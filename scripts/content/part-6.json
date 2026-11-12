@@ -1,0 +1,250 @@
+{
+  "examples": {
+    "n5-418": { "jp": "{毎日|まいにち}{白|しろ}いシャツを{着|き}ます。", "vi": "Ngày nào tôi cũng mặc áo sơ mi trắng.", "tip": "Hán Việt: TRƯỚC (着). Dùng cho đồ mặc từ vai xuống: シャツを着る. Nhóm 2: 着ます/着て." },
+    "n5-462": { "jp": "{新|あたら}しい{靴|くつ}を{履|は}きました。", "vi": "Tôi đã đi đôi giày mới.", "tip": "Dùng cho đồ mặc từ chân lên: 靴・靴下・ズボン・スカートを履く. Áo thì dùng 着る." },
+    "n5-456": { "jp": "{家|いえ}の{中|なか}では{靴|くつ}を{脱|ぬ}ぎます。", "vi": "Trong nhà thì cởi giày ra.", "tip": "Hán Việt: THOÁT. Ngược nghĩa với 着る/履く. 靴を脱ぐ = cởi giày; thể て: 脱いで." },
+    "n5-417": { "jp": "ナイフでパンを{切|き}ります。", "vi": "Tôi cắt bánh mì bằng dao.", "tip": "Hán Việt: THIẾT. Dụng cụ dùng で. Bẫy: 切る là động từ nhóm 1 → 切ります, 切って (không phải 切て)." },
+    "n5-428": { "jp": "{父|ちち}はたばこを{吸|す}いません。", "vi": "Bố tôi không hút thuốc.", "tip": "Hán Việt: HẤP (hô hấp). たばこを吸う = hút thuốc; 空気を吸う = hít không khí." },
+    "n5-468": { "jp": "{封筒|ふうとう}に{切手|きって}を{貼|は}ります。", "vi": "Tôi dán tem lên phong bì.", "tip": "Hán Việt: THIẾP. Mẫu: (chỗ)に (vật)を貼る = dán cái gì lên đâu." },
+    "n5-470": { "jp": "このドアを{引|ひ}いてください。", "vi": "Hãy kéo cánh cửa này.", "tip": "Hán Việt: DẪN. 引く ↔ 押す (đẩy). Còn có: 風邪を引く (bị cảm), 辞書を引く (tra từ điển)." },
+    "n5-471": { "jp": "{姉|あね}はピアノを{弾|ひ}きます。", "vi": "Chị gái tôi chơi đàn piano.", "tip": "Hán Việt: ĐÀN. Chơi nhạc cụ phím/dây: ピアノ・ギターを弾く. Đồng âm với 引く nhưng khác chữ." },
+    "n5-392": { "jp": "{分|わ}かった{人|ひと}は{手|て}を{上|あ}げてください。", "vi": "Ai hiểu rồi thì hãy giơ tay lên.", "tip": "Hán Việt: THƯỢNG. 手を上げる = giơ tay. ↔ 下げる (hạ xuống). Nhóm 2: 上げます." },
+    "n5-449": { "jp": "{公園|こうえん}で{写真|しゃしん}を{撮|と}りました。", "vi": "Tôi đã chụp ảnh ở công viên.", "tip": "Hán Việt: TOÁT. 写真を撮る = chụp ảnh. Khác 取る (lấy, cầm) cùng đọc とる." },
+
+    "n5-434": { "jp": "{兄|あに}は{駅|えき}の{前|まえ}に{立|た}っています。", "vi": "Anh trai tôi đang đứng trước nhà ga.", "tip": "Hán Việt: LẬP. 立つ ↔ 座る. 立ってください = Hãy đứng lên. Thể て: 立って." },
+    "n5-431": { "jp": "どうぞ、いすに{座|すわ}ってください。", "vi": "Mời bạn ngồi xuống ghế.", "tip": "Hán Việt: TỌA. Chỗ ngồi dùng に: いすに座る. ↔ 立つ." },
+    "n5-445": { "jp": "{鳥|とり}が{空|そら}を{飛|と}んでいます。", "vi": "Con chim đang bay trên bầu trời.", "tip": "Hán Việt: PHI. Bay qua không gian dùng を: 空を飛ぶ. Thể て: 飛んで." },
+    "n5-450": { "jp": "{木|き}の{上|うえ}で{鳥|とり}が{鳴|な}いています。", "vi": "Chim đang hót trên cây.", "tip": "Hán Việt: MINH. Tiếng con vật kêu (có bộ 口 miệng + 鳥 chim). Khác 泣く = người khóc." },
+    "n5-458": { "jp": "{日曜日|にちようび}に{山|やま}に{登|のぼ}りました。", "vi": "Chủ nhật tôi đã leo núi.", "tip": "Hán Việt: ĐĂNG. 山に登る = leo núi (dùng に hoặc を). Thể て: 登って." },
+    "n5-453": { "jp": "{店|みせ}の{前|まえ}に{人|ひと}が{並|なら}んでいます。", "vi": "Mọi người đang xếp hàng trước cửa tiệm.", "tip": "Tự động từ: người/vật tự đứng thành hàng (Nが並ぶ). Khác 並べる = xếp cái gì đó ra (Nを並べる)." },
+    "n5-454": { "jp": "テーブルに{皿|さら}を{並|なら}べます。", "vi": "Tôi bày đĩa lên bàn.", "tip": "Tha động từ: Nを並べる = bày, sắp xếp cái gì. Còn 並ぶ = tự xếp hàng (Nが並ぶ). Nhóm 2: 並べます." },
+    "n5-451": { "jp": "{電車|でんしゃ}で{傘|かさ}を{無|な}くしました。", "vi": "Tôi đã làm mất ô trên tàu điện.", "tip": "Hán Việt: VÔ (không có). Nを無くす = làm mất. Thường viết bằng kana: なくす." },
+    "n5-389": { "jp": "{駅|えき}で{友達|ともだち}に{会|あ}いました。", "vi": "Tôi đã gặp bạn ở nhà ga.", "tip": "Hán Việt: HỘI. Gặp ai dùng に: 友達に会う (không dùng を!)." },
+    "n5-393": { "jp": "{子|こ}どもたちが{公園|こうえん}で{遊|あそ}んでいます。", "vi": "Bọn trẻ đang chơi ở công viên.", "tip": "Hán Việt: DU. Nơi chơi dùng で. Chơi nhạc cụ thì dùng 弾く, chơi thể thao dùng する." },
+    "n5-401": { "jp": "{日本|にほん}の{歌|うた}を{歌|うた}いました。", "vi": "Tôi đã hát một bài hát Nhật.", "tip": "Hán Việt: CA. 歌 (うた) = bài hát, 歌う = hát → 歌を歌う." },
+    "n5-476": { "jp": "{少|すこ}し{待|ま}ってください。", "vi": "Xin hãy đợi một chút.", "tip": "Hán Việt: ĐÃI. Chờ ai/cái gì dùng を: 友達を待つ. Thể て: 待って." },
+    "n5-479": { "jp": "{夜|よる}はテレビを{見|み}ます。", "vi": "Buổi tối tôi xem tivi.", "tip": "Hán Việt: KIẾN. Nhóm 2: 見ます, 見て. Nを見る. Khác 見せる = cho xem." },
+
+    "n5-506": { "jp": "{私|わたし}の{家|いえ}は{大|おお}きいです。", "vi": "Nhà tôi to.", "tip": "Hán Việt: ĐẠI. Tính từ い. ↔ 小さい. Phủ định: 大きくない. Trước danh từ có thể dùng 大きな." },
+    "n5-522": { "jp": "この{靴|くつ}は{少|すこ}し{小|ちい}さいです。", "vi": "Đôi giày này hơi nhỏ.", "tip": "Hán Việt: TIỂU. Tính từ い, dùng được cả làm vị ngữ (〜は小さいです) lẫn trước danh từ. ↔ 大きい." },
+    "n5-559": { "jp": "{小|ちい}さな{店|みせ}でパンを{買|か}いました。", "vi": "Tôi mua bánh mì ở một tiệm nhỏ.", "tip": "小さな CHỈ đứng trước danh từ (小さな店), không nói 店は小さなです. 小さい thì dùng được cả hai chỗ." },
+    "n5-494": { "jp": "{新|あたら}しいかばんが{欲|ほ}しいです。", "vi": "Tôi muốn có một chiếc cặp mới.", "tip": "Hán Việt: TÂN. Tính từ い. ↔ 古い. Quá khứ: 新しかった." },
+    "n5-532": { "jp": "この{町|まち}には{古|ふる}いお{寺|てら}があります。", "vi": "Thị trấn này có một ngôi chùa cổ.", "tip": "Hán Việt: CỔ. ↔ 新しい. Không dùng cho người già (người già: 年をとった人)." },
+    "n5-527": { "jp": "{妹|いもうと}の{髪|かみ}は{長|なが}いです。", "vi": "Tóc của em gái tôi dài.", "tip": "Hán Việt: TRƯỜNG. Tính từ い. ↔ 短い." },
+    "n5-537": { "jp": "このズボンは{短|みじか}いです。", "vi": "Cái quần này ngắn.", "tip": "Hán Việt: ĐOẢN. Tính từ い. ↔ 長い." },
+    "n5-508": { "jp": "この{荷物|にもつ}はとても{重|おも}いです。", "vi": "Hành lý này rất nặng.", "tip": "Hán Việt: TRỌNG. Tính từ い. ↔ 軽い." },
+    "n5-511": { "jp": "この{傘|かさ}は{軽|かる}くて{便利|べんり}です。", "vi": "Cái ô này nhẹ và tiện lợi.", "tip": "Hán Việt: KHINH. Tính từ い. ↔ 重い. Nối câu: 軽くて〜 (nhẹ và…)." },
+    "n5-505": { "jp": "{東京|とうきょう}は{人|ひと}が{多|おお}いです。", "vi": "Tokyo đông người.", "tip": "Hán Việt: ĐA. ↔ 少ない. Thường làm vị ngữ: 〜が多いです; ít khi đứng trước danh từ (多い人 nghe không tự nhiên)." },
+    "n5-518": { "jp": "この{町|まち}は{店|みせ}が{少|すく}ないです。", "vi": "Thị trấn này có ít cửa hàng.", "tip": "Hán Việt: THIỂU. ↔ 多い. Phân biệt: 少ない (tính từ: ít) với 少し (phó từ: một chút)." },
+
+    "n5-523": { "jp": "{学校|がっこう}は{駅|えき}から{近|ちか}いです。", "vi": "Trường học gần nhà ga.", "tip": "Hán Việt: CẬN. Mẫu: AはBから近い. ↔ 遠い. 近く = chỗ gần (駅の近く)." },
+    "n5-526": { "jp": "{私|わたし}の{国|くに}はここから{遠|とお}いです。", "vi": "Đất nước tôi xa nơi này.", "tip": "Hán Việt: VIỄN. ↔ 近い. Chú ý đọc とおい (kéo dài お)." },
+    "n5-528": { "jp": "{父|ちち}は{毎朝|まいあさ}{早|はや}く{起|お}きます。", "vi": "Bố tôi dậy sớm mỗi sáng.", "tip": "Hán Việt: TẢO. 早い = SỚM (thời gian). Khác 速い = NHANH (tốc độ). ↔ 遅い." },
+    "n5-507": { "jp": "{昨日|きのう}は{遅|おそ}く{寝|ね}ました。", "vi": "Hôm qua tôi ngủ muộn.", "tip": "Hán Việt: TRÌ. Hai nghĩa: muộn (↔ 早い) và chậm (↔ 速い). 遅く寝る = ngủ muộn." },
+    "n5-529": { "jp": "{電車|でんしゃ}はバスより{速|はや}いです。", "vi": "Tàu điện nhanh hơn xe buýt.", "tip": "Hán Việt: TỐC (tốc độ). 速い = nhanh về tốc độ; 早い = sớm. ↔ 遅い." },
+    "n5-530": { "jp": "この{部屋|へや}は{広|ひろ}くて{明|あか}るいです。", "vi": "Căn phòng này rộng và sáng sủa.", "tip": "Hán Việt: QUẢNG. Tính từ い. ↔ 狭い." },
+    "n5-520": { "jp": "{私|わたし}のアパートは{狭|せま}いです。", "vi": "Căn hộ của tôi chật hẹp.", "tip": "Hán Việt: HIỆP (chật hẹp). Tính từ い. ↔ 広い." },
+    "n5-497": { "jp": "{冬|ふゆ}は{厚|あつ}いコートを{着|き}ます。", "vi": "Mùa đông tôi mặc áo khoác dày.", "tip": "Hán Việt: HẬU (dày). Ba chữ あつい: 厚い (dày), 暑い (trời nóng), 熱い (vật nóng). ↔ 薄い (mỏng)." },
+    "n5-531": { "jp": "この{木|き}はとても{太|ふと}いです。", "vi": "Cái cây này rất to (thân to).", "tip": "Hán Việt: THÁI. To, dày (thân cây, nét bút); người béo thường nói 太っている. ↔ 細い." },
+    "n5-534": { "jp": "{彼女|かのじょ}の{指|ゆび}は{細|ほそ}いです。", "vi": "Ngón tay của cô ấy thon dài.", "tip": "Hán Việt: TẾ. Mảnh, thon, hẹp (ngón tay, con đường). ↔ 太い." },
+    "n5-541": { "jp": "{今日|きょう}は{風|かぜ}が{強|つよ}いです。", "vi": "Hôm nay gió mạnh.", "tip": "Hán Việt: CƯỜNG. Tính từ い. ↔ 弱い. 風が強い = gió mạnh." },
+    "n5-540": { "jp": "{私|わたし}はお{酒|さけ}に{弱|よわ}いです。", "vi": "Tôi uống rượu kém (dễ say).", "tip": "Hán Việt: NHƯỢC. ↔ 強い. 〜に弱い = yếu/kém về khoản gì." },
+
+    "n5-504": { "jp": "この{店|みせ}のラーメンは{美味|おい}しいです。", "vi": "Mì ramen của quán này ngon.", "tip": "Hán Việt: MỸ VỊ (vị ngon). Thường viết bằng kana: おいしい. ↔ まずい." },
+    "n5-535": { "jp": "このコーヒーはまずいです。", "vi": "Cà phê này dở.", "tip": "Dở (đồ ăn) ↔ おいしい. Còn nghĩa “gay rồi, không ổn”. Nói thẳng trước người nấu là bất lịch sự." },
+    "n5-499": { "jp": "このケーキはとても{甘|あま}いです。", "vi": "Cái bánh này rất ngọt.", "tip": "Hán Việt: CAM (ngọt). Tính từ い. Còn nghĩa nuông chiều: 子どもに甘い." },
+    "n5-510": { "jp": "タイの{料理|りょうり}は{辛|から}いです。", "vi": "Món ăn Thái thì cay.", "tip": "Hán Việt: TÂN. からい = cay (mặn cũng có khi nói からい). Cùng chữ đọc つらい = khổ sở." },
+    "n5-509": { "jp": "この{本|ほん}はとてもおもしろいです。", "vi": "Cuốn sách này rất thú vị.", "tip": "Kanji: 面白い. Thú vị, hay, buồn cười. ↔ つまらない. Quá khứ: おもしろかった." },
+    "n5-524": { "jp": "{昨日|きのう}の{映画|えいが}はつまらなかったです。", "vi": "Bộ phim hôm qua thật nhàm chán.", "tip": "Nhàm chán ↔ おもしろい. Đuôi ない nhưng là tính từ い: つまらなかった (không phải phủ định)." },
+    "n5-521": { "jp": "{旅行|りょこう}はとても{楽|たの}しかったです。", "vi": "Chuyến du lịch rất vui.", "tip": "Hán Việt: LẠC. 楽しい = vui (bản thân trải nghiệm). Khác おもしろい = thú vị, hay." },
+    "n5-512": { "jp": "その{猫|ねこ}はかわいいですね。", "vi": "Con mèo đó dễ thương nhỉ.", "tip": "Tính từ い: かわいくない, かわいかった. Dùng khen trẻ em, con vật, đồ vật xinh xắn." },
+    "n5-542": { "jp": "{田中|たなか}さんのお{母|かあ}さんは{若|わか}いです。", "vi": "Mẹ của anh Tanaka trẻ.", "tip": "Hán Việt: NHƯỢC. Trẻ (dùng cho người). Đồ vật mới thì dùng 新しい, không dùng 若い." },
+    "n5-543": { "jp": "{今日|きょう}は{天気|てんき}が{悪|わる}いです。", "vi": "Hôm nay thời tiết xấu.", "tip": "Hán Việt: ÁC. Tính từ い. ↔ いい/よい. 天気が悪い = trời xấu." },
+    "n5-500": { "jp": "この{辞書|じしょ}はとてもいいです。", "vi": "Cuốn từ điển này rất tốt.", "tip": "いい = よい. Bẫy: chia từ よい → よくない, よかった (không nói いくない, いかった). ↔ 悪い." },
+    "n5-539": { "jp": "この{店|みせ}の{野菜|やさい}は{安|やす}いです。", "vi": "Rau ở cửa hàng này rẻ.", "tip": "Hán Việt: AN. 安い = rẻ ↔ 高い (đắt). Đừng nhầm với やさしい (dễ, hiền)." },
+
+    "n5-492": { "jp": "{田中|たなか}さんはいつも{明|あか}るいです。", "vi": "Anh Tanaka lúc nào cũng vui vẻ.", "tip": "Hán Việt: MINH. Viết đúng: 明るい. Nghĩa: sáng sủa (phòng) và vui tươi (tính cách). ↔ 暗い." },
+    "n5-515": { "jp": "{夜|よる}の{道|みち}は{暗|くら}いです。", "vi": "Đường buổi tối thì tối.", "tip": "Hán Việt: ÁM. ↔ 明るい. Cũng dùng cho tính cách u ám." },
+    "n5-502": { "jp": "{頭|あたま}が{痛|いた}いです。", "vi": "Tôi bị đau đầu.", "tip": "Hán Việt: THỐNG. Mẫu: (bộ phận cơ thể)が痛い. Kêu 「痛い!」 khi bị đau." },
+    "n5-503": { "jp": "{隣|となり}の{部屋|へや}がうるさいです。", "vi": "Phòng bên cạnh ồn ào.", "tip": "Ồn ào; cũng nghĩa là phiền, lắm chuyện. Tính từ い. Ngược: 静か (tính từ な)." },
+    "n5-498": { "jp": "{危|あぶ}ないですから、{道|みち}で{遊|あそ}ばないでください。", "vi": "Nguy hiểm lắm, đừng chơi ngoài đường.", "tip": "Hán Việt: NGUY. Tính từ い. Kêu 「危ない!」 = Cẩn thận!" },
+    "n5-501": { "jp": "{今週|こんしゅう}は{仕事|しごと}が{忙|いそが}しいです。", "vi": "Tuần này công việc bận rộn.", "tip": "Hán Việt: MANG. 忙 = tâm (忄) + vong (亡). Tính từ い. ↔ 暇 (tính từ な)." },
+    "n5-538": { "jp": "{漢字|かんじ}は{難|むずか}しいです。", "vi": "Chữ Hán thì khó.", "tip": "Hán Việt: NAN. Tính từ い. ↔ 易しい, 簡単 (tính từ な)." },
+    "n5-533": { "jp": "{新|あたら}しいパソコンが{欲|ほ}しいです。", "vi": "Tôi muốn có máy tính mới.", "tip": "Hán Việt: DỤC. Muốn CÓ vật: Nが欲しい. Muốn LÀM gì thì dùng V-たい. Tính từ い." },
+    "n5-525": { "jp": "{冷|つめ}たい{水|みず}を{飲|の}みたいです。", "vi": "Tôi muốn uống nước lạnh.", "tip": "Hán Việt: LÃNH. Lạnh khi chạm vào (nước, tay). Trời lạnh dùng 寒い. ↔ 熱い." },
+    "n5-496": { "jp": "このお{茶|ちゃ}は{熱|あつ}いです。", "vi": "Trà này nóng.", "tip": "Hán Việt: NHIỆT. Nóng khi chạm (đồ uống, nước). Trời nóng = 暑い; dày = 厚い. ↔ 冷たい." },
+    "n5-536": { "jp": "{今晩|こんばん}は{月|つき}が{丸|まる}いです。", "vi": "Tối nay trăng tròn.", "tip": "Hán Việt: HOÀN (tròn). Tính từ い. 丸 (まる) = vòng tròn, cũng là dấu ○ đúng." },
+    "n5-514": { "jp": "{手|て}が{汚|きたな}いですから、{洗|あら}います。", "vi": "Tay bẩn nên tôi đi rửa.", "tip": "Hán Việt: Ô (ô nhiễm). Tính từ い. ↔ きれい (tính từ な)." },
+
+    "n5-554": { "jp": "{私|わたし}は{猫|ねこ}が{好|す}きです。", "vi": "Tôi thích mèo.", "tip": "Hán Việt: HẢO. Tính từ な, dùng が: Nが好きです. ↔ 嫌い. Mạnh hơn: 大好き." },
+    "n5-547": { "jp": "{弟|おとうと}は{野菜|やさい}が{嫌|きら}いです。", "vi": "Em trai tôi ghét rau.", "tip": "Bẫy: đuôi い nhưng là tính từ な → 嫌いな食べ物, 嫌いじゃない. ↔ 好き. Dùng が." },
+    "n5-556": { "jp": "{私|わたし}は{日本|にほん}の{歌|うた}が{大好|だいす}きです。", "vi": "Tôi rất thích các bài hát Nhật.", "tip": "大 (rất) + 好き = rất thích, mạnh hơn 好き. Tính từ な, dùng が. Không cần thêm とても." },
+    "n5-544": { "jp": "{雨|あめ}の{日|ひ}は{嫌|いや}です。", "vi": "Tôi ghét những ngày mưa.", "tip": "Cùng chữ với 嫌い nhưng 嫌 (いや) = khó chịu, không muốn (cảm xúc tức thời). 「嫌です!」 = Không chịu đâu!" },
+    "n5-548": { "jp": "この{公園|こうえん}はきれいです。", "vi": "Công viên này sạch đẹp.", "tip": "Bẫy: tính từ な dù đuôi い → きれいな花, きれいじゃない. Hai nghĩa: đẹp và sạch. ↔ 汚い." },
+    "n5-551": { "jp": "{図書館|としょかん}は{静|しず}かです。", "vi": "Thư viện yên tĩnh.", "tip": "Hán Việt: TĨNH. Tính từ な: 静かな町. ↔ にぎやか, うるさい." },
+    "n5-560": { "jp": "{駅|えき}の{近|ちか}くは{賑|にぎ}やかです。", "vi": "Khu gần nhà ga thì náo nhiệt.", "tip": "Tính từ な: 賑やかな町 = phố náo nhiệt (nghĩa tích cực). ↔ 静か. Thường viết にぎやか." },
+    "n5-550": { "jp": "{祖母|そぼ}はとても{元気|げんき}です。", "vi": "Bà tôi rất khỏe mạnh.", "tip": "Hán Việt: NGUYÊN KHÍ. Tính từ な. お元気ですか = Bạn có khỏe không?" },
+    "n5-555": { "jp": "{足|あし}はもう{大丈夫|だいじょうぶ}です。", "vi": "Chân tôi giờ không sao rồi.", "tip": "Hán Việt: ĐẠI TRƯỢNG PHU. Tính từ な. 大丈夫ですか = Có sao không? / 大丈夫です = Không sao." },
+    "n5-552": { "jp": "{兄|あに}は{料理|りょうり}が{上手|じょうず}です。", "vi": "Anh trai tôi nấu ăn giỏi.", "tip": "Hán Việt: THƯỢNG THỦ. Nが上手です. ↔ 下手. Dùng khen người khác, không tự khen mình." },
+    "n5-546": { "jp": "すてきな{服|ふく}ですね。", "vi": "Bộ quần áo đẹp quá nhỉ.", "tip": "Kanji: 素敵. Tính từ な: すてきな〜. Dùng để khen đồ vật, người: tuyệt, đẹp, hay." },
+
+    "n5-562": { "jp": "このかばんはとても{便利|べんり}です。", "vi": "Chiếc cặp này rất tiện lợi.", "tip": "Hán Việt: TIỆN LỢI (便利) – giống hệt tiếng Việt. Tính từ な. ↔ 不便." },
+    "n5-564": { "jp": "{私|わたし}の{家|いえ}は{駅|えき}から{遠|とお}くて{不便|ふべん}です。", "vi": "Nhà tôi xa ga nên bất tiện.", "tip": "Hán Việt: BẤT TIỆN (不便) – giống tiếng Việt. Tính từ な. ↔ 便利." },
+    "n5-565": { "jp": "この{問題|もんだい}は{簡単|かんたん}です。", "vi": "Câu hỏi này đơn giản.", "tip": "Hán Việt: GIẢN ĐƠN. Tính từ な: 簡単な問題. ↔ 難しい (tính từ い)." },
+    "n5-557": { "jp": "{家族|かぞく}はとても{大切|たいせつ}です。", "vi": "Gia đình rất quan trọng.", "tip": "Hán Việt: ĐẠI THIẾT. Quan trọng, quý giá. Tính từ な: 大切な人 = người quan trọng." },
+    "n5-558": { "jp": "{毎日|まいにち}{仕事|しごと}が{大変|たいへん}です。", "vi": "Ngày nào công việc cũng vất vả.", "tip": "Hán Việt: ĐẠI BIẾN. Tính từ な = vất vả; còn làm phó từ = rất (大変おいしい). 大変ですね = Vất vả nhỉ." },
+    "n5-561": { "jp": "{明日|あした}は{暇|ひま}ですか。", "vi": "Ngày mai bạn có rảnh không?", "tip": "Hán Việt: HẠ (nhàn hạ). Tính từ な: 暇な日. ↔ 忙しい (tính từ い)." },
+    "n5-563": { "jp": "りっぱな{家|いえ}ですね。", "vi": "Ngôi nhà lộng lẫy quá nhỉ.", "tip": "Kanji: 立派 (LẬP PHÁI). Tính từ な: りっぱな〜 = lộng lẫy, xuất sắc, đáng nể." },
+    "n5-553": { "jp": "この{靴|くつ}は{丈夫|じょうぶ}です。", "vi": "Đôi giày này bền.", "tip": "Hán Việt: TRƯỢNG PHU. Tính từ な: chắc, bền; 体が丈夫 = khỏe. Khác 大丈夫 = không sao." },
+    "n5-549": { "jp": "コーヒーはもう{結構|けっこう}です。", "vi": "Cà phê thì tôi đủ rồi (không cần nữa).", "tip": "Hán Việt: KẾT CẤU. もう結構です = đủ rồi, không cần (từ chối lịch sự). Còn nghĩa “khá”: 結構おいしい." },
+    "n5-545": { "jp": "{京都|きょうと}でいろいろな{所|ところ}へ{行|い}きました。", "vi": "Tôi đã đi nhiều nơi ở Kyoto.", "tip": "Tính từ な: いろいろな＋N = nhiều loại, đa dạng. Kanji: 色々 (々 = lặp lại chữ trước)." },
+    "n5-79": { "jp": "{兄|あに}と{私|わたし}は{同|おな}じ{学校|がっこう}です。", "vi": "Anh tôi và tôi học cùng một trường.", "tip": "Hán Việt: ĐỒNG. Bẫy: đứng trước danh từ KHÔNG có な: 同じ本 (không nói 同じな本)." },
+    "n5-327": { "jp": "それは{本当|ほんとう}ですか。", "vi": "Chuyện đó có thật không?", "tip": "Hán Việt: BẢN ĐƯƠNG. 本当ですか = Thật không? 本当に = thật sự (本当にありがとう)." }
+  },
+  "readings": {
+    "L41": {
+      "title": "{友達|ともだち}のパーティー",
+      "titleVi": "Bữa tiệc của bạn",
+      "lines": [
+        { "jp": "{今日|きょう}は{友達|ともだち}のパーティーです。", "vi": "Hôm nay là bữa tiệc của bạn tôi." },
+        { "jp": "{私|わたし}は{白|しろ}いシャツを{着|き}て、{黒|くろ}い{靴|くつ}を{履|は}きました。", "vi": "Tôi mặc áo sơ mi trắng và đi giày đen." },
+        { "jp": "{友達|ともだち}の{家|いえ}で{靴|くつ}を{脱|ぬ}ぎました。", "vi": "Tôi cởi giày ở nhà bạn." },
+        { "jp": "{友達|ともだち}がケーキを{切|き}って、みんなで{食|た}べました。", "vi": "Bạn tôi cắt bánh và mọi người cùng ăn." },
+        { "jp": "それから、{友達|ともだち}のお{姉|ねえ}さんがピアノを{弾|ひ}きました。", "vi": "Sau đó, chị gái của bạn tôi chơi piano." },
+        { "jp": "{私|わたし}はスマホで{写真|しゃしん}をたくさん{撮|と}りました。", "vi": "Tôi đã chụp rất nhiều ảnh bằng điện thoại." },
+        { "jp": "{外|そと}でたばこを{吸|す}う{人|ひと}もいました。", "vi": "Cũng có người hút thuốc ở bên ngoài." }
+      ],
+      "questions": [
+        { "q": "Nhân vật “tôi” đi giày màu gì?", "options": ["Màu trắng", "Màu đen", "Màu đỏ"], "answer": 1 },
+        { "q": "Ai đã chơi piano?", "options": ["Bạn của tôi", "Tôi", "Chị gái của bạn tôi"], "answer": 2 },
+        { "q": "“Tôi” đã làm gì bằng điện thoại?", "options": ["Chụp nhiều ảnh", "Gọi điện cho mẹ", "Nghe nhạc"], "answer": 0 }
+      ]
+    },
+    "L42": {
+      "title": "{日曜日|にちようび}の{公園|こうえん}",
+      "titleVi": "Công viên ngày Chủ nhật",
+      "lines": [
+        { "jp": "{日曜日|にちようび}、{公園|こうえん}で{友達|ともだち}に{会|あ}いました。", "vi": "Chủ nhật, tôi gặp bạn ở công viên." },
+        { "jp": "{木|き}の{上|うえ}で{鳥|とり}が{鳴|な}いていました。", "vi": "Trên cây, chim đang hót." },
+        { "jp": "{子|こ}どもたちは{元気|げんき}に{遊|あそ}んでいました。", "vi": "Bọn trẻ đang chơi đùa vui vẻ." },
+        { "jp": "{私|わたし}たちはベンチに{座|すわ}って、{歌|うた}を{歌|うた}いました。", "vi": "Chúng tôi ngồi trên ghế dài và hát." },
+        { "jp": "それから、アイスクリームの{店|みせ}に{並|なら}びました。", "vi": "Sau đó, chúng tôi xếp hàng ở tiệm kem." },
+        { "jp": "{人|ひと}が{多|おお}くて、{二十分|にじゅっぷん}{待|ま}ちました。", "vi": "Đông người quá nên chúng tôi đã chờ 20 phút." },
+        { "jp": "{帰|かえ}りに、{友達|ともだち}は{傘|かさ}を{無|な}くしました。", "vi": "Trên đường về, bạn tôi đã làm mất ô." }
+      ],
+      "questions": [
+        { "q": "“Tôi” gặp bạn ở đâu?", "options": ["Ở nhà ga", "Ở công viên", "Ở trường học"], "answer": 1 },
+        { "q": "Họ đã chờ ở tiệm kem bao lâu?", "options": ["10 phút", "30 phút", "20 phút"], "answer": 2 },
+        { "q": "Người bạn đã làm mất gì?", "options": ["Cái ô", "Ví tiền", "Điện thoại"], "answer": 0 }
+      ]
+    },
+    "L43": {
+      "title": "{新|あたら}しいかばん",
+      "titleVi": "Chiếc cặp mới",
+      "lines": [
+        { "jp": "{昨日|きのう}、デパートへかばんを{買|か}いに{行|い}きました。", "vi": "Hôm qua tôi đến trung tâm thương mại để mua cặp." },
+        { "jp": "{私|わたし}の{古|ふる}いかばんは{小|ちい}さくて、{重|おも}いです。", "vi": "Chiếc cặp cũ của tôi nhỏ và nặng." },
+        { "jp": "デパートには{新|あたら}しいかばんが{多|おお}かったです。", "vi": "Ở trung tâm thương mại có nhiều cặp mới." },
+        { "jp": "{大|おお}きいかばんは{便利|べんり}ですが、{少|すこ}し{高|たか}かったです。", "vi": "Cặp to thì tiện, nhưng hơi đắt." },
+        { "jp": "{私|わたし}は{軽|かる}くて{小|ちい}さなかばんを{買|か}いました。", "vi": "Tôi đã mua một chiếc cặp nhỏ và nhẹ." },
+        { "jp": "{母|はは}には{長|なが}いスカーフを{買|か}いました。", "vi": "Tôi mua cho mẹ một chiếc khăn quàng dài." },
+        { "jp": "{明日|あした}は{荷物|にもつ}が{少|すく}ないですから、{新|あたら}しいかばんで{出|で}かけます。", "vi": "Ngày mai đồ đạc ít nên tôi sẽ mang chiếc cặp mới ra ngoài." }
+      ],
+      "questions": [
+        { "q": "Chiếc cặp cũ của “tôi” như thế nào?", "options": ["To và nhẹ", "Nhỏ và nặng", "Mới và đắt"], "answer": 1 },
+        { "q": "“Tôi” đã mua chiếc cặp như thế nào?", "options": ["Cặp to và đắt", "Cặp cũ", "Cặp nhỏ và nhẹ"], "answer": 2 },
+        { "q": "“Tôi” đã mua gì cho mẹ?", "options": ["Khăn quàng dài", "Cặp to", "Đôi giày"], "answer": 0 }
+      ]
+    },
+    "L44": {
+      "title": "{新|あたら}しいアパート",
+      "titleVi": "Căn hộ mới",
+      "lines": [
+        { "jp": "A：{新|あたら}しいアパートはどうですか。", "vi": "A: Căn hộ mới thế nào?" },
+        { "jp": "B：{駅|えき}から{近|ちか}くて、{便利|べんり}です。", "vi": "B: Gần ga nên tiện lợi." },
+        { "jp": "B：でも、{部屋|へや}は{前|まえ}のアパートより{狭|せま}いです。", "vi": "B: Nhưng phòng hẹp hơn căn hộ trước." },
+        { "jp": "A：{前|まえ}のアパートは{広|ひろ}かったですね。", "vi": "A: Căn hộ trước rộng nhỉ." },
+        { "jp": "B：ええ。でも、{会社|かいしゃ}から{遠|とお}かったです。", "vi": "B: Vâng. Nhưng nó xa công ty." },
+        { "jp": "B：{毎朝|まいあさ}{早|はや}く{起|お}きて、{速|はや}い{電車|でんしゃ}に{乗|の}りました。", "vi": "B: Sáng nào tôi cũng dậy sớm và đi tàu nhanh." },
+        { "jp": "A：じゃあ、{今|いま}は{朝|あさ}{遅|おそ}く{起|お}きてもいいですね。", "vi": "A: Vậy bây giờ buổi sáng dậy muộn cũng được nhỉ." }
+      ],
+      "questions": [
+        { "q": "Căn hộ mới của B thế nào?", "options": ["Gần ga và tiện lợi", "Xa ga", "Rất rộng"], "answer": 0 },
+        { "q": "Căn hộ trước có điểm gì bất tiện?", "options": ["Hẹp", "Xa công ty", "Tối"], "answer": 1 },
+        { "q": "Trước đây mỗi sáng B làm gì?", "options": ["Dậy muộn", "Đi xe buýt", "Dậy sớm và đi tàu nhanh"], "answer": 2 }
+      ]
+    },
+    "L45": {
+      "title": "{新|あたら}しいレストラン",
+      "titleVi": "Nhà hàng mới",
+      "lines": [
+        { "jp": "{昨日|きのう}、{友達|ともだち}と{新|あたら}しいレストランへ{行|い}きました。", "vi": "Hôm qua tôi đi đến một nhà hàng mới với bạn." },
+        { "jp": "{店|みせ}の{人|ひと}は{若|わか}くて、とても{親切|しんせつ}でした。", "vi": "Nhân viên quán trẻ và rất tử tế." },
+        { "jp": "カレーは{辛|から}かったですが、{美味|おい}しかったです。", "vi": "Cà ri thì cay nhưng ngon." },
+        { "jp": "デザートのケーキは{甘|あま}くて、かわいかったです。", "vi": "Bánh tráng miệng ngọt và trông dễ thương." },
+        { "jp": "でも、コーヒーは{少|すこ}しまずかったです。", "vi": "Nhưng cà phê thì hơi dở." },
+        { "jp": "{値段|ねだん}も{安|やす}かったですから、いい{店|みせ}です。", "vi": "Giá cũng rẻ nên đây là một quán tốt." },
+        { "jp": "{友達|ともだち}といろいろ{話|はな}して、とても{楽|たの}しかったです。", "vi": "Tôi nói chuyện nhiều với bạn, rất vui." }
+      ],
+      "questions": [
+        { "q": "Món cà ri thế nào?", "options": ["Cay nhưng ngon", "Ngọt và dở", "Không cay"], "answer": 0 },
+        { "q": "Món nào hơi dở?", "options": ["Cà ri", "Bánh ngọt", "Cà phê"], "answer": 2 },
+        { "q": "Nhân viên quán như thế nào?", "options": ["Lớn tuổi", "Trẻ và tử tế", "Ồn ào"], "answer": 1 }
+      ]
+    },
+    "L46": {
+      "title": "{頭|あたま}が{痛|いた}い{日|ひ}",
+      "titleVi": "Ngày bị đau đầu",
+      "lines": [
+        { "jp": "{今日|きょう}は{朝|あさ}から{頭|あたま}が{痛|いた}いです。", "vi": "Hôm nay tôi bị đau đầu từ sáng." },
+        { "jp": "{仕事|しごと}は{忙|いそが}しいですが、{会社|かいしゃ}を{休|やす}みました。", "vi": "Công việc bận nhưng tôi đã nghỉ làm." },
+        { "jp": "でも、{隣|となり}の{家|いえ}がとてもうるさいです。", "vi": "Nhưng nhà bên cạnh rất ồn ào." },
+        { "jp": "{熱|あつ}いお{茶|ちゃ}を{飲|の}んで、{薬|くすり}を{飲|の}みました。", "vi": "Tôi uống trà nóng rồi uống thuốc." },
+        { "jp": "{冷|つめ}たいアイスクリームも{欲|ほ}しいです。", "vi": "Tôi cũng muốn ăn kem lạnh." },
+        { "jp": "{夜|よる}、{部屋|へや}は{暗|くら}くて{静|しず}かでした。", "vi": "Buổi tối, căn phòng tối và yên tĩnh." },
+        { "jp": "{明日|あした}は{元気|げんき}になりたいです。", "vi": "Tôi muốn ngày mai khỏe lại." }
+      ],
+      "questions": [
+        { "q": "Hôm nay “tôi” bị làm sao?", "options": ["Đau bụng", "Đau đầu", "Đau chân"], "answer": 1 },
+        { "q": "Cái gì ồn ào?", "options": ["Nhà bên cạnh", "Tiếng mưa", "Xe trên đường"], "answer": 0 },
+        { "q": "“Tôi” đã uống gì?", "options": ["Cà phê lạnh", "Nước ép", "Trà nóng và thuốc"], "answer": 2 }
+      ]
+    },
+    "L47": {
+      "title": "{私|わたし}の{町|まち}と{友達|ともだち}",
+      "titleVi": "Thị trấn của tôi và người bạn",
+      "lines": [
+        { "jp": "{私|わたし}の{町|まち}は{小|ちい}さいですが、とてもきれいです。", "vi": "Thị trấn của tôi nhỏ nhưng rất đẹp." },
+        { "jp": "{昼|ひる}は{静|しず}かですが、{夜|よる}は{駅|えき}の{近|ちか}くが{賑|にぎ}やかです。", "vi": "Ban ngày yên tĩnh, nhưng buổi tối khu gần ga thì náo nhiệt." },
+        { "jp": "{私|わたし}はこの{町|まち}が{大好|だいす}きです。", "vi": "Tôi rất thích thị trấn này." },
+        { "jp": "{友達|ともだち}のマイさんは{歌|うた}が{上手|じょうず}で、いつも{元気|げんき}です。", "vi": "Bạn tôi là Mai hát hay và lúc nào cũng khỏe khoắn." },
+        { "jp": "マイさんは{肉|にく}が{好|す}きですが、{魚|さかな}は{嫌|きら}いです。", "vi": "Mai thích thịt nhưng ghét cá." },
+        { "jp": "{雨|あめ}の{日|ひ}は{嫌|いや}ですが、マイさんはいつも「{大丈夫|だいじょうぶ}！」と{言|い}います。", "vi": "Tôi ghét ngày mưa, nhưng Mai lúc nào cũng nói: “Không sao đâu!”." },
+        { "jp": "マイさんはとてもすてきな{人|ひと}です。", "vi": "Mai là một người rất tuyệt vời." }
+      ],
+      "questions": [
+        { "q": "Buổi tối khu gần nhà ga thế nào?", "options": ["Yên tĩnh", "Náo nhiệt", "Bẩn"], "answer": 1 },
+        { "q": "Mai giỏi việc gì?", "options": ["Hát", "Nấu ăn", "Chơi piano"], "answer": 0 },
+        { "q": "Mai ghét món gì?", "options": ["Thịt", "Rau", "Cá"], "answer": 2 }
+      ]
+    },
+    "L48": {
+      "title": "{新|あたら}しいスマホ",
+      "titleVi": "Chiếc điện thoại mới",
+      "lines": [
+        { "jp": "A：そのスマホ、{新|あたら}しいですね。", "vi": "A: Cái điện thoại đó mới nhỉ." },
+        { "jp": "B：ええ。とても{便利|べんり}ですよ。{使|つか}い{方|かた}も{簡単|かんたん}です。", "vi": "B: Ừ. Rất tiện lợi đấy. Cách dùng cũng đơn giản." },
+        { "jp": "B：{前|まえ}のスマホは{古|ふる}くて、{不便|ふべん}でした。", "vi": "B: Cái điện thoại trước cũ và bất tiện." },
+        { "jp": "A：{丈夫|じょうぶ}ですか。", "vi": "A: Nó có bền không?" },
+        { "jp": "B：はい、{丈夫|じょうぶ}です。{色|いろ}もいろいろありますよ。", "vi": "B: Có, bền lắm. Cũng có nhiều màu nữa." },
+        { "jp": "A：{私|わたし}も{同|おな}じのが{欲|ほ}しいです。でも、{今|いま}は{仕事|しごと}が{大変|たいへん}で、{暇|ひま}がありません。", "vi": "A: Tôi cũng muốn một cái giống vậy. Nhưng giờ công việc vất vả, tôi không có thời gian rảnh." },
+        { "jp": "B：{本当|ほんとう}ですか。じゃあ、{今度|こんど}の{日曜日|にちようび}に{一緒|いっしょ}に{見|み}に{行|い}きましょう。", "vi": "B: Thật à? Vậy Chủ nhật tới mình cùng đi xem nhé." }
+      ],
+      "questions": [
+        { "q": "B nói gì về chiếc điện thoại mới?", "options": ["Đắt và khó dùng", "Tiện lợi và dễ dùng", "Cũ và bất tiện"], "answer": 1 },
+        { "q": "A muốn có gì?", "options": ["Một chiếc điện thoại giống của B", "Một cái máy tính", "Một kỳ nghỉ dài"], "answer": 0 },
+        { "q": "Khi nào họ sẽ cùng đi xem?", "options": ["Hôm nay", "Thứ Bảy này", "Chủ nhật tới"], "answer": 2 }
+      ]
+    }
+  }
+}

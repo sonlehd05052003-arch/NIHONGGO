@@ -1,11 +1,11 @@
 import React from 'react'
-import { Sun, Moon, Flame, BookOpen, Layers, Award } from 'lucide-react'
+import { Sun, Moon, Flame, BookOpen, Layers, Award, Map } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useProgress } from '@/hooks/useProgress'
 import { levelInfo } from '@/services/level'
 import './Navbar.css'
 
-export type TabId = 'home' | 'vocab' | 'study'
+export type TabId = 'home' | 'lessons' | 'vocab' | 'study'
 
 interface NavbarProps {
   theme: 'light' | 'dark'
@@ -16,6 +16,7 @@ interface NavbarProps {
 
 const TABS: { id: TabId; label: string; icon: React.ReactNode }[] = [
   { id: 'home', label: 'Tổng quan', icon: <BookOpen size={18} /> },
+  { id: 'lessons', label: 'Bài học', icon: <Map size={18} /> },
   { id: 'vocab', label: 'Từ vựng N5', icon: <Layers size={18} /> },
   { id: 'study', label: 'Luyện tập', icon: <Award size={18} /> },
 ]

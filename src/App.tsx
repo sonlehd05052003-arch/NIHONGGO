@@ -4,6 +4,7 @@ import { Footer } from '@/components/layout/Footer'
 import { HomePage } from '@/features/home/HomePage'
 import { VocabularyPage } from '@/features/vocabulary/VocabularyPage'
 import { StudyPage } from '@/features/study/StudyPage'
+import { LessonsPage } from '@/features/lessons/LessonsPage'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { ProgressProvider } from '@/hooks/useProgress'
 import type { ThemeMode } from '@/types'
@@ -36,8 +37,13 @@ export const App: React.FC = () => {
 
         <main className="main-content">
           {currentTab === 'home' && (
-            <HomePage onNavigateToVocab={() => selectTab('vocab')} onNavigateToQuiz={() => selectTab('study')} />
+            <HomePage
+              onNavigateToVocab={() => selectTab('vocab')}
+              onNavigateToQuiz={() => selectTab('study')}
+              onNavigateToLessons={() => selectTab('lessons')}
+            />
           )}
+          {currentTab === 'lessons' && <LessonsPage />}
           {currentTab === 'vocab' && <VocabularyPage />}
           {currentTab === 'study' && <StudyPage />}
         </main>

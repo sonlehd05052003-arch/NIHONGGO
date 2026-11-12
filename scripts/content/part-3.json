@@ -1,0 +1,1011 @@
+{
+  "examples": {
+    "n5-2": {
+      "jp": "{毎朝|まいあさ}、{朝|あさ}ご{飯|はん}にパンを{食|た}べます。",
+      "vi": "Mỗi sáng tôi ăn bánh mì vào bữa sáng.",
+      "tip": "朝 (TRIÊU – buổi sáng) + ご飯 (bữa ăn) → bữa sáng. Cũng viết 朝御飯."
+    },
+    "n5-304": {
+      "jp": "{昼|ひる}ご{飯|はん}は{食堂|しょくどう}で{食|た}べました。",
+      "vi": "Tôi đã ăn trưa ở nhà ăn.",
+      "tip": "昼 (TRÚ – buổi trưa) + ご飯 (bữa ăn) → bữa trưa."
+    },
+    "n5-291": {
+      "jp": "{晩御飯|ばんごはん}を{家族|かぞく}と{食|た}べます。",
+      "vi": "Tôi ăn tối cùng gia đình.",
+      "tip": "Hán Việt: VÃN NGỰ PHẠN (晩 = tối). Thường viết 晩ご飯. 夕飯 cùng nghĩa, nghe nhẹ nhàng hơn."
+    },
+    "n5-366": {
+      "jp": "{今日|きょう}の{夕飯|ゆうはん}はカレーです。",
+      "vi": "Bữa tối hôm nay là cà ri.",
+      "tip": "Hán Việt: TỊCH PHẠN (夕 = chiều tối). Nghĩa giống 晩ご飯 \"bữa tối\", hay dùng trong gia đình."
+    },
+    "n5-163": {
+      "jp": "{御飯|ごはん}をもう{少|すこ}し{食|た}べたいです。",
+      "vi": "Tôi muốn ăn thêm một chút cơm.",
+      "tip": "Hán Việt: NGỰ PHẠN. Vừa là \"cơm\", vừa là \"bữa ăn\". ご là tiền tố lịch sự; thường viết ご飯."
+    },
+    "n5-85": {
+      "jp": "{毎日|まいにち}お{弁当|べんとう}を{作|つく}ります。",
+      "vi": "Ngày nào tôi cũng làm cơm hộp.",
+      "tip": "Hán Việt: BIỆN ĐƯƠNG. お là tiền tố lịch sự. Cơm hộp mang theo đi học, đi làm."
+    },
+    "n5-221": {
+      "jp": "{好|す}きな{食|た}べ{物|もの}は{何|なん}ですか。",
+      "vi": "Món ăn bạn thích là gì?",
+      "tip": "食べ (ăn) + 物 (VẬT – đồ vật) → đồ ăn. Tương tự: 飲み物 = đồ uống."
+    },
+    "n5-270": {
+      "jp": "{飲|の}み{物|もの}は{何|なに}がいいですか。",
+      "vi": "Bạn muốn uống gì?",
+      "tip": "飲み (uống) + 物 (VẬT) → đồ uống. Cùng mẫu với 食べ物 (đồ ăn), 買い物 (mua sắm)."
+    },
+    "n5-380": {
+      "jp": "{母|はは}は{料理|りょうり}が{上手|じょうず}です。",
+      "vi": "Mẹ tôi nấu ăn giỏi.",
+      "tip": "Hán Việt: LIỆU LÝ. Vừa là \"món ăn\", vừa là \"nấu ăn\": 料理をします = nấu ăn."
+    },
+    "n5-193": {
+      "jp": "{大学|だいがく}の{食堂|しょくどう}は{安|やす}いです。",
+      "vi": "Nhà ăn của trường đại học rẻ.",
+      "tip": "Hán Việt: THỰC ĐƯỜNG (食 ăn + 堂 gian phòng lớn). Nhà ăn ở trường, công ty; bình dân hơn レストラン."
+    },
+    "n5-218": {
+      "jp": "{母|はは}は{台所|だいどころ}にいます。",
+      "vi": "Mẹ đang ở trong bếp.",
+      "tip": "Hán Việt: ĐÀI SỞ. Bếp trong nhà; từ hiện đại hay dùng: キッチン (kitchen)."
+    },
+    "n5-383": {
+      "jp": "{駅|えき}の{前|まえ}にレストランがあります。",
+      "vi": "Trước nhà ga có một nhà hàng.",
+      "tip": "Từ tiếng Pháp/Anh \"restaurant\". Nhà hàng, thường sang hơn 食堂."
+    },
+    "n5-119": {
+      "jp": "{喫茶店|きっさてん}でコーヒーを{飲|の}みました。",
+      "vi": "Tôi đã uống cà phê ở quán giải khát.",
+      "tip": "Hán Việt: KHIẾT TRÀ ĐIẾM (khiết = ăn uống). Quán cà phê kiểu truyền thống Nhật."
+    },
+    "n5-262": {
+      "jp": "{私|わたし}は{肉|にく}が{好|す}きです。",
+      "vi": "Tôi thích thịt.",
+      "tip": "Hán Việt: NHỤC – thịt. Ghép: 牛肉 (thịt bò), 豚肉 (thịt lợn), とり肉 (thịt gà)."
+    },
+    "n5-123": {
+      "jp": "{今晩|こんばん}は{牛肉|ぎゅうにく}を{食|た}べます。",
+      "vi": "Tối nay tôi ăn thịt bò.",
+      "tip": "Hán Việt: NGƯU NHỤC – thịt bò (牛 = bò, như trong 牛乳 sữa bò)."
+    },
+    "n5-255": {
+      "jp": "とり{肉|にく}でカレーを{作|つく}ります。",
+      "vi": "Tôi nấu cà ri bằng thịt gà.",
+      "tip": "とり = 鳥 (ĐIỂU – chim, gà) + 肉 → thịt gà. Còn viết 鶏肉 hoặc 鳥肉."
+    },
+    "n5-311": {
+      "jp": "スーパーで{豚肉|ぶたにく}を{買|か}いました。",
+      "vi": "Tôi đã mua thịt lợn ở siêu thị.",
+      "tip": "Hán Việt: ĐỒN NHỤC (豚 = lợn). Đọc là ぶたにく."
+    },
+    "n5-169": {
+      "jp": "{毎日|まいにち}{魚|さかな}を{食|た}べます。",
+      "vi": "Ngày nào tôi cũng ăn cá.",
+      "tip": "Hán Việt: NGƯ – cá. Chữ tượng hình con cá: đầu, thân và đuôi."
+    },
+    "n5-222": {
+      "jp": "{朝|あさ}、{卵|たまご}を{二|ふた}つ{食|た}べました。",
+      "vi": "Buổi sáng tôi đã ăn hai quả trứng.",
+      "tip": "Hán Việt: NOÃN – trứng. Món trứng cuộn Nhật: 卵焼き (たまごやき)."
+    },
+    "n5-361": {
+      "jp": "{野菜|やさい}をたくさん{食|た}べてください。",
+      "vi": "Hãy ăn nhiều rau vào.",
+      "tip": "Hán Việt: DÃ THÁI (野 = đồng ruộng, 菜 = rau) → rau."
+    },
+    "n5-134": {
+      "jp": "どんな{果物|くだもの}が{好|す}きですか。",
+      "vi": "Bạn thích loại trái cây nào?",
+      "tip": "Hán Việt: QUẢ VẬT, nhưng đọc đặc biệt là くだもの (không đọc かぶつ)."
+    },
+    "n5-288": {
+      "jp": "{朝|あさ}はいつもパンを{食|た}べます。",
+      "vi": "Buổi sáng tôi luôn ăn bánh mì.",
+      "tip": "Từ tiếng Bồ Đào Nha \"pão\" – bánh mì (không phải từ tiếng Anh)."
+    },
+    "n5-279": {
+      "jp": "パンにバターをつけます。",
+      "vi": "Tôi phết bơ lên bánh mì.",
+      "tip": "Từ tiếng Anh \"butter\" – bơ (sữa). Quả bơ là アボカド."
+    },
+    "n5-111": {
+      "jp": "{昼|ひる}ご{飯|はん}にカレーを{食|た}べました。",
+      "vi": "Bữa trưa tôi đã ăn cà ri.",
+      "tip": "Từ tiếng Anh \"curry\". カレーライス = cơm cà ri, món ăn rất phổ biến ở Nhật."
+    },
+    "n5-62": {
+      "jp": "{子供|こども}はお{菓子|かし}が{大好|だいす}きです。",
+      "vi": "Trẻ con rất thích bánh kẹo.",
+      "tip": "Hán Việt: QUẢ TỬ. お là tiền tố lịch sự. Chỉ chung bánh kẹo, đồ ăn vặt."
+    },
+    "n5-25": {
+      "jp": "この{飴|あめ}は{甘|あま}いです。",
+      "vi": "Viên kẹo này ngọt.",
+      "tip": "Hán Việt: DI – kẹo. Đồng âm với 雨 (あめ – mưa) nhưng khác chữ Hán và ngữ điệu."
+    },
+    "n5-340": {
+      "jp": "{水|みず}を{一杯|いっぱい}ください。",
+      "vi": "Cho tôi một cốc nước.",
+      "tip": "Hán Việt: THỦY – nước. Nước lạnh là 水, nước nóng là お湯 (おゆ)."
+    },
+    "n5-69": {
+      "jp": "お{茶|ちゃ}を{飲|の}みませんか。",
+      "vi": "Bạn uống trà không?",
+      "tip": "Hán Việt: TRÀ. お là tiền tố lịch sự; お茶 thường chỉ trà xanh Nhật."
+    },
+    "n5-151": {
+      "jp": "{私|わたし}は{紅茶|こうちゃ}が{好|す}きです。",
+      "vi": "Tôi thích trà đen.",
+      "tip": "Hán Việt: HỒNG TRÀ (紅 = đỏ). Người Nhật gọi trà đen là \"trà đỏ\" theo màu nước."
+    },
+    "n5-155": {
+      "jp": "{毎朝|まいあさ}コーヒーを{飲|の}みます。",
+      "vi": "Mỗi sáng tôi uống cà phê.",
+      "tip": "Từ tiếng Hà Lan \"koffie\" (tiếng Anh \"coffee\")."
+    },
+    "n5-124": {
+      "jp": "{子供|こども}は{毎朝|まいあさ}{牛乳|ぎゅうにゅう}を{飲|の}みます。",
+      "vi": "Bọn trẻ uống sữa mỗi sáng.",
+      "tip": "Hán Việt: NGƯU NHŨ (牛乳) – sữa bò. Còn gọi là ミルク (milk)."
+    },
+    "n5-65": {
+      "jp": "{父|ちち}はお{酒|さけ}を{飲|の}みません。",
+      "vi": "Bố tôi không uống rượu.",
+      "tip": "Hán Việt: TỬU – rượu. お酒 = đồ uống có cồn nói chung; 日本酒 = rượu sake."
+    },
+    "n5-172": {
+      "jp": "コーヒーに{砂糖|さとう}を{入|い}れますか。",
+      "vi": "Bạn có cho đường vào cà phê không?",
+      "tip": "Hán Việt: SA ĐƯỜNG (砂 = cát, 糖 = đường) → đường cát."
+    },
+    "n5-176": {
+      "jp": "{塩|しお}を{少|すこ}し{入|い}れてください。",
+      "vi": "Hãy cho một chút muối vào.",
+      "tip": "Hán Việt: DIÊM – muối. Đừng nhầm với 砂糖 (đường) khi nấu ăn!"
+    },
+    "n5-192": {
+      "jp": "{魚|さかな}にしょうゆをかけます。",
+      "vi": "Tôi rưới xì dầu lên cá.",
+      "tip": "Chữ Hán: 醤油 (TƯƠNG DU) – nước tương, xì dầu làm từ đậu nành."
+    },
+    "n5-66": {
+      "jp": "お{皿|さら}を{洗|あら}ってください。",
+      "vi": "Hãy rửa đĩa đi.",
+      "tip": "Hán Việt: MÃNH – cái đĩa. お là tiền tố lịch sự. 灰皿 = đĩa đựng tro (gạt tàn)."
+    },
+    "n5-227": {
+      "jp": "このちゃわんは{新|あたら}しいです。",
+      "vi": "Cái bát này mới.",
+      "tip": "Chữ Hán: 茶碗 (TRÀ OẢN) – bát ăn cơm, cũng là chén uống trà."
+    },
+    "n5-277": {
+      "jp": "{箸|はし}でご{飯|はん}を{食|た}べます。",
+      "vi": "Tôi ăn cơm bằng đũa.",
+      "tip": "Hán Việt: TRỨ – đũa. Đồng âm với 橋 (はし – cây cầu), phân biệt bằng chữ Hán và ngữ điệu."
+    },
+    "n5-198": {
+      "jp": "スプーンでスープを{飲|の}みます。",
+      "vi": "Tôi húp súp bằng thìa.",
+      "tip": "Từ tiếng Anh \"spoon\" – cái thìa."
+    },
+    "n5-308": {
+      "jp": "フォークでケーキを{食|た}べました。",
+      "vi": "Tôi đã ăn bánh ngọt bằng dĩa.",
+      "tip": "Từ tiếng Anh \"fork\" – cái dĩa (nĩa)."
+    },
+    "n5-256": {
+      "jp": "ナイフで{肉|にく}を{切|き}ります。",
+      "vi": "Tôi cắt thịt bằng dao.",
+      "tip": "Từ tiếng Anh \"knife\" – dao ăn. Dao làm bếp gọi là 包丁 (ほうちょう)."
+    },
+    "n5-102": {
+      "jp": "カップでコーヒーを{飲|の}みます。",
+      "vi": "Tôi uống cà phê bằng tách.",
+      "tip": "Từ tiếng Anh \"cup\" – cốc/tách có quai. Khác コップ (cốc không quai)."
+    },
+    "n5-103": {
+      "jp": "コップに{水|みず}を{入|い}れてください。",
+      "vi": "Hãy rót nước vào cốc.",
+      "tip": "Từ tiếng Hà Lan \"kop\" – cốc không quai (cốc thủy tinh). Khác カップ (có quai)."
+    },
+    "n5-382": {
+      "jp": "{牛乳|ぎゅうにゅう}は{冷蔵庫|れいぞうこ}にあります。",
+      "vi": "Sữa ở trong tủ lạnh.",
+      "tip": "Hán Việt: LÃNH TÀNG KHỐ – kho cất giữ đồ lạnh → tủ lạnh."
+    },
+    "n5-26": {
+      "jp": "{私|わたし}の{家|いえ}は{駅|えき}から{近|ちか}いです。",
+      "vi": "Nhà tôi gần ga.",
+      "tip": "Hán Việt: GIA – nhà. Còn đọc うち; うち thiên về \"nhà mình, gia đình mình\"."
+    },
+    "n5-23": {
+      "jp": "{私|わたし}はアパートに{住|す}んでいます。",
+      "vi": "Tôi sống ở căn hộ.",
+      "tip": "Từ tiếng Anh \"apartment\" (rút gọn). Thường là nhà cho thuê thấp tầng; cao cấp hơn là マンション."
+    },
+    "n5-317": {
+      "jp": "{私|わたし}の{部屋|へや}は{狭|せま}いです。",
+      "vi": "Phòng của tôi chật.",
+      "tip": "Cách đọc đặc biệt: 部 (BỘ) + 屋 (ỐC) → へや. Không đọc theo âm Hán."
+    },
+    "n5-84": {
+      "jp": "{夜|よる}、お{風呂|ふろ}に{入|はい}ります。",
+      "vi": "Buổi tối tôi tắm bồn.",
+      "tip": "Hán Việt: PHONG LỮ. \"Tắm bồn\" = お風呂に入ります (dùng 入る – vào). お là tiền tố lịch sự."
+    },
+    "n5-70": {
+      "jp": "すみません、お{手洗|てあら}いはどこですか。",
+      "vi": "Xin lỗi, nhà vệ sinh ở đâu ạ?",
+      "tip": "Nghĩa đen \"chỗ rửa tay\" (手 tay + 洗い rửa). Lịch sự hơn トイレ."
+    },
+    "n5-244": {
+      "jp": "トイレは{二階|にかい}にあります。",
+      "vi": "Nhà vệ sinh ở tầng hai.",
+      "tip": "Từ tiếng Anh \"toilet\". Dùng hằng ngày; お手洗い lịch sự hơn."
+    },
+    "n5-148": {
+      "jp": "{玄関|げんかん}で{靴|くつ}を{脱|ぬ}ぎます。",
+      "vi": "Tôi cởi giày ở lối vào.",
+      "tip": "Hán Việt: HUYỀN QUAN. Khoảng sàn thấp ở cửa vào nhà Nhật, nơi cởi giày."
+    },
+    "n5-384": {
+      "jp": "{廊下|ろうか}を{走|はし}らないでください。",
+      "vi": "Xin đừng chạy ở hành lang.",
+      "tip": "Hán Việt: LANG HẠ – hành lang. Câu quen thuộc ở trường học Nhật."
+    },
+    "n5-92": {
+      "jp": "{階段|かいだん}で{三階|さんがい}へ{行|い}きます。",
+      "vi": "Tôi đi cầu thang bộ lên tầng ba.",
+      "tip": "Hán Việt: GIAI ĐOẠN – bậc thang. 階 = tầng: 二階, 三階 (さんがい)."
+    },
+    "n5-58": {
+      "jp": "エレベーターで{五階|ごかい}へ{行|い}きました。",
+      "vi": "Tôi đã đi thang máy lên tầng năm.",
+      "tip": "Từ tiếng Anh \"elevator\" – thang máy. Thang cuốn là エスカレーター."
+    },
+    "n5-267": {
+      "jp": "{庭|にわ}に{花|はな}がたくさんあります。",
+      "vi": "Trong vườn có nhiều hoa.",
+      "tip": "Hán Việt: ĐÌNH – sân, vườn (như trong 家庭 かてい – gia đình)."
+    },
+    "n5-242": {
+      "jp": "{戸|と}を{閉|し}めてください。",
+      "vi": "Hãy đóng cửa lại.",
+      "tip": "Hán Việt: HỘ. Cửa kiểu Nhật, thường là cửa trượt; ドア là cửa có bản lề kiểu Tây."
+    },
+    "n5-243": {
+      "jp": "ドアを{開|あ}けてもいいですか。",
+      "vi": "Tôi mở cửa được không?",
+      "tip": "Từ tiếng Anh \"door\" – cửa có bản lề, tay nắm. Khác 戸 (thường là cửa trượt kiểu Nhật)."
+    },
+    "n5-336": {
+      "jp": "{窓|まど}を{開|あ}けましょう。",
+      "vi": "Chúng ta mở cửa sổ ra nhé.",
+      "tip": "Hán Việt: SONG – cửa sổ (như \"song cửa\")."
+    },
+    "n5-358": {
+      "jp": "{学校|がっこう}の{門|もん}の{前|まえ}で{待|ま}っています。",
+      "vi": "Tôi đang đợi trước cổng trường.",
+      "tip": "Hán Việt: MÔN – cổng (hình hai cánh cổng). 門 là cổng ngoài; 玄関 là cửa vào nhà."
+    },
+    "n5-29": {
+      "jp": "{椅子|いす}に{座|すわ}ってください。",
+      "vi": "Mời ngồi xuống ghế.",
+      "tip": "Hán Việt: Y TỬ – cái ghế. Thường viết bằng kana いす."
+    },
+    "n5-229": {
+      "jp": "{机|つくえ}の{上|うえ}に{本|ほん}があります。",
+      "vi": "Trên bàn có quyển sách.",
+      "tip": "Hán Việt: KỶ. 机 = bàn học, bàn làm việc; テーブル = bàn ăn, bàn uống nước."
+    },
+    "n5-231": {
+      "jp": "テーブルで{晩|ばん}ご{飯|はん}を{食|た}べます。",
+      "vi": "Tôi ăn tối ở bàn ăn.",
+      "tip": "Từ tiếng Anh \"table\". Bàn ăn, bàn tiếp khách; bàn học/làm việc là 机."
+    },
+    "n5-315": {
+      "jp": "{私|わたし}の{部屋|へや}にベッドがあります。",
+      "vi": "Trong phòng tôi có giường.",
+      "tip": "Từ tiếng Anh \"bed\". Nệm trải sàn kiểu Nhật là 布団 (ふとん)."
+    },
+    "n5-326": {
+      "jp": "{本棚|ほんだな}に{辞書|じしょ}があります。",
+      "vi": "Trên giá sách có từ điển.",
+      "tip": "本 (sách) + 棚 (たな – kệ, giá) → giá sách. たな biến âm thành だな."
+    },
+    "n5-250": {
+      "jp": "この{時計|とけい}は{高|たか}いです。",
+      "vi": "Chiếc đồng hồ này đắt.",
+      "tip": "Cách đọc đặc biệt とけい. Dùng cho cả đồng hồ treo tường và đeo tay (腕時計)."
+    },
+    "n5-237": {
+      "jp": "{夜|よる}はテレビを{見|み}ます。",
+      "vi": "Buổi tối tôi xem tivi.",
+      "tip": "Từ tiếng Anh \"television\" (rút gọn)."
+    },
+    "n5-376": {
+      "jp": "{父|ちち}は{毎朝|まいあさ}ラジオを{聞|き}きます。",
+      "vi": "Bố tôi nghe radio mỗi sáng.",
+      "tip": "Từ tiếng Anh \"radio\". Dùng động từ 聞きます (nghe)."
+    },
+    "n5-377": {
+      "jp": "ラジカセで{音楽|おんがく}を{聞|き}きます。",
+      "vi": "Tôi nghe nhạc bằng đài cassette.",
+      "tip": "Viết tắt của ラジオカセット (radio + cassette) – đài có băng cassette."
+    },
+    "n5-232": {
+      "jp": "テープレコーダーで{日本語|にほんご}を{聞|き}きます。",
+      "vi": "Tôi nghe tiếng Nhật bằng máy ghi âm.",
+      "tip": "Từ tiếng Anh \"tape recorder\" – máy ghi âm băng từ. ラジカセ thì có thêm radio."
+    },
+    "n5-239": {
+      "jp": "{部屋|へや}の{電気|でんき}をつけてください。",
+      "vi": "Hãy bật đèn trong phòng lên.",
+      "tip": "Hán Việt: ĐIỆN KHÍ. Vừa là \"điện\", vừa là \"đèn\": 電気をつけます/消します = bật/tắt đèn."
+    },
+    "n5-197": {
+      "jp": "{寒|さむ}いですから、ストーブをつけましょう。",
+      "vi": "Lạnh quá, bật lò sưởi lên nhé.",
+      "tip": "Từ tiếng Anh \"stove\", nhưng ở Nhật nghĩa là lò sưởi, không phải bếp nấu."
+    },
+    "n5-273": {
+      "jp": "{灰皿|はいざら}はありますか。",
+      "vi": "Có gạt tàn không?",
+      "tip": "Hán Việt: HÔI MÃNH (灰 tro + 皿 đĩa). さら biến âm thành ざら."
+    },
+    "n5-107": {
+      "jp": "{花瓶|かびん}に{花|はな}を{入|い}れました。",
+      "vi": "Tôi đã cắm hoa vào bình.",
+      "tip": "Hán Việt: HOA BÌNH – bình hoa. 瓶 (びん) = chai, lọ."
+    },
+    "n5-112": {
+      "jp": "{机|つくえ}の{上|うえ}にカレンダーがあります。",
+      "vi": "Trên bàn có cuốn lịch.",
+      "tip": "Từ tiếng Anh \"calendar\" – tờ lịch, cuốn lịch."
+    },
+    "n5-241": {
+      "jp": "{夜|よる}、{母|はは}に{電話|でんわ}をかけます。",
+      "vi": "Buổi tối tôi gọi điện cho mẹ.",
+      "tip": "Hán Việt: ĐIỆN THOẠI. Gọi điện: 電話をかけます."
+    },
+    "n5-94": {
+      "jp": "かぎをかけて{出|で}かけます。",
+      "vi": "Tôi khóa cửa rồi ra ngoài.",
+      "tip": "Chữ Hán: 鍵. \"Khóa cửa\" = かぎをかけます."
+    },
+    "n5-168": {
+      "jp": "{財布|さいふ}にお{金|かね}がありません。",
+      "vi": "Trong ví không có tiền.",
+      "tip": "Hán Việt: TÀI BỐ (財 tiền của + 布 vải) → túi vải đựng tiền = cái ví."
+    },
+    "n5-63": {
+      "jp": "{銀行|ぎんこう}でお{金|かね}を{出|だ}します。",
+      "vi": "Tôi rút tiền ở ngân hàng.",
+      "tip": "Hán Việt: KIM – vàng, kim loại. お là tiền tố lịch sự; nói かね trơn nghe suồng sã."
+    },
+    "n5-96": {
+      "jp": "{雨|あめ}ですから、{傘|かさ}を{持|も}っていきます。",
+      "vi": "Trời mưa nên tôi mang ô đi.",
+      "tip": "Hán Việt: TẢN. Chữ tượng hình chiếc ô đang mở. \"Che ô\" = 傘をさします."
+    },
+    "n5-354": {
+      "jp": "{兄|あに}は{眼鏡|めがね}をかけています。",
+      "vi": "Anh trai tôi đeo kính.",
+      "tip": "Hán Việt: NHÃN KÍNH (mắt + gương), đọc đặc biệt めがね. Đeo kính dùng động từ かけます."
+    },
+    "n5-289": {
+      "jp": "ハンカチで{手|て}をふきます。",
+      "vi": "Tôi lau tay bằng khăn tay.",
+      "tip": "Từ tiếng Anh \"handkerchief\" (rút gọn) – khăn tay."
+    },
+    "n5-204": {
+      "jp": "せっけんで{手|て}を{洗|あら}います。",
+      "vi": "Tôi rửa tay bằng xà phòng.",
+      "tip": "Chữ Hán: 石鹸 (THẠCH KIỀM). Thường viết bằng kana せっけん."
+    },
+    "n5-275": {
+      "jp": "この{箱|はこ}は{重|おも}いです。",
+      "vi": "Cái hộp này nặng.",
+      "tip": "Hán Việt: TƯƠNG – cái hộp (bộ trúc 竹). Hộp cơm: 弁当箱 (べんとうばこ)."
+    },
+    "n5-265": {
+      "jp": "{荷物|にもつ}はここに{置|お}いてください。",
+      "vi": "Hãy để hành lý ở đây.",
+      "tip": "Hán Việt: HÀ VẬT (荷 = gánh hàng). Hành lý, đồ đạc mang theo."
+    },
+    "n5-357": {
+      "jp": "{机|つくえ}の{上|うえ}に{物|もの}がたくさんあります。",
+      "vi": "Trên bàn có nhiều đồ.",
+      "tip": "Hán Việt: VẬT – đồ vật hữu hình. Ghép: 食べ物, 飲み物. Khác こと (việc, sự việc)."
+    },
+    "n5-322": {
+      "jp": "ポケットにかぎがあります。",
+      "vi": "Chìa khóa ở trong túi.",
+      "tip": "Từ tiếng Anh \"pocket\" – túi áo, túi quần."
+    },
+    "n5-323": {
+      "jp": "このボタンを{押|お}してください。",
+      "vi": "Hãy bấm nút này.",
+      "tip": "Từ tiếng Bồ Đào Nha \"botão\". Vừa là cúc áo, vừa là nút bấm."
+    },
+    "n5-106": {
+      "jp": "かばんに{本|ほん}を{入|い}れます。",
+      "vi": "Tôi cho sách vào cặp.",
+      "tip": "Chữ Hán: 鞄. Cặp, túi xách nói chung."
+    },
+    "n5-309": {
+      "jp": "{新|あたら}しい{服|ふく}を{買|か}いました。",
+      "vi": "Tôi đã mua quần áo mới.",
+      "tip": "Hán Việt: PHỤC (y phục) – quần áo nói chung. Mặc áo: 着ます."
+    },
+    "n5-369": {
+      "jp": "デパートで{洋服|ようふく}を{見|み}ます。",
+      "vi": "Tôi xem quần áo ở trung tâm thương mại.",
+      "tip": "Hán Việt: DƯƠNG PHỤC – đồ kiểu Tây, đối lập 和服/着物 (đồ Nhật). 服 là cách nói chung."
+    },
+    "n5-52": {
+      "jp": "{寒|さむ}いですから、{上着|うわぎ}を{着|き}てください。",
+      "vi": "Trời lạnh, hãy mặc áo khoác vào.",
+      "tip": "上 (trên, ngoài) + 着 (mặc) → áo mặc ngoài nói chung, kể cả áo vest. コート là áo choàng dày."
+    },
+    "n5-154": {
+      "jp": "{冬|ふゆ}はコートを{着|き}ます。",
+      "vi": "Mùa đông tôi mặc áo khoác.",
+      "tip": "Từ tiếng Anh \"coat\" – áo khoác dài, dày mặc mùa đông. 上着 rộng nghĩa hơn."
+    },
+    "n5-187": {
+      "jp": "{白|しろ}いシャツを{着|き}ています。",
+      "vi": "Tôi đang mặc áo sơ mi trắng.",
+      "tip": "Từ tiếng Anh \"shirt\". Chỉ chung các loại áo, kể cả Tシャツ (áo phông)."
+    },
+    "n5-386": {
+      "jp": "{父|ちち}は{毎日|まいにち}ワイシャツを{着|き}ます。",
+      "vi": "Bố tôi mặc sơ mi mỗi ngày.",
+      "tip": "Từ \"white shirt\" đọc trại → ワイシャツ: sơ mi công sở mặc với cà vạt. シャツ rộng nghĩa hơn."
+    },
+    "n5-203": {
+      "jp": "このセーターは{暖|あたた}かいです。",
+      "vi": "Chiếc áo len này ấm.",
+      "tip": "Từ tiếng Anh \"sweater\" – áo len."
+    },
+    "n5-196": {
+      "jp": "{妹|いもうと}は{赤|あか}いスカートをはいています。",
+      "vi": "Em gái tôi đang mặc váy đỏ.",
+      "tip": "Từ tiếng Anh \"skirt\". Đồ mặc phần dưới (váy, quần) dùng động từ はきます."
+    },
+    "n5-200": {
+      "jp": "このズボンは{長|なが}いです。",
+      "vi": "Cái quần này dài.",
+      "tip": "Từ tiếng Pháp \"jupon\". Quần dài; mặc quần dùng はきます."
+    },
+    "n5-137": {
+      "jp": "{新|あたら}しい{靴下|くつした}をはきます。",
+      "vi": "Tôi đi đôi tất mới.",
+      "tip": "靴 (giày) + 下 (dưới) → thứ đi bên dưới giày = tất. Đi tất: はきます."
+    },
+    "n5-136": {
+      "jp": "{玄関|げんかん}で{靴|くつ}を{脱|ぬ}いでください。",
+      "vi": "Hãy cởi giày ở lối vào.",
+      "tip": "Hán Việt: NGOA – giày (bộ cách 革 = da thuộc). Đi giày: 靴をはきます."
+    },
+    "n5-320": {
+      "jp": "{帽子|ぼうし}をかぶって{出|で}かけます。",
+      "vi": "Tôi đội mũ rồi ra ngoài.",
+      "tip": "Hán Việt: MẠO TỬ – mũ. Đội mũ dùng động từ かぶります."
+    },
+    "n5-268": {
+      "jp": "{父|ちち}はネクタイをしています。",
+      "vi": "Bố tôi đang đeo cà vạt.",
+      "tip": "Từ tiếng Anh \"necktie\". Đeo cà vạt: ネクタイをします/しめます."
+    }
+  },
+  "readings": {
+    "L17": {
+      "title": "{昼|ひる}ご{飯|はん}とお{弁当|べんとう}",
+      "titleVi": "Bữa trưa và cơm hộp",
+      "lines": [
+        {
+          "jp": "{田中|たなか}：{山田|やまだ}さん、{昼|ひる}ご{飯|はん}はいつも{食堂|しょくどう}で{食|た}べますか。",
+          "vi": "Tanaka: Anh Yamada, anh thường ăn trưa ở nhà ăn à?"
+        },
+        {
+          "jp": "{山田|やまだ}：いいえ、{毎日|まいにち}お{弁当|べんとう}を{持|も}ってきます。",
+          "vi": "Yamada: Không, ngày nào tôi cũng mang cơm hộp đến."
+        },
+        {
+          "jp": "{田中|たなか}：すごいですね。{料理|りょうり}が{好|す}きですか。",
+          "vi": "Tanaka: Giỏi quá nhỉ. Anh thích nấu ăn à?"
+        },
+        {
+          "jp": "{山田|やまだ}：はい。{朝|あさ}ご{飯|はん}も{晩御飯|ばんごはん}も{家|うち}の{台所|だいどころ}で{作|つく}ります。",
+          "vi": "Yamada: Vâng. Cả bữa sáng lẫn bữa tối tôi đều nấu trong bếp ở nhà."
+        },
+        {
+          "jp": "{田中|たなか}：じゃあ、{今度|こんど}いっしょにレストランへ{行|い}きませんか。",
+          "vi": "Tanaka: Vậy lần tới mình cùng đi nhà hàng nhé?"
+        },
+        {
+          "jp": "{山田|やまだ}：いいですね。{駅|えき}の{前|まえ}の{喫茶店|きっさてん}にも{行|い}きたいです。",
+          "vi": "Yamada: Hay đấy. Tôi cũng muốn đến quán giải khát trước nhà ga."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Anh Yamada thường ăn trưa như thế nào?",
+          "options": [
+            "Ăn ở nhà ăn",
+            "Mang cơm hộp",
+            "Ăn ở nhà hàng"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Anh Yamada nấu bữa sáng và bữa tối ở đâu?",
+          "options": [
+            "Trong bếp ở nhà",
+            "Ở nhà ăn",
+            "Ở quán giải khát"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Anh Tanaka rủ anh Yamada lần tới đi đâu?",
+          "options": [
+            "Quán giải khát",
+            "Nhà ăn của công ty",
+            "Nhà hàng"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    "L18": {
+      "title": "スーパーで{買|か}い{物|もの}",
+      "titleVi": "Đi mua sắm ở siêu thị",
+      "lines": [
+        {
+          "jp": "{今日|きょう}、{母|はは}とスーパーへ{行|い}きました。",
+          "vi": "Hôm nay tôi đã đi siêu thị với mẹ."
+        },
+        {
+          "jp": "まず、{牛肉|ぎゅうにく}と{豚肉|ぶたにく}を{買|か}いました。",
+          "vi": "Trước tiên, chúng tôi mua thịt bò và thịt lợn."
+        },
+        {
+          "jp": "それから、{野菜|やさい}と{卵|たまご}も{買|か}いました。",
+          "vi": "Sau đó, chúng tôi mua cả rau và trứng."
+        },
+        {
+          "jp": "{今晩|こんばん}は{母|はは}がカレーを{作|つく}ります。",
+          "vi": "Tối nay mẹ sẽ nấu cà ri."
+        },
+        {
+          "jp": "{私|わたし}は{果物|くだもの}とお{菓子|かし}がほしかったです。",
+          "vi": "Tôi đã muốn có trái cây và bánh kẹo."
+        },
+        {
+          "jp": "{母|はは}は「お{菓子|かし}はだめです。りんごを{買|か}いましょう」と{言|い}いました。",
+          "vi": "Mẹ nói: \"Bánh kẹo thì không được. Mua táo đi.\""
+        }
+      ],
+      "questions": [
+        {
+          "q": "Hôm nay \"tôi\" đi siêu thị với ai?",
+          "options": [
+            "Với bố",
+            "Với mẹ",
+            "Với bạn"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Tối nay mẹ nấu món gì?",
+          "options": [
+            "Cà ri",
+            "Cá nướng",
+            "Bánh mì"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Mẹ bảo mua gì thay cho bánh kẹo?",
+          "options": [
+            "Kẹo ngậm",
+            "Trứng",
+            "Táo"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    "L19": {
+      "title": "{家族|かぞく}の{飲|の}み{物|もの}",
+      "titleVi": "Đồ uống của gia đình",
+      "lines": [
+        {
+          "jp": "{私|わたし}は{朝|あさ}、{紅茶|こうちゃ}を{飲|の}みます。",
+          "vi": "Buổi sáng tôi uống trà đen."
+        },
+        {
+          "jp": "{紅茶|こうちゃ}に{砂糖|さとう}を{少|すこ}し{入|い}れます。",
+          "vi": "Tôi cho một chút đường vào trà."
+        },
+        {
+          "jp": "{父|ちち}はいつもコーヒーを{飲|の}みます。",
+          "vi": "Bố tôi luôn uống cà phê."
+        },
+        {
+          "jp": "{妹|いもうと}は{牛乳|ぎゅうにゅう}が{好|す}きです。",
+          "vi": "Em gái tôi thích sữa."
+        },
+        {
+          "jp": "おばあさんは{毎日|まいにち}{日本|にほん}のお{茶|ちゃ}を{飲|の}みます。",
+          "vi": "Bà tôi ngày nào cũng uống trà Nhật."
+        },
+        {
+          "jp": "{夜|よる}、{父|ちち}は{時々|ときどき}お{酒|さけ}を{飲|の}みます。",
+          "vi": "Buổi tối, thỉnh thoảng bố uống rượu."
+        },
+        {
+          "jp": "{私|わたし}はお{酒|さけ}を{飲|の}みません。{水|みず}をたくさん{飲|の}みます。",
+          "vi": "Tôi không uống rượu. Tôi uống nhiều nước."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Buổi sáng \"tôi\" uống gì?",
+          "options": [
+            "Cà phê",
+            "Trà đen",
+            "Sữa"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Ai thích sữa?",
+          "options": [
+            "Em gái",
+            "Bố",
+            "Bà"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Ai thỉnh thoảng uống rượu vào buổi tối?",
+          "options": [
+            "Tôi",
+            "Bà",
+            "Bố"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    "L20": {
+      "title": "{晩|ばん}ご{飯|はん}の{準備|じゅんび}",
+      "titleVi": "Chuẩn bị bữa tối",
+      "lines": [
+        {
+          "jp": "{母|はは}：アン、テーブルにお{皿|さら}を{並|なら}べてください。",
+          "vi": "Mẹ: An ơi, con bày đĩa lên bàn giúp mẹ nhé."
+        },
+        {
+          "jp": "アン：はい。お{箸|はし}もいりますか。",
+          "vi": "An: Vâng. Có cần đũa không ạ?"
+        },
+        {
+          "jp": "{母|はは}：ええ、{箸|はし}とちゃわんもお{願|ねが}いします。",
+          "vi": "Mẹ: Ừ, cả đũa và bát nữa nhé."
+        },
+        {
+          "jp": "アン：スプーンとフォークは？",
+          "vi": "An: Còn thìa và dĩa thì sao ạ?"
+        },
+        {
+          "jp": "{母|はは}：{今日|きょう}はカレーですから、スプーンだけでいいです。",
+          "vi": "Mẹ: Hôm nay ăn cà ri nên chỉ cần thìa thôi."
+        },
+        {
+          "jp": "アン：{飲|の}み{物|もの}は？",
+          "vi": "An: Còn đồ uống ạ?"
+        },
+        {
+          "jp": "{母|はは}：{冷蔵庫|れいぞうこ}に{牛乳|ぎゅうにゅう}があります。コップも{出|だ}してください。",
+          "vi": "Mẹ: Trong tủ lạnh có sữa. Con lấy cả cốc ra nhé."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Mẹ nhờ An làm gì đầu tiên?",
+          "options": [
+            "Rửa bát",
+            "Bày đĩa lên bàn",
+            "Nấu cà ri"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Vì sao chỉ cần thìa?",
+          "options": [
+            "Vì hôm nay ăn cà ri",
+            "Vì nhà không có dĩa",
+            "Vì An thích thìa"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Sữa ở đâu?",
+          "options": [
+            "Trên bàn",
+            "Trong bát",
+            "Trong tủ lạnh"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    "L21": {
+      "title": "{私|わたし}の{家|いえ}",
+      "titleVi": "Ngôi nhà của tôi",
+      "lines": [
+        {
+          "jp": "{私|わたし}の{家|いえ}は{古|ふる}いですが、{広|ひろ}いです。",
+          "vi": "Nhà tôi cũ nhưng rộng."
+        },
+        {
+          "jp": "{門|もん}から{玄関|げんかん}まで{小|ちい}さい{庭|にわ}があります。",
+          "vi": "Từ cổng đến lối vào có một khu vườn nhỏ."
+        },
+        {
+          "jp": "{一階|いっかい}に{台所|だいどころ}とお{風呂|ふろ}とトイレがあります。",
+          "vi": "Tầng một có bếp, phòng tắm và nhà vệ sinh."
+        },
+        {
+          "jp": "{二階|にかい}に{私|わたし}の{部屋|へや}があります。{階段|かいだん}はちょっと{暗|くら}いです。",
+          "vi": "Phòng tôi ở tầng hai. Cầu thang hơi tối."
+        },
+        {
+          "jp": "{部屋|へや}には{大|おお}きい{窓|まど}があります。",
+          "vi": "Trong phòng có một cửa sổ lớn."
+        },
+        {
+          "jp": "{朝|あさ}、{窓|まど}を{開|あ}けて、{庭|にわ}の{花|はな}を{見|み}ます。",
+          "vi": "Buổi sáng tôi mở cửa sổ và ngắm hoa trong vườn."
+        },
+        {
+          "jp": "エレベーターはありませんが、{私|わたし}はこの{家|いえ}が{大好|だいす}きです。",
+          "vi": "Không có thang máy, nhưng tôi rất yêu ngôi nhà này."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Nhà của \"tôi\" như thế nào?",
+          "options": [
+            "Mới và nhỏ",
+            "Cũ nhưng rộng",
+            "Cũ và chật"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Phòng của \"tôi\" ở đâu?",
+          "options": [
+            "Tầng một",
+            "Cạnh cổng",
+            "Tầng hai"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Buổi sáng \"tôi\" làm gì?",
+          "options": [
+            "Mở cửa sổ và ngắm hoa trong vườn",
+            "Đi thang máy",
+            "Tắm bồn"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "L22": {
+      "title": "{私|わたし}の{部屋|へや}",
+      "titleVi": "Căn phòng của tôi",
+      "lines": [
+        {
+          "jp": "これは{私|わたし}の{部屋|へや}です。",
+          "vi": "Đây là phòng của tôi."
+        },
+        {
+          "jp": "{窓|まど}の{前|まえ}に{机|つくえ}と{椅子|いす}があります。",
+          "vi": "Trước cửa sổ có bàn học và ghế."
+        },
+        {
+          "jp": "{机|つくえ}の{上|うえ}に{時計|とけい}と{電話|でんわ}があります。",
+          "vi": "Trên bàn có đồng hồ và điện thoại."
+        },
+        {
+          "jp": "{机|つくえ}の{右|みぎ}に{本棚|ほんだな}があります。",
+          "vi": "Bên phải bàn học có giá sách."
+        },
+        {
+          "jp": "ベッドの{横|よこ}に{小|ちい}さいテーブルがあります。",
+          "vi": "Cạnh giường có một chiếc bàn nhỏ."
+        },
+        {
+          "jp": "テーブルの{上|うえ}に{花瓶|かびん}があります。",
+          "vi": "Trên bàn nhỏ có bình hoa."
+        },
+        {
+          "jp": "{冬|ふゆ}は{寒|さむ}いですから、ストーブをつけます。",
+          "vi": "Mùa đông lạnh nên tôi bật lò sưởi."
+        },
+        {
+          "jp": "テレビはありませんが、ラジオがあります。",
+          "vi": "Không có tivi nhưng có radio."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Bàn học ở đâu?",
+          "options": [
+            "Cạnh giường",
+            "Trước cửa sổ",
+            "Bên phải giá sách"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Trên chiếc bàn nhỏ có gì?",
+          "options": [
+            "Đồng hồ",
+            "Điện thoại",
+            "Bình hoa"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Trong phòng KHÔNG có gì?",
+          "options": [
+            "Tivi",
+            "Radio",
+            "Lò sưởi"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "L23": {
+      "title": "{出|で}かける{前|まえ}に",
+      "titleVi": "Trước khi ra ngoài",
+      "lines": [
+        {
+          "jp": "{母|はは}：{健|けん}、{忘|わす}れ{物|もの}はありませんか。",
+          "vi": "Mẹ: Ken ơi, con có quên đồ gì không?"
+        },
+        {
+          "jp": "{健|けん}：ええと、{財布|さいふ}とかぎはかばんに{入|い}れました。",
+          "vi": "Ken: Ừm, con đã cho ví và chìa khóa vào cặp rồi."
+        },
+        {
+          "jp": "{母|はは}：ハンカチは？",
+          "vi": "Mẹ: Còn khăn tay?"
+        },
+        {
+          "jp": "{健|けん}：ハンカチはズボンのポケットにあります。",
+          "vi": "Ken: Khăn tay ở trong túi quần ạ."
+        },
+        {
+          "jp": "{母|はは}：{今日|きょう}は{雨|あめ}ですよ。{傘|かさ}も{持|も}っていってください。",
+          "vi": "Mẹ: Hôm nay trời mưa đấy. Mang cả ô đi nhé."
+        },
+        {
+          "jp": "{健|けん}：あ、{眼鏡|めがね}も！ありがとう。いってきます。",
+          "vi": "Ken: A, cả kính nữa! Cảm ơn mẹ. Con đi đây."
+        },
+        {
+          "jp": "{母|はは}：いってらっしゃい。",
+          "vi": "Mẹ: Con đi nhé."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Ken để ví và chìa khóa ở đâu?",
+          "options": [
+            "Trong túi quần",
+            "Trong cặp",
+            "Trên bàn"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Vì sao mẹ bảo Ken mang ô?",
+          "options": [
+            "Vì trời nắng",
+            "Vì ô mới mua",
+            "Vì hôm nay trời mưa"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Khăn tay của Ken ở đâu?",
+          "options": [
+            "Trong túi quần",
+            "Trong cặp",
+            "Ở nhà"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "L24": {
+      "title": "{寒|さむ}い{日|ひ}の{服|ふく}",
+      "titleVi": "Quần áo ngày lạnh",
+      "lines": [
+        {
+          "jp": "{今日|きょう}はとても{寒|さむ}いです。",
+          "vi": "Hôm nay rất lạnh."
+        },
+        {
+          "jp": "{父|ちち}はワイシャツを{着|き}て、ネクタイをしています。",
+          "vi": "Bố mặc sơ mi và đeo cà vạt."
+        },
+        {
+          "jp": "{父|ちち}は{黒|くろ}いコートを{着|き}て、{会社|かいしゃ}へ{行|い}きました。",
+          "vi": "Bố mặc áo khoác đen rồi đi làm."
+        },
+        {
+          "jp": "{母|はは}は{赤|あか}いセーターを{着|き}ています。",
+          "vi": "Mẹ đang mặc áo len đỏ."
+        },
+        {
+          "jp": "{妹|いもうと}は{青|あお}いスカートをはいて、{白|しろ}い{帽子|ぼうし}をかぶっています。",
+          "vi": "Em gái mặc váy xanh và đội mũ trắng."
+        },
+        {
+          "jp": "{私|わたし}はズボンをはいて、{厚|あつ}い{靴下|くつした}と{靴|くつ}をはきました。",
+          "vi": "Tôi mặc quần dài, đi tất dày và giày."
+        },
+        {
+          "jp": "みんな{暖|あたた}かい{服|ふく}を{着|き}ています。",
+          "vi": "Mọi người đều mặc quần áo ấm."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Bố mặc áo khoác màu gì?",
+          "options": [
+            "Trắng",
+            "Đen",
+            "Đỏ"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Ai đội mũ trắng?",
+          "options": [
+            "Mẹ",
+            "Tôi",
+            "Em gái"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Thời tiết hôm nay thế nào?",
+          "options": [
+            "Lạnh",
+            "Nóng",
+            "Mưa"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  }
+}

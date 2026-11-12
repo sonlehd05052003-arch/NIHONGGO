@@ -1,0 +1,828 @@
+.lessons-container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.lessons-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.lessons-sub {
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.lessons-sub b {
+  color: var(--color-primary);
+}
+
+/* ---------- Ôn tập + học tiếp ---------- */
+.lessons-top {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+}
+
+.review-card,
+.continue-card {
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.review-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, var(--color-accent-light), transparent 70%), var(--bg-surface);
+}
+
+.review-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--color-accent);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.review-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.review-body h2,
+.continue-card h2 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.review-body p,
+.continue-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.review-body b {
+  color: var(--color-accent);
+  font-size: 1.05rem;
+}
+
+.review-muted {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-faint);
+}
+
+.review-card > .app-btn {
+  align-self: center;
+}
+
+.continue-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  background: linear-gradient(135deg, var(--color-primary-light), transparent 70%), var(--bg-surface);
+}
+
+.continue-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+}
+
+.continue-card .app-btn {
+  margin-top: 6px;
+}
+
+.srs-explain {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+}
+
+/* ---------- Danh sách bài ---------- */
+.unit-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.lesson-card.next {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.lc-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  background: var(--bg-page);
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.lesson-card.next .lc-num {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.lesson-card.done .lc-num {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.lc-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lc-title {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lc-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lc-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 1px 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.lc-bar,
+.ld-progress-bar {
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--border-subtle);
+  overflow: hidden;
+}
+
+.lc-bar span,
+.ld-progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: width 0.4s ease;
+}
+
+.lesson-card.done .lc-bar span {
+  background: #22c55e;
+}
+
+.lc-stars {
+  display: flex;
+  gap: 1px;
+  color: var(--border-strong);
+}
+
+.lc-stars .on {
+  color: #f59e0b;
+}
+
+.all-done {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+/* ---------- Chi tiết bài ---------- */
+.lesson-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ld-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ld-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.ld-unit {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.ld-title {
+  font-size: clamp(1.35rem, 3.5vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.ld-top .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ld-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ld-progress-bar {
+  flex: 1;
+  height: 8px;
+}
+
+.ld-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 6px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 76px;
+  z-index: 5;
+}
+
+.ld-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.ld-step:hover {
+  color: var(--text-main);
+  background: var(--bg-page);
+}
+
+.ld-step.active {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.ld-step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  background: var(--bg-page);
+  color: var(--text-muted);
+}
+
+.ld-step.done .ld-step-num {
+  background: #22c55e;
+  color: #fff;
+}
+
+.ld-step.active .ld-step-num {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.ld-hint {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.ld-hint b {
+  color: var(--text-main);
+}
+
+.ld-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* Thẻ từ trong bước "Học từ" */
+.word-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+  gap: 14px;
+}
+
+.word-card {
+  display: flex;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.word-card.learned {
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.wc-img {
+  position: relative;
+  width: 130px;
+  flex-shrink: 0;
+  min-height: 150px;
+}
+
+.wc-body {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wc-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.wc-jp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.wc-word {
+  font-family: var(--font-japanese);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.wc-kana {
+  font-family: var(--font-japanese);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.wc-romaji {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.wc-actions {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.wc-meaning {
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.wc-example {
+  text-align: left;
+  font-family: var(--font-japanese);
+  font-size: 1.02rem;
+  color: var(--text-main);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-page);
+  line-height: 2;
+}
+
+.wc-example:hover {
+  background: var(--color-accent-light);
+}
+
+.wc-ex-icon {
+  margin-left: 6px;
+  vertical-align: middle;
+  color: var(--text-faint);
+}
+
+.wc-example-vi {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.wc-tip {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid #f59e0b;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.wc-tip svg {
+  color: #f59e0b;
+  vertical-align: -2px;
+}
+
+.wc-loading {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+/* Furigana */
+.ruby-text rt {
+  font-size: 0.55em;
+  color: var(--text-muted);
+  font-weight: 500;
+  user-select: none;
+}
+
+.no-furigana .ruby-text rt {
+  visibility: hidden;
+}
+
+/* Bước luyện tập */
+.ld-direction {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+.practice-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.practice-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.pc-label {
+  font-weight: 800;
+  font-size: 1.02rem;
+}
+
+.pc-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-right: 22px;
+}
+
+.pc-arrow {
+  position: absolute;
+  right: 14px;
+  bottom: 16px;
+  color: var(--color-primary);
+}
+
+/* ---------- Bài đọc ---------- */
+.reading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reading-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.reading-title {
+  font-family: var(--font-japanese);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.reading-title-vi {
+  color: var(--text-muted);
+}
+
+.reading-tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.reading-help {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+.reading-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.reading-line {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.reading-line .icon-btn {
+  margin-top: 8px;
+}
+
+.reading-line-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.reading-jp {
+  text-align: left;
+  font-family: var(--font-japanese);
+  font-size: 1.2rem;
+  line-height: 2.3;
+  color: var(--text-main);
+  padding: 0 6px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.reading-jp:hover {
+  background: var(--bg-page);
+}
+
+.reading-vi {
+  font-size: 0.92rem;
+  color: var(--color-accent);
+  padding: 0 6px 8px;
+  animation: fade-in 0.2s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+
+.reading-glossary h3,
+.reading-quiz h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.glossary-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.glossary-item {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.88rem;
+}
+
+.glossary-item:hover {
+  border-color: var(--color-accent);
+}
+
+.g-jp {
+  font-family: var(--font-japanese);
+  font-weight: 700;
+}
+
+.g-kana {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+}
+
+.g-vi {
+  color: var(--text-muted);
+}
+
+.reading-best {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.reading-quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rq-q {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.rq-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 8px;
+}
+
+.rq-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+}
+
+.rq-opt:not(:disabled):hover {
+  border-color: var(--color-accent);
+}
+
+.rq-opt:disabled {
+  cursor: default;
+}
+
+.rq-opt.ok {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+  font-weight: 700;
+}
+
+.rq-opt.bad {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.rq-opt.dim {
+  opacity: 0.55;
+}
+
+[data-theme='dark'] .rq-opt.ok {
+  color: #4ade80;
+}
+
+.rq-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.rq-result.perfect {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+@media (max-width: 768px) {
+  .lessons-top {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    flex-wrap: wrap;
+  }
+
+  .review-card > .app-btn {
+    width: 100%;
+  }
+
+  .ld-steps {
+    top: 64px;
+  }
+
+  .ld-step {
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.8rem;
+    padding: 8px 4px;
+  }
+
+  .ld-step-num {
+    display: none;
+  }
+
+  .wc-img {
+    width: 96px;
+  }
+
+  .ld-direction {
+    flex-wrap: wrap;
+  }
+}

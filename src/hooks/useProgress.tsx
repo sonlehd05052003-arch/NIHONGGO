@@ -1,11 +1,7 @@
 import React, { createContext, useCallback, useContext, useMemo } from 'react'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { dayKey as today, isDue, nextSrs } from '@/services/srs'
 import type { ProgressState, WordProgress } from '@/types'
-
-const today = () => {
-  const d = new Date()
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
-}
 
 function computeStreak(days: string[]): number {
   const set = new Set(days)
@@ -33,6 +29,9 @@ interface ProgressContextValue {
   setKnown: (id: string, known: boolean) => void
   toggleStar: (id: string) => void
   recordAnswer: (id: string, correct: boolean) => void
+  /** Các từ đến hạn ôn hôm nay theo lịch ôn ngắt quãng */
+  dueIds: string[]
+  setReadingScore: (lessonId: string, score: number) => void
   resetProgress: () => void
 }
 
@@ -59,6 +58,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   const value = useMemo<ProgressContextValue>(() => {
     const words = progress.words ?? {}
+    const t = today()
+    const dueIds = Object.keys(words).filter((id) => isDue(words[id], t))
     return {
       progress,
       streak: computeStreak(progress.studyDays ?? []),
@@ -69,10 +70,18 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       get: (id) => words[id] ?? {},
       setKnown: (id, known) => update(id, (p) => ({ ...p, known })),
       toggleStar: (id) => update(id, (p) => ({ ...p, starred: !p.starred }), false),
+      dueIds,
+      setReadingScore: (lessonId, score) =>
+        setProgress((prev) => {
+          const best = Math.max(prev.readings?.[lessonId] ?? 0, score)
+          return { ...prev, readings: { ...prev.readings, [lessonId]: best } }
+        }),
       recordAnswer: (id, correct) => {
-        update(id, (p) =>
-          correct ? { ...p, correct: (p.correct ?? 0) + 1 } : { ...p, wrong: (p.wrong ?? 0) + 1 },
-        )
+        update(id, (p) => ({
+          ...p,
+          ...(correct ? { correct: (p.correct ?? 0) + 1 } : { wrong: (p.wrong ?? 0) + 1 }),
+          srs: nextSrs(p.srs, correct),
+        }))
         setProgress((prev) => {
           const t = today()
           const count = prev.daily?.date === t ? prev.daily.count : 0

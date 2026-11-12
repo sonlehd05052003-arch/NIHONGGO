@@ -1,0 +1,262 @@
+{
+  "examples": {
+    "n5-59": { "jp": "{鉛筆|えんぴつ}で{名前|なまえ}を{書|か}きます。", "vi": "Tôi viết tên bằng bút chì.", "tip": "Hán Việt: DUYÊN BÚT – 鉛 = chì, 筆 = bút → bút chì. Đếm bút bằng 本: いっぽん, にほん." },
+    "n5-319": { "jp": "このペンは{少|すこ}し{高|たか}いです。", "vi": "Cây bút này hơi đắt.", "tip": "Từ tiếng Anh 'pen'. Chỉ chung các loại bút viết mực." },
+    "n5-321": { "jp": "ボールペンを{貸|か}してください。", "vi": "Hãy cho tôi mượn cây bút bi.", "tip": "Từ tiếng Anh 'ball pen' – đầu bút có viên bi (ball) → bút bi." },
+    "n5-338": { "jp": "{父|ちち}に{万年筆|まんねんひつ}をもらいました。", "vi": "Tôi được bố tặng một cây bút mực.", "tip": "Hán Việt: VẠN NIÊN BÚT – 'bút dùng vạn năm' → bút máy, bút mực." },
+    "n5-108": { "jp": "{白|しろ}い{紙|かみ}を{一枚|いちまい}ください。", "vi": "Cho tôi một tờ giấy trắng.", "tip": "Hán Việt: CHỈ (giấy). Đếm tờ giấy bằng 枚 (まい). Cùng âm かみ với 髪 (tóc)." },
+    "n5-325": { "jp": "{図書館|としょかん}で{本|ほん}を{借|か}りました。", "vi": "Tôi đã mượn sách ở thư viện.", "tip": "Hán Việt: BẢN. 本 còn là từ đếm vật dài (bút, chai): いっぽん, にほん, さんぼん." },
+    "n5-179": { "jp": "この{辞書|じしょ}はとても{便利|べんり}です。", "vi": "Cuốn từ điển này rất tiện.", "tip": "Hán Việt: TỪ THƯ – sách (書) về từ ngữ (辞) → từ điển." },
+    "n5-171": { "jp": "{電車|でんしゃ}で{雑誌|ざっし}を{読|よ}みます。", "vi": "Tôi đọc tạp chí trên tàu điện.", "tip": "Hán Việt: TẠP CHÍ – giống hệt tiếng Việt!" },
+    "n5-194": { "jp": "{父|ちち}は{毎朝|まいあさ}{新聞|しんぶん}を{読|よ}みます。", "vi": "Bố tôi đọc báo mỗi sáng.", "tip": "Hán Việt: TÂN VĂN – 新 = mới, 聞 = nghe → tin mới → tờ báo." },
+    "n5-274": { "jp": "{友達|ともだち}に{葉書|はがき}を{書|か}きました。", "vi": "Tôi đã viết bưu thiếp cho bạn.", "tip": "Hán Việt: DIỆP THƯ – 'thư viết trên lá' → bưu thiếp. Thường viết bằng kana: はがき." },
+    "n5-306": { "jp": "{封筒|ふうとう}に{手紙|てがみ}を{入|い}れます。", "vi": "Tôi cho lá thư vào phong bì.", "tip": "Hán Việt: PHONG ĐỒNG – 封 = phong (niêm phong, phong bì), 筒 = ống." },
+    "n5-120": { "jp": "{郵便局|ゆうびんきょく}で{切手|きって}を{買|か}いました。", "vi": "Tôi đã mua tem ở bưu điện.", "tip": "Hán Việt: THIẾT THỦ. Đừng nhầm 切手 (きって, tem thư) với 切符 (きっぷ, vé tàu xe)." },
+    "n5-305": { "jp": "カメラにフィルムを{入|い}れます。", "vi": "Tôi lắp cuộn phim vào máy ảnh.", "tip": "Từ tiếng Anh 'film' – cuộn phim chụp ảnh." },
+    "n5-109": { "jp": "{新|あたら}しいカメラで{写真|しゃしん}を{撮|と}りました。", "vi": "Tôi đã chụp ảnh bằng máy ảnh mới.", "tip": "Từ tiếng Anh 'camera'. Chụp ảnh: 写真を撮る (しゃしんをとる)." },
+
+    "n5-101": { "jp": "{学校|がっこう}は{八時|はちじ}に{始|はじ}まります。", "vi": "Trường bắt đầu học lúc 8 giờ.", "tip": "Hán Việt: HỌC HIỆU – trường học. 学校へ行く = đi học." },
+    "n5-216": { "jp": "{兄|あに}は{大学|だいがく}で{英語|えいご}を{勉強|べんきょう}しています。", "vi": "Anh trai tôi đang học tiếng Anh ở đại học.", "tip": "Hán Việt: ĐẠI HỌC – giống tiếng Việt. Sinh viên đại học = 大学生 (だいがくせい)." },
+    "n5-126": { "jp": "{教室|きょうしつ}に{学生|がくせい}が{二十人|にじゅうにん}います。", "vi": "Trong phòng học có 20 sinh viên.", "tip": "Hán Việt: GIÁO THẤT – căn phòng (室) để dạy (教) → phòng học. Chỉ căn phòng, khác クラス (nhóm lớp)." },
+    "n5-140": { "jp": "{私|わたし}のクラスは{十五人|じゅうごにん}です。", "vi": "Lớp của tôi có 15 người.", "tip": "Từ tiếng Anh 'class' – lớp (nhóm người học cùng nhau); còn 教室 là căn phòng học." },
+    "n5-95": { "jp": "{私|わたし}は{大学|だいがく}の{学生|がくせい}です。", "vi": "Tôi là sinh viên đại học.", "tip": "Hán Việt: HỌC SINH, nhưng thường chỉ sinh viên đại học. Học sinh phổ thông hay gọi là 生徒." },
+    "n5-202": { "jp": "{先生|せんせい}と{生徒|せいと}が{話|はな}しています。", "vi": "Thầy giáo và học sinh đang nói chuyện.", "tip": "Hán Việt: SINH ĐỒ – học trò tiểu học, cấp 2, cấp 3 (người được thầy dạy). 学生 thiên về sinh viên." },
+    "n5-190": { "jp": "{授業|じゅぎょう}は{九時|くじ}からです。", "vi": "Giờ học bắt đầu từ 9 giờ.", "tip": "Hán Việt: THỤ NGHIỆP – trao (授) nghề nghiệp, kiến thức → giờ học, tiết học." },
+    "n5-191": { "jp": "{今日|きょう}は{宿題|しゅくだい}がたくさんあります。", "vi": "Hôm nay có nhiều bài tập về nhà.", "tip": "Hán Việt: TÚC ĐỀ – 宿 = trọ, nghỉ đêm; 'đề bài mang về qua đêm' → bài tập về nhà." },
+    "n5-235": { "jp": "{明日|あした}、{漢字|かんじ}のテストがあります。", "vi": "Ngày mai có bài kiểm tra chữ Hán.", "tip": "Từ tiếng Anh 'test' – bài kiểm tra. Kỳ thi lớn thì gọi là 試験 (しけん)." },
+    "n5-182": { "jp": "{授業|じゅぎょう}の{後|あと}で{先生|せんせい}に{質問|しつもん}しました。", "vi": "Sau giờ học tôi đã hỏi thầy giáo.", "tip": "Hán Việt: CHẤT VẤN, nhưng nghĩa nhẹ: câu hỏi mình đặt ra. 質問があります = Tôi có câu hỏi." },
+    "n5-359": { "jp": "この{問題|もんだい}は{難|むずか}しいです。", "vi": "Bài này (câu hỏi này) khó.", "tip": "Hán Việt: VẤN ĐỀ – vừa là 'vấn đề', vừa là 'câu/bài' trong đề thi. Khác 質問 (câu mình hỏi người khác)." },
+    "n5-170": { "jp": "{日本語|にほんご}で{作文|さくぶん}を{書|か}きました。", "vi": "Tôi đã viết bài văn bằng tiếng Nhật.", "tip": "Hán Việt: TÁC VĂN – 作 = làm ra, 文 = văn → bài làm văn, bài luận ngắn." },
+    "n5-378": { "jp": "リンさんはベトナムの{留学生|りゅうがくせい}です。", "vi": "Bạn Linh là du học sinh Việt Nam.", "tip": "Hán Việt: LƯU HỌC SINH – sinh viên lưu lại (留) nước ngoài để học → du học sinh." },
+
+    "n5-56": { "jp": "{兄|あに}は{英語|えいご}が{上手|じょうず}です。", "vi": "Anh trai tôi giỏi tiếng Anh.", "tip": "Hán Việt: ANH NGỮ. Tên ngôn ngữ = tên nước + 語 (ご): 日本語, ベトナム語." },
+    "n5-114": { "jp": "{漢字|かんじ}は{難|むずか}しいですが、おもしろいです。", "vi": "Chữ Hán khó nhưng thú vị.", "tip": "Hán Việt: HÁN TỰ – chữ của người Hán. Biết âm Hán Việt giúp người Việt học nhanh hơn!" },
+    "n5-161": { "jp": "この{言葉|ことば}は{分|わ}かりません。", "vi": "Tôi không hiểu từ này.", "tip": "Hán Việt: NGÔN DIỆP – 'lá của lời nói' → từ ngữ, lời nói. Đọc theo âm Nhật: ことば." },
+    "n5-44": { "jp": "この{漢字|かんじ}の{意味|いみ}を{教|おし}えてください。", "vi": "Hãy chỉ cho tôi nghĩa của chữ Hán này.", "tip": "Hán Việt: Ý VỊ → ý nghĩa. Hỏi nghĩa: ～はどういう意味ですか (...nghĩa là gì?)." },
+    "n5-313": { "jp": "{先生|せんせい}は{短|みじか}い{文章|ぶんしょう}を{読|よ}みました。", "vi": "Thầy giáo đã đọc một đoạn văn ngắn.", "tip": "Hán Việt: VĂN CHƯƠNG, nhưng tiếng Nhật chỉ nghĩa câu văn, đoạn văn, bài viết (không phải văn chương nghệ thuật)." },
+    "n5-314": { "jp": "{本|ほん}の{二十|にじゅう}ページを{見|み}てください。", "vi": "Hãy xem trang 20 của sách.", "tip": "Từ tiếng Anh 'page'. Trang 10 = 10ページ (じゅっページ)." },
+    "n5-233": { "jp": "{母|はは}に{手紙|てがみ}を{書|か}きました。", "vi": "Tôi đã viết thư cho mẹ.", "tip": "Hán Việt: THỦ CHỈ – giấy (紙) viết tay (手) → lá thư. Lưu ý: trong tiếng Trung 手纸 lại là giấy vệ sinh!" },
+    "n5-285": { "jp": "{祖母|そぼ}の{話|はなし}はおもしろいです。", "vi": "Câu chuyện của bà tôi thú vị.", "tip": "Hán Việt: THOẠI. Danh từ 話 (はなし, câu chuyện) ↔ động từ 話す (はなす, nói)." },
+    "n5-485": { "jp": "{毎日|まいにち}、{漢字|かんじ}を{練習|れんしゅう}します。", "vi": "Mỗi ngày tôi luyện tập chữ Hán.", "tip": "Hán Việt: LUYỆN TẬP – giống tiếng Việt. Dùng cho kỹ năng cần lặp lại: 練習する." },
+    "n5-474": { "jp": "{図書館|としょかん}で{日本語|にほんご}を{勉強|べんきょう}します。", "vi": "Tôi học tiếng Nhật ở thư viện.", "tip": "Hán Việt: MIỄN CƯỠNG ('gắng sức') → học, tự học. Khác 習う: học có người dạy." },
+    "n5-452": { "jp": "{友達|ともだち}にギターを{習|なら}っています。", "vi": "Tôi đang học guitar với bạn.", "tip": "Hán Việt: TẬP. 習う = học TỪ ai đó (人に習う), hay dùng cho kỹ năng. 勉強する = tự học." },
+    "n5-405": { "jp": "{新|あたら}しい{言葉|ことば}を{覚|おぼ}えました。", "vi": "Tôi đã nhớ được từ mới.", "tip": "Hán Việt: GIÁC. 覚える = ghi nhớ, học thuộc. Khác 分かる = hiểu. Hiểu rồi mới nhớ!" },
+    "n5-487": { "jp": "{宿題|しゅくだい}を{忘|わす}れました。", "vi": "Tôi quên bài tập về nhà rồi.", "tip": "Hán Việt: VONG (quên, như 'vong ân'). Trái nghĩa 覚える. Cũng dùng khi để quên đồ: 傘を忘れました." },
+    "n5-486": { "jp": "{先生|せんせい}の{話|はなし}がよく{分|わ}かります。", "vi": "Tôi hiểu rõ lời thầy giáo nói.", "tip": "分かる dùng trợ từ が: 日本語が分かります. Nghĩa là 'hiểu', khác 覚える (nhớ)." },
+
+    "n5-57": { "jp": "{駅|えき}はどこですか。", "vi": "Nhà ga ở đâu ạ?", "tip": "Hán Việt: DỊCH – trạm ngựa thời xưa (bộ 馬 bên trái) → nhà ga ngày nay." },
+    "n5-131": { "jp": "{銀行|ぎんこう}は{三時|さんじ}までです。", "vi": "Ngân hàng mở đến 3 giờ.", "tip": "Hán Việt: NGÂN HÀNG – y như tiếng Việt." },
+    "n5-149": { "jp": "{子|こ}どもが{公園|こうえん}で{遊|あそ}んでいます。", "vi": "Bọn trẻ đang chơi ở công viên.", "tip": "Hán Việt: CÔNG VIÊN – giống tiếng Việt." },
+    "n5-247": { "jp": "{図書館|としょかん}で{本|ほん}を{読|よ}みます。", "vi": "Tôi đọc sách ở thư viện.", "tip": "Hán Việt: ĐỒ THƯ QUÁN – quán chứa sách vở (書), tranh ảnh (図) → thư viện." },
+    "n5-367": { "jp": "{郵便局|ゆうびんきょく}で{葉書|はがき}を{出|だ}します。", "vi": "Tôi gửi bưu thiếp ở bưu điện.", "tip": "Hán Việt: BƯU TIỆN CỤC – cục bưu chính → bưu điện." },
+    "n5-236": { "jp": "デパートで{靴|くつ}を{買|か}いました。", "vi": "Tôi đã mua giày ở cửa hàng bách hóa.", "tip": "Từ tiếng Anh 'department store' nói tắt → trung tâm/cửa hàng bách hóa." },
+    "n5-341": { "jp": "あの{店|みせ}のパンはおいしいです。", "vi": "Bánh mì của cửa hàng kia ngon.", "tip": "Hán Việt: ĐIẾM (tiệm). Đứng riêng đọc みせ; trong từ ghép đọc てん: 喫茶店 (きっさてん)." },
+    "n5-360": { "jp": "{八百屋|やおや}で{野菜|やさい}を{買|か}いました。", "vi": "Tôi đã mua rau ở cửa hàng rau.", "tip": "Hán Việt: BÁT BÁCH ỐC – 'tiệm 800 thứ' (bán rất nhiều loại rau quả). Cách đọc đặc biệt: やおや." },
+    "n5-324": { "jp": "このホテルはきれいで{安|やす}いです。", "vi": "Khách sạn này sạch đẹp và rẻ.", "tip": "Từ tiếng Anh 'hotel' – khách sạn." },
+    "n5-55": { "jp": "{日曜日|にちようび}に{映画館|えいがかん}へ{行|い}きました。", "vi": "Chủ nhật tôi đã đi rạp chiếu phim.", "tip": "Hán Việt: ÁNH HỌA QUÁN – 映画 (phim) + 館 (tòa nhà) → rạp chiếu phim." },
+    "n5-335": { "jp": "この{町|まち}は{静|しず}かです。", "vi": "Thị trấn này yên tĩnh.", "tip": "Hán Việt: ĐINH. 町 = phố, thị trấn; lớn hơn 村 (làng). Cũng dùng chung chỉ 'phố xá'." },
+    "n5-351": { "jp": "{祖父|そふ}は{小|ちい}さい{村|むら}に{住|す}んでいます。", "vi": "Ông tôi sống ở một ngôi làng nhỏ.", "tip": "Hán Việt: THÔN – làng, thôn xóm. Đối lập với 町 (phố, thị trấn)." },
+    "n5-220": { "jp": "あの{高|たか}い{建物|たてもの}は{銀行|ぎんこう}です。", "vi": "Tòa nhà cao kia là ngân hàng.", "tip": "Hán Việt: KIẾN VẬT – vật được xây (建てる) → tòa nhà, công trình." },
+    "n5-46": { "jp": "{入口|いりぐち}はあちらです。", "vi": "Lối vào ở đằng kia.", "tip": "Hán Việt: NHẬP KHẨU – 入 = vào, 口 = cửa → lối vào. Đối lập 出口 (でぐち, lối ra)." },
+    "n5-234": { "jp": "{北|きた}の{出口|でぐち}で{待|ま}っています。", "vi": "Tôi đang đợi ở lối ra phía Bắc.", "tip": "Hán Việt: XUẤT KHẨU – 出 = ra → lối ra. Nhớ cặp: 入口 (いりぐち, vào) ↔ 出口 (でぐち, ra)." },
+
+    "n5-142": { "jp": "{父|ちち}は{車|くるま}で{会社|かいしゃ}へ{行|い}きます。", "vi": "Bố tôi đi làm bằng xe hơi.", "tip": "Hán Việt: XA (xe). Chữ 車 vốn là hình chiếc xe nhìn từ trên. くるま = xe nói chung, hay chỉ ô tô." },
+    "n5-184": { "jp": "{日本|にほん}の{自動車|じどうしゃ}は{有名|ゆうめい}です。", "vi": "Ô tô Nhật Bản nổi tiếng.", "tip": "Hán Việt: TỰ ĐỘNG XA – xe tự chạy → ô tô. Trang trọng hơn 車 (くるま)." },
+    "n5-183": { "jp": "{自転車|じてんしゃ}で{学校|がっこう}へ{行|い}きます。", "vi": "Tôi đi học bằng xe đạp.", "tip": "Hán Việt: TỰ CHUYỂN XA – xe tự quay bánh (bằng sức người) → xe đạp. Đừng nhầm với 自動車 (ô tô)!" },
+    "n5-219": { "jp": "{駅|えき}からタクシーに{乗|の}りました。", "vi": "Tôi đã đi taxi từ nhà ga.", "tip": "Từ tiếng Anh 'taxi'. Đi taxi: タクシーに乗る (dùng trợ từ に)." },
+    "n5-278": { "jp": "{駅|えき}の{前|まえ}でバスを{待|ま}っています。", "vi": "Tôi đang đợi xe buýt trước nhà ga.", "tip": "Từ tiếng Anh 'bus'. Bến xe buýt = バス停 (バスてい)." },
+    "n5-224": { "jp": "{地下鉄|ちかてつ}は{速|はや}くて{便利|べんり}です。", "vi": "Tàu điện ngầm nhanh và tiện lợi.", "tip": "Hán Việt: ĐỊA HẠ THIẾT – đường sắt (鉄) dưới (下) mặt đất (地) → tàu điện ngầm." },
+    "n5-240": { "jp": "{電車|でんしゃ}の{中|なか}で{本|ほん}を{読|よ}みます。", "vi": "Tôi đọc sách trên tàu điện.", "tip": "Hán Việt: ĐIỆN XA – xe chạy bằng điện → tàu điện. 電車に乗る = lên tàu." },
+    "n5-294": { "jp": "{飛行機|ひこうき}で{日本|にほん}へ{来|き}ました。", "vi": "Tôi đã đến Nhật bằng máy bay.", "tip": "Hán Việt: PHI HÀNH CƠ – cỗ máy (機) bay đi (飛行) → máy bay." },
+    "n5-121": { "jp": "{駅|えき}で{切符|きっぷ}を{買|か}いました。", "vi": "Tôi đã mua vé ở nhà ga.", "tip": "Hán Việt: THIẾT PHÙ – vé tàu xe. Đừng nhầm với 切手 (きって, tem thư)." },
+    "n5-276": { "jp": "{川|かわ}に{長|なが}い{橋|はし}があります。", "vi": "Trên sông có một cây cầu dài.", "tip": "Hán Việt: KIỀU (cầu), có bộ 木. Cùng âm はし với 箸 (đũa) nhưng khác ngữ điệu." },
+    "n5-150": { "jp": "{次|つぎ}の{交差点|こうさてん}を{右|みぎ}へ{曲|ま}がってください。", "vi": "Hãy rẽ phải ở ngã tư tiếp theo.", "tip": "Hán Việt: GIAO SAI ĐIỂM – điểm các con đường giao nhau → ngã tư." },
+    "n5-342": { "jp": "この{道|みち}はとても{広|ひろ}いです。", "vi": "Con đường này rất rộng.", "tip": "Hán Việt: ĐẠO (đường, như 'đạo lộ'). 道を渡る (わたる) = băng qua đường." },
+    "n5-225": { "jp": "{地図|ちず}を{見|み}て{行|い}きましょう。", "vi": "Mình xem bản đồ rồi đi nhé.", "tip": "Hán Việt: ĐỊA ĐỒ – bản vẽ (図) mặt đất (地) → bản đồ." },
+
+    "n5-48": { "jp": "{机|つくえ}の{上|うえ}に{本|ほん}があります。", "vi": "Trên bàn có quyển sách.", "tip": "Hán Việt: THƯỢNG – trên. Nét ngang ngắn nằm TRÊN nét dài; 下 thì ngược lại." },
+    "n5-180": { "jp": "{椅子|いす}の{下|した}に{猫|ねこ}がいます。", "vi": "Dưới ghế có con mèo.", "tip": "Hán Việt: HẠ – dưới. Nhớ cặp 上 (うえ, trên) ↔ 下 (した, dưới)." },
+    "n5-49": { "jp": "{私|わたし}の{後|うし}ろに{田中|たなか}さんがいます。", "vi": "Anh Tanaka ở phía sau tôi.", "tip": "Hán Việt: HẬU – sau. Đối lập 前 (まえ). 後 còn đọc あと (sau đó, về thời gian)." },
+    "n5-334": { "jp": "{駅|えき}の{前|まえ}で{待|ま}っています。", "vi": "Tôi đang đợi trước nhà ga.", "tip": "Hán Việt: TIỀN – trước, cả vị trí lẫn thời gian: 三年前 = 3 năm trước." },
+    "n5-213": { "jp": "{外|そと}はとても{寒|さむ}いです。", "vi": "Bên ngoài rất lạnh.", "tip": "Hán Việt: NGOẠI – bên ngoài. Đối lập 中 (なか, bên trong). 外国 = nước ngoài." },
+    "n5-214": { "jp": "{駅|えき}のそばに{本屋|ほんや}があります。", "vi": "Gần nhà ga có hiệu sách.", "tip": "そば = ở gần, quanh đó (không cần sát). 隣 = sát bên, cùng loại; 横 = ngay bên hông." },
+    "n5-251": { "jp": "{隣|となり}の{部屋|へや}に{山田|やまだ}さんが{住|す}んでいます。", "vi": "Anh Yamada sống ở phòng bên cạnh.", "tip": "Hán Việt: LÂN (lân cận). 隣 = kế bên, thường là hai thứ cùng loại xếp cạnh nhau: nhà bên, ghế bên." },
+    "n5-370": { "jp": "テレビの{横|よこ}に{時計|とけい}があります。", "vi": "Bên cạnh tivi có cái đồng hồ.", "tip": "Hán Việt: HOÀNH (ngang). 横 = bên hông, không cần cùng loại; còn có nghĩa chiều ngang." },
+    "n5-295": { "jp": "{銀行|ぎんこう}は{左|ひだり}にあります。", "vi": "Ngân hàng ở bên trái.", "tip": "Hán Việt: TẢ – trái. Phân biệt: 左 có 工 bên dưới, 右 có 口 bên dưới." },
+    "n5-339": { "jp": "{右|みぎ}の{部屋|へや}は{私|わたし}の{部屋|へや}です。", "vi": "Căn phòng bên phải là phòng của tôi.", "tip": "Hán Việt: HỮU – phải. Mẹo: 右 có 口 (miệng) – tay phải đưa đồ ăn lên miệng. Đối lập 左 (ひだり)." },
+    "n5-477": { "jp": "{二|ふた}つ{目|め}の{角|かど}を{右|みぎ}へ{曲|ま}がってください。", "vi": "Hãy rẽ phải ở góc đường thứ hai.", "tip": "Mục trùng với 右 (bên phải). Chỉ đường: 右へ曲がる = rẽ phải, 左へ曲がる = rẽ trái." },
+    "n5-257": { "jp": "{箱|はこ}の{中|なか}に{何|なに}がありますか。", "vi": "Trong hộp có gì vậy?", "tip": "Hán Việt: TRUNG – nét dọc xuyên giữa khung → ở giữa, bên trong. Đối lập 外 (そと)." },
+    "n5-349": { "jp": "{川|かわ}の{向|む}こうに{山|やま}が{見|み}えます。", "vi": "Có thể thấy núi ở bên kia sông.", "tip": "Hán Việt: HƯỚNG. 向こう = phía bên kia (cách qua sông, đường...); còn chỉ 'bên đó, nước ngoài'." },
+    "n5-245": { "jp": "ここは{静|しず}かな{所|ところ}ですね。", "vi": "Đây là một nơi yên tĩnh nhỉ.", "tip": "Hán Việt: SỞ (nơi chốn, như 'trụ sở'). 住所 (じゅうしょ) = địa chỉ." },
+    "n5-318": { "jp": "この{辺|へん}に{銀行|ぎんこう}はありますか。", "vi": "Quanh đây có ngân hàng không?", "tip": "Hán Việt: BIÊN (vùng, ven). Dùng sau この/その/あの: この辺 = quanh đây, khu này." },
+
+    "n5-293": { "jp": "{日|ひ}は{東|ひがし}から{出|で}ます。", "vi": "Mặt trời mọc ở phía Đông.", "tip": "Hán Việt: ĐÔNG. Mẹo nhớ: mặt trời (日) mọc sau rặng cây (木) → phía Đông. Cặp 東 ↔ 西 (にし)." },
+    "n5-346": { "jp": "{南|みなみ}の{国|くに}は{暑|あつ}いです。", "vi": "Những nước phương Nam thì nóng.", "tip": "Hán Việt: NAM – phía Nam. Cặp 北 (きた) ↔ 南 (みなみ)." },
+    "n5-117": { "jp": "{北|きた}の{町|まち}は{冬|ふゆ}がとても{寒|さむ}いです。", "vi": "Thị trấn phía Bắc mùa đông rất lạnh.", "tip": "Hán Việt: BẮC – phía Bắc. 北口 (きたぐち) = cửa Bắc nhà ga." },
+    "n5-263": { "jp": "{西|にし}の{空|そら}がきれいです。", "vi": "Bầu trời phía Tây thật đẹp.", "tip": "Hán Việt: TÂY – phía Tây, nơi mặt trời lặn. Cặp 東 (ひがし) ↔ 西 (にし)." },
+    "n5-105": { "jp": "あの{角|かど}を{左|ひだり}へ{曲|ま}がってください。", "vi": "Hãy rẽ trái ở góc đường kia.", "tip": "Hán Việt: GIÁC (góc). かど = góc đường, góc bàn; đọc つの thì là cái sừng." },
+    "n5-129": { "jp": "{肉|にく}を{一|いち}キログラム{買|か}いました。", "vi": "Tôi đã mua 1 kg thịt.", "tip": "Từ 'kilogram' (gốc tiếng Pháp kilogramme). Nói tắt キロ; 1キロ = 1000グラム." },
+    "n5-130": { "jp": "{駅|えき}から{家|いえ}まで{二|に}キロあります。", "vi": "Từ nhà ga đến nhà dài 2 km.", "tip": "Từ 'kilometre'. Nói tắt キロ giống kg – xem ngữ cảnh: 2キロ歩く (km) ↔ 2キロの肉 (kg)." },
+    "n5-141": { "jp": "{砂糖|さとう}を{百|ひゃく}グラムください。", "vi": "Cho tôi 100 gam đường.", "tip": "Từ 'gram' (gốc tiếng Pháp gramme). 1000グラム = 1キロ." },
+    "n5-353": { "jp": "このプールは{二十五|にじゅうご}メートルです。", "vi": "Bể bơi này dài 25 mét.", "tip": "Từ 'mètre' (tiếng Pháp) / 'metre'. 1000メートル = 1キロ (km)." },
+
+    "n5-51": { "jp": "{夏|なつ}は{海|うみ}で{泳|およ}ぎます。", "vi": "Mùa hè tôi bơi ở biển.", "tip": "Hán Việt: HẢI – biển (như 'hải sản'). Có bộ 氵 (nước) bên trái." },
+    "n5-113": { "jp": "この{川|かわ}はとてもきれいです。", "vi": "Con sông này rất sạch đẹp.", "tip": "Hán Việt: XUYÊN – ba nét như dòng nước chảy → sông." },
+    "n5-364": { "jp": "{日曜日|にちようび}に{山|やま}に{登|のぼ}りました。", "vi": "Chủ nhật tôi đã leo núi.", "tip": "Hán Việt: SƠN – hình ba ngọn núi. Tên núi đọc さん: 富士山 (ふじさん)." },
+    "n5-27": { "jp": "{池|いけ}に{魚|さかな}がたくさんいます。", "vi": "Trong ao có nhiều cá.", "tip": "Hán Việt: TRÌ (ao, như 'thành trì'). Có bộ 氵 (nước). Ao nhỏ hơn 湖 (みずうみ, hồ)." },
+    "n5-115": { "jp": "{庭|にわ}に{大|おお}きい{木|き}があります。", "vi": "Trong vườn có một cái cây lớn.", "tip": "Hán Việt: MỘC – hình cái cây có cành và rễ. Còn nghĩa là gỗ." },
+    "n5-283": { "jp": "{母|はは}に{花|はな}をあげました。", "vi": "Tôi đã tặng hoa cho mẹ.", "tip": "Hán Việt: HOA. Đừng nhầm 花 (はな, hoa) với 鼻 (はな, cái mũi)." },
+    "n5-215": { "jp": "{今日|きょう}は{空|そら}が{青|あお}いです。", "vi": "Hôm nay bầu trời xanh.", "tip": "Hán Việt: KHÔNG (trống không, bầu trời). 空港 (くうこう) = sân bay." },
+    "n5-248": { "jp": "{私|わたし}は{動物|どうぶつ}が{好|す}きです。", "vi": "Tôi thích động vật.", "tip": "Hán Việt: ĐỘNG VẬT – giống tiếng Việt. 動物園 (どうぶつえん) = sở thú." },
+    "n5-254": { "jp": "{木|き}の{上|うえ}に{鳥|とり}がいます。", "vi": "Trên cây có con chim.", "tip": "Hán Việt: ĐIỂU – chim. とり còn hay chỉ thịt gà: とり肉." },
+    "n5-42": { "jp": "{犬|いぬ}と{公園|こうえん}を{散歩|さんぽ}します。", "vi": "Tôi đi dạo công viên cùng con chó.", "tip": "Hán Việt: KHUYỂN – chó. Khác 大 (to) ở dấu chấm phía trên bên phải." },
+    "n5-269": { "jp": "{猫|ねこ}が{椅子|いす}の{上|うえ}で{寝|ね}ています。", "vi": "Con mèo đang ngủ trên ghế.", "tip": "Hán Việt: MIÊU – mèo. Với động vật dùng いる (không dùng ある): 猫がいます." },
+    "n5-316": { "jp": "{何|なに}かペットを{飼|か}っていますか。", "vi": "Bạn có nuôi thú cưng nào không?", "tip": "Từ tiếng Anh 'pet'. Nuôi thú cưng: ペットを飼う (かう)." }
+  },
+  "readings": {
+    "L25": {
+      "title": "{私|わたし}の{机|つくえ}",
+      "titleVi": "Bàn học của tôi",
+      "lines": [
+        { "jp": "{私|わたし}の{机|つくえ}の{上|うえ}に{鉛筆|えんぴつ}とボールペンがあります。", "vi": "Trên bàn của tôi có bút chì và bút bi." },
+        { "jp": "{万年筆|まんねんひつ}もあります。{父|ちち}にもらいました。", "vi": "Cũng có cả bút mực. Tôi được bố tặng." },
+        { "jp": "{毎朝|まいあさ}、{新聞|しんぶん}を{読|よ}みます。", "vi": "Mỗi sáng tôi đọc báo." },
+        { "jp": "{日曜日|にちようび}には{雑誌|ざっし}も{読|よ}みます。", "vi": "Vào Chủ nhật tôi đọc cả tạp chí." },
+        { "jp": "{昨日|きのう}、{郵便局|ゆうびんきょく}で{切手|きって}と{封筒|ふうとう}を{買|か}いました。", "vi": "Hôm qua tôi đã mua tem và phong bì ở bưu điện." },
+        { "jp": "{今日|きょう}は{国|くに}の{母|はは}に{手紙|てがみ}を{書|か}きます。", "vi": "Hôm nay tôi viết thư cho mẹ ở quê nhà." },
+        { "jp": "{写真|しゃしん}も{入|い}れます。{新|あたら}しいカメラで{撮|と}りました。", "vi": "Tôi cho cả ảnh vào. Ảnh chụp bằng máy ảnh mới." }
+      ],
+      "questions": [
+        { "q": "Cây bút mực là do ai tặng?", "options": ["Mẹ", "Bố", "Bạn"], "answer": 1 },
+        { "q": "Hôm qua người viết đã mua gì ở bưu điện?", "options": ["Tem và phong bì", "Báo và tạp chí", "Bút chì và giấy"], "answer": 0 },
+        { "q": "Người viết đọc tạp chí khi nào?", "options": ["Mỗi sáng", "Thứ Bảy", "Chủ nhật"], "answer": 2 }
+      ]
+    },
+    "L26": {
+      "title": "{留学生|りゅうがくせい}の{毎日|まいにち}",
+      "titleVi": "Cuộc sống hằng ngày của du học sinh",
+      "lines": [
+        { "jp": "{私|わたし}はベトナムの{留学生|りゅうがくせい}です。", "vi": "Tôi là du học sinh Việt Nam." },
+        { "jp": "{東京|とうきょう}の{大学|だいがく}で{日本語|にほんご}を{勉強|べんきょう}しています。", "vi": "Tôi đang học tiếng Nhật ở một trường đại học tại Tokyo." },
+        { "jp": "クラスには{学生|がくせい}が{十二人|じゅうににん}います。", "vi": "Lớp tôi có 12 sinh viên." },
+        { "jp": "{授業|じゅぎょう}は{毎日|まいにち}{九時|くじ}から{十二時|じゅうにじ}までです。", "vi": "Giờ học từ 9 giờ đến 12 giờ mỗi ngày." },
+        { "jp": "{宿題|しゅくだい}は{多|おお}いですが、{楽|たの}しいです。", "vi": "Bài tập về nhà nhiều nhưng vui." },
+        { "jp": "{明日|あした}は{作文|さくぶん}のテストがあります。", "vi": "Ngày mai có bài kiểm tra làm văn." },
+        { "jp": "{分|わ}からない{問題|もんだい}は{先生|せんせい}に{質問|しつもん}します。", "vi": "Bài nào không hiểu thì tôi hỏi thầy giáo." }
+      ],
+      "questions": [
+        { "q": "Lớp của người viết có bao nhiêu sinh viên?", "options": ["10 người", "12 người", "20 người"], "answer": 1 },
+        { "q": "Giờ học kết thúc lúc mấy giờ?", "options": ["12 giờ", "9 giờ", "11 giờ"], "answer": 0 },
+        { "q": "Ngày mai có bài kiểm tra gì?", "options": ["Chữ Hán", "Nghe", "Làm văn"], "answer": 2 }
+      ]
+    },
+    "L27": {
+      "title": "{日本語|にほんご}の{勉強|べんきょう}",
+      "titleVi": "Việc học tiếng Nhật",
+      "lines": [
+        { "jp": "A：{日本語|にほんご}の{勉強|べんきょう}はどうですか。", "vi": "A: Việc học tiếng Nhật thế nào rồi?" },
+        { "jp": "B：{漢字|かんじ}が{難|むずか}しいです。すぐ{忘|わす}れます。", "vi": "B: Chữ Hán khó quá. Tôi quên ngay." },
+        { "jp": "A：{毎日|まいにち}{書|か}いて、{練習|れんしゅう}してください。", "vi": "A: Bạn hãy viết và luyện tập mỗi ngày nhé." },
+        { "jp": "B：はい。{言葉|ことば}も{毎日|まいにち}{十|じゅう}ずつ{覚|おぼ}えています。", "vi": "B: Vâng. Từ vựng thì mỗi ngày tôi cũng nhớ 10 từ." },
+        { "jp": "A：{英語|えいご}も{勉強|べんきょう}していますか。", "vi": "A: Bạn cũng học tiếng Anh à?" },
+        { "jp": "B：はい、{日曜日|にちようび}に{友達|ともだち}に{習|なら}っています。", "vi": "B: Vâng, Chủ nhật tôi học với bạn." },
+        { "jp": "A：{意味|いみ}が{分|わ}からない{言葉|ことば}は、{私|わたし}に{聞|き}いてください。", "vi": "A: Từ nào không hiểu nghĩa thì cứ hỏi tôi nhé." }
+      ],
+      "questions": [
+        { "q": "B thấy điều gì khó?", "options": ["Chữ Hán", "Nghe", "Ngữ pháp"], "answer": 0 },
+        { "q": "Mỗi ngày B nhớ bao nhiêu từ?", "options": ["5 từ", "20 từ", "10 từ"], "answer": 2 },
+        { "q": "B học tiếng Anh với ai?", "options": ["Thầy giáo", "Bạn", "Anh trai"], "answer": 1 }
+      ]
+    },
+    "L28": {
+      "title": "{私|わたし}の{町|まち}",
+      "titleVi": "Thị trấn của tôi",
+      "lines": [
+        { "jp": "{私|わたし}の{町|まち}は{小|ちい}さいですが、{便利|べんり}です。", "vi": "Thị trấn của tôi nhỏ nhưng tiện lợi." },
+        { "jp": "{駅|えき}の{前|まえ}に{銀行|ぎんこう}と{郵便局|ゆうびんきょく}があります。", "vi": "Trước nhà ga có ngân hàng và bưu điện." },
+        { "jp": "{駅|えき}の{近|ちか}くに{大|おお}きいデパートもあります。", "vi": "Gần nhà ga cũng có một cửa hàng bách hóa lớn." },
+        { "jp": "デパートの{隣|となり}は{映画館|えいがかん}です。", "vi": "Bên cạnh cửa hàng bách hóa là rạp chiếu phim." },
+        { "jp": "{図書館|としょかん}は{公園|こうえん}の{中|なか}にあります。", "vi": "Thư viện nằm trong công viên." },
+        { "jp": "{私|わたし}は{毎週|まいしゅう}{土曜日|どようび}に{図書館|としょかん}へ{行|い}きます。", "vi": "Thứ Bảy hằng tuần tôi đến thư viện." },
+        { "jp": "{帰|かえ}りに{八百屋|やおや}で{野菜|やさい}を{買|か}います。", "vi": "Trên đường về tôi mua rau ở cửa hàng rau." }
+      ],
+      "questions": [
+        { "q": "Trước nhà ga có gì?", "options": ["Ngân hàng và bưu điện", "Rạp phim và thư viện", "Cửa hàng rau"], "answer": 0 },
+        { "q": "Thư viện ở đâu?", "options": ["Cạnh cửa hàng bách hóa", "Trong công viên", "Trước nhà ga"], "answer": 1 },
+        { "q": "Người viết đến thư viện khi nào?", "options": ["Chủ nhật hằng tuần", "Mỗi ngày", "Thứ Bảy hằng tuần"], "answer": 2 }
+      ]
+    },
+    "L29": {
+      "title": "{図書館|としょかん}への{道|みち}",
+      "titleVi": "Đường đến thư viện",
+      "lines": [
+        { "jp": "A：すみません、{図書館|としょかん}はどこですか。", "vi": "A: Xin lỗi, thư viện ở đâu ạ?" },
+        { "jp": "B：この{道|みち}をまっすぐ{行|い}ってください。", "vi": "B: Anh cứ đi thẳng con đường này." },
+        { "jp": "B：{二|ふた}つ{目|め}の{交差点|こうさてん}を{左|ひだり}へ{曲|ま}がってください。", "vi": "B: Đến ngã tư thứ hai thì rẽ trái." },
+        { "jp": "B：それから{橋|はし}を{渡|わた}ってください。{図書館|としょかん}は{橋|はし}の{向|む}こうです。", "vi": "B: Sau đó đi qua cầu. Thư viện ở bên kia cầu." },
+        { "jp": "A：{遠|とお}いですか。バスがありますか。", "vi": "A: Có xa không ạ? Có xe buýt không?" },
+        { "jp": "B：{歩|ある}いて{二十分|にじゅっぷん}ぐらいです。バスより{自転車|じてんしゃ}が{便利|べんり}ですよ。", "vi": "B: Đi bộ khoảng 20 phút. Đi xe đạp tiện hơn xe buýt đấy." },
+        { "jp": "A：ありがとうございます。{地図|ちず}も{見|み}て{行|い}きます。", "vi": "A: Cảm ơn chị. Tôi sẽ xem cả bản đồ rồi đi." }
+      ],
+      "questions": [
+        { "q": "Đến ngã tư thứ hai thì rẽ hướng nào?", "options": ["Rẽ phải", "Rẽ trái", "Đi thẳng"], "answer": 1 },
+        { "q": "Thư viện ở đâu?", "options": ["Bên kia cây cầu", "Trước nhà ga", "Cạnh ngã tư"], "answer": 0 },
+        { "q": "B khuyên nên đi bằng gì?", "options": ["Xe buýt", "Taxi", "Xe đạp"], "answer": 2 }
+      ]
+    },
+    "L30": {
+      "title": "{私|わたし}のアパート",
+      "titleVi": "Căn hộ của tôi",
+      "lines": [
+        { "jp": "{私|わたし}のアパートは{駅|えき}のそばにあります。", "vi": "Căn hộ của tôi ở gần nhà ga." },
+        { "jp": "アパートの{前|まえ}に{小|ちい}さい{公園|こうえん}があります。", "vi": "Trước căn hộ có một công viên nhỏ." },
+        { "jp": "{隣|となり}は{花屋|はなや}で、{後|うし}ろは{銀行|ぎんこう}です。", "vi": "Bên cạnh là tiệm hoa, phía sau là ngân hàng." },
+        { "jp": "{道|みち}の{向|む}こうにはスーパーがあります。", "vi": "Bên kia đường có siêu thị." },
+        { "jp": "{部屋|へや}の{中|なか}には{机|つくえ}とベッドがあります。", "vi": "Trong phòng có cái bàn và cái giường." },
+        { "jp": "{机|つくえ}の{上|うえ}にパソコンがあって、{下|した}に{猫|ねこ}がいます。", "vi": "Trên bàn có máy tính, dưới bàn có con mèo." },
+        { "jp": "{静|しず}かでいい{所|ところ}です。", "vi": "Đó là một nơi yên tĩnh và dễ chịu." }
+      ],
+      "questions": [
+        { "q": "Căn hộ của người viết ở đâu?", "options": ["Gần nhà ga", "Bên kia sông", "Sau trường học"], "answer": 0 },
+        { "q": "Phía sau căn hộ là gì?", "options": ["Tiệm hoa", "Ngân hàng", "Siêu thị"], "answer": 1 },
+        { "q": "Con mèo ở đâu?", "options": ["Trên bàn", "Trên giường", "Dưới bàn"], "answer": 2 }
+      ]
+    },
+    "L31": {
+      "title": "{家|いえ}までの{道|みち}",
+      "titleVi": "Đường về nhà tôi",
+      "lines": [
+        { "jp": "{私|わたし}の{家|いえ}は{駅|えき}の{東|ひがし}にあります。", "vi": "Nhà tôi ở phía Đông nhà ga." },
+        { "jp": "{駅|えき}から{家|いえ}まで{一|いち}キロぐらいです。", "vi": "Từ nhà ga đến nhà khoảng 1 km." },
+        { "jp": "{駅|えき}を{出|で}て、{北|きた}へ{五百|ごひゃく}メートル{歩|ある}きます。", "vi": "Ra khỏi ga, đi bộ 500 mét về phía Bắc." },
+        { "jp": "それから、{本屋|ほんや}の{角|かど}を{右|みぎ}へ{曲|ま}がります。", "vi": "Sau đó rẽ phải ở góc có hiệu sách." },
+        { "jp": "{角|かど}の{店|みせ}で{毎週|まいしゅう}{米|こめ}を{五|ご}キロ{買|か}います。", "vi": "Mỗi tuần tôi mua 5 kg gạo ở cửa hàng góc đường." },
+        { "jp": "{肉|にく}は{三百|さんびゃく}グラム{買|か}います。", "vi": "Thịt thì tôi mua 300 gam." },
+        { "jp": "{家|いえ}の{西|にし}には{大|おお}きい{公園|こうえん}があります。", "vi": "Phía Tây nhà tôi có một công viên lớn." }
+      ],
+      "questions": [
+        { "q": "Từ nhà ga đến nhà khoảng bao xa?", "options": ["500 mét", "1 km", "5 km"], "answer": 1 },
+        { "q": "Mỗi tuần người viết mua bao nhiêu gạo?", "options": ["5 kg", "3 kg", "300 gam"], "answer": 0 },
+        { "q": "Phía Tây nhà người viết có gì?", "options": ["Hiệu sách", "Nhà ga", "Công viên lớn"], "answer": 2 }
+      ]
+    },
+    "L32": {
+      "title": "{山|やま}へ{行|い}きました",
+      "titleVi": "Chuyến đi núi",
+      "lines": [
+        { "jp": "{日曜日|にちようび}に{家族|かぞく}と{山|やま}へ{行|い}きました。", "vi": "Chủ nhật tôi đã đi núi cùng gia đình." },
+        { "jp": "{空|そら}が{青|あお}くて、とてもいい{天気|てんき}でした。", "vi": "Trời xanh, thời tiết rất đẹp." },
+        { "jp": "{山|やま}の{下|した}にきれいな{川|かわ}と{池|いけ}がありました。", "vi": "Dưới chân núi có một con sông và một cái ao rất đẹp." },
+        { "jp": "{池|いけ}のそばに{花|はな}がたくさん{咲|さ}いていました。", "vi": "Bên cạnh ao có rất nhiều hoa đang nở." },
+        { "jp": "{木|き}の{上|うえ}で{鳥|とり}が{鳴|な}いていました。", "vi": "Chim đang hót trên cây." },
+        { "jp": "うちのペットの{犬|いぬ}も{一緒|いっしょ}に{行|い}きました。", "vi": "Con chó cưng nhà tôi cũng đi cùng." },
+        { "jp": "{来月|らいげつ}は{海|うみ}へ{行|い}きたいです。", "vi": "Tháng sau tôi muốn đi biển." }
+      ],
+      "questions": [
+        { "q": "Người viết đi núi cùng ai?", "options": ["Bạn bè", "Gia đình", "Một mình"], "answer": 1 },
+        { "q": "Hoa nở ở đâu?", "options": ["Bên cạnh cái ao", "Trên đỉnh núi", "Bên bờ biển"], "answer": 0 },
+        { "q": "Tháng sau người viết muốn đi đâu?", "options": ["Núi", "Sông", "Biển"], "answer": 2 }
+      ]
+    }
+  }
+}

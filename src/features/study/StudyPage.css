@@ -1023,3 +1023,20 @@ kbd {
     animation: none !important;
   }
 }
+
+/* Câu ví dụ + mẹo nhớ dưới thẻ khi đã lật */
+.fc-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: -8px;
+  animation: fade-in 0.25s ease;
+}
+
+.fc-extra .wc-example {
+  text-align: center;
+}
+
+.fc-extra .wc-example-vi {
+  text-align: center;
+}

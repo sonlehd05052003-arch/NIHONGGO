@@ -1,0 +1,254 @@
+{
+  "examples": {
+    "n5-28": { "jp": "{父|ちち}は{医者|いしゃ}です。", "vi": "Bố tôi là bác sĩ.", "tip": "Hán Việt: Y GIẢ (医者) – người làm nghề y. Khi gọi trực tiếp bác sĩ thì dùng 先生 (せんせい)." },
+    "n5-209": { "jp": "{田中|たなか}{先生|せんせい}は{日本語|にほんご}の{先生|せんせい}です。", "vi": "Thầy Tanaka là giáo viên tiếng Nhật.", "tip": "Hán Việt: TIÊN SINH. Dùng gọi giáo viên, bác sĩ, luật sư… Không tự gọi mình là 先生." },
+    "n5-86": { "jp": "おまわりさんに{道|みち}を{聞|き}きました。", "vi": "Tôi đã hỏi đường chú cảnh sát.", "tip": "Cách gọi thân mật, lịch sự cho cảnh sát khu vực (お巡りさん = người đi tuần). Trang trọng hơn: 警官." },
+    "n5-144": { "jp": "{交番|こうばん}に{警官|けいかん}がいます。", "vi": "Ở bốt cảnh sát có cảnh sát.", "tip": "Hán Việt: CẢNH QUAN. Từ trang trọng, hay gặp trong văn viết; nói chuyện hằng ngày thường dùng おまわりさん." },
+    "n5-91": { "jp": "{会社|かいしゃ}は{駅|えき}の{近|ちか}くです。", "vi": "Công ty ở gần nhà ga.", "tip": "Hán Việt: HỘI XÃ (会社) = công ty. 会社員 (かいしゃいん) = nhân viên công ty." },
+    "n5-178": { "jp": "{今日|きょう}は{仕事|しごと}が{多|おお}いです。", "vi": "Hôm nay có nhiều việc.", "tip": "Hán Việt: SĨ SỰ. お仕事 là cách nói lịch sự khi hỏi về công việc của người khác." },
+    "n5-442": { "jp": "{父|ちち}は{銀行|ぎんこう}に{勤|つと}めています。", "vi": "Bố tôi làm việc cho ngân hàng.", "tip": "Hán Việt: CẦN. 勤める đi với に (làm cho tổ chức nào); 働く đi với で (lao động ở đâu). Thường dùng dạng 勤めています." },
+    "n5-466": { "jp": "{姉|あね}は{病院|びょういん}で{働|はたら}いています。", "vi": "Chị gái tôi làm việc ở bệnh viện.", "tip": "働 = người (亻) + động (動) → người vận động = LAO ĐỘNG. Dùng で + nơi làm việc; khác 勤める (に + công ty)." },
+    "n5-152": { "jp": "{交番|こうばん}は{駅|えき}の{前|まえ}にあります。", "vi": "Bốt cảnh sát ở trước nhà ga.", "tip": "Hán Việt: GIAO PHIÊN (番 = phiên trực). Bốt cảnh sát nhỏ ở góc phố, nơi có おまわりさん." },
+    "n5-301": { "jp": "{明日|あした}、{病院|びょういん}へ{行|い}きます。", "vi": "Ngày mai tôi sẽ đi bệnh viện.", "tip": "Hán Việt: BỆNH VIỆN – giống hệt tiếng Việt. Cẩn thận: びょういん (bệnh viện) ≠ びよういん (tiệm làm tóc)." },
+    "n5-217": { "jp": "ベトナムの{大使館|たいしかん}はどこですか。", "vi": "Đại sứ quán Việt Nam ở đâu ạ?", "tip": "Hán Việt: ĐẠI SỨ QUÁN – giống hệt tiếng Việt." },
+
+    "n5-30": { "jp": "{一時|いちじ}に{会|あ}いましょう。", "vi": "Chúng ta gặp nhau lúc 1 giờ nhé.", "tip": "Hán Việt: NHẤT – một nét ngang. Biến âm: 一つ ひとつ, 一人 ひとり, 一日 ついたち (mùng 1)." },
+    "n5-261": { "jp": "{二時|にじ}に{家|いえ}へ{帰|かえ}ります。", "vi": "Tôi về nhà lúc 2 giờ.", "tip": "Hán Việt: NHỊ – hai nét ngang. Biến âm: 二つ ふたつ, 二人 ふたり, 二日 ふつか." },
+    "n5-174": { "jp": "{三時|さんじ}にお{茶|ちゃ}を{飲|の}みます。", "vi": "Tôi uống trà lúc 3 giờ.", "tip": "Hán Việt: TAM – ba nét ngang. 三つ みっつ, 三日 みっか; 三百 = さんびゃく (biến âm)." },
+    "n5-175": { "jp": "{四|し}{月|がつ}に{日本|にほん}へ{来|き}ました。", "vi": "Tôi đã đến Nhật vào tháng Tư.", "tip": "Hán Việt: TỨ. Đọc し hoặc よん; hay dùng よん vì し trùng âm 死 (chết). 四月 しがつ, 四時 よじ, 四人 よにん." },
+    "n5-181": { "jp": "{毎朝|まいあさ}{七|しち}{時|じ}に{起|お}きます。", "vi": "Mỗi sáng tôi dậy lúc 7 giờ.", "tip": "Hán Việt: THẤT. Đọc しち hoặc なな; なな dễ nghe hơn (しち dễ nhầm với いち). 七時 しちじ, 七つ ななつ." },
+    "n5-281": { "jp": "{八時|はちじ}に{学校|がっこう}へ{行|い}きます。", "vi": "Tôi đi học lúc 8 giờ.", "tip": "Hán Việt: BÁT. Biến âm: 八百 はっぴゃく, 八千 はっせん, 八つ やっつ, 八日 ようか." },
+    "n5-385": { "jp": "{六時|ろくじ}に{晩|ばん}ご{飯|はん}を{食|た}べます。", "vi": "Tôi ăn tối lúc 6 giờ.", "tip": "Hán Việt: LỤC. Biến âm: 六百 ろっぴゃく, 六つ むっつ, 六日 むいか." },
+    "n5-189": { "jp": "{十時|じゅうじ}に{寝|ね}ます。", "vi": "Tôi đi ngủ lúc 10 giờ.", "tip": "Hán Việt: THẬP – hình dấu cộng. Khi đếm đồ vật: 十 (とお), không có つ. 十日 = とおか." },
+    "n5-300": { "jp": "このペンは{百円|ひゃくえん}です。", "vi": "Cây bút này giá 100 yên.", "tip": "Hán Việt: BÁCH. Biến âm: 三百 さんびゃく, 六百 ろっぴゃく, 八百 はっぴゃく. 100 chỉ nói 百, không nói いちひゃく." },
+    "n5-206": { "jp": "このかばんは{三千円|さんぜんえん}です。", "vi": "Cái cặp này giá 3.000 yên.", "tip": "Hán Việt: THIÊN. Biến âm: 三千 さんぜん, 八千 はっせん. 1.000 chỉ nói 千 (せん)." },
+    "n5-337": { "jp": "{一万円|いちまんえん}はちょっと{高|たか}いです。", "vi": "10.000 yên thì hơi đắt.", "tip": "Hán Việt: VẠN = 10.000. Người Nhật đếm theo nhóm 4 chữ số: 10.000 = 一万 (không nói 十千), 100.000 = 十万." },
+    "n5-205": { "jp": "{電話番号|でんわばんごう}はゼロから{始|はじ}まります。", "vi": "Số điện thoại bắt đầu bằng số 0.", "tip": "Từ tiếng Anh 'zero'. Cũng có れい (零); khi đọc số điện thoại người Nhật hay nói ゼロ." },
+    "n5-286": { "jp": "{今|いま}、{三時半|さんじはん}です。", "vi": "Bây giờ là 3 giờ rưỡi.", "tip": "Hán Việt: BÁN. Đứng sau số: 三時半 = 3 giờ rưỡi, 一年半 = một năm rưỡi. Khác 半分 (một nửa của vật)." },
+    "n5-292": { "jp": "ケーキを{半分|はんぶん}{食|た}べました。", "vi": "Tôi đã ăn một nửa cái bánh.", "tip": "Hán Việt: BÁN PHÂN. 半分 = một nửa (của vật/lượng); còn 半 thường đứng sau số: 三時半." },
+    "n5-290": { "jp": "{電話番号|でんわばんごう}を{教|おし}えてください。", "vi": "Hãy cho tôi biết số điện thoại.", "tip": "Hán Việt: PHIÊN HIỆU = số thứ tự, mã số. 電話番号 = số điện thoại, 番号 khác 数 (số lượng)." },
+
+    "n5-297": { "jp": "りんごを{一|ひと}つください。", "vi": "Cho tôi một quả táo.", "tip": "Đọc ひとつ (không phải いちつ). Bộ đếm つ kiểu Nhật dùng cho đồ vật chung khi không biết lượng từ riêng." },
+    "n5-310": { "jp": "{卵|たまご}を{二|ふた}つ{買|か}いました。", "vi": "Tôi đã mua hai quả trứng.", "tip": "Đọc ふたつ (không phải につ). Cùng gốc ふ/ふた với 二人 ふたり, 二日 ふつか." },
+    "n5-343": { "jp": "{箱|はこ}が{三|みっ}つあります。", "vi": "Có ba cái hộp.", "tip": "Đọc みっつ – nhớ âm ngắt っ. Cùng gốc み với 三日 みっか." },
+    "n5-371": { "jp": "{部屋|へや}にいすが{四|よっ}つあります。", "vi": "Trong phòng có bốn cái ghế.", "tip": "Đọc よっつ (không phải しつ). Cùng gốc よ với 四日 よっか." },
+    "n5-41": { "jp": "{弟|おとうと}は{五|いつ}つです。", "vi": "Em trai tôi 5 tuổi.", "tip": "Đọc いつつ. Bộ đếm つ còn dùng nói tuổi trẻ nhỏ (1–9 tuổi). Cùng gốc với 五日 いつか." },
+    "n5-350": { "jp": "{卵|たまご}を{六|むっ}つ{使|つか}います。", "vi": "Dùng sáu quả trứng.", "tip": "Đọc むっつ (không phải ろくつ). Cùng gốc む với 六日 むいか." },
+    "n5-259": { "jp": "みかんが{七|なな}つあります。", "vi": "Có bảy quả quýt.", "tip": "Đọc ななつ. Cùng gốc なな/なの với 七日 なのか." },
+    "n5-363": { "jp": "あめを{八|やっ}つもらいました。", "vi": "Tôi đã nhận được tám viên kẹo.", "tip": "Đọc やっつ. Gốc や/よう như 八日 ようか, 八百屋 やおや (cửa hàng rau)." },
+    "n5-157": { "jp": "クッキーが{九|ここの}つあります。", "vi": "Có chín cái bánh quy.", "tip": "Đọc ここのつ. Đếm つ chỉ đến 9; 10 là 十 (とお), không có つ. Cùng gốc với 九日 ここのか." },
+    "n5-299": { "jp": "{昨日|きのう}、{一人|ひとり}で{映画|えいが}を{見|み}ました。", "vi": "Hôm qua tôi đi xem phim một mình.", "tip": "Đọc ひとり (không phải いちにん). 一人で = một mình. Từ 3 người đọc bình thường: 三人 さんにん." },
+    "n5-312": { "jp": "{二人|ふたり}で{公園|こうえん}へ{行|い}きました。", "vi": "Hai người đã đi đến công viên.", "tip": "Đọc ふたり. Chỉ 一人, 二人 đọc đặc biệt; 三人 さんにん, 四人 よにん (không phải しにん)." },
+
+    "n5-31": { "jp": "{昨日|きのう}は{一日|いちにち}{家|いえ}にいました。", "vi": "Hôm qua tôi ở nhà cả ngày.", "tip": "Hai cách đọc: いちにち = một ngày (khoảng thời gian), ついたち = ngày mùng 1. Xem ngữ cảnh để đọc." },
+    "n5-228": { "jp": "{一月|いちがつ}{一日|ついたち}は{休|やす}みです。", "vi": "Ngày mùng 1 tháng 1 là ngày nghỉ.", "tip": "ついたち chỉ dùng cho ngày mùng 1 của tháng. 'Một ngày' (khoảng thời gian) thì đọc いちにち." },
+    "n5-32": { "jp": "{三月|さんがつ}{二日|ふつか}は{私|わたし}の{誕生日|たんじょうび}です。", "vi": "Ngày 2 tháng 3 là sinh nhật tôi.", "tip": "Đọc ふつか – vừa là ngày mùng 2, vừa là 2 ngày. Ngày 1–10 đều có cách đọc kiểu Nhật riêng." },
+    "n5-33": { "jp": "{京都|きょうと}に{三日|みっか}いました。", "vi": "Tôi đã ở Kyoto 3 ngày.", "tip": "Đọc みっか (có っ). Cùng gốc み với 三つ みっつ. Nghĩa: mùng 3 hoặc 3 ngày." },
+    "n5-34": { "jp": "{四日|よっか}にテストがあります。", "vi": "Ngày mùng 4 có bài kiểm tra.", "tip": "Đọc よっか (ngắn, có っ) = 4. Rất dễ nhầm với 八日 ようか (kéo dài) = 8!" },
+    "n5-35": { "jp": "{五日|いつか}の{午後|ごご}、{友|とも}だちが{来|き}ます。", "vi": "Chiều mùng 5, bạn tôi sẽ đến.", "tip": "Đọc いつか – trùng âm với いつか 'một ngày nào đó'. Cùng gốc いつ với 五つ いつつ." },
+    "n5-36": { "jp": "{六日|むいか}は{日曜日|にちようび}です。", "vi": "Ngày mùng 6 là Chủ nhật.", "tip": "Đọc むいか (không phải ろくにち). Cùng gốc む với 六つ むっつ." },
+    "n5-37": { "jp": "{七日|なのか}に{国|くに}へ{帰|かえ}ります。", "vi": "Ngày mùng 7 tôi về nước.", "tip": "Đọc なのか (đôi khi nghe なぬか). Cùng gốc なな với 七つ ななつ." },
+    "n5-38": { "jp": "{八日|ようか}は{雨|あめ}でした。", "vi": "Ngày mùng 8 trời mưa.", "tip": "Đọc ようか (kéo dài よう) = 8. Đừng nhầm với 四日 よっか (có っ) = 4." },
+    "n5-39": { "jp": "{九日|ここのか}に{病院|びょういん}へ{行|い}きます。", "vi": "Ngày mùng 9 tôi đi bệnh viện.", "tip": "Đọc ここのか. Cùng gốc ここの với 九つ ここのつ." },
+    "n5-40": { "jp": "{十日|とおか}から{旅行|りょこう}に{行|い}きます。", "vi": "Từ ngày mùng 10 tôi đi du lịch.", "tip": "Đọc とおか (とお = 10). Từ ngày 11 đọc bình thường: 十一日 じゅういちにち (trừ 14 じゅうよっか, 20 はつか, 24)." },
+    "n5-282": { "jp": "{二十日|はつか}は{兄|あに}の{誕生日|たんじょうび}です。", "vi": "Ngày 20 là sinh nhật anh trai tôi.", "tip": "Đọc đặc biệt はつか (ngày 20 / 20 ngày). Liên tưởng: 二十歳 cũng đọc đặc biệt là はたち (20 tuổi)." },
+    "n5-298": { "jp": "{一月|いちがつ}はとても{寒|さむ}いです。", "vi": "Tháng Một rất lạnh.", "tip": "いちがつ = tháng Một (tên tháng). Khác 一か月 いっかげつ = 1 tháng (khoảng thời gian). Chú ý 四月 しがつ, 九月 くがつ." },
+
+    "n5-147": { "jp": "{月曜日|げつようび}は{忙|いそが}しいです。", "vi": "Thứ Hai thì bận.", "tip": "Hán Việt: NGUYỆT DIỆU NHẬT – ngày Mặt Trăng (giống Monday = Moon day)." },
+    "n5-110": { "jp": "{火曜日|かようび}にプールへ{行|い}きます。", "vi": "Thứ Ba tôi đi bể bơi.", "tip": "Hán Việt: HỎA – sao Hỏa (火 = lửa). Đọc か, không đọc ひ." },
+    "n5-195": { "jp": "{水曜日|すいようび}の{午後|ごご}は{休|やす}みです。", "vi": "Chiều thứ Tư được nghỉ.", "tip": "Hán Việt: THỦY – sao Thủy (水 = nước). Đọc すい, không đọc みず." },
+    "n5-356": { "jp": "{木曜日|もくようび}に{漢字|かんじ}のテストがあります。", "vi": "Thứ Năm có bài kiểm tra chữ Hán.", "tip": "Hán Việt: MỘC – sao Mộc (木 = cây). Đọc もく, không đọc き." },
+    "n5-132": { "jp": "{金曜日|きんようび}の{夜|よる}、{友|とも}だちと{飲|の}みます。", "vi": "Tối thứ Sáu tôi đi uống với bạn.", "tip": "Hán Việt: KIM – sao Kim (金 = vàng, tiền). Thứ tự cả tuần: 月火水木金土日." },
+    "n5-253": { "jp": "{土曜日|どようび}は{学校|がっこう}がありません。", "vi": "Thứ Bảy không có giờ học.", "tip": "Hán Việt: THỔ – sao Thổ (土 = đất). Đọc ど, không đọc つち." },
+    "n5-264": { "jp": "{日曜日|にちようび}に{洗濯|せんたく}をします。", "vi": "Chủ nhật tôi giặt đồ.", "tip": "Hán Việt: NHẬT – ngày Mặt Trời (giống Sunday). Đọc にち, không đọc ひ." },
+    "n5-330": { "jp": "{毎週|まいしゅう}{日本語|にほんご}を{習|なら}っています。", "vi": "Tuần nào tôi cũng học tiếng Nhật.", "tip": "Hán Việt: MỖI CHU. 毎 = mỗi: 毎日, 毎朝, 毎月 cùng một khuôn." },
+    "n5-208": { "jp": "{先週|せんしゅう}、{京都|きょうと}へ{行|い}きました。", "vi": "Tuần trước tôi đã đi Kyoto.", "tip": "Hán Việt: TIÊN CHU. 先 = trước: 先週, 先月. Thường đi với thì quá khứ ～ました." },
+    "n5-165": { "jp": "{今週|こんしゅう}はとても{忙|いそが}しいです。", "vi": "Tuần này rất bận.", "tip": "Hán Việt: KIM CHU. 今 = nay: 今週, 今月 (nhưng 今年 đọc đặc biệt ことし)." },
+    "n5-374": { "jp": "{来週|らいしゅう}、{国|くに}へ{帰|かえ}ります。", "vi": "Tuần sau tôi về nước.", "tip": "Hán Việt: LAI CHU. 来 = sắp đến. Bộ ba: 先週 – 今週 – 来週." },
+
+    "n5-1": { "jp": "{朝|あさ}、コーヒーを{飲|の}みます。", "vi": "Buổi sáng tôi uống cà phê.", "tip": "Hán Việt: TRIỀU (sáng sớm). 朝ご飯 = bữa sáng, 毎朝 = mỗi sáng. Chào buổi sáng: おはようございます." },
+    "n5-145": { "jp": "{今朝|けさ}、{六時|ろくじ}に{起|お}きました。", "vi": "Sáng nay tôi dậy lúc 6 giờ.", "tip": "Đọc đặc biệt けさ (không phải こんあさ). Hán Việt: KIM TRIỀU = sáng nay." },
+    "n5-303": { "jp": "{昼|ひる}ご{飯|はん}はいつも{十二時|じゅうにじ}に{食|た}べます。", "vi": "Tôi luôn ăn trưa lúc 12 giờ.", "tip": "Hán Việt: TRÚ. 昼 = buổi trưa / ban ngày (đối lập 夜). 昼ご飯 = cơm trưa, 昼休み = nghỉ trưa." },
+    "n5-156": { "jp": "{午後|ごご}{三時|さんじ}に{会|あ}いましょう。", "vi": "Gặp nhau lúc 3 giờ chiều nhé.", "tip": "Hán Việt: NGỌ HẬU = sau giờ Ngọ (12h trưa) → buổi chiều, PM. Đặt trước giờ: 午後3時." },
+    "n5-158": { "jp": "{銀行|ぎんこう}は{午前|ごぜん}{九時|くじ}からです。", "vi": "Ngân hàng mở từ 9 giờ sáng.", "tip": "Hán Việt: NGỌ TIỀN = trước giờ Ngọ → AM. Dùng khi nói giờ; còn 朝 là 'buổi sáng' chung. 九時 đọc くじ." },
+    "n5-365": { "jp": "{夕方|ゆうがた}、{公園|こうえん}を{散歩|さんぽ}します。", "vi": "Chiều tối tôi đi dạo ở công viên.", "tip": "Hán Việt: TỊCH PHƯƠNG. Lúc chạng vạng (khoảng 4–7 giờ chiều), trước 晩/夜." },
+    "n5-287": { "jp": "{晩|ばん}ご{飯|はん}に{魚|さかな}を{食|た}べました。", "vi": "Bữa tối tôi đã ăn cá.", "tip": "Hán Việt: VÃN. 晩 = buổi tối, hay gặp trong 晩ご飯, 今晩, 毎晩. 夜 rộng hơn, gồm cả đêm khuya." },
+    "n5-372": { "jp": "{昨日|きのう}の{夜|よる}、{雨|あめ}が{降|ふ}りました。", "vi": "Tối hôm qua trời mưa.", "tip": "Hán Việt: DẠ. 夜 = ban đêm (đối lập 昼). Lời chào buổi tối là こんばんは (từ 晩), không dùng 夜." },
+    "n5-167": { "jp": "{今晩|こんばん}、{電話|でんわ}します。", "vi": "Tối nay tôi sẽ gọi điện.", "tip": "Hán Việt: KIM VÃN = tối nay. Lời chào こんばんは chính là 今晩は." },
+    "n5-368": { "jp": "ゆうべは{遅|おそ}くまで{勉強|べんきょう}しました。", "vi": "Đêm qua tôi đã học đến khuya.", "tip": "= 昨日の夜 (tối/đêm qua); kanji 昨夜/夕べ. Đừng nhầm với 夕方 (chiều tối)." },
+    "n5-43": { "jp": "{今|いま}、{何時|なんじ}ですか。", "vi": "Bây giờ là mấy giờ?", "tip": "Hán Việt: KIM = bây giờ. Là gốc của 今日, 今週, 今月, 今晩." },
+    "n5-177": { "jp": "{今日|きょう}は{時間|じかん}がありません。", "vi": "Hôm nay tôi không có thời gian.", "tip": "Hán Việt: THỜI GIAN – giống tiếng Việt. Còn là 'tiếng đồng hồ': 3時 = 3 giờ, 3時間 = 3 tiếng." },
+
+    "n5-125": { "jp": "{今日|きょう}はとても{暑|あつ}いです。", "vi": "Hôm nay rất nóng.", "tip": "Đọc đặc biệt きょう (Hán Việt: KIM NHẬT). Chỉ đọc こんにち trong lời chào こんにちは." },
+    "n5-122": { "jp": "{昨日|きのう}、{友|とも}だちに{会|あ}いました。", "vi": "Hôm qua tôi đã gặp bạn.", "tip": "Đọc đặc biệt きのう (Hán Việt: TẠC NHẬT). Đi với thì quá khứ ～ました / ～でした." },
+    "n5-5": { "jp": "{明日|あした}、{海|うみ}へ{行|い}きます。", "vi": "Ngày mai tôi sẽ đi biển.", "tip": "Đọc đặc biệt あした (Hán Việt: MINH NHẬT). Cách nói trang trọng hơn: あす." },
+    "n5-3": { "jp": "あさって、{母|はは}が{国|くに}から{来|き}ます。", "vi": "Ngày kia mẹ tôi từ quê nhà sang.", "tip": "= ngày kia (sau ngày mai), kanji 明後日. Đối xứng với おととい (hôm kia)." },
+    "n5-75": { "jp": "{一昨日|おととい}は{日曜日|にちようび}でした。", "vi": "Hôm kia là Chủ nhật.", "tip": "Đọc đặc biệt おととい. Thứ tự: おととい → きのう → きょう → あした → あさって." },
+    "n5-331": { "jp": "{毎日|まいにち}{日本語|にほんご}を{勉強|べんきょう}します。", "vi": "Ngày nào tôi cũng học tiếng Nhật.", "tip": "Hán Việt: MỖI NHẬT. まいにち – đọc đều, không biến âm. Cùng khuôn: 毎朝, 毎晩, 毎週." },
+    "n5-328": { "jp": "{毎朝|まいあさ}{牛乳|ぎゅうにゅう}を{飲|の}みます。", "vi": "Sáng nào tôi cũng uống sữa.", "tip": "毎 (mỗi) + 朝 (sáng) → まいあさ. Lưu ý: 毎 đọc theo âm Hán まい, 朝 đọc âm Nhật あさ." },
+    "n5-333": { "jp": "{毎晩|まいばん}{十一時|じゅういちじ}に{寝|ね}ます。", "vi": "Tối nào tôi cũng ngủ lúc 11 giờ.", "tip": "毎 (mỗi) + 晩 (tối) = mỗi tối. Người Nhật hay nói 毎晩 hơn 毎夜." },
+    "n5-164": { "jp": "{今月|こんげつ}は{雨|あめ}が{多|おお}いです。", "vi": "Tháng này mưa nhiều.", "tip": "Hán Việt: KIM NGUYỆT. 月 đọc げつ trong 今月/先月/来月; còn tên tháng đọc がつ: 一月 いちがつ." },
+    "n5-207": { "jp": "{先月|せんげつ}、{日本|にほん}へ{来|き}ました。", "vi": "Tháng trước tôi đã đến Nhật.", "tip": "Hán Việt: TIÊN NGUYỆT. 先 = trước (先週, 先月). Nhưng 'năm ngoái' là 去年, không nói 先年." },
+    "n5-373": { "jp": "{来月|らいげつ}、{姉|あね}が{結婚|けっこん}します。", "vi": "Tháng sau chị gái tôi kết hôn.", "tip": "Hán Việt: LAI NGUYỆT. 来 = sắp đến: 来週, 来月, 来年." },
+    "n5-329": { "jp": "{毎月|まいつき}{家族|かぞく}に{手紙|てがみ}を{書|か}きます。", "vi": "Tháng nào tôi cũng viết thư cho gia đình.", "tip": "Hai cách đọc: まいつき (hay dùng trong hội thoại) và まいげつ (trang trọng hơn). Đều đúng." },
+
+    "n5-160": { "jp": "{今年|ことし}、{大学|だいがく}に{入|はい}りました。", "vi": "Năm nay tôi đã vào đại học.", "tip": "Đọc đặc biệt ことし (không phải こんねん). Hán Việt: KIM NIÊN = năm nay." },
+    "n5-128": { "jp": "{去年|きょねん}、{日本|にほん}へ{来|き}ました。", "vi": "Năm ngoái tôi đã đến Nhật.", "tip": "Hán Việt: KHỨ NIÊN = năm đã qua. Năm ngoái là 去年, KHÔNG nói 先年 (khác 先月, 先週)." },
+    "n5-375": { "jp": "{来年|らいねん}、{日本|にほん}で{働|はたら}きたいです。", "vi": "Năm sau tôi muốn làm việc ở Nhật.", "tip": "Hán Việt: LAI NIÊN. Cùng khuôn với 来週, 来月." },
+    "n5-173": { "jp": "{再来年|さらいねん}、{大学|だいがく}を{出|で}ます。", "vi": "Năm sau nữa tôi sẽ ra trường.", "tip": "Hán Việt: TÁI LAI NIÊN; 再 (lại) đọc さ. Tương tự: 再来週 (2 tuần nữa), 再来月 (2 tháng nữa)." },
+    "n5-76": { "jp": "{一昨年|おととし}、{兄|あに}は{結婚|けっこん}しました。", "vi": "Năm kia anh trai tôi đã kết hôn.", "tip": "Đọc đặc biệt おととし (năm kia). Cùng kiểu với 一昨日 おととい (hôm kia)." },
+    "n5-332": { "jp": "{毎年|まいとし}、{夏|なつ}に{国|くに}へ{帰|かえ}ります。", "vi": "Năm nào tôi cũng về nước vào mùa hè.", "tip": "Hai cách đọc まいとし / まいねん, đều đúng. Cùng khuôn 毎 + thời gian: 毎日, 毎月." },
+    "n5-246": { "jp": "お{年|とし}はおいくつですか。", "vi": "Bác bao nhiêu tuổi ạ?", "tip": "Hán Việt: NIÊN. とし = năm / tuổi. Sau số đọc ねん: 2026年. 20 tuổi: 二十歳 đọc đặc biệt はたち." },
+    "n5-15": { "jp": "{春|はる}は{花|はな}がきれいです。", "vi": "Mùa xuân hoa rất đẹp.", "tip": "Hán Việt: XUÂN. 春休み = kỳ nghỉ xuân. Thứ tự: 春 – 夏 – 秋 – 冬." },
+    "n5-16": { "jp": "{日本|にほん}の{夏|なつ}は{暑|あつ}いです。", "vi": "Mùa hè ở Nhật nóng.", "tip": "Hán Việt: HẠ. Nóng thời tiết là 暑い, còn đồ vật nóng là 熱い (cùng đọc あつい)." },
+    "n5-17": { "jp": "{秋|あき}は{涼|すず}しいです。", "vi": "Mùa thu mát mẻ.", "tip": "Hán Việt: THU. 秋 = 禾 (lúa) + 火 (lửa) – mùa gặt lúa. Hay đi với 涼しい (mát)." },
+    "n5-18": { "jp": "{冬|ふゆ}は{寒|さむ}いです。", "vi": "Mùa đông lạnh.", "tip": "Hán Việt: ĐÔNG. Lạnh thời tiết là 寒い; lạnh khi chạm vào (nước, đồ uống) là 冷たい." },
+    "n5-258": { "jp": "{夏休|なつやす}みに{海|うみ}へ{行|い}きました。", "vi": "Kỳ nghỉ hè tôi đã đi biển.", "tip": "夏 (hè) + 休み (nghỉ). Tương tự: 冬休み (nghỉ đông), 春休み (nghỉ xuân)." },
+    "n5-362": { "jp": "{明日|あした}は{休|やす}みです。", "vi": "Ngày mai là ngày nghỉ.", "tip": "休 = người (亻) tựa gốc cây (木) → NGHỈ (Hán Việt: HƯU). Động từ: 休みます (nghỉ ngơi)." }
+  },
+  "readings": {
+    "L9": {
+      "title": "{家族|かぞく}の{仕事|しごと}",
+      "titleVi": "Công việc của gia đình tôi",
+      "lines": [
+        { "jp": "{父|ちち}は{医者|いしゃ}です。{駅|えき}の{近|ちか}くの{病院|びょういん}で{働|はたら}いています。", "vi": "Bố tôi là bác sĩ. Bố làm việc ở bệnh viện gần nhà ga." },
+        { "jp": "{母|はは}は{小学校|しょうがっこう}の{先生|せんせい}です。", "vi": "Mẹ tôi là giáo viên tiểu học." },
+        { "jp": "{兄|あに}は{警官|けいかん}です。{毎日|まいにち}{駅|えき}の{前|まえ}の{交番|こうばん}にいます。", "vi": "Anh trai tôi là cảnh sát. Ngày nào anh cũng ở bốt cảnh sát trước nhà ga." },
+        { "jp": "{近|ちか}くの{子|こ}どもたちは「おまわりさん、こんにちは」と{言|い}います。", "vi": "Trẻ con gần đó hay nói: \"Chào chú cảnh sát ạ\"." },
+        { "jp": "{姉|あね}は{大使館|たいしかん}に{勤|つと}めています。", "vi": "Chị gái tôi làm việc ở đại sứ quán." },
+        { "jp": "{私|わたし}はまだ{学生|がくせい}ですが、{来年|らいねん}から{会社|かいしゃ}で{働|はたら}きたいです。", "vi": "Tôi vẫn còn là sinh viên, nhưng từ năm sau tôi muốn làm việc ở công ty." },
+        { "jp": "みんな{仕事|しごと}はたいへんですが、{元気|げんき}です。", "vi": "Công việc của mọi người đều vất vả, nhưng ai cũng khỏe." }
+      ],
+      "questions": [
+        { "q": "Bố của người viết làm việc ở đâu?", "options": ["Bốt cảnh sát", "Bệnh viện", "Đại sứ quán"], "answer": 1 },
+        { "q": "Ai làm việc ở đại sứ quán?", "options": ["Chị gái", "Mẹ", "Anh trai"], "answer": 0 },
+        { "q": "Anh trai của người viết làm nghề gì?", "options": ["Bác sĩ", "Giáo viên", "Nhân viên công ty", "Cảnh sát"], "answer": 3 }
+      ]
+    },
+    "L10": {
+      "title": "スーパーで{買|か}い{物|もの}",
+      "titleVi": "Đi mua sắm ở siêu thị",
+      "lines": [
+        { "jp": "{今日|きょう}、{私|わたし}は{七時半|しちじはん}にスーパーへ{行|い}きました。", "vi": "Hôm nay tôi đã đi siêu thị lúc 7 giờ rưỡi." },
+        { "jp": "りんごは{三|さん}{個|こ}で{四百円|よんひゃくえん}でした。", "vi": "Táo thì 3 quả giá 400 yên." },
+        { "jp": "{肉|にく}は{千二百円|せんにひゃくえん}でした。", "vi": "Thịt giá 1.200 yên." },
+        { "jp": "ケーキは{二千四百円|にせんよんひゃくえん}でしたから、{半分|はんぶん}だけ{買|か}いました。", "vi": "Bánh kem giá 2.400 yên nên tôi chỉ mua một nửa." },
+        { "jp": "{店|みせ}の{人|ひと}は「{六番|ろくばん}のレジへどうぞ」と{言|い}いました。{番号|ばんごう}を{見|み}て、そこへ{行|い}きました。", "vi": "Nhân viên nói: \"Mời quý khách đến quầy số 6\". Tôi nhìn số rồi đi đến đó." },
+        { "jp": "{全部|ぜんぶ}で{二千八百円|にせんはっぴゃくえん}でした。", "vi": "Tổng cộng là 2.800 yên." },
+        { "jp": "{一万円|いちまんえん}を{出|だ}しました。おつりは{七千二百円|ななせんにひゃくえん}でした。", "vi": "Tôi đưa tờ 10.000 yên. Tiền thối lại là 7.200 yên." }
+      ],
+      "questions": [
+        { "q": "Người viết đi siêu thị lúc mấy giờ?", "options": ["7 giờ", "7 giờ rưỡi", "6 giờ rưỡi"], "answer": 1 },
+        { "q": "Tổng cộng người viết đã trả bao nhiêu tiền?", "options": ["2.400 yên", "1.200 yên", "2.800 yên"], "answer": 2 },
+        { "q": "Tiền thối lại là bao nhiêu?", "options": ["7.200 yên", "2.800 yên", "8.200 yên"], "answer": 0 }
+      ]
+    },
+    "L11": {
+      "title": "{喫茶店|きっさてん}で",
+      "titleVi": "Ở quán cà phê",
+      "lines": [
+        { "jp": "{店|みせ}の{人|ひと}：いらっしゃいませ。お{一人|ひとり}ですか。", "vi": "Nhân viên: Xin mời vào. Quý khách đi một mình ạ?" },
+        { "jp": "{田中|たなか}：いいえ、{二人|ふたり}です。{五|いつ}つの{妹|いもうと}といっしょです。", "vi": "Tanaka: Không, hai người. Tôi đi cùng em gái 5 tuổi." },
+        { "jp": "{田中|たなか}：コーヒーを{一|ひと}つとジュースを{一|ひと}つ、それからケーキを{三|みっ}つください。", "vi": "Tanaka: Cho tôi một cà phê, một nước hoa quả, và ba cái bánh kem." },
+        { "jp": "{店|みせ}の{人|ひと}：ケーキは{三|みっ}つですね。", "vi": "Nhân viên: Bánh kem là ba cái nhỉ." },
+        { "jp": "{田中|たなか}：はい。{妹|いもうと}はケーキが{大好|だいす}きですから。", "vi": "Tanaka: Vâng. Vì em gái tôi rất thích bánh kem." },
+        { "jp": "{店|みせ}の{人|ひと}：クッキーもどうですか。{一|ひと}つの{袋|ふくろ}に{八|やっ}つ{入|はい}っています。", "vi": "Nhân viên: Quý khách dùng thêm bánh quy không ạ? Một túi có tám cái." },
+        { "jp": "{田中|たなか}：じゃ、それも{一|ひと}つお{願|ねが}いします。", "vi": "Tanaka: Vậy cho tôi thêm một túi đó nữa." }
+      ],
+      "questions": [
+        { "q": "Tanaka đến quán cùng ai?", "options": ["Đi một mình", "Em gái 5 tuổi", "Mẹ"], "answer": 1 },
+        { "q": "Tanaka gọi mấy cái bánh kem?", "options": ["Hai cái", "Một cái", "Ba cái"], "answer": 2 },
+        { "q": "Một túi bánh quy có mấy cái?", "options": ["Tám cái", "Sáu cái", "Chín cái"], "answer": 0 }
+      ]
+    },
+    "L12": {
+      "title": "{私|わたし}の{一月|いちがつ}",
+      "titleVi": "Tháng Một của tôi",
+      "lines": [
+        { "jp": "{一月|いちがつ}{一日|ついたち}は{家族|かぞく}とお{寺|てら}へ{行|い}きました。", "vi": "Ngày mùng 1 tháng 1, tôi đi chùa cùng gia đình." },
+        { "jp": "{二日|ふつか}と{三日|みっか}は{家|いえ}で{休|やす}みました。", "vi": "Mùng 2 và mùng 3 tôi nghỉ ở nhà." },
+        { "jp": "{五日|いつか}から{会社|かいしゃ}の{仕事|しごと}が{始|はじ}まりました。", "vi": "Từ mùng 5, công việc ở công ty bắt đầu." },
+        { "jp": "{八日|ようか}は{友|とも}だちの{誕生日|たんじょうび}でした。", "vi": "Mùng 8 là sinh nhật của bạn tôi." },
+        { "jp": "{十日|とおか}に{大阪|おおさか}へ{行|い}きました。", "vi": "Ngày mùng 10 tôi đã đi Osaka." },
+        { "jp": "{二十日|はつか}に{日本語|にほんご}のテストがありますから、{今|いま}は{毎日|まいにち}{勉強|べんきょう}しています。", "vi": "Ngày 20 có bài thi tiếng Nhật nên bây giờ ngày nào tôi cũng học." },
+        { "jp": "{一日|いちにち}に{三時間|さんじかん}{勉強|べんきょう}します。", "vi": "Mỗi ngày tôi học 3 tiếng." }
+      ],
+      "questions": [
+        { "q": "Ngày mùng 1 tháng 1, người viết đã làm gì?", "options": ["Đi chùa cùng gia đình", "Nghỉ ở nhà", "Đi Osaka"], "answer": 0 },
+        { "q": "Ngày 20 có gì?", "options": ["Sinh nhật bạn", "Bắt đầu đi làm", "Bài thi tiếng Nhật"], "answer": 2 },
+        { "q": "Mỗi ngày người viết học mấy tiếng?", "options": ["2 tiếng", "3 tiếng", "5 tiếng"], "answer": 1 }
+      ]
+    },
+    "L13": {
+      "title": "{日曜日|にちようび}に{映画|えいが}",
+      "titleVi": "Xem phim ngày Chủ nhật",
+      "lines": [
+        { "jp": "A：{来週|らいしゅう}の{土曜日|どようび}、いっしょに{映画|えいが}を{見|み}ませんか。", "vi": "A: Thứ Bảy tuần sau, cùng đi xem phim không?" },
+        { "jp": "B：すみません、{土曜日|どようび}はアルバイトがあります。", "vi": "B: Xin lỗi, thứ Bảy tôi có việc làm thêm." },
+        { "jp": "A：じゃ、{日曜日|にちようび}はどうですか。", "vi": "A: Vậy Chủ nhật thì sao?" },
+        { "jp": "B：{日曜日|にちようび}はいいですよ。{先週|せんしゅう}の{日曜日|にちようび}も{映画|えいが}を{見|み}ました。とてもおもしろかったです。", "vi": "B: Chủ nhật thì được. Chủ nhật tuần trước tôi cũng đã xem phim. Rất hay." },
+        { "jp": "A：そうですか。{私|わたし}は{今週|こんしゅう}、{月曜日|げつようび}から{金曜日|きんようび}までとても{忙|いそが}しかったです。", "vi": "A: Thế à. Tuần này tôi rất bận từ thứ Hai đến thứ Sáu." },
+        { "jp": "B：{毎週|まいしゅう}{忙|いそが}しいですね。{日曜日|にちようび}はゆっくり{休|やす}みましょう。", "vi": "B: Tuần nào bạn cũng bận nhỉ. Chủ nhật hãy nghỉ ngơi thong thả nhé." }
+      ],
+      "questions": [
+        { "q": "A rủ B làm gì?", "options": ["Đi xem phim", "Đi làm thêm", "Đi ăn tối"], "answer": 0 },
+        { "q": "Vì sao thứ Bảy B không đi được?", "options": ["Vì bận học", "Vì có việc làm thêm", "Vì đi xem phim với bạn khác"], "answer": 1 },
+        { "q": "Tuần này A bận vào những ngày nào?", "options": ["Thứ Bảy và Chủ nhật", "Chỉ thứ Hai", "Từ thứ Hai đến thứ Sáu"], "answer": 2 }
+      ]
+    },
+    "L14": {
+      "title": "{私|わたし}の{一日|いちにち}",
+      "titleVi": "Một ngày của tôi",
+      "lines": [
+        { "jp": "{私|わたし}はいつも{朝|あさ}{六時|ろくじ}に{起|お}きます。", "vi": "Tôi thường dậy lúc 6 giờ sáng." },
+        { "jp": "でも、{今朝|けさ}は{七時半|しちじはん}に{起|お}きました。ゆうべ{遅|おそ}くまでテレビを{見|み}ましたから。", "vi": "Nhưng sáng nay tôi dậy lúc 7 giờ rưỡi. Vì đêm qua tôi xem tivi đến khuya." },
+        { "jp": "{午前|ごぜん}は{学校|がっこう}で{勉強|べんきょう}します。", "vi": "Buổi sáng tôi học ở trường." },
+        { "jp": "{昼|ひる}ご{飯|はん}は{友|とも}だちと{食|た}べます。", "vi": "Bữa trưa tôi ăn cùng bạn bè." },
+        { "jp": "{午後|ごご}はアルバイトです。{夕方|ゆうがた}{六時|ろくじ}に{家|いえ}へ{帰|かえ}ります。", "vi": "Buổi chiều tôi đi làm thêm. 6 giờ chiều tối tôi về nhà." },
+        { "jp": "{今晩|こんばん}は{早|はや}く{寝|ね}たいです。", "vi": "Tối nay tôi muốn đi ngủ sớm." },
+        { "jp": "{今|いま}、{十時|じゅうじ}です。もう{寝|ね}る{時間|じかん}です。", "vi": "Bây giờ là 10 giờ. Đã đến giờ đi ngủ rồi." }
+      ],
+      "questions": [
+        { "q": "Sáng nay người viết dậy lúc mấy giờ?", "options": ["6 giờ", "7 giờ rưỡi", "10 giờ"], "answer": 1 },
+        { "q": "Vì sao sáng nay người viết dậy muộn?", "options": ["Vì đêm qua xem tivi đến khuya", "Vì đi làm thêm về muộn", "Vì học bài đến khuya"], "answer": 0 },
+        { "q": "Người viết về nhà lúc mấy giờ?", "options": ["5 giờ", "10 giờ", "6 giờ"], "answer": 2 }
+      ]
+    },
+    "L15": {
+      "title": "{明日|あした}とあさって",
+      "titleVi": "Ngày mai và ngày kia",
+      "lines": [
+        { "jp": "A：{昨日|きのう}は{何|なに}をしましたか。", "vi": "A: Hôm qua bạn đã làm gì?" },
+        { "jp": "B：{一昨日|おととい}から{昨日|きのう}まで、{友|とも}だちと{山|やま}へ{行|い}きました。", "vi": "B: Từ hôm kia đến hôm qua, tôi đã đi núi cùng bạn." },
+        { "jp": "A：いいですね。{明日|あした}は{何|なに}をしますか。", "vi": "A: Hay quá. Ngày mai bạn làm gì?" },
+        { "jp": "B：{明日|あした}はアルバイトです。{今月|こんげつ}は{毎日|まいにち}アルバイトがあります。", "vi": "B: Ngày mai tôi đi làm thêm. Tháng này ngày nào tôi cũng có ca làm thêm." },
+        { "jp": "A：たいへんですね。", "vi": "A: Vất vả nhỉ." },
+        { "jp": "B：でも、あさっては{休|やす}みです。", "vi": "B: Nhưng ngày kia thì tôi được nghỉ." },
+        { "jp": "B：{来月|らいげつ}、{国|くに}へ{帰|かえ}ります。ですから、{今|いま}はアルバイトをがんばっています。", "vi": "B: Tháng sau tôi về nước. Vì vậy bây giờ tôi đang cố gắng làm thêm." }
+      ],
+      "questions": [
+        { "q": "Từ hôm kia đến hôm qua, B đã làm gì?", "options": ["Đi núi cùng bạn", "Về nước", "Đi làm thêm"], "answer": 0 },
+        { "q": "B được nghỉ vào ngày nào?", "options": ["Ngày mai", "Ngày kia", "Hôm nay"], "answer": 1 },
+        { "q": "Tháng sau B sẽ làm gì?", "options": ["Đi núi", "Làm thêm mỗi ngày", "Về nước"], "answer": 2 }
+      ]
+    },
+    "L16": {
+      "title": "{日本|にほん}の{一年|いちねん}",
+      "titleVi": "Một năm ở Nhật",
+      "lines": [
+        { "jp": "{私|わたし}は{一昨年|おととし}、ベトナムから{日本|にほん}へ{来|き}ました。", "vi": "Tôi đến Nhật từ Việt Nam vào năm kia." },
+        { "jp": "{去年|きょねん}の{春|はる}、{日本語|にほんご}{学校|がっこう}に{入|はい}りました。", "vi": "Mùa xuân năm ngoái, tôi vào trường tiếng Nhật." },
+        { "jp": "{今年|ことし}の{夏休|なつやす}みは、{友|とも}だちと{海|うみ}へ{行|い}きました。", "vi": "Kỳ nghỉ hè năm nay, tôi đã đi biển với bạn." },
+        { "jp": "{日本|にほん}の{夏|なつ}はとても{暑|あつ}いですが、{秋|あき}は{涼|すず}しくて{好|す}きです。", "vi": "Mùa hè ở Nhật rất nóng, nhưng mùa thu mát mẻ nên tôi thích." },
+        { "jp": "{冬|ふゆ}は{雪|ゆき}が{降|ふ}りますから、ちょっと{寒|さむ}いです。", "vi": "Mùa đông có tuyết rơi nên hơi lạnh." },
+        { "jp": "{来年|らいねん}、{日本|にほん}の{大学|だいがく}に{入|はい}りたいです。", "vi": "Năm sau tôi muốn vào đại học ở Nhật." },
+        { "jp": "{再来年|さらいねん}は{家族|かぞく}も{日本|にほん}へ{来|き}ます。", "vi": "Năm sau nữa gia đình tôi cũng sẽ sang Nhật." }
+      ],
+      "questions": [
+        { "q": "Người viết đến Nhật khi nào?", "options": ["Năm ngoái", "Năm kia", "Năm nay"], "answer": 1 },
+        { "q": "Kỳ nghỉ hè năm nay người viết đã làm gì?", "options": ["Đi biển với bạn", "Về Việt Nam", "Đi leo núi"], "answer": 0 },
+        { "q": "Năm sau nữa ai sẽ đến Nhật?", "options": ["Bạn bè", "Giáo viên", "Gia đình"], "answer": 2 }
+      ]
+    }
+  }
+}

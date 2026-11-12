@@ -34,6 +34,14 @@ export interface WordProgress {
   starred?: boolean
   correct?: number
   wrong?: number
+  /** Lịch ôn ngắt quãng (Leitner): hộp càng cao thì càng lâu mới phải ôn lại */
+  srs?: SrsState
+}
+
+export interface SrsState {
+  box: number
+  /** Ngày đến hạn ôn, dạng YYYY-MM-DD */
+  due: string
 }
 
 export interface ProgressState {
@@ -43,6 +51,40 @@ export interface ProgressState {
   xp?: number
   /** Số lượt ôn trong ngày, để tính mục tiêu hằng ngày */
   daily?: { date: string; count: number }
+  /** Điểm cao nhất phần đọc hiểu của từng bài (0..1) */
+  readings?: Record<string, number>
+}
+
+export interface Lesson {
+  id: string
+  unit: string
+  title: string
+  words: string[]
+}
+
+export interface WordExample {
+  /** Câu ví dụ, kanji có furigana dạng {漢字|かな} */
+  jp: string
+  vi: string
+  tip: string
+}
+
+export interface ReadingQuestion {
+  q: string
+  options: string[]
+  answer: number
+}
+
+export interface Reading {
+  title: string
+  titleVi: string
+  lines: { jp: string; vi: string }[]
+  questions: ReadingQuestion[]
+}
+
+export interface StudyContent {
+  examples: Record<string, WordExample>
+  readings: Record<string, Reading>
 }
 
 export type StudyMode = 'flashcard' | 'quiz' | 'typing' | 'match'

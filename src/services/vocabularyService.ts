@@ -191,7 +191,15 @@ function buildCanon(fold: (s: string) => string) {
   const r2 = makeReplacer(num)
   // Bỏ loại từ đứng đầu: "cái bàn" = "bàn", "bức tranh" = "tranh"
   const lead = new RegExp(`^(${['cái', 'chiếc', 'con', 'quả', 'bức', 'cuốn', 'quyển', 'tờ'].map(fold).join('|')}) (?=\\S)`, 'u')
-  return (s: string) => r2(r1(fold(s))).replace(lead, '').replace(/\s+/g, ' ').trim()
+  // "ngày mồng 4" = "mồng 4" = "ngày 4"
+  const ngay = fold('ngày')
+  const mong = new RegExp(`(?:${ngay} )?${fold('mồng')} (\\d+)`, 'gu')
+  return (s: string) =>
+    r2(r1(fold(s)))
+      .replace(lead, '')
+      .replace(mong, `${ngay} $1`)
+      .replace(/\s+/g, ' ')
+      .trim()
 }
 
 const canonExact = buildCanon((s) => s)
@@ -223,11 +231,17 @@ export function checkMeaningAnswer(input: string, w: VocabularyItem): boolean {
   return alts.some((a) => canonFolded(foldVi(a)) === cf)
 }
 
+/** Đọc một từ (lấy cách đọc đầu tiên nếu có nhiều cách ngăn bởi "、") */
 export function speak(text: string) {
+  speakSentence(text.split('、')[0])
+}
+
+/** Đọc nguyên một câu/đoạn tiếng Nhật */
+export function speakSentence(text: string, rate = 0.9) {
   if (!('speechSynthesis' in window)) return
   window.speechSynthesis.cancel()
-  const u = new SpeechSynthesisUtterance(text.split('、')[0])
+  const u = new SpeechSynthesisUtterance(text)
   u.lang = 'ja-JP'
-  u.rate = 0.9
+  u.rate = rate
   window.speechSynthesis.speak(u)
 }

@@ -5,11 +5,7 @@ import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useProgress } from '@/hooks/useProgress'
 import { CATEGORIES, buildDeck, shuffle } from '@/services/vocabularyService'
 import type { DeckFilter, QuizDirection, StudyMode, StudySettings, VocabularyItem } from '@/types'
-import { FlashcardMode } from './FlashcardMode'
-import { QuizMode } from './QuizMode'
-import { TypingMode } from './TypingMode'
-import { MatchMode } from './MatchMode'
-import type { ModeProps } from './shared'
+import { StudySession, type Session } from './StudySession'
 import './StudyPage.css'
 
 const MODES: { id: StudyMode; label: string; desc: string; icon: React.ReactNode }[] = [
@@ -36,12 +32,6 @@ const DIRECTIONS: { id: QuizDirection; label: string }[] = [
 
 const DEFAULT_SETTINGS: StudySettings = { categories: [], filter: 'all', count: 20, direction: 'jp-vi' }
 
-interface Session {
-  mode: StudyMode
-  deck: VocabularyItem[]
-  key: number
-}
-
 export const StudyPage: React.FC = () => {
   const { progress } = useProgress()
   const [settings, setSettings] = useLocalStorage<StudySettings>('nihongo_study_settings', DEFAULT_SETTINGS)
@@ -67,19 +57,13 @@ export const StudyPage: React.FC = () => {
   }
 
   if (session) {
-    const common: ModeProps = {
-      deck: session.deck,
-      onExit: () => setSession(null),
-      onRestart: (deck: VocabularyItem[]) => start(shuffle(deck)),
-    }
-    const k = session.key
     return (
-      <div className="study-container">
-        {session.mode === 'flashcard' && <FlashcardMode key={k} {...common} />}
-        {session.mode === 'quiz' && <QuizMode key={k} {...common} direction={settings.direction} />}
-        {session.mode === 'typing' && <TypingMode key={k} {...common} direction={settings.direction} />}
-        {session.mode === 'match' && <MatchMode key={k} {...common} />}
-      </div>
+      <StudySession
+        session={session}
+        direction={settings.direction}
+        onExit={() => setSession(null)}
+        onRestart={(deck) => start(shuffle(deck))}
+      />
     )
   }
 

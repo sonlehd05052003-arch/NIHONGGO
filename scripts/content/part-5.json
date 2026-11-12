@@ -1,0 +1,258 @@
+{
+  "examples": {
+    "n5-24": { "jp": "{今日|きょう}は{雨|あめ}が{降|ふ}っています。", "vi": "Hôm nay trời đang mưa.", "tip": "Hán Việt: VŨ (雨) – mưa, như 'vũ lượng'. Đi với 降る: 雨が降る = trời mưa." },
+    "n5-97": { "jp": "{今日|きょう}は{風|かぜ}が{強|つよ}いです。", "vi": "Hôm nay gió mạnh.", "tip": "Hán Việt: PHONG (風) – gió, như 'phong cảnh'. 風が吹く = gió thổi. Chú ý: 風邪 (かぜ) = cảm cúm." },
+    "n5-139": { "jp": "{今日|きょう}は{一日中|いちにちじゅう}{曇|くも}りでした。", "vi": "Hôm nay trời nhiều mây suốt cả ngày.", "tip": "Danh từ của 曇る. Hán Việt: ĐÀM (曇) = 日 (mặt trời) + 雲 (mây) → mây che mặt trời." },
+    "n5-238": { "jp": "{今日|きょう}はいい{天気|てんき}ですね。", "vi": "Hôm nay thời tiết đẹp nhỉ.", "tip": "Hán Việt: THIÊN KHÍ (天気) – khí trời → thời tiết. いい天気 = trời đẹp." },
+    "n5-419": { "jp": "{朝|あさ}から{空|そら}が{曇|くも}っています。", "vi": "Trời u ám (nhiều mây) từ sáng.", "tip": "Động từ nhóm I, tự động từ: 空が曇る. Danh từ: 曇り. Trái nghĩa: 晴れる (trời nắng)." },
+    "n5-469": { "jp": "{今日|きょう}はよく{晴|は}れています。", "vi": "Hôm nay trời nắng đẹp.", "tip": "Hán Việt: TÌNH (晴) = 日 + 青 → trời xanh có nắng. Nhóm II. Danh từ: 晴れ (trời nắng)." },
+    "n5-473": { "jp": "{昨日|きのう}は{雪|ゆき}が{降|ふ}りました。", "vi": "Hôm qua tuyết đã rơi.", "tip": "Hán Việt: GIÁNG (降). Nhóm I, dùng が: 雨が降る, 雪が降る. Đừng nhầm 降りる (おりる – xuống xe), cùng chữ Hán." },
+    "n5-472": { "jp": "{外|そと}は{強|つよ}い{風|かぜ}が{吹|ふ}いています。", "vi": "Bên ngoài gió đang thổi mạnh.", "tip": "Hán Việt: XUY (吹) = 口 (miệng) + 欠 → thổi. Nhóm I. 風が吹く = gió thổi." },
+    "n5-495": { "jp": "{夏|なつ}はとても{暑|あつ}いです。", "vi": "Mùa hè rất nóng.", "tip": "Hán Việt: THỬ (暑) – nóng bức. Chỉ dùng cho thời tiết; vật nóng (trà, nước) là 熱い; ấm áp là 暖かい." },
+    "n5-516": { "jp": "{冬|ふゆ}の{朝|あさ}は{寒|さむ}いです。", "vi": "Buổi sáng mùa đông thì lạnh.", "tip": "Hán Việt: HÀN (寒) – lạnh, như 'hàn đới'. Lạnh do thời tiết; đồ vật lạnh (nước, bia) dùng 冷たい." },
+    "n5-519": { "jp": "{秋|あき}は{涼|すず}しいですね。", "vi": "Mùa thu mát mẻ nhỉ.", "tip": "Hán Việt: LƯƠNG (涼) – mát, như 'thanh lương'. Mát dễ chịu; khác 寒い (lạnh) và 冷たい (vật lạnh)." },
+    "n5-493": { "jp": "{春|はる}は{暖|あたた}かいです。", "vi": "Mùa xuân ấm áp.", "tip": "Hán Việt: NOÃN (暖) – ấm. Thời tiết ấm; đồ ăn, nước ấm viết 温かい. So sánh: 暑い = nóng bức." },
+
+    "n5-50": { "jp": "{妹|いもうと}は{歌|うた}が{上手|じょうず}です。", "vi": "Em gái tôi hát hay.", "tip": "Hán Việt: CA (歌) – bài hát, như 'ca sĩ'. Hát một bài = 歌を歌う (うたう)." },
+    "n5-87": { "jp": "{毎晩|まいばん}{音楽|おんがく}を{聞|き}きます。", "vi": "Tối nào tôi cũng nghe nhạc.", "tip": "Hán Việt: ÂM NHẠC (音楽) – đọc gần giống tiếng Việt. 音楽を聞く = nghe nhạc." },
+    "n5-54": { "jp": "{日曜日|にちようび}に{映画|えいが}を{見|み}ました。", "vi": "Chủ nhật tôi đã xem phim.", "tip": "Hán Việt: ÁNH HỌA (映画) – hình chiếu → phim. 映画館 (えいがかん) = rạp chiếu phim." },
+    "n5-53": { "jp": "{公園|こうえん}で{花|はな}の{絵|え}を{描|か}きました。", "vi": "Tôi đã vẽ tranh hoa ở công viên.", "tip": "Hán Việt: HỘI (絵) – tranh, như 'hội họa'. Vẽ tranh = 絵を描く (かく)." },
+    "n5-118": { "jp": "{兄|あに}は{毎日|まいにち}ギターを{弾|ひ}きます。", "vi": "Anh trai tôi chơi guitar mỗi ngày.", "tip": "Từ tiếng Anh 'guitar'. Chơi đàn dùng 弾く (ひく): ギターを弾く, ピアノを弾く." },
+    "n5-199": { "jp": "どんなスポーツが{好|す}きですか。", "vi": "Bạn thích môn thể thao nào?", "tip": "Từ tiếng Anh 'sports'. Chơi thể thao: スポーツをする." },
+    "n5-272": { "jp": "{土曜日|どようび}にパーティーをします。", "vi": "Thứ bảy chúng tôi tổ chức tiệc.", "tip": "Từ tiếng Anh 'party'. Tổ chức tiệc: パーティーをする; đi dự tiệc: パーティーに行く." },
+    "n5-381": { "jp": "{夏休|なつやす}みに{京都|きょうと}へ{旅行|りょこう}しました。", "vi": "Kỳ nghỉ hè tôi đã đi du lịch Kyoto.", "tip": "Hán Việt: LỮ HÀNH (旅行) – du lịch. Dùng: 旅行する, ～へ旅行に行く." },
+    "n5-93": { "jp": "デパートで{買|か}い{物|もの}をしました。", "vi": "Tôi đã mua sắm ở trung tâm thương mại.", "tip": "買う (mua) + 物 (đồ vật) → mua sắm. 買い物をする / 買い物に行く." },
+    "n5-186": { "jp": "{友達|ともだち}と{写真|しゃしん}を{撮|と}りました。", "vi": "Tôi đã chụp ảnh với bạn.", "tip": "Hán Việt: TẢ CHÂN (写真) – chép lại cái thật → ảnh. Chụp ảnh = 写真を撮る (とる)." },
+    "n5-307": { "jp": "{夏|なつ}はプールで{泳|およ}ぎます。", "vi": "Mùa hè tôi bơi ở hồ bơi.", "tip": "Từ tiếng Anh 'pool'. プールで泳ぐ = bơi ở hồ bơi (で chỉ nơi diễn ra hành động)." },
+    "n5-266": { "jp": "{毎朝|まいあさ}テレビでニュースを{見|み}ます。", "vi": "Sáng nào tôi cũng xem tin tức trên TV.", "tip": "Từ tiếng Anh 'news'. ニュースを見る (xem tin trên TV) / ニュースを聞く (nghe tin)." },
+    "n5-424": { "jp": "{毎朝|まいあさ}{犬|いぬ}と{散歩|さんぽ}します。", "vi": "Sáng nào tôi cũng đi dạo với chó.", "tip": "Hán Việt: TẢN BỘ (散歩) – đi tản bộ. Dùng を chỉ nơi đi qua: 公園を散歩する." },
+
+    "n5-47": { "jp": "どんな{色|いろ}が{好|す}きですか。", "vi": "Bạn thích màu gì?", "tip": "Hán Việt: SẮC (色) – màu, như 'sắc màu'. 何色 (なにいろ) = màu gì?" },
+    "n5-143": { "jp": "{私|わたし}の{猫|ねこ}は{黒|くろ}です。", "vi": "Con mèo của tôi màu đen.", "tip": "Hán Việt: HẮC (黒) – đen, như 'hắc ám'. Danh từ 黒; tính từ 黒い. 黒のかばん = 黒いかばん." },
+    "n5-116": { "jp": "{黄色|きいろ}のシャツを{買|か}いました。", "vi": "Tôi đã mua áo sơ mi màu vàng.", "tip": "Hán Việt: HOÀNG SẮC (黄色) – màu vàng. Danh từ dùng với の: 黄色のかさ. Tính từ: 黄色い." },
+    "n5-226": { "jp": "{茶色|ちゃいろ}のかばんがほしいです。", "vi": "Tôi muốn có một cái cặp màu nâu.", "tip": "Hán Việt: TRÀ SẮC (茶色) – màu của trà → màu nâu. Dùng với の: 茶色のくつ." },
+    "n5-344": { "jp": "{緑|みどり}のセーターを{着|き}ています。", "vi": "Tôi đang mặc áo len màu xanh lá.", "tip": "Hán Việt: LỤC (緑) – xanh lục. Không có dạng 緑い, phải nói 緑の～: 緑のセーター." },
+    "n5-490": { "jp": "{今日|きょう}は{空|そら}が{青|あお}いです。", "vi": "Hôm nay bầu trời xanh.", "tip": "Hán Việt: THANH (青) – xanh, như 'thanh thiên'. 青い = xanh dương; đèn xanh giao thông cũng gọi là 青." },
+    "n5-491": { "jp": "{赤|あか}いりんごを{食|た}べました。", "vi": "Tôi đã ăn quả táo đỏ.", "tip": "Hán Việt: XÍCH (赤) – đỏ, như 'xích đạo'. Danh từ: 赤; tính từ: 赤い. 赤ちゃん = em bé." },
+    "n5-513": { "jp": "{庭|にわ}に{黄色|きいろ}い{花|はな}が{咲|さ}いています。", "vi": "Trong vườn hoa màu vàng đang nở.", "tip": "Tính từ い của 黄色: 黄色い花 = 黄色の花. Chỉ vài màu có dạng い: 赤い, 青い, 白い, 黒い, 黄色い, 茶色い." },
+    "n5-517": { "jp": "{白|しろ}いシャツを{着|き}ます。", "vi": "Tôi mặc áo sơ mi trắng.", "tip": "Hán Việt: BẠCH (白) – trắng, như 'bạch tuyết'. Danh từ: 白; tính từ: 白い." },
+
+    "n5-457": { "jp": "{毎晩|まいばん}11{時|じ}に{寝|ね}ます。", "vi": "Tối nào tôi cũng đi ngủ lúc 11 giờ.", "tip": "Hán Việt: TẨM (寝) – ngủ, như 'tẩm cung'. Nhóm II: 寝ます. Trái nghĩa: 起きる (thức dậy)." },
+    "n5-436": { "jp": "{朝|あさ}ご{飯|はん}にパンを{食|た}べます。", "vi": "Bữa sáng tôi ăn bánh mì.", "tip": "Hán Việt: THỰC (食) – ăn, như 'thực phẩm'. Nhóm II: 食べます. ～を食べる." },
+    "n5-459": { "jp": "{毎朝|まいあさ}コーヒーを{飲|の}みます。", "vi": "Sáng nào tôi cũng uống cà phê.", "tip": "Hán Việt: ẨM (飲) – uống, như 'ẩm thực'. Nhóm I. Uống thuốc cũng dùng 飲む: 薬を飲む." },
+    "n5-394": { "jp": "{朝|あさ}シャワーを{浴|あ}びます。", "vi": "Buổi sáng tôi tắm vòi sen.", "tip": "Hán Việt: DỤC (浴) – tắm. Nhóm II. Đi với シャワーを浴びる. Tắm bồn thì nói お風呂に入る." },
+    "n5-395": { "jp": "{食|た}べる{前|まえ}に{手|て}を{洗|あら}います。", "vi": "Tôi rửa tay trước khi ăn.", "tip": "Hán Việt: TẨY (洗) – rửa, như 'tẩy rửa'. Nhóm I: 洗います. 手を洗う, 顔を洗う." },
+    "n5-210": { "jp": "{日曜日|にちようび}に{洗濯|せんたく}をします。", "vi": "Chủ nhật tôi giặt đồ.", "tip": "Hán Việt: TẨY TRẠC (洗濯) – giặt giũ. 洗濯する = giặt quần áo; còn 洗う là rửa nói chung." },
+    "n5-211": { "jp": "{部屋|へや}の{掃除|そうじ}は{大変|たいへん}です。", "vi": "Việc dọn phòng thật vất vả.", "tip": "Hán Việt: TẢO TRỪ (掃除) – quét dọn. Đây là danh từ: 掃除が好き, 掃除の時間. Thêm する thành động từ." },
+    "n5-432": { "jp": "{毎週|まいしゅう}{部屋|へや}を{掃除|そうじ}します。", "vi": "Tuần nào tôi cũng dọn phòng.", "tip": "Động từ nhóm III = danh từ 掃除 + する. Dùng ～を掃除する: 部屋を掃除する." },
+    "n5-441": { "jp": "{暗|くら}いですから、{電気|でんき}をつけてください。", "vi": "Tối quá, hãy bật đèn lên.", "tip": "Tha động từ nhóm II: 電気/テレビをつける (bật). Trái nghĩa: 消す (tắt). Cặp tự động từ: つく / 消える." },
+    "n5-415": { "jp": "{部屋|へや}の{電気|でんき}が{消|き}えています。", "vi": "Đèn trong phòng đang tắt.", "tip": "Hán Việt: TIÊU (消). Tự động từ, dùng が: 電気が消える (đèn tắt). Tha động từ: 電気を消す (tắt đèn)." },
+    "n5-438": { "jp": "{今日|きょう}はとても{疲|つか}れました。", "vi": "Hôm nay tôi rất mệt.", "tip": "Hán Việt: BÌ (疲) – mệt. Nhóm II. Nói 'tôi mệt' dùng 疲れました / 疲れています." },
+    "n5-481": { "jp": "{疲|つか}れましたから、{少|すこ}し{休|やす}みます。", "vi": "Vì mệt rồi nên tôi nghỉ một chút.", "tip": "休 = người (亻) tựa gốc cây (木) → NGHỈ (Hán Việt: HƯU). Nhóm I. 会社を休む = nghỉ làm." },
+    "n5-188": { "jp": "{寝|ね}る{前|まえ}にシャワーを{浴|あ}びます。", "vi": "Tôi tắm vòi sen trước khi đi ngủ.", "tip": "Từ tiếng Anh 'shower'. Tắm vòi sen: シャワーを浴びる (あびる)." },
+
+    "n5-397": { "jp": "{駅|えき}まで{歩|ある}いて{行|い}きます。", "vi": "Tôi đi bộ đến nhà ga.", "tip": "Hán Việt: BỘ (歩) – đi bộ, như 'bộ hành'. Nhóm I. を chỉ nơi đi qua: 道を歩く." },
+    "n5-465": { "jp": "{毎朝|まいあさ}{公園|こうえん}を{走|はし}ります。", "vi": "Sáng nào tôi cũng chạy trong công viên.", "tip": "Hán Việt: TẨU (走) – chạy, như 'tẩu thoát'. Nhóm I (dù đuôi る): 走ります." },
+    "n5-420": { "jp": "{友達|ともだち}が{日本|にほん}から{来|き}ました。", "vi": "Bạn tôi đã đến từ Nhật Bản.", "tip": "Nhóm III bất quy tắc: 来ます (きます), 来て (きて). Đến phía người nói. 着く = tới nơi, đến đích." },
+    "n5-410": { "jp": "{毎日|まいにち}6{時|じ}にうちへ{帰|かえ}ります。", "vi": "Ngày nào tôi cũng về nhà lúc 6 giờ.", "tip": "Hán Việt: QUY (帰) – về, như 'hồi quy'. Nhóm I (ngoại lệ): 帰ります. Khác 返す (trả lại đồ)." },
+    "n5-439": { "jp": "{電車|でんしゃ}は9{時|じ}に{駅|えき}に{着|つ}きます。", "vi": "Tàu đến ga lúc 9 giờ.", "tip": "Hán Việt: TRƯỚC (着). ～に着く = tới nơi. 来る = đến (phía người nói). Đừng nhầm 着る (きる) = mặc." },
+    "n5-443": { "jp": "{日曜日|にちようび}は{家族|かぞく}と{出|で}かけます。", "vi": "Chủ nhật tôi ra ngoài cùng gia đình.", "tip": "Nhóm II: đi ra ngoài (đi chơi, đi việc). Khác 出る: ～を出る = rời khỏi một nơi cụ thể." },
+    "n5-444": { "jp": "8{時|じ}にうちを{出|で}ます。", "vi": "Tôi ra khỏi nhà lúc 8 giờ.", "tip": "Hán Việt: XUẤT (出) – ra. Nhóm II. ～を出る = rời khỏi. Trái nghĩa: ～に入る (đi vào)." },
+    "n5-461": { "jp": "どうぞ{部屋|へや}に{入|はい}ってください。", "vi": "Xin mời vào phòng.", "tip": "Hán Việt: NHẬP (入) – vào. Nhóm I (ngoại lệ): 入ります. ～に入る. Khác 入れる (cho vào)." },
+    "n5-460": { "jp": "{毎朝|まいあさ}バスに{乗|の}ります。", "vi": "Sáng nào tôi cũng đi xe buýt.", "tip": "Hán Việt: THỪA (乗). Nhóm I. Dùng に: バスに乗る (không dùng を). Trái nghĩa: ～を降りる." },
+    "n5-406": { "jp": "{次|つぎ}の{駅|えき}で{電車|でんしゃ}を{降|お}ります。", "vi": "Tôi xuống tàu ở ga tiếp theo.", "tip": "Hán Việt: GIÁNG (降). Nhóm II. Dùng を: 電車を降りる. Cùng chữ với 降る (ふる – mưa rơi)." },
+    "n5-446": { "jp": "{車|くるま}が{家|いえ}の{前|まえ}に{止|と}まりました。", "vi": "Chiếc xe đã dừng trước nhà.", "tip": "Hán Việt: CHỈ (止) – dừng. Tự động từ, dùng が: 車が止まる (xe dừng). Tha động từ: 車を止める." },
+    "n5-447": { "jp": "ここに{車|くるま}を{止|と}めてください。", "vi": "Hãy đỗ xe ở đây.", "tip": "Tha động từ nhóm II, dùng を: 車を止める = dừng/đỗ xe. Cặp tự động từ: 止まる (dùng が)." },
+    "n5-489": { "jp": "{橋|はし}を{渡|わた}って、{右|みぎ}へ{行|い}きます。", "vi": "Băng qua cầu rồi đi về bên phải.", "tip": "Hán Việt: ĐỘ (渡) – vượt qua. Nhóm I. Dùng を: 道を渡る, 橋を渡る. Khác 渡す (đưa cho)." },
+    "n5-475": { "jp": "{次|つぎ}の{角|かど}を{左|ひだり}へ{曲|ま}がってください。", "vi": "Hãy rẽ trái ở góc đường tiếp theo.", "tip": "Hán Việt: KHÚC (曲) – cong. Nay thường viết 曲がる. Nhóm I. Dùng を: 角を曲がる (rẽ ở góc)." },
+
+    "n5-408": { "jp": "スーパーで{野菜|やさい}を{買|か}いました。", "vi": "Tôi đã mua rau ở siêu thị.", "tip": "Hán Việt: MÃI (買) – mua. Nhóm I: 買います. ～を買う. Trái nghĩa: 売る (bán)." },
+    "n5-403": { "jp": "あの{店|みせ}は{古|ふる}い{本|ほん}を{売|う}っています。", "vi": "Cửa hàng kia bán sách cũ.", "tip": "Hán Việt: MẠI (売) – bán. Nhóm I. Cặp 買う/売る = 'mãi mại' (mua bán)." },
+    "n5-413": { "jp": "{友達|ともだち}にかさを{貸|か}しました。", "vi": "Tôi đã cho bạn mượn ô.", "tip": "Hán Việt: THẢI (貸) – cho vay/mượn. [người] に貸す = cho ai mượn. Ngược với 借りる (đi mượn)." },
+    "n5-414": { "jp": "{図書館|としょかん}で{本|ほん}を{借|か}りました。", "vi": "Tôi đã mượn sách ở thư viện.", "tip": "Hán Việt: TÁ (借) – vay mượn. Nhóm II. [người] に/から借りる = mượn của ai. Ngược với 貸す." },
+    "n5-409": { "jp": "{明日|あした}{本|ほん}を{返|かえ}します。", "vi": "Ngày mai tôi sẽ trả sách.", "tip": "Hán Việt: PHẢN (返) – trả lại. Nhóm I. [người] に～を返す. Khác 帰る (đi về nhà)." },
+    "n5-488": { "jp": "{先生|せんせい}に{手紙|てがみ}を{渡|わた}しました。", "vi": "Tôi đã đưa lá thư cho thầy giáo.", "tip": "Hán Việt: ĐỘ (渡). Tha động từ: [người] に～を渡す = trao, đưa cho. Khác 渡る (băng qua)." },
+    "n5-478": { "jp": "その{写真|しゃしん}を{見|み}せてください。", "vi": "Hãy cho tôi xem bức ảnh đó.", "tip": "見 (xem) + せる → cho người khác xem. Nhóm II. [người] に～を見せる. Khác 見る (tự mình xem)." },
+    "n5-448": { "jp": "すみません、{塩|しお}を{取|と}ってください。", "vi": "Xin lỗi, lấy giúp tôi lọ muối.", "tip": "Hán Việt: THỦ (取) – lấy. Nhóm I. ～を取る. Chụp ảnh viết 撮る (cùng âm とる)." },
+    "n5-433": { "jp": "{郵便局|ゆうびんきょく}で{手紙|てがみ}を{出|だ}しました。", "vi": "Tôi đã gửi thư ở bưu điện.", "tip": "Tha động từ của 出る. Nhóm I: ～を出す = lấy ra, nộp (宿題を出す), gửi (手紙を出す)." },
+    "n5-480": { "jp": "{雨|あめ}ですから、かさを{持|も}って{行|い}きます。", "vi": "Vì trời mưa nên tôi mang ô theo.", "tip": "Hán Việt: TRÌ (持) – cầm, giữ, như 'duy trì'. Nhóm I. 持っています = đang cầm / có. 持って行く = mang đi." },
+    "n5-400": { "jp": "コーヒーに{砂糖|さとう}を{入|い}れます。", "vi": "Tôi cho đường vào cà phê.", "tip": "Tha động từ nhóm II: ～に～を入れる = cho vào. Tự động từ tương ứng: 入る (はいる – đi vào)." },
+    "n5-399": { "jp": "{旅行|りょこう}にパスポートが{要|い}ります。", "vi": "Đi du lịch cần hộ chiếu.", "tip": "Hán Việt: YẾU (要) – cần, như 'cần yếu'. Nhóm I: 要ります, dùng が. Khác いる (có – người, nhóm II)." },
+    "n5-411": { "jp": "{駅|えき}まで{歩|ある}いて10{分|ぷん}かかります。", "vi": "Đi bộ đến ga mất 10 phút.", "tip": "Nhóm I, thường viết kana. Thời gian/tiền + かかる: 1時間かかる, お金がかかる." },
+
+    "n5-412": { "jp": "ここに{名前|なまえ}を{書|か}いてください。", "vi": "Hãy viết tên vào đây.", "tip": "Hán Việt: THƯ (書) – viết, như 'thư pháp'. Nhóm I: 書きます / 書いて. ～に～を書く." },
+    "n5-484": { "jp": "{毎晩|まいばん}{本|ほん}を{読|よ}みます。", "vi": "Tối nào tôi cũng đọc sách.", "tip": "Hán Việt: ĐỘC (読) – đọc, như 'độc giả'. Nhóm I: 読みます / 読んで." },
+    "n5-416": { "jp": "わからない{言葉|ことば}を{先生|せんせい}に{聞|き}きました。", "vi": "Tôi đã hỏi thầy từ mà mình không hiểu.", "tip": "Hán Việt: VĂN (聞) = 門 + 耳 → áp tai vào cửa. 2 nghĩa: nghe (音楽を聞く), hỏi ([người] に聞く)." },
+    "n5-421": { "jp": "{先生|せんせい}の{質問|しつもん}に{答|こた}えます。", "vi": "Tôi trả lời câu hỏi của thầy.", "tip": "Hán Việt: ĐÁP (答) – trả lời, như 'đáp án'. Nhóm II. Dùng に: 質問に答える (không dùng を)." },
+    "n5-404": { "jp": "{田中|たなか}さんは{英語|えいご}を{教|おし}えています。", "vi": "Anh Tanaka đang dạy tiếng Anh.", "tip": "Hán Việt: GIÁO (教) – dạy, như 'giáo viên'. Nhóm II. [người] に～を教える. Còn nghĩa 'chỉ cho biết'." },
+    "n5-467": { "jp": "{友達|ともだち}と{日本語|にほんご}で{話|はな}します。", "vi": "Tôi nói chuyện với bạn bằng tiếng Nhật.", "tip": "Hán Việt: THOẠI (話) – nói, như 'hội thoại'. Nhóm I. [người] と話す; ～語で話す." },
+    "n5-430": { "jp": "{毎日|まいにち}{宿題|しゅくだい}をします。", "vi": "Ngày nào tôi cũng làm bài tập.", "tip": "Nhóm III bất quy tắc: します / して. Gắn sau danh từ: 勉強する, 掃除する. スポーツをする = chơi thể thao." },
+    "n5-482": { "jp": "{夜|よる}は{宿題|しゅくだい}をやります。", "vi": "Buổi tối tôi làm bài tập.", "tip": "Nghĩa giống する (làm) nhưng thân mật, khẩu ngữ hơn. Nhóm I: やります. 宿題をやる = 宿題をする." },
+    "n5-440": { "jp": "{母|はは}は{晩|ばん}ご{飯|はん}を{作|つく}っています。", "vi": "Mẹ tôi đang nấu bữa tối.", "tip": "Hán Việt: TÁC (作) – làm ra, như 'tác phẩm'. Nhóm I. ～を作る: nấu (料理を作る), làm ra đồ vật." },
+    "n5-437": { "jp": "このペンを{使|つか}ってもいいですか。", "vi": "Tôi dùng cây bút này có được không?", "tip": "Hán Việt: SỬ (使) – sử dụng. Nhóm I: 使います / 使って. ～を使う." },
+    "n5-422": { "jp": "この{紙|かみ}をコピーしてください。", "vi": "Hãy photo tờ giấy này.", "tip": "Từ tiếng Anh 'copy' + する (nhóm III). ～をコピーする = photo, sao chép." },
+    "n5-435": { "jp": "{友達|ともだち}に{仕事|しごと}を{頼|たの}みました。", "vi": "Tôi đã nhờ bạn một việc.", "tip": "Hán Việt: LẠI (頼) – nhờ cậy, như 'ỷ lại'. Nhóm I. [người] に～を頼む. Ở quán: コーヒーを頼む = gọi cà phê." },
+    "n5-483": { "jp": "タクシーを{呼|よ}んでください。", "vi": "Hãy gọi taxi giúp tôi.", "tip": "Hán Việt: HÔ (呼) – gọi, như 'hô hoán'. Nhóm I: 呼びます / 呼んで. Gọi tên, gọi taxi, mời người đến." },
+
+    "n5-396": { "jp": "{机|つくえ}の{上|うえ}に{本|ほん}があります。", "vi": "Trên bàn có quyển sách.", "tip": "Nhóm I. Dùng cho đồ vật, cây cối (không tự cử động): ～に～がある. Người, động vật dùng いる." },
+    "n5-398": { "jp": "{教室|きょうしつ}に{学生|がくせい}が{三人|さんにん}います。", "vi": "Trong lớp có ba học sinh.", "tip": "Nhóm II. Dùng cho người, động vật: 猫がいる. Đồ vật dùng ある. Khác 要る (いる – cần, nhóm I)." },
+    "n5-429": { "jp": "{私|わたし}はハノイに{住|す}んでいます。", "vi": "Tôi sống ở Hà Nội.", "tip": "Hán Việt: TRÚ (住) – ở, như 'cư trú'. Dùng ～に住んでいます để nói nơi mình đang sống." },
+    "n5-402": { "jp": "{私|わたし}は2005{年|ねん}に{生|う}まれました。", "vi": "Tôi sinh năm 2005.", "tip": "Hán Việt: SINH (生) – sinh ra. Nhóm II. Thường dùng thể quá khứ: ～に生まれました (năm, nơi sinh)." },
+    "n5-455": { "jp": "{兄|あに}は{医者|いしゃ}になりました。", "vi": "Anh trai tôi đã trở thành bác sĩ.", "tip": "Nhóm I. Danh từ/tính từ な + になる; tính từ い bỏ い + くなる: 寒くなる = trở nên lạnh." },
+    "n5-427": { "jp": "{田中|たなか}さんの{住所|じゅうしょ}を{知|し}っていますか。", "vi": "Bạn có biết địa chỉ của anh Tanaka không?", "tip": "Hán Việt: TRI (知) – biết, như 'tri thức'. 'Biết' = 知っています; 'không biết' = 知りません (không nói 知っていません)." },
+    "n5-423": { "jp": "{財布|さいふ}をなくして、{困|こま}っています。", "vi": "Tôi làm mất ví nên đang khốn đốn.", "tip": "Hán Việt: KHỐN (困) – khốn khó. Nhóm I. Thường dùng 困っています (đang gặp rắc rối) hoặc 困りました." },
+    "n5-407": { "jp": "{授業|じゅぎょう}は3{時|じ}に{終|お}わります。", "vi": "Giờ học kết thúc lúc 3 giờ.", "tip": "Hán Việt: CHUNG (終) – kết thúc, như 'chung kết'. Nay viết 終わる. Dùng が: 授業が終わる. Trái nghĩa: 始まる." },
+    "n5-463": { "jp": "{映画|えいが}は7{時|じ}に{始|はじ}まります。", "vi": "Bộ phim bắt đầu lúc 7 giờ.", "tip": "Hán Việt: THỦY (始) – bắt đầu, như 'khởi thủy'. Tự động từ, dùng が: 映画が始まる. Tha động từ: 始める." },
+    "n5-464": { "jp": "{来月|らいげつ}から{日本語|にほんご}の{勉強|べんきょう}を{始|はじ}めます。", "vi": "Từ tháng sau tôi bắt đầu học tiếng Nhật.", "tip": "Tha động từ nhóm II, dùng を: (ai đó) bắt đầu việc gì. So sánh: 授業が始まる (tự bắt đầu)." },
+    "n5-390": { "jp": "{銀行|ぎんこう}は9{時|じ}に{開|あ}きます。", "vi": "Ngân hàng mở cửa lúc 9 giờ.", "tip": "Hán Việt: KHAI (開) – mở. Tự động từ, dùng が: ドアが開く (cửa mở). Tha động từ: ドアを開ける." },
+    "n5-391": { "jp": "{暑|あつ}いですから、{窓|まど}を{開|あ}けてください。", "vi": "Nóng quá, hãy mở cửa sổ ra.", "tip": "Tha động từ nhóm II, dùng を: ai đó mở cái gì. Cặp tự động từ: 開く (が). Trái nghĩa: 閉める." },
+    "n5-425": { "jp": "{風|かぜ}でドアが{閉|し}まりました。", "vi": "Cửa đã đóng lại vì gió.", "tip": "Hán Việt: BẾ (閉) – đóng, như 'bế mạc'. Tự động từ, dùng が: ドアが閉まる. Tha động từ: 閉める." },
+    "n5-426": { "jp": "{寒|さむ}いですから、{窓|まど}を{閉|し}めましょう。", "vi": "Lạnh quá, đóng cửa sổ lại nào.", "tip": "Tha động từ nhóm II, dùng を: 窓を閉める. Cặp tự động từ: 閉まる (dùng が). Trái nghĩa: 開ける." }
+  },
+  "readings": {
+    "L33": {
+      "title": "{今日|きょう}の{天気|てんき}",
+      "titleVi": "Thời tiết hôm nay",
+      "lines": [
+        { "jp": "{今日|きょう}は{朝|あさ}から{雨|あめ}が{降|ふ}っています。", "vi": "Hôm nay trời mưa từ sáng." },
+        { "jp": "{風|かぜ}も{強|つよ}く{吹|ふ}いていて、とても{寒|さむ}いです。", "vi": "Gió cũng thổi mạnh, rất lạnh." },
+        { "jp": "{昨日|きのう}はよく{晴|は}れて、{暖|あたた}かかったです。", "vi": "Hôm qua trời nắng đẹp và ấm áp." },
+        { "jp": "{明日|あした}は{曇|くも}りですが、{雨|あめ}は{降|ふ}りません。", "vi": "Ngày mai trời nhiều mây nhưng không mưa." },
+        { "jp": "{私|わたし}は{暑|あつ}い{夏|なつ}より{涼|すず}しい{秋|あき}が{好|す}きです。", "vi": "Tôi thích mùa thu mát mẻ hơn mùa hè nóng bức." },
+        { "jp": "{明日|あした}は{友達|ともだち}と{公園|こうえん}へ{行|い}きたいです。", "vi": "Ngày mai tôi muốn đi công viên với bạn." }
+      ],
+      "questions": [
+        { "q": "Hôm nay thời tiết thế nào?", "options": ["Nắng và ấm", "Mưa, gió mạnh và lạnh", "Nhiều mây và mát"], "answer": 1 },
+        { "q": "Hôm qua thời tiết ra sao?", "options": ["Nắng đẹp và ấm áp", "Mưa to", "Có tuyết rơi"], "answer": 0 },
+        { "q": "Người viết thích mùa nào hơn mùa hè?", "options": ["Mùa xuân", "Mùa đông", "Mùa thu"], "answer": 2 }
+      ]
+    },
+    "L34": {
+      "title": "{休|やす}みの{日|ひ}",
+      "titleVi": "Ngày nghỉ",
+      "lines": [
+        { "jp": "{田中|たなか}：リンさん、{休|やす}みの{日|ひ}は{何|なに}をしますか。", "vi": "Tanaka: Chị Linh, ngày nghỉ chị làm gì?" },
+        { "jp": "リン：{音楽|おんがく}が{好|す}きですから、よくギターを{弾|ひ}いて、{歌|うた}を{歌|うた}います。", "vi": "Linh: Vì thích âm nhạc nên tôi hay chơi guitar và hát." },
+        { "jp": "{田中|たなか}：いいですね。{私|わたし}はよく{映画|えいが}を{見|み}ます。", "vi": "Tanaka: Hay quá. Tôi thì hay xem phim." },
+        { "jp": "リン：{私|わたし}も{映画|えいが}が{好|す}きです。{日曜日|にちようび}に{一緒|いっしょ}に{見|み}に{行|い}きませんか。", "vi": "Linh: Tôi cũng thích phim. Chủ nhật cùng đi xem nhé?" },
+        { "jp": "{田中|たなか}：ええ、{行|い}きましょう。{映画|えいが}の{後|あと}で{買|か}い{物|もの}もしたいです。", "vi": "Tanaka: Ừ, đi thôi. Sau khi xem phim tôi cũng muốn đi mua sắm." },
+        { "jp": "リン：{夜|よる}は{私|わたし}のうちでパーティーをします。{田中|たなか}さんも{来|き}てください。", "vi": "Linh: Buổi tối nhà tôi có tiệc. Anh Tanaka cũng đến nhé." },
+        { "jp": "{田中|たなか}：ありがとうございます。{写真|しゃしん}をたくさん{撮|と}りましょう。", "vi": "Tanaka: Cảm ơn chị. Chúng ta chụp thật nhiều ảnh nhé." }
+      ],
+      "questions": [
+        { "q": "Linh thường làm gì vào ngày nghỉ?", "options": ["Đi bơi", "Chơi guitar và hát", "Đi du lịch"], "answer": 1 },
+        { "q": "Chủ nhật hai người hẹn nhau làm gì?", "options": ["Đi xem phim", "Đi hồ bơi", "Đi dạo công viên"], "answer": 0 },
+        { "q": "Buổi tối có hoạt động gì?", "options": ["Xem tin tức", "Chơi thể thao", "Tiệc ở nhà Linh"], "answer": 2 }
+      ]
+    },
+    "L35": {
+      "title": "シャツを{買|か}う",
+      "titleVi": "Mua áo sơ mi",
+      "lines": [
+        { "jp": "{店員|てんいん}：いらっしゃいませ。", "vi": "Nhân viên: Xin mời quý khách." },
+        { "jp": "アン：すみません、{赤|あか}いシャツか{青|あお}いシャツはありますか。", "vi": "An: Xin lỗi, ở đây có áo sơ mi đỏ hoặc xanh dương không?" },
+        { "jp": "{店員|てんいん}：{赤|あか}と{青|あお}はありませんが、{白|しろ}いシャツと{黄色|きいろ}いシャツがあります。", "vi": "Nhân viên: Không có màu đỏ và xanh dương, nhưng có áo trắng và áo vàng." },
+        { "jp": "アン：うーん、{黒|くろ}はありますか。", "vi": "An: Hừm, có màu đen không?" },
+        { "jp": "{店員|てんいん}：はい、{黒|くろ}と{茶色|ちゃいろ}があります。この{緑|みどり}のシャツもきれいですよ。", "vi": "Nhân viên: Vâng, có màu đen và màu nâu. Chiếc áo xanh lá này cũng đẹp lắm." },
+        { "jp": "アン：いい{色|いろ}ですね。じゃ、{緑|みどり}のシャツをください。", "vi": "An: Màu đẹp nhỉ. Vậy cho tôi chiếc áo xanh lá." },
+        { "jp": "{店員|てんいん}：ありがとうございます。2000{円|えん}です。", "vi": "Nhân viên: Cảm ơn quý khách. 2000 yên ạ." }
+      ],
+      "questions": [
+        { "q": "Lúc đầu An muốn tìm áo màu gì?", "options": ["Đỏ hoặc xanh dương", "Trắng hoặc vàng", "Đen hoặc nâu"], "answer": 0 },
+        { "q": "Cửa hàng KHÔNG có áo màu nào?", "options": ["Trắng", "Đỏ", "Nâu", "Xanh lá"], "answer": 1 },
+        { "q": "Cuối cùng An mua áo màu gì?", "options": ["Đen", "Vàng", "Xanh lá cây"], "answer": 2 }
+      ]
+    },
+    "L36": {
+      "title": "{私|わたし}の{一日|いちにち}",
+      "titleVi": "Một ngày của tôi",
+      "lines": [
+        { "jp": "{私|わたし}は{毎朝|まいあさ}6{時|じ}に{起|お}きて、シャワーを{浴|あ}びます。", "vi": "Mỗi sáng tôi dậy lúc 6 giờ và tắm vòi sen." },
+        { "jp": "それから、{朝|あさ}ご{飯|はん}を{食|た}べて、コーヒーを{飲|の}みます。", "vi": "Sau đó tôi ăn sáng và uống cà phê." },
+        { "jp": "{昨日|きのう}は{日曜日|にちようび}でしたから、{洗濯|せんたく}をして、{部屋|へや}を{掃除|そうじ}しました。", "vi": "Hôm qua là Chủ nhật nên tôi đã giặt đồ và dọn phòng." },
+        { "jp": "{午後|ごご}はとても{疲|つか}れましたから、{少|すこ}し{休|やす}みました。", "vi": "Buổi chiều tôi rất mệt nên đã nghỉ một chút." },
+        { "jp": "{夜|よる}はテレビをつけて、ニュースを{見|み}ました。", "vi": "Buổi tối tôi bật TV và xem tin tức." },
+        { "jp": "11{時|じ}に{電気|でんき}を{消|け}して、{寝|ね}ました。", "vi": "Lúc 11 giờ tôi tắt đèn và đi ngủ." }
+      ],
+      "questions": [
+        { "q": "Người viết làm gì đầu tiên sau khi thức dậy?", "options": ["Uống cà phê", "Tắm vòi sen", "Xem tin tức"], "answer": 1 },
+        { "q": "Hôm qua (Chủ nhật) người viết đã làm gì?", "options": ["Giặt đồ và dọn phòng", "Đi làm", "Đi du lịch"], "answer": 0 },
+        { "q": "Người viết đi ngủ lúc mấy giờ?", "options": ["9 giờ", "10 giờ", "11 giờ", "6 giờ"], "answer": 2 }
+      ]
+    },
+    "L37": {
+      "title": "{図書館|としょかん}への{道|みち}",
+      "titleVi": "Đường đến thư viện",
+      "lines": [
+        { "jp": "A：すみません、{図書館|としょかん}はどこですか。", "vi": "A: Xin lỗi, thư viện ở đâu ạ?" },
+        { "jp": "B：この{道|みち}をまっすぐ{歩|ある}いて、{二|ふた}つ{目|め}の{角|かど}を{右|みぎ}へ{曲|ま}がってください。", "vi": "B: Đi thẳng đường này, đến góc thứ hai thì rẽ phải." },
+        { "jp": "B：それから、{橋|はし}を{渡|わた}ってください。{図書館|としょかん}は{左|ひだり}にあります。", "vi": "B: Sau đó băng qua cầu. Thư viện ở bên trái." },
+        { "jp": "A：{歩|ある}いて{何分|なんぷん}ぐらいかかりますか。", "vi": "A: Đi bộ mất khoảng bao nhiêu phút ạ?" },
+        { "jp": "B：20{分|ぷん}ぐらいです。バスに{乗|の}って、{図書館前|としょかんまえ}で{降|お}りてもいいですよ。", "vi": "B: Khoảng 20 phút. Bạn cũng có thể đi xe buýt rồi xuống ở trạm Trước Thư Viện." },
+        { "jp": "A：バスはどこに{止|と}まりますか。", "vi": "A: Xe buýt dừng ở đâu ạ?" },
+        { "jp": "B：あの{銀行|ぎんこう}の{前|まえ}に{止|と}まります。バスはすぐ{来|き}ますよ。", "vi": "B: Dừng trước ngân hàng kia. Xe buýt sắp đến rồi đấy." },
+        { "jp": "A：ありがとうございました。", "vi": "A: Cảm ơn bạn nhiều." }
+      ],
+      "questions": [
+        { "q": "A muốn đi đâu?", "options": ["Thư viện", "Nhà ga", "Ngân hàng"], "answer": 0 },
+        { "q": "Đi bộ mất khoảng bao lâu?", "options": ["10 phút", "20 phút", "30 phút"], "answer": 1 },
+        { "q": "Có thể lên xe buýt ở đâu?", "options": ["Trước thư viện", "Bên kia cây cầu", "Trước ngân hàng"], "answer": 2 }
+      ]
+    },
+    "L38": {
+      "title": "{本|ほん}を{返|かえ}す",
+      "titleVi": "Trả sách",
+      "lines": [
+        { "jp": "マイ：{山田|やまだ}さん、{本|ほん}を{返|かえ}します。ありがとうございました。", "vi": "Mai: Anh Yamada, tôi trả sách. Cảm ơn anh nhiều." },
+        { "jp": "{山田|やまだ}：いいえ。おもしろかったですか。", "vi": "Yamada: Không có gì. Sách có hay không?" },
+        { "jp": "マイ：はい。それから、{私|わたし}も{駅|えき}の{前|まえ}の{店|みせ}で{本|ほん}を{買|か}いました。", "vi": "Mai: Có ạ. Ngoài ra, tôi cũng đã mua sách ở cửa hàng trước nhà ga." },
+        { "jp": "マイ：あの{店|みせ}は{古|ふる}い{本|ほん}を{安|やす}く{売|う}っています。{駅|えき}から{歩|ある}いて5{分|ふん}かかります。", "vi": "Mai: Cửa hàng đó bán sách cũ giá rẻ. Từ ga đi bộ mất 5 phút." },
+        { "jp": "{山田|やまだ}：そうですか。その{本|ほん}をちょっと{見|み}せてください。", "vi": "Yamada: Vậy à. Cho tôi xem quyển sách đó một chút." },
+        { "jp": "マイ：はい、どうぞ。{山田|やまだ}さんに{貸|か}しますよ。", "vi": "Mai: Vâng, mời anh. Tôi cho anh mượn đấy." },
+        { "jp": "{山田|やまだ}：ありがとう。かばんに{入|い}れて、うちで{読|よ}みます。", "vi": "Yamada: Cảm ơn. Tôi sẽ cho vào cặp và đọc ở nhà." }
+      ],
+      "questions": [
+        { "q": "Mai trả cho Yamada cái gì?", "options": ["Cái ô", "Quyển sách", "Cái cặp"], "answer": 1 },
+        { "q": "Cửa hàng trước nhà ga bán gì?", "options": ["Sách cũ", "Cà phê", "Quần áo"], "answer": 0 },
+        { "q": "Từ nhà ga đi bộ đến cửa hàng mất bao lâu?", "options": ["10 phút", "15 phút", "5 phút"], "answer": 2 }
+      ]
+    },
+    "L39": {
+      "title": "{日本語|にほんご}{学校|がっこう}で",
+      "titleVi": "Ở trường tiếng Nhật",
+      "lines": [
+        { "jp": "{私|わたし}は{日本語|にほんご}{学校|がっこう}で{勉強|べんきょう}しています。", "vi": "Tôi đang học ở trường tiếng Nhật." },
+        { "jp": "{毎朝|まいあさ}、{先生|せんせい}が{学生|がくせい}の{名前|なまえ}を{呼|よ}びます。", "vi": "Mỗi sáng, giáo viên gọi tên học sinh." },
+        { "jp": "{教室|きょうしつ}では{本|ほん}を{読|よ}んで、{漢字|かんじ}を{書|か}きます。", "vi": "Trong lớp chúng tôi đọc sách và viết chữ Hán." },
+        { "jp": "わからない{言葉|ことば}は{先生|せんせい}に{聞|き}きます。{先生|せんせい}はいつもていねいに{答|こた}えます。", "vi": "Từ nào không hiểu thì tôi hỏi thầy. Thầy luôn trả lời cẩn thận." },
+        { "jp": "{昼休|ひるやす}みは{友達|ともだち}と{日本語|にほんご}で{話|はな}します。", "vi": "Giờ nghỉ trưa tôi nói chuyện với bạn bằng tiếng Nhật." },
+        { "jp": "{今日|きょう}、{先生|せんせい}は{私|わたし}に{宿題|しゅくだい}のコピーを{頼|たの}みました。", "vi": "Hôm nay thầy nhờ tôi photo bài tập về nhà." },
+        { "jp": "{学校|がっこう}のコピー{機|き}を{使|つか}って、20{枚|まい}コピーしました。", "vi": "Tôi dùng máy photo của trường và đã photo 20 tờ." }
+      ],
+      "questions": [
+        { "q": "Mỗi sáng giáo viên làm gì?", "options": ["Gọi tên học sinh", "Đọc sách", "Photo bài tập"], "answer": 0 },
+        { "q": "Giờ nghỉ trưa người viết làm gì?", "options": ["Viết chữ Hán", "Nói chuyện bằng tiếng Nhật với bạn", "Ăn cơm một mình"], "answer": 1 },
+        { "q": "Người viết đã photo bao nhiêu tờ?", "options": ["10 tờ", "15 tờ", "20 tờ"], "answer": 2 }
+      ]
+    },
+    "L40": {
+      "title": "{私|わたし}のこと",
+      "titleVi": "Về bản thân tôi",
+      "lines": [
+        { "jp": "{私|わたし}はベトナムのハノイで{生|う}まれました。", "vi": "Tôi sinh ra ở Hà Nội, Việt Nam." },
+        { "jp": "{今|いま}は{東京|とうきょう}に{住|す}んでいます。", "vi": "Bây giờ tôi đang sống ở Tokyo." },
+        { "jp": "アパートの{近|ちか}くに{大|おお}きいスーパーがあります。", "vi": "Gần căn hộ có một siêu thị lớn." },
+        { "jp": "スーパーは{朝|あさ}9{時|じ}に{開|あ}いて、{夜|よる}10{時|じ}に{閉|し}まります。", "vi": "Siêu thị mở cửa lúc 9 giờ sáng và đóng cửa lúc 10 giờ tối." },
+        { "jp": "{日本語|にほんご}の{勉強|べんきょう}は{去年|きょねん}{始|はじ}めました。", "vi": "Tôi bắt đầu học tiếng Nhật từ năm ngoái." },
+        { "jp": "{初|はじ}めは{言葉|ことば}がわかりませんでしたから、とても{困|こま}りました。", "vi": "Lúc đầu tôi không hiểu tiếng nên rất khó khăn." },
+        { "jp": "でも、{今|いま}は{日本語|にほんご}が{上手|じょうず}になりました。", "vi": "Nhưng bây giờ tiếng Nhật của tôi đã giỏi lên." },
+        { "jp": "{日本人|にほんじん}の{友達|ともだち}もたくさんいます。", "vi": "Tôi cũng có nhiều bạn người Nhật." }
+      ],
+      "questions": [
+        { "q": "Người viết sinh ra ở đâu?", "options": ["Tokyo", "Hà Nội", "Osaka"], "answer": 1 },
+        { "q": "Siêu thị đóng cửa lúc mấy giờ?", "options": ["10 giờ tối", "9 giờ sáng", "9 giờ tối"], "answer": 0 },
+        { "q": "Người viết bắt đầu học tiếng Nhật khi nào?", "options": ["Tháng trước", "Năm nay", "Năm ngoái"], "answer": 2 }
+      ]
+    }
+  }
+}

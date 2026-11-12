@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Volume2, Star, Check, X as XIcon, ArrowLeftRight, RotateCcw } from 'lucide-react'
+import { Volume2, Star, Check, X as XIcon, ArrowLeftRight, RotateCcw, Lightbulb } from 'lucide-react'
+import { Ruby } from '@/components/ui/Ruby'
 import { WordImage } from '@/components/ui/WordImage'
+import { useContent } from '@/hooks/useContent'
 import { useProgress } from '@/hooks/useProgress'
-import { preloadImage, speak } from '@/services/vocabularyService'
+import { rubyKana } from '@/services/lessons'
+import { preloadImage, speak, speakSentence } from '@/services/vocabularyService'
 import { isSoundOn, sfx } from '@/services/sound'
 import type { VocabularyItem } from '@/types'
 import { ResultView, SessionHeader, type ModeProps } from './shared'
@@ -12,6 +15,7 @@ import { useSessionGame } from './useSessionGame'
 export const FlashcardMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
   const { get, setKnown, toggleStar, recordAnswer } = useProgress()
   const game = useSessionGame()
+  const content = useContent()
   const [idx, setIdx] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [frontVi, setFrontVi] = useState(false)
@@ -94,6 +98,7 @@ export const FlashcardMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) 
   }
 
   const starred = !!get(word.id).starred
+  const example = content?.examples[word.id]
   const jpFace = <div className="fc-jp">{word.kanji || word.kana}</div>
   const viFace = (
     <>
@@ -151,6 +156,18 @@ export const FlashcardMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) 
           <RotateCcw size={13} /> Nhấn thẻ hoặc phím Space để lật
         </div>
       </div>
+
+      {flipped && example && (
+        <div className="fc-extra">
+          <button className="wc-example" onClick={() => speakSentence(rubyKana(example.jp), 0.85)} title="Nghe câu ví dụ">
+            <Ruby text={example.jp} />
+          </button>
+          <p className="wc-example-vi">{example.vi}</p>
+          <p className="wc-tip">
+            <Lightbulb size={14} /> {example.tip}
+          </p>
+        </div>
+      )}
 
       <div className="fc-actions">
         <button className="fc-btn bad" onClick={() => answer(false)}>

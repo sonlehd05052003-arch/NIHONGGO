@@ -6,18 +6,21 @@ import { WordImage } from '@/components/ui/WordImage'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { N5_VOCABULARY, shuffle, speak } from '@/services/vocabularyService'
 import { useProgress } from '@/hooks/useProgress'
+import { LESSONS } from '@/services/lessons'
 import './HomePage.css'
 
 interface HomePageProps {
   onNavigateToVocab: () => void
   onNavigateToQuiz: () => void
+  onNavigateToLessons: () => void
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
   onNavigateToVocab,
   onNavigateToQuiz,
+  onNavigateToLessons,
 }) => {
-  const { knownCount, streak, todayCount } = useProgress()
+  const { knownCount, streak, todayCount, dueIds } = useProgress()
   const [goal, setGoal] = useLocalStorage<number>('nihongo_daily_goal', 20)
   const [previewCards] = useState(() => shuffle(N5_VOCABULARY.filter((w) => w.image)).slice(0, 12))
   const goalPct = Math.min(1, todayCount / goal)
@@ -55,14 +58,18 @@ export const HomePage: React.FC<HomePageProps> = ({
             <span className="text-gradient">{N5_VOCABULARY.length} từ vựng JLPT N5</span>
           </h1>
           <p className="hero-description">
-            Học bằng thẻ ghi nhớ, trắc nghiệm, gõ đáp án và ghép thẻ. Không cần đăng ký — tiến độ được lưu ngay trên trình duyệt của bạn.
+            {LESSONS.length} bài nhỏ theo chủ đề, có ảnh, câu ví dụ, mẹo nhớ và bài đọc. Ôn tập ngắt quãng giúp nhớ lâu.
+            Không cần đăng ký — tiến độ được lưu ngay trên trình duyệt của bạn.
           </p>
           <div className="hero-cta">
-            <Button size="lg" icon={<ArrowRight size={18} />} onClick={onNavigateToVocab}>
-              Xem danh sách từ
+            <Button size="lg" icon={<ArrowRight size={18} />} onClick={onNavigateToLessons}>
+              {dueIds.length > 0 ? `Ôn ${dueIds.length} từ đến hạn` : 'Học theo lộ trình'}
             </Button>
             <Button size="lg" variant="outline" icon={<Trophy size={18} />} onClick={onNavigateToQuiz}>
-              Luyện tập ngay
+              Luyện tập tự do
+            </Button>
+            <Button size="lg" variant="ghost" onClick={onNavigateToVocab}>
+              Danh sách từ
             </Button>
           </div>
         </div>

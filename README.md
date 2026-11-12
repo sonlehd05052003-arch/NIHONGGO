@@ -23,6 +23,22 @@ sửa từ khoá rồi chạy `node scripts/fetch-images.mjs` để lấy lại 
 
 **Cho học thú vị hơn:** XP & cấp độ, combo trả lời đúng liên tiếp, hiệu ứng âm thanh (tắt được), pháo giấy và 1–3 sao khi hoàn thành, mục tiêu ôn tập mỗi ngày.
 
+## Lộ trình bài học
+
+Tab **Bài học** chia 604 từ thành 48 bài theo chủ đề (`src/data/lessons.json`, nguồn ở `scripts/lessons-src.mjs`).
+Mỗi bài có 3 bước:
+
+1. **Học từ** — ảnh, câu ví dụ có furigana (nghe được), mẹo nhớ (âm Hán Việt, từ dễ nhầm, cách dùng)
+2. **Luyện tập** — 4 chế độ từ dễ đến khó, chỉ với từ của bài
+3. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, bật/tắt bản dịch từng câu, nghe cả bài, 3 câu hỏi đọc hiểu
+
+**Ôn tập ngắt quãng (SRS):** trả lời đúng thì từ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày, sai thì ôn lại
+ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn.
+
+Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`, gộp lại bằng
+`node scripts/build-content.mjs` (kiểm tra furigana, đủ từ, đáp án hợp lệ) → `src/data/content.json` (tải lười).
+Furigana viết dạng `{漢字|かんじ}`.
+
 ## Chế độ học
 
 - **Thẻ ghi nhớ** — Space lật thẻ, ← chưa thuộc, → đã thuộc, S gắn sao, P phát âm

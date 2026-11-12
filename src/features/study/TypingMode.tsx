@@ -2,9 +2,12 @@ import React, { useEffect, useRef, useState } from 'react'
 import { CheckCircle2, XCircle, Lightbulb, Volume2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useProgress } from '@/hooks/useProgress'
-import { checkMeaningAnswer, checkTypedAnswer, meaningAlternatives, speak } from '@/services/vocabularyService'
+import { WordImage } from '@/components/ui/WordImage'
+import { checkMeaningAnswer, checkTypedAnswer, meaningAlternatives, preloadImage, speak } from '@/services/vocabularyService'
+import { isSoundOn } from '@/services/sound'
 import type { QuizDirection, VocabularyItem } from '@/types'
 import { ResultView, SessionHeader, type ModeProps } from './shared'
+import { useSessionGame } from './useSessionGame'
 
 type Status = 'idle' | 'correct' | 'wrong'
 /** jp-vi: nhìn tiếng Nhật, gõ nghĩa tiếng Việt · vi-jp: nhìn nghĩa, gõ tiếng Nhật */
@@ -17,6 +20,7 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
   onRestart,
 }) => {
   const { recordAnswer } = useProgress()
+  const game = useSessionGame()
   const [dirs] = useState<Dir[]>(() =>
     deck.map(() => (direction === 'mixed' ? (Math.random() < 0.5 ? 'jp-vi' : 'vi-jp') : direction)),
   )
@@ -31,6 +35,11 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
   const done = idx >= deck.length
   const word = deck[idx]
   const dir = dirs[idx]
+
+  useEffect(() => {
+    preloadImage(deck[idx + 1])
+    if (dirs[idx] === 'jp-vi' && deck[idx] && isSoundOn()) speak(deck[idx].kana)
+  }, [deck, dirs, idx])
 
   useEffect(() => {
     if (status === 'idle') inputRef.current?.focus()
@@ -48,6 +57,8 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
     return (
       <ResultView
         title="Hoàn thành phần gõ đáp án"
+        accuracy={score / deck.length}
+        game={game}
         scoreText={
           <>
             Đúng <b className="hl">{score}</b> / {deck.length} từ
@@ -62,6 +73,7 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
   }
 
   const markWrong = () => {
+    game.miss()
     recordAnswer(word.id, false)
     setWrong((w) => [...w, word])
   }
@@ -72,13 +84,16 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
     if (!input.trim()) return
     const ok = dir === 'vi-jp' ? checkTypedAnswer(input, word) : checkMeaningAnswer(input, word)
     setStatus(ok ? 'correct' : 'wrong')
-    if (ok) recordAnswer(word.id, true)
-    else markWrong()
-    if (dir === 'vi-jp') speak(word.kana)
+    if (ok) {
+      recordAnswer(word.id, true)
+      game.hit(12)
+    } else markWrong()
+    if (dir === 'vi-jp' && isSoundOn()) speak(word.kana)
   }
 
   const override = () => {
     recordAnswer(word.id, true)
+    game.hit(12)
     setWrong((w) => w.filter((x) => x.id !== word.id))
     next()
   }
@@ -107,9 +122,11 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
         total={deck.length}
         onExit={onExit}
         right={`${idx + 1} / ${deck.length}`}
+        game={game}
       />
 
-      <div className="q-box">
+      <div key={idx} className={`q-box enter ${status === 'correct' ? 'ok' : status === 'wrong' ? 'bad' : ''}`}>
+        {(dir === 'vi-jp' || status !== 'idle') && word.image && <WordImage word={word} credit className="q-img" />}
         {dir === 'vi-jp' ? (
           <>
             <p className="q-prompt">Gõ từ tiếng Nhật (kana, romaji hoặc kanji) có nghĩa:</p>

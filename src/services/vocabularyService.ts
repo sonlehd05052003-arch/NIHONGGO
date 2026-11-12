@@ -1,7 +1,27 @@
-import type { DeckFilter, ProgressState, VocabularyItem, WordCategory } from '@/types'
+import type { DeckFilter, ProgressState, VocabularyItem, WordCategory, WordImage } from '@/types'
 import n5Data from '@/data/n5.json'
+import n5Images from '@/data/n5-images.json'
 
-export const N5_VOCABULARY = n5Data as VocabularyItem[]
+// Ảnh từ Wikimedia Commons, lưu gọn: [đường dẫn sau "wikipedia/commons/", tác giả, giấy phép]
+const COMMONS = 'https://upload.wikimedia.org/wikipedia/commons/'
+const IMAGES = n5Images as unknown as Record<string, [string, string, string]>
+
+function toImage([path, credit, license]: [string, string, string]): WordImage {
+  // thumb/a/ab/<tên>/500px-<tên>  hoặc  a/ab/<tên>
+  const parts = path.split('/')
+  const file = parts[0] === 'thumb' ? parts[3] : parts[2]
+  return { src: COMMONS + path, page: `https://commons.wikimedia.org/wiki/File:${file}`, credit, license }
+}
+
+export const N5_VOCABULARY: VocabularyItem[] = (n5Data as VocabularyItem[]).map((w) => {
+  const img = IMAGES[w.kanji || w.kana]
+  return img ? { ...w, image: toImage(img) } : w
+})
+
+/** Tải trước ảnh để lúc chuyển thẻ hiện ngay */
+export function preloadImage(w?: VocabularyItem) {
+  if (w?.image) new Image().src = w.image.src
+}
 
 export const CATEGORIES: WordCategory[] = ['Danh từ', 'Động từ', 'Tính từ い', 'Tính từ な', 'Từ khác']
 
@@ -103,14 +123,104 @@ export function meaningAlternatives(meaning: string): string[] {
   return [...new Set(parts.map(cleanVi).filter(Boolean))]
 }
 
-/** So nghĩa tiếng Việt: đúng một ý là được; gõ không dấu cũng chấp nhận */
+// ---------------------------------------------------------------------------
+// Chuẩn hoá nghĩa tiếng Việt: từ đồng nghĩa / Bắc–Nam và số chữ ↔ chữ số
+// ---------------------------------------------------------------------------
+
+/** Mỗi nhóm: từ đầu tiên là dạng chuẩn, các từ sau được quy về nó */
+const VI_SYNONYMS: string[][] = [
+  ['mùa hạ', 'mùa hè'],
+  ['nghỉ hè', 'nghỉ hạ'],
+  ['bố', 'cha', 'tía'],
+  ['mẹ', 'má'],
+  ['tivi', 'ti vi', 'ti-vi', 'tv', 'vô tuyến'],
+  ['ô tô', 'ôtô', 'oto', 'xe ô tô', 'xe hơi'],
+  ['xe máy', 'xe gắn máy'],
+  ['cốc', 'ly'],
+  ['bát', 'chén'],
+  ['thìa', 'muỗng'],
+  ['xà phòng', 'xà bông'],
+  ['nghìn', 'ngàn'],
+  ['máy ảnh', 'máy chụp ảnh', 'máy chụp hình', 'máy hình'],
+  ['nhà vệ sinh', 'toilet', 'wc'],
+  ['lạc', 'đậu phộng'],
+  ['béo', 'mập'],
+  ['nhanh', 'lẹ'],
+  ['mũ', 'nón'],
+  ['kính', 'mắt kính', 'kính mắt'],
+  ['sân bay', 'phi trường'],
+  ['máy bay', 'phi cơ'],
+  ['cảnh sát', 'công an'],
+  ['rạp chiếu phim', 'rạp phim', 'rạp chiếu bóng'],
+  ['bao giờ', 'khi nào', 'lúc nào'],
+  ['như thế nào', 'thế nào', 'ra sao'],
+  ['tại sao', 'vì sao'],
+  ['vâng', 'dạ'],
+  ['chủ nhật', 'cn'],
+  ['mồng', 'mùng'],
+  ['năm ngoái', 'năm trước', 'năm rồi'],
+  ['tháng trước', 'tháng rồi'],
+  ['tuần trước', 'tuần rồi'],
+  ['hôm nay', 'bữa nay'],
+  ['hôm qua', 'bữa qua'],
+  ['ngày mai', 'mai'],
+]
+
+/** Số đếm viết bằng chữ → chữ số (áp dụng cho cả đáp án và câu trả lời nên luôn nhất quán) */
+const VI_NUMBERS: Record<string, string> = {
+  một: '1', hai: '2', ba: '3', bốn: '4', tư: '4', năm: '5', sáu: '6',
+  bảy: '7', bẩy: '7', tám: '8', chín: '9', mười: '10', trăm: '100', vạn: '10000',
+}
+
+const BOUND_L = '(?<![\\p{L}\\p{N}])'
+const BOUND_R = '(?![\\p{L}\\p{N}])'
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+/** Tạo hàm thay thế theo từ, ưu tiên cụm dài trước để "ô tô" không bị cắt thành "ô" */
+function makeReplacer(map: Map<string, string>) {
+  const keys = [...map.keys()].sort((a, b) => b.length - a.length).map(escapeRe)
+  const re = new RegExp(`${BOUND_L}(${keys.join('|')})${BOUND_R}`, 'gu')
+  return (s: string) => s.replace(re, (m) => map.get(m) ?? m)
+}
+
+function buildCanon(fold: (s: string) => string) {
+  const syn = new Map<string, string>()
+  for (const [canon, ...rest] of VI_SYNONYMS) for (const v of [canon, ...rest]) syn.set(fold(v), fold(canon))
+  const num = new Map(Object.entries(VI_NUMBERS).map(([k, v]) => [fold(k), v]))
+  const r1 = makeReplacer(syn)
+  const r2 = makeReplacer(num)
+  // Bỏ loại từ đứng đầu: "cái bàn" = "bàn", "bức tranh" = "tranh"
+  const lead = new RegExp(`^(${['cái', 'chiếc', 'con', 'quả', 'bức', 'cuốn', 'quyển', 'tờ'].map(fold).join('|')}) (?=\\S)`, 'u')
+  return (s: string) => r2(r1(fold(s))).replace(lead, '').replace(/\s+/g, ' ').trim()
+}
+
+const canonExact = buildCanon((s) => s)
+const canonFolded = buildCanon(foldVi)
+
+/**
+ * Gõ thiếu dấu thì bỏ qua, nhưng dấu đã gõ phải khớp:
+ * "ban" khớp "bàn"; "bẩn" thì không khớp "bàn".
+ */
+function accentCompatible(input: string, target: string): boolean {
+  const a = [...input]
+  const b = [...target]
+  if (a.length !== b.length) return false
+  return a.every((c, i) => c === b[i] || (foldVi(c) === c && foldVi(b[i]) === c))
+}
+
+/** So nghĩa tiếng Việt: đúng một ý là được; chấp nhận gõ thiếu dấu, số dạng chữ số và từ đồng nghĩa */
 export function checkMeaningAnswer(input: string, w: VocabularyItem): boolean {
   const n = cleanVi(input.replace(/\([^)]*\)/g, ' '))
   if (!n) return false
   const alts = meaningAlternatives(w.meaningVi)
-  if (alts.includes(n)) return true
+  if (alts.some((a) => accentCompatible(n, a))) return true
+  const ce = canonExact(n)
+  if (alts.some((a) => accentCompatible(ce, canonExact(a)))) return true
+  // Gõ hoàn toàn không dấu: so trên bản đã bỏ dấu (để "mua he" vẫn khớp "mùa hạ")
   const folded = foldVi(n)
-  return alts.some((a) => foldVi(a) === folded)
+  if (folded !== n) return false
+  const cf = canonFolded(folded)
+  return alts.some((a) => canonFolded(foldVi(a)) === cf)
 }
 
 export function speak(text: string) {

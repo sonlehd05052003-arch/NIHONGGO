@@ -1,6 +1,7 @@
 import React, { useDeferredValue, useMemo, useState } from 'react'
 import { Search, Volume2, BookOpen, Star, Check } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
+import { WordImage } from '@/components/ui/WordImage'
 import { useProgress } from '@/hooks/useProgress'
 import { CATEGORIES, N5_VOCABULARY, speak } from '@/services/vocabularyService'
 import type { WordCategory } from '@/types'
@@ -123,6 +124,9 @@ export const VocabularyPage: React.FC = () => {
                 <div key={w.id} className={`vocab-row ${p.known ? 'known' : ''}`}>
                   <button className="row-btn" onClick={() => speak(w.kana)} title="Nghe phát âm">
                     <Volume2 size={18} />
+                  </button>
+                  <button className="row-img" onClick={() => speak(w.kana)} title="Nghe phát âm">
+                    <WordImage word={w} size="thumb" />
                   </button>
                   <div className="row-jp">
                     <span className="row-kanji">{w.kanji || w.kana}</span>

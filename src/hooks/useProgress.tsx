@@ -26,6 +26,9 @@ interface ProgressContextValue {
   progress: ProgressState
   streak: number
   knownCount: number
+  xp: number
+  todayCount: number
+  addXp: (amount: number) => void
   get: (id: string) => WordProgress
   setKnown: (id: string, known: boolean) => void
   toggleStar: (id: string) => void
@@ -44,6 +47,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setProgress((prev) => {
         const t = today()
         return {
+          ...prev,
           words: { ...prev.words, [id]: fn(prev.words[id] ?? {}) },
           studyDays:
             markStudy && !prev.studyDays.includes(t) ? [...prev.studyDays, t].slice(-400) : prev.studyDays,
@@ -59,13 +63,22 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       progress,
       streak: computeStreak(progress.studyDays ?? []),
       knownCount: Object.values(words).filter((w) => w.known).length,
+      xp: progress.xp ?? 0,
+      todayCount: progress.daily?.date === today() ? progress.daily.count : 0,
+      addXp: (amount) => setProgress((prev) => ({ ...prev, xp: (prev.xp ?? 0) + amount })),
       get: (id) => words[id] ?? {},
       setKnown: (id, known) => update(id, (p) => ({ ...p, known })),
       toggleStar: (id) => update(id, (p) => ({ ...p, starred: !p.starred }), false),
-      recordAnswer: (id, correct) =>
+      recordAnswer: (id, correct) => {
         update(id, (p) =>
           correct ? { ...p, correct: (p.correct ?? 0) + 1 } : { ...p, wrong: (p.wrong ?? 0) + 1 },
-        ),
+        )
+        setProgress((prev) => {
+          const t = today()
+          const count = prev.daily?.date === t ? prev.daily.count : 0
+          return { ...prev, daily: { date: t, count: count + 1 } }
+        })
+      },
       resetProgress: () => setProgress(EMPTY),
     }
   }, [progress, update, setProgress])

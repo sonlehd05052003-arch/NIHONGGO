@@ -1,9 +1,12 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Timer } from 'lucide-react'
 import { useProgress } from '@/hooks/useProgress'
+import { WordImage } from '@/components/ui/WordImage'
 import { shuffle } from '@/services/vocabularyService'
+import { sfx } from '@/services/sound'
 import type { VocabularyItem } from '@/types'
 import { ResultView, SessionHeader, type ModeProps } from './shared'
+import { useSessionGame } from './useSessionGame'
 
 const PAIRS_PER_ROUND = 6
 
@@ -12,13 +15,14 @@ interface Tile {
   wordId: string
   text: string
   jp: boolean
+  word: VocabularyItem
 }
 
 function makeTiles(words: VocabularyItem[]): Tile[] {
   return shuffle(
     words.flatMap((w) => [
-      { key: `${w.id}-jp`, wordId: w.id, text: w.kanji || w.kana, jp: true },
-      { key: `${w.id}-vi`, wordId: w.id, text: w.meaningVi, jp: false },
+      { key: `${w.id}-jp`, wordId: w.id, text: w.kanji || w.kana, jp: true, word: w },
+      { key: `${w.id}-vi`, wordId: w.id, text: w.meaningVi, jp: false, word: w },
     ]),
   )
 }
@@ -27,6 +31,7 @@ const fmt = (ms: number) => `${(ms / 1000).toFixed(1)}s`
 
 export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
   const { recordAnswer } = useProgress()
+  const game = useSessionGame()
   const rounds = useMemo(() => {
     const r: VocabularyItem[][] = []
     for (let i = 0; i < deck.length; i += PAIRS_PER_ROUND) r.push(deck.slice(i, i + PAIRS_PER_ROUND))
@@ -63,6 +68,7 @@ export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
 
   const click = (t: Tile) => {
     if (matched.has(t.wordId) || flash) return
+    sfx.tap()
     if (!picked) return setPicked(t)
     if (picked.key === t.key) return setPicked(null)
     if (picked.jp === t.jp) return setPicked(t)
@@ -73,8 +79,10 @@ export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
     if (!ok) {
       setMistakes((m) => new Map(m).set(picked.wordId, byId.get(picked.wordId)!).set(t.wordId, byId.get(t.wordId)!))
       recordAnswer(picked.wordId, false)
+      game.miss()
     } else {
       recordAnswer(t.wordId, !mistakes.has(t.wordId))
+      game.hit(5)
     }
     window.setTimeout(
       () => {
@@ -100,6 +108,8 @@ export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
     return (
       <ResultView
         title="Ghép xong toàn bộ!"
+        accuracy={1 - wrong.length / deck.length}
+        game={game}
         scoreText={
           <>
             Thời gian <b className="hl">{fmt(endTime - start)}</b> · {wrong.length} từ ghép nhầm
@@ -122,6 +132,7 @@ export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
         current={doneBefore + matched.size}
         total={deck.length}
         onExit={onExit}
+        game={game}
         right={
           <span className="timer">
             <Timer size={15} /> {fmt(now - start)}
@@ -135,11 +146,12 @@ export const MatchMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) => {
           return (
             <button
               key={t.key}
-              className={`match-tile ${t.jp ? 'jp' : ''} ${picked?.key === t.key ? 'picked' : ''} ${f} ${isMatched ? 'gone' : ''}`}
+              className={`match-tile ${t.jp ? 'jp' : t.word.image ? 'has-img' : ''} ${picked?.key === t.key ? 'picked' : ''} ${f} ${isMatched ? 'gone' : ''}`}
               onClick={() => click(t)}
               disabled={isMatched}
             >
-              {t.text}
+              {!t.jp && t.word.image && <WordImage word={t.word} size="tile" />}
+              <span className="match-text">{t.text}</span>
             </button>
           )
         })}

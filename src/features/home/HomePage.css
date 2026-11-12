@@ -293,3 +293,45 @@
     grid-template-columns: 1fr;
   }
 }
+
+.card-photo.word-img-card {
+  max-height: 150px;
+  margin-bottom: 4px;
+}
+
+.goal-ring {
+  --pct: 0;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  background:
+    radial-gradient(closest-side, var(--bg-surface) 76%, transparent 78%),
+    conic-gradient(#22c55e calc(var(--pct) * 360deg), var(--border-subtle) 0);
+  transition: background 0.4s ease;
+}
+
+.goal-chips {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.goal-chip {
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-strong);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.goal-chip.active {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #fff;
+}

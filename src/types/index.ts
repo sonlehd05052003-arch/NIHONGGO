@@ -14,10 +14,19 @@ export interface VocabularyItem {
   meaningVi: string
   level: JlptLevel
   category: WordCategory
+  image?: WordImage
   example?: {
     japanese: string
     vietnamese: string
   }
+}
+
+export interface WordImage {
+  src: string
+  /** Trang mô tả ảnh trên Wikimedia Commons */
+  page: string
+  credit: string
+  license: string
 }
 
 export interface WordProgress {
@@ -31,6 +40,9 @@ export interface ProgressState {
   words: Record<string, WordProgress>
   /** Các ngày có học, dạng YYYY-MM-DD */
   studyDays: string[]
+  xp?: number
+  /** Số lượt ôn trong ngày, để tính mục tiêu hằng ngày */
+  daily?: { date: string; count: number }
 }
 
 export type StudyMode = 'flashcard' | 'quiz' | 'typing' | 'match'

@@ -1,0 +1,99 @@
+.word-img {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.word-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation: img-in 0.35s ease;
+}
+
+@keyframes img-in {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+}
+
+.word-img-card {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  max-height: 230px;
+  border-radius: var(--radius-md);
+}
+
+.word-img-tile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.word-img-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+}
+
+.word-img-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, hsl(var(--hue) 80% 62%), hsl(calc(var(--hue) + 40) 75% 52%));
+  color: #fff;
+  font-family: var(--font-japanese);
+  font-weight: 700;
+  text-align: center;
+  padding: 6px;
+}
+
+.word-img-fallback span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.word-img-card.word-img-fallback {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+}
+
+.word-img-thumb.word-img-fallback {
+  font-size: 1rem;
+}
+
+.word-img-credit {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0.75;
+}
+
+.word-img-credit:hover {
+  opacity: 1;
+}
+
+.confetti-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+}

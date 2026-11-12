@@ -2,9 +2,13 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { CheckCircle2, XCircle, Volume2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useProgress } from '@/hooks/useProgress'
-import { pickDistractors, shuffle, speak } from '@/services/vocabularyService'
+import { WordImage } from '@/components/ui/WordImage'
+import { pickDistractors, preloadImage, shuffle, speak } from '@/services/vocabularyService'
+import { isSoundOn } from '@/services/sound'
 import type { QuizDirection, VocabularyItem } from '@/types'
 import { ResultView, SessionHeader, type ModeProps } from './shared'
+import { isFromControl } from './keys'
+import { useSessionGame } from './useSessionGame'
 
 type QType = 'jp-vi' | 'vi-jp' | 'reading'
 
@@ -39,6 +43,7 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
   onRestart,
 }) => {
   const { recordAnswer } = useProgress()
+  const game = useSessionGame()
   const [questions] = useState(() => makeQuestions(deck, direction))
   const [idx, setIdx] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
@@ -47,6 +52,13 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
 
   const done = idx >= questions.length
   const q = questions[idx]
+
+  useEffect(() => {
+    preloadImage(questions[idx + 1]?.word)
+    // Câu hỏi tiếng Nhật: tự đọc phát âm
+    const cur = questions[idx]
+    if (cur && cur.type !== 'vi-jp' && isSoundOn()) speak(cur.word.kana)
+  }, [questions, idx])
 
   const next = useCallback(() => {
     window.clearTimeout(timer.current)
@@ -60,10 +72,16 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
       setSelected(i)
       const ok = q.options[i].id === q.word.id
       recordAnswer(q.word.id, ok)
-      if (ok) timer.current = window.setTimeout(next, 700)
-      else setWrong((w) => [...w, q.word])
+      if (ok) {
+        game.hit()
+        timer.current = window.setTimeout(next, 900)
+      } else {
+        game.miss()
+        setWrong((w) => [...w, q.word])
+      }
+      if (q.type === 'vi-jp' && isSoundOn()) speak(q.word.kana)
     },
-    [q, selected, recordAnswer, next],
+    [q, selected, recordAnswer, next, game],
   )
 
   useEffect(() => () => window.clearTimeout(timer.current), [])
@@ -74,7 +92,7 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
       if (done) return
       const n = Number(e.key)
       if (n >= 1 && n <= 4) choose(n - 1)
-      else if (e.key === 'Enter' && selected !== null) next()
+      else if (e.key === 'Enter' && selected !== null && !isFromControl(e)) next()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -85,6 +103,8 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
     return (
       <ResultView
         title={score === questions.length ? 'Xuất sắc! 🎉' : 'Hoàn thành bài trắc nghiệm'}
+        accuracy={score / questions.length}
+        game={game}
         scoreText={
           <>
             Đúng <b className="hl">{score}</b> / {questions.length} câu ({Math.round((score / questions.length) * 100)}%)
@@ -104,9 +124,11 @@ export const QuizMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
 
   return (
     <>
-      <SessionHeader title="Trắc nghiệm" current={idx} total={questions.length} onExit={onExit} right={`${idx + 1} / ${questions.length}`} />
+      <SessionHeader title="Trắc nghiệm" current={idx} total={questions.length} onExit={onExit} right={`${idx + 1} / ${questions.length}`} game={game} />
 
-      <div className="q-box">
+      <div key={idx} className={`q-box enter ${selected === null ? '' : options[selected].id === word.id ? 'ok' : 'bad'}`}>
+        {/* Việt→Nhật: ảnh là gợi ý; Nhật→Việt: chỉ hiện ảnh sau khi trả lời để không lộ đáp án */}
+        {(type === 'vi-jp' || selected !== null) && word.image && <WordImage word={word} credit className="q-img" />}
         <p className="q-prompt">{PROMPTS[type]}</p>
         {type === 'vi-jp' ? (
           <div className="q-main vi">{word.meaningVi}</div>

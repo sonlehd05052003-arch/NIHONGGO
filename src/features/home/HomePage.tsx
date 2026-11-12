@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { Sparkles, Trophy, BookMarked, ArrowRight, Volume2, RotateCcw, Flame, CheckCircle2 } from 'lucide-react'
+import { Sparkles, Trophy, ArrowRight, Volume2, RotateCcw, Flame, CheckCircle2, Target } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
+import { WordImage } from '@/components/ui/WordImage'
+import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { N5_VOCABULARY, shuffle, speak } from '@/services/vocabularyService'
 import { useProgress } from '@/hooks/useProgress'
 import './HomePage.css'
@@ -15,8 +17,10 @@ export const HomePage: React.FC<HomePageProps> = ({
   onNavigateToVocab,
   onNavigateToQuiz,
 }) => {
-  const { knownCount, streak } = useProgress()
-  const [previewCards] = useState(() => shuffle(N5_VOCABULARY).slice(0, 12))
+  const { knownCount, streak, todayCount } = useProgress()
+  const [goal, setGoal] = useLocalStorage<number>('nihongo_daily_goal', 20)
+  const [previewCards] = useState(() => shuffle(N5_VOCABULARY.filter((w) => w.image)).slice(0, 12))
+  const goalPct = Math.min(1, todayCount / goal)
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const [isFlipped, setIsFlipped] = useState(false)
 
@@ -93,6 +97,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="card-header-badge">
                   <span className="romaji-badge">Romaji: {activeCard.romaji}</span>
                 </div>
+                <WordImage word={activeCard} credit className="card-photo" />
                 <div className="card-meaning">{activeCard.meaningVi}</div>
                 {activeCard.example && (
                   <div className="card-example">
@@ -123,13 +128,24 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* Stats Section */}
       <section className="stats-section">
-        <Card glass className="stat-card">
-          <div className="stat-icon-box primary">
-            <BookMarked size={24} />
+        <Card glass className="stat-card goal-card">
+          <div className="goal-ring" style={{ '--pct': goalPct } as React.CSSProperties}>
+            {goalPct >= 1 ? <CheckCircle2 size={26} /> : <Target size={24} />}
           </div>
           <div>
-            <div className="stat-value">{N5_VOCABULARY.length}</div>
-            <div className="stat-label">Từ vựng N5 (danh từ, động từ, tính từ...)</div>
+            <div className="stat-value">
+              {Math.min(todayCount, goal)} / {goal}
+            </div>
+            <div className="stat-label">
+              {goalPct >= 1 ? 'Đã đạt mục tiêu hôm nay 🎉' : 'Lượt ôn hôm nay · mục tiêu:'}
+            </div>
+            <div className="goal-chips">
+              {[10, 20, 50].map((g) => (
+                <button key={g} className={`goal-chip ${goal === g ? 'active' : ''}`} onClick={() => setGoal(g)}>
+                  {g}
+                </button>
+              ))}
+            </div>
           </div>
         </Card>
 

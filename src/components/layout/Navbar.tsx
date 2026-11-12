@@ -2,6 +2,7 @@ import React from 'react'
 import { Sun, Moon, Flame, BookOpen, Layers, Award } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useProgress } from '@/hooks/useProgress'
+import { levelInfo } from '@/services/level'
 import './Navbar.css'
 
 export type TabId = 'home' | 'vocab' | 'study'
@@ -20,7 +21,8 @@ const TABS: { id: TabId; label: string; icon: React.ReactNode }[] = [
 ]
 
 export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, currentTab, onSelectTab }) => {
-  const { streak } = useProgress()
+  const { streak, xp } = useProgress()
+  const lv = levelInfo(xp)
 
   const links = TABS.map((t) => (
     <button
@@ -50,6 +52,12 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, currentTab
           <nav className="navbar-menu">{links}</nav>
 
           <div className="navbar-actions">
+            <div className="nav-level" title={`Cấp ${lv.level} · ${lv.current}/${lv.needed} XP tới cấp tiếp theo`}>
+              <span className="nav-level-num">Lv {lv.level}</span>
+              <span className="nav-level-bar">
+                <span style={{ width: `${(lv.current / lv.needed) * 100}%` }} />
+              </span>
+            </div>
             <div className="streak-badge" title="Chuỗi ngày học liên tục">
               <Flame size={18} className="streak-icon" />
               <span className="streak-count">{streak} ngày</span>

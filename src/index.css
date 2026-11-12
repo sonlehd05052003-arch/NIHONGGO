@@ -83,11 +83,32 @@ button {
   cursor: pointer;
   border: none;
   background: none;
-  outline: none;
 }
 
 input, textarea, select {
   font-family: inherit;
+}
+
+/* Viền focus chỉ hiện khi điều hướng bằng bàn phím (Tab), không hiện khi bấm chuột */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--color-accent-light);
+}
+
+/* Ô nhập đã có style focus riêng */
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+[data-theme='dark'] :focus-visible {
+  outline-color: #a5b4fc;
 }
 
 /* Scrollbar customization */

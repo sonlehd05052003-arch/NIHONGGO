@@ -8,7 +8,7 @@ import { addDays, dayKey } from '@/services/srs'
 import { shuffle } from '@/services/vocabularyService'
 import type { QuizDirection, StudyMode, VocabularyItem } from '@/types'
 import { StudySession, type Session } from '@/features/study/StudySession'
-import { LessonDetail } from './LessonDetail'
+import { LessonDetail, type Step } from './LessonDetail'
 import './LessonsPage.css'
 
 const REVIEW_MODES: { mode: StudyMode; label: string }[] = [
@@ -23,6 +23,12 @@ export const LessonsPage: React.FC = () => {
   const [openId, setOpenId] = useLocalStorage<string | null>('nihongo_open_lesson', null)
   const [reviewMode, setReviewMode] = useLocalStorage<StudyMode>('nihongo_review_mode', 'quiz')
   const [session, setSession] = useState<(Session & { direction: QuizDirection }) | null>(null)
+  // Bước mở đầu khi vào một bài (mặc định "Học từ"; "Bài đọc tiếp theo" thì mở thẳng bài đọc)
+  const [openStep, setOpenStep] = useState<Step>('learn')
+  const openLesson = (id: string | null) => {
+    setOpenStep('learn')
+    setOpenId(id)
+  }
 
   const stats = useMemo(
     () => new Map(LESSONS.map((l) => [l.id, lessonStats(l, get, progress.readings?.[l.id])])),
@@ -71,8 +77,17 @@ export const LessonsPage: React.FC = () => {
             key={open.id}
             lesson={open}
             index={openIdx}
-            onBack={() => setOpenId(null)}
-            onNext={openIdx < LESSONS.length - 1 ? () => setOpenId(LESSONS[openIdx + 1].id) : undefined}
+            onBack={() => openLesson(null)}
+            initialStep={openStep}
+            onNext={
+              openIdx < LESSONS.length - 1
+                ? (step) => {
+                    setOpenStep(step)
+                    setOpenId(LESSONS[openIdx + 1].id)
+                    window.scrollTo({ top: 0 })
+                  }
+                : undefined
+            }
             onPractice={(mode, direction) => start(mode, shuffle(lessonWords(open)), direction)}
           />
         </div>
@@ -143,7 +158,7 @@ export const LessonsPage: React.FC = () => {
           <p>
             {nextLesson.unit} · {nextLesson.words.length} từ
           </p>
-          <Button variant="secondary" icon={<Play size={16} />} onClick={() => setOpenId(nextLesson.id)}>
+          <Button variant="secondary" icon={<Play size={16} />} onClick={() => openLesson(nextLesson.id)}>
             Vào học
           </Button>
         </section>
@@ -166,7 +181,7 @@ export const LessonsPage: React.FC = () => {
                 <button
                   key={l.id}
                   className={`lesson-card ${s.done ? 'done' : ''} ${isNext ? 'next' : ''}`}
-                  onClick={() => setOpenId(l.id)}
+                  onClick={() => openLesson(l.id)}
                 >
                   <span className="lc-num">{s.done ? <CheckCircle2 size={20} /> : n}</span>
                   <span className="lc-main">

@@ -12,7 +12,7 @@ import { speak, speakSentence } from '@/services/vocabularyService'
 import type { Lesson, QuizDirection, StudyMode } from '@/types'
 import { ReadingView } from './ReadingView'
 
-type Step = 'learn' | 'practice' | 'read'
+export type Step = 'learn' | 'practice' | 'read'
 
 const PRACTICE: { mode: StudyMode; label: string; desc: string }[] = [
   { mode: 'flashcard', label: '① Thẻ ghi nhớ', desc: 'Làm quen: lật thẻ, tự đánh giá' },
@@ -25,12 +25,14 @@ export const LessonDetail: React.FC<{
   lesson: Lesson
   index: number
   onBack: () => void
-  onNext?: () => void
+  initialStep?: Step
+  /** Mở bài kế tiếp, ở bước được chỉ định */
+  onNext?: (step: Step) => void
   onPractice: (mode: StudyMode, direction: QuizDirection) => void
-}> = ({ lesson, index, onBack, onNext, onPractice }) => {
+}> = ({ lesson, index, initialStep = 'learn', onBack, onNext, onPractice }) => {
   const { get, toggleStar, progress } = useProgress()
   const content = useContent()
-  const [step, setStep] = useState<Step>('learn')
+  const [step, setStep] = useState<Step>(initialStep)
   const [furigana, setFurigana] = useLocalStorage('nihongo_furigana', true)
   const [direction, setDirection] = useLocalStorage<QuizDirection>('nihongo_lesson_direction', 'jp-vi')
   const words = lessonWords(lesson)
@@ -210,9 +212,14 @@ export const LessonDetail: React.FC<{
               Luyện tập thêm
             </Button>
             {onNext && (
-              <Button size="lg" icon={<ArrowRight size={18} />} onClick={onNext}>
-                Bài tiếp theo
-              </Button>
+              <>
+                <Button variant="secondary" icon={<BookOpen size={16} />} onClick={() => onNext('learn')}>
+                  Học bài tiếp theo
+                </Button>
+                <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => onNext('read')}>
+                  Bài đọc tiếp theo
+                </Button>
+              </>
             )}
           </div>
         </>

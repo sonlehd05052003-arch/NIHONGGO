@@ -1,6 +1,10 @@
 import type { DeckFilter, ProgressState, VocabularyItem, WordCategory, WordImage } from '@/types'
 import n5Data from '@/data/n5.json'
 import n5Images from '@/data/n5-images.json'
+import acceptVi from '@/data/accept-vi.json'
+
+/** Các cách nói khác được chấm đúng khi gõ nghĩa (không hiển thị) */
+const ACCEPT_VI = acceptVi as unknown as Record<string, string[] | undefined>
 
 // Ảnh từ Wikimedia Commons, lưu gọn: [đường dẫn sau "wikipedia/commons/", tác giả, giấy phép]
 const COMMONS = 'https://upload.wikimedia.org/wikipedia/commons/'
@@ -108,18 +112,31 @@ export function checkTypedAnswer(input: string, w: VocabularyItem): boolean {
 export const foldVi = (s: string) =>
   s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd')
 
-const cleanVi = (s: string) =>
+/**
+ * Đưa dấu thanh về một kiểu: "hóa" = "hoá", "khỏe" = "khoẻ", "thủy" = "thuỷ".
+ * Chỉ áp dụng cho oa/oe/uy ở cuối âm tiết (kiểu cũ đặt dấu ở o/u, kiểu mới đặt ở a/e/y).
+ */
+const TONES = '̣̀́̃̉'
+const OLD_TONE = new RegExp(`(o)([${TONES}])([ae])(?!\\p{L})|(u)([${TONES}])(y)(?!\\p{L})`, 'gu')
+const normTone = (s: string) =>
   s
-    .toLowerCase()
+    .normalize('NFD')
+    .replace(OLD_TONE, (_, o, t1, a, u, t2, y) => (o ? o + a + t1 : u + y + t2))
     .normalize('NFC')
-    .replace(/[.!?…"“”]/g, '')
+
+const cleanVi = (s: string) =>
+  normTone(s.toLowerCase())
+    .replace(/[.!?…"“”~～]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
 
+/** Phần chú thích trong ngoặc, cả ngoặc thường lẫn ngoặc toàn khổ （） */
+const PARENS = /[(（][^)）]*[)）]/g
+
 /** Các nghĩa chấp nhận được: cả câu, từng ý ngăn bởi , ; /, có và không có phần trong ngoặc */
 export function meaningAlternatives(meaning: string): string[] {
-  const withoutParens = meaning.replace(/\([^)]*\)/g, ' ')
-  const parts = [meaning, withoutParens, ...withoutParens.split(/[,;/]/)]
+  const withoutParens = meaning.replace(PARENS, ' ')
+  const parts = [meaning, withoutParens, ...withoutParens.split(/[,;/?]|\shoặc\s/)]
   return [...new Set(parts.map(cleanVi).filter(Boolean))]
 }
 
@@ -164,12 +181,20 @@ const VI_SYNONYMS: string[][] = [
   ['hôm nay', 'bữa nay'],
   ['hôm qua', 'bữa qua'],
   ['ngày mai', 'mai'],
+  ['tất', 'vớ'],
+  ['thịt lợn', 'thịt heo'],
+  ['dĩa', 'nĩa'],
+  ['kỳ', 'kì'],
+  ['ký', 'kí'],
+  ['đợi', 'chờ'],
+  ['hai mươi', 'hai chục'],
 ]
 
 /** Số đếm viết bằng chữ → chữ số (áp dụng cho cả đáp án và câu trả lời nên luôn nhất quán) */
 const VI_NUMBERS: Record<string, string> = {
   một: '1', hai: '2', ba: '3', bốn: '4', tư: '4', năm: '5', sáu: '6',
   bảy: '7', bẩy: '7', tám: '8', chín: '9', mười: '10', trăm: '100', vạn: '10000',
+  'hai mươi': '20',
 }
 
 const BOUND_L = '(?<![\\p{L}\\p{N}])'
@@ -189,8 +214,9 @@ function buildCanon(fold: (s: string) => string) {
   const num = new Map(Object.entries(VI_NUMBERS).map(([k, v]) => [fold(k), v]))
   const r1 = makeReplacer(syn)
   const r2 = makeReplacer(num)
-  // Bỏ loại từ đứng đầu: "cái bàn" = "bàn", "bức tranh" = "tranh"
-  const lead = new RegExp(`^(${['cái', 'chiếc', 'con', 'quả', 'bức', 'cuốn', 'quyển', 'tờ'].map(fold).join('|')}) (?=\\S)`, 'u')
+  // Bỏ loại từ đứng đầu: "cái bàn" = "bàn", "bức tranh" = "tranh", "màu đỏ" = "đỏ"
+  const CLASSIFIERS = ['cái', 'chiếc', 'con', 'quả', 'bức', 'cuốn', 'quyển', 'tờ', 'tấm', 'màu']
+  const lead = new RegExp(`^(${CLASSIFIERS.map(fold).join('|')}) (?=\\S)`, 'u')
   // "ngày mồng 4" = "mồng 4" = "ngày 4"
   const ngay = fold('ngày')
   const mong = new RegExp(`(?:${ngay} )?${fold('mồng')} (\\d+)`, 'gu')
@@ -218,9 +244,9 @@ function accentCompatible(input: string, target: string): boolean {
 
 /** So nghĩa tiếng Việt: đúng một ý là được; chấp nhận gõ thiếu dấu, số dạng chữ số và từ đồng nghĩa */
 export function checkMeaningAnswer(input: string, w: VocabularyItem): boolean {
-  const n = cleanVi(input.replace(/\([^)]*\)/g, ' '))
+  const n = cleanVi(input.replace(PARENS, ' '))
   if (!n) return false
-  const alts = meaningAlternatives(w.meaningVi)
+  const alts = [...meaningAlternatives(w.meaningVi), ...(ACCEPT_VI[w.id] ?? []).map(cleanVi)]
   if (alts.some((a) => accentCompatible(n, a))) return true
   const ce = canonExact(n)
   if (alts.some((a) => accentCompatible(ce, canonExact(a)))) return true

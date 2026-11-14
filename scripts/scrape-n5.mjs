@@ -91,7 +91,7 @@ tables.slice(0, CATEGORIES.length).forEach((table, ti) => {
     if (!kana && !kanji) continue
     if (!kana) kana = kanji
     kana = kana.replace(/\s*[,、，/／]\s*/g, '、')
-    meaning = meaning.replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').replace(/\s*\(/g, ' (').trim()
+    meaning = meaning.replace(/（/g, '(').replace(/）/g, ')').replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').replace(/\s*\(/g, ' (').trim()
     meaning = meaning.charAt(0).toLowerCase() === meaning.charAt(0) ? meaning : meaning.charAt(0).toLowerCase() + meaning.slice(1)
     const key = `${kanji}|${kana}|${ti}`
     if (seen.has(key)) continue

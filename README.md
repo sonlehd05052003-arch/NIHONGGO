@@ -1,6 +1,23 @@
 # NihonGo — Học từ vựng JLPT N5
 
-Ứng dụng học từ vựng tiếng Nhật kiểu Quizlet, không cần đăng nhập. Tiến độ (đã thuộc, gắn sao, đúng/sai, chuỗi ngày học) lưu trong `localStorage` của trình duyệt.
+Ứng dụng học từ vựng tiếng Nhật kiểu Quizlet. Không cần đăng nhập vẫn học được — tiến độ (đã thuộc, gắn sao, đúng/sai,
+lịch ôn, XP, chuỗi ngày học) lưu trong `localStorage` của trình duyệt. **Đăng nhập bằng Google** thì tiến độ được
+lưu lên Firebase Firestore và đồng bộ giữa các thiết bị. Ngoài ra có **Tải file sao lưu / Khôi phục từ file** trong
+hộp thoại tài khoản.
+
+## Bật đăng nhập & đồng bộ (Firebase)
+
+1. Tạo project tại https://console.firebase.google.com (gói Spark miễn phí là đủ).
+2. **Authentication → Get started → Sign-in method**, bật **Google** (đổi Public-facing name thành NihonGo).
+3. **Firestore → Create database** (chọn vùng gần, vd. `asia-southeast1`).
+   Sang tab **Rules**, dán nội dung file [`firestore.rules`](firestore.rules) rồi **Publish**.
+4. **Project settings → Your apps → Web (`</>`)**, đăng ký app, chép cấu hình vào file `.env.local`
+   (theo mẫu [`.env.example`](.env.example)), rồi chạy lại `npm run dev`.
+5. Khi đưa app lên tên miền thật, thêm tên miền đó vào **Authentication → Settings → Authorized domains**.
+
+Dữ liệu mỗi người nằm ở `users/{uid}` và chỉ chính người đó đọc/ghi được. Khi đăng nhập, tiến độ trên máy được gộp với
+tiến độ trên cloud (không mất phần đã học ở bên nào); sau đó mọi thay đổi tự đồng bộ, mất mạng vẫn học bình thường.
+Đăng xuất sẽ xoá dữ liệu trên máy đó (vẫn còn trong tài khoản).
 
 ## Chạy
 

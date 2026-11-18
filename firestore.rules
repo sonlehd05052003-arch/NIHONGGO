@@ -1,0 +1,17 @@
+rules_version = '2';
+
+// Mỗi người chỉ đọc/ghi được tiến độ của chính mình: users/{uid}
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read, delete: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['progress', 'clientId', 'updatedAt'])
+        && request.resource.data.progress is map;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

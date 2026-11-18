@@ -1,5 +1,7 @@
 import React, { createContext, useCallback, useContext, useMemo } from 'react'
+import { CloudProvider } from '@/hooks/useCloud'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { EMPTY_PROGRESS, mergeProgress } from '@/services/progressMerge'
 import { dayKey as today, isDue, nextSrs } from '@/services/srs'
 import type { ProgressState, WordProgress } from '@/types'
 
@@ -33,9 +35,11 @@ interface ProgressContextValue {
   dueIds: string[]
   setReadingScore: (lessonId: string, score: number) => void
   resetProgress: () => void
+  /** Thay tiến độ bằng dữ liệu khác (vd. từ file sao lưu); merge = gộp với tiến độ hiện có */
+  replaceProgress: (p: ProgressState, merge?: boolean) => void
 }
 
-const EMPTY: ProgressState = { words: {}, studyDays: [] }
+const EMPTY = EMPTY_PROGRESS
 const ProgressContext = createContext<ProgressContextValue | null>(null)
 
 export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -89,10 +93,17 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         })
       },
       resetProgress: () => setProgress(EMPTY),
+      replaceProgress: (p, merge = false) => setProgress((prev) => (merge ? mergeProgress(prev, p) : p)),
     }
   }, [progress, update, setProgress])
 
-  return <ProgressContext.Provider value={value}>{children}</ProgressContext.Provider>
+  return (
+    <ProgressContext.Provider value={value}>
+      <CloudProvider progress={progress} setProgress={setProgress}>
+        {children}
+      </CloudProvider>
+    </ProgressContext.Provider>
+  )
 }
 
 // eslint-disable-next-line react/only-export-components

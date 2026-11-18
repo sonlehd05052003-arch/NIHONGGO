@@ -1,5 +1,6 @@
 import React from 'react'
 import { Sun, Moon, Flame, BookOpen, Layers, Award, Map } from 'lucide-react'
+import { AccountButton } from '@/components/account/AccountMenu'
 import { Button } from '@/components/ui/Button'
 import { useProgress } from '@/hooks/useProgress'
 import { levelInfo } from '@/services/level'
@@ -72,6 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, onToggleTheme, currentTab
             >
               {theme === 'dark' ? <Sun size={19} /> : <Moon size={19} />}
             </Button>
+            <AccountButton />
           </div>
         </div>
       </header>

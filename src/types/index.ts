@@ -53,6 +53,10 @@ export interface ProgressState {
   daily?: { date: string; count: number }
   /** Điểm cao nhất phần đọc hiểu của từng bài (0..1) */
   readings?: Record<string, number>
+  /** Điểm cao nhất phần viết câu của từng bài (0..1) */
+  writing?: Record<string, number>
+  /** Điểm cao nhất phần nghe chép chính tả của từng bài (0..1) */
+  dictation?: Record<string, number>
 }
 
 export interface Lesson {
@@ -82,9 +86,39 @@ export interface Reading {
   questions: ReadingQuestion[]
 }
 
+export interface GrammarPoint {
+  /** Mẫu ngữ pháp, vd. "N1 は N2 です" */
+  pattern: string
+  meaning: string
+  structure?: string
+  explain: string
+  note?: string
+  examples: { jp: string; vi: string }[]
+}
+
+export interface WritingExercise {
+  /** jv = Nhật → Việt, vj = Việt → Nhật */
+  dir: 'jv' | 'vj'
+  /** Câu tiếng Nhật (có furigana dạng {漢字|かな}) — đề bài (jv) hoặc đáp án (vj) */
+  jp: string
+  /** Câu tiếng Việt — đáp án (jv) hoặc đề bài (vj) */
+  vi: string
+  /** Các cách dịch tiếng Việt khác cũng đúng */
+  acceptVi?: string[]
+  /** Các đáp án tiếng Nhật khác cũng đúng (không furigana) */
+  acceptJp?: string[]
+  hint?: string
+}
+
+export interface LessonGrammar {
+  points: GrammarPoint[]
+  exercises: WritingExercise[]
+}
+
 export interface StudyContent {
   examples: Record<string, WordExample>
   readings: Record<string, Reading>
+  grammar?: Record<string, LessonGrammar>
 }
 
 export type StudyMode = 'flashcard' | 'quiz' | 'typing' | 'match'

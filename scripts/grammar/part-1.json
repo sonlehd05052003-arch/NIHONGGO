@@ -1,0 +1,341 @@
+{
+  "L1": {
+    "points": [
+      {
+        "pattern": "これ／それ／あれ は N です",
+        "meaning": "Cái này / cái đó / cái kia là N",
+        "structure": "これ／それ／あれ ＋ は ＋ N ＋ です",
+        "explain": "これ chỉ vật ở gần người nói, それ chỉ vật ở gần người nghe, あれ chỉ vật ở xa cả hai người. Ba từ này đứng một mình thay cho danh từ, không đi kèm danh từ phía sau. は (đọc là \"wa\") đánh dấu chủ đề của câu, です đặt cuối câu để khẳng định lịch sự, giống \"là\" trong tiếng Việt.",
+        "note": "Trợ từ は trong câu này luôn đọc là \"wa\", không đọc \"ha\".",
+        "examples": [
+          { "jp": "これは{本|ほん}です。", "vi": "Đây là quyển sách." },
+          { "jp": "それは{傘|かさ}です。", "vi": "Đó là cái ô." },
+          { "jp": "あれは{学校|がっこう}です。", "vi": "Kia là trường học." }
+        ]
+      },
+      {
+        "pattern": "この／その／あの N",
+        "meaning": "N này / N đó / N kia",
+        "structure": "この／その／あの ＋ N",
+        "explain": "この, その, あの luôn đứng ngay trước một danh từ để chỉ rõ vật/người nào: この本 = quyển sách này, あの人 = người kia. Khoảng cách giống bộ これ・それ・あれ: この gần người nói, その gần người nghe, あの xa cả hai.",
+        "note": "Không nói \"これ本\" hay \"この は\": これ đứng một mình, この phải có danh từ đi sau.",
+        "examples": [
+          { "jp": "この{人|ひと}は{先生|せんせい}です。", "vi": "Người này là giáo viên." },
+          { "jp": "その{本|ほん}は{辞書|じしょ}です。", "vi": "Quyển sách đó là từ điển." },
+          { "jp": "あの{建物|たてもの}は{病院|びょういん}です。", "vi": "Toà nhà kia là bệnh viện." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "それは{時計|とけい}です。", "vi": "Đó là cái đồng hồ.",
+        "acceptVi": ["Cái đó là đồng hồ", "Cái đó là cái đồng hồ", "Đó là đồng hồ"] },
+      { "dir": "vj", "vi": "Cái kia là cái ô.", "jp": "あれは{傘|かさ}です。",
+        "acceptJp": [], "hint": "あれ ＋ は ＋ かさ（cái ô）＋ です" },
+      { "dir": "jv", "jp": "この{人|ひと}は{先生|せんせい}です。", "vi": "Người này là giáo viên.",
+        "acceptVi": ["Người này là thầy giáo", "Người này là cô giáo", "Vị này là giáo viên"] },
+      { "dir": "vj", "vi": "Đây là quyển sách.", "jp": "これは{本|ほん}です。",
+        "acceptJp": [], "hint": "これ ＋ は ＋ ほん（sách）＋ です" },
+      { "dir": "jv", "jp": "あの{建物|たてもの}は{病院|びょういん}です。", "vi": "Toà nhà kia là bệnh viện.",
+        "acceptVi": ["Tòa nhà kia là bệnh viện", "Ngôi nhà kia là bệnh viện", "Toà nhà đằng kia là bệnh viện"] },
+      { "dir": "vj", "vi": "Người kia là bác sĩ.", "jp": "あの{人|ひと}は{医者|いしゃ}です。",
+        "acceptJp": ["あの方は医者です"], "hint": "あの ＋ ひと（người）＋ は ＋ いしゃ（bác sĩ）＋ です" }
+    ]
+  },
+  "L2": {
+    "points": [
+      {
+        "pattern": "〜か (câu hỏi) & từ để hỏi",
+        "meaning": "Đặt câu hỏi với なん, だれ, どこ, いつ…",
+        "structure": "Câu ＋ か ／ … ＋ từ để hỏi ＋ ですか",
+        "explain": "Chỉ cần thêm か vào cuối câu là thành câu hỏi, giọng hơi lên cuối câu: これは本ですか (Đây là sách phải không?). Muốn hỏi thông tin cụ thể thì đặt từ để hỏi vào đúng chỗ của thông tin đó: 何 (cái gì), 誰 (ai), いつ (khi nào), いくら (bao nhiêu tiền), どれ (cái nào). Trật tự câu không thay đổi.",
+        "note": "何 trước です đọc là なん (なんですか), còn trước を hay đứng riêng thường đọc là なに.",
+        "examples": [
+          { "jp": "これは{何|なん}ですか。", "vi": "Cái này là cái gì?" },
+          { "jp": "あの{人|ひと}は{誰|だれ}ですか。", "vi": "Người kia là ai?" },
+          { "jp": "{誕生日|たんじょうび}はいつですか。", "vi": "Sinh nhật (bạn) là khi nào?" }
+        ]
+      },
+      {
+        "pattern": "N は どこ ですか",
+        "meaning": "N ở đâu?",
+        "structure": "N ＋ は ＋ どこ ＋ ですか",
+        "explain": "Dùng để hỏi vị trí của người, đồ vật hay địa điểm. Câu trả lời thay どこ bằng chỗ đó: トイレはあそこです (Nhà vệ sinh ở đằng kia). Muốn nói lịch sự hơn thì dùng どちら thay cho どこ.",
+        "note": "Trả lời bằng ここ／そこ／あそこ (chỗ này / chỗ đó / chỗ kia), không dùng これ／それ／あれ.",
+        "examples": [
+          { "jp": "トイレはどこですか。", "vi": "Nhà vệ sinh ở đâu?" },
+          { "jp": "{駅|えき}はどこですか。", "vi": "Nhà ga ở đâu?" },
+          { "jp": "{先生|せんせい}はどこですか。", "vi": "Thầy giáo ở đâu?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "それは{何|なん}ですか。", "vi": "Cái đó là cái gì?",
+        "acceptVi": ["Đó là gì", "Cái đó là gì", "Cái đó là cái gì vậy"] },
+      { "dir": "vj", "vi": "Người kia là ai?", "jp": "あの{人|ひと}は{誰|だれ}ですか。",
+        "acceptJp": ["あの方はどなたですか", "あの方は誰ですか"], "hint": "あの ひと ＋ は ＋ だれ（ai）＋ ですか" },
+      { "dir": "jv", "jp": "このかばんはいくらですか。", "vi": "Cái cặp này bao nhiêu tiền?",
+        "acceptVi": ["Cái túi này bao nhiêu tiền", "Cái cặp này giá bao nhiêu", "Chiếc cặp này bao nhiêu tiền"] },
+      { "dir": "vj", "vi": "Nhà ga ở đâu?", "jp": "{駅|えき}はどこですか。",
+        "acceptJp": ["駅はどちらですか"], "hint": "えき（nhà ga）＋ は ＋ どこ ＋ ですか" },
+      { "dir": "jv", "jp": "トイレはどこですか。", "vi": "Nhà vệ sinh ở đâu?",
+        "acceptVi": ["Nhà vệ sinh ở chỗ nào", "Phòng vệ sinh ở đâu", "Toilet ở đâu"] },
+      { "dir": "vj", "vi": "Cái này là cái gì?", "jp": "これは{何|なん}ですか。",
+        "acceptJp": [], "hint": "これ ＋ は ＋ なん（gì）＋ ですか" }
+    ]
+  },
+  "L3": {
+    "points": [
+      {
+        "pattern": "N じゃ（では）ありません",
+        "meaning": "Không phải là N",
+        "structure": "N1 ＋ は ＋ N2 ＋ じゃ ありません（では ありません）",
+        "explain": "Đây là dạng phủ định của です. じゃありません dùng khi nói chuyện, ではありません trang trọng hơn, hay gặp trong văn viết; nghĩa giống nhau. Khi trả lời câu hỏi có/không, thường mở đầu bằng はい (vâng) hoặc いいえ (không).",
+        "note": "Chữ は trong ではありません cũng đọc là \"wa\".",
+        "examples": [
+          { "jp": "これは{本|ほん}じゃありません。", "vi": "Đây không phải là sách." },
+          { "jp": "{私|わたし}は{学生|がくせい}じゃありません。", "vi": "Tôi không phải là sinh viên." },
+          { "jp": "いいえ、それは{傘|かさ}ではありません。", "vi": "Không, đó không phải là cái ô." }
+        ]
+      },
+      {
+        "pattern": "N も",
+        "meaning": "N cũng…",
+        "structure": "N ＋ も ＋ … です／じゃ ありません",
+        "explain": "も thay vào chỗ của は khi điều được nói giống với điều vừa nói trước đó, nghĩa là \"cũng\". Dùng được cả với câu khẳng định (cũng là) và phủ định (cũng không phải là).",
+        "note": "Không viết \"はも\": も thay hẳn cho は.",
+        "examples": [
+          { "jp": "{私|わたし}も{学生|がくせい}です。", "vi": "Tôi cũng là sinh viên." },
+          { "jp": "これも{辞書|じしょ}です。", "vi": "Cái này cũng là từ điển." },
+          { "jp": "あの{人|ひと}も{先生|せんせい}じゃありません。", "vi": "Người kia cũng không phải là giáo viên." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "いいえ、{私|わたし}は{先生|せんせい}じゃありません。", "vi": "Không, tôi không phải là giáo viên.",
+        "acceptVi": ["Không, tôi không phải giáo viên", "Không, mình không phải là giáo viên", "Không phải, tôi không phải là giáo viên"] },
+      { "dir": "vj", "vi": "Cái này không phải là từ điển.", "jp": "これは{辞書|じしょ}じゃありません。",
+        "acceptJp": ["これは辞書ではありません"], "hint": "これ ＋ は ＋ じしょ（từ điển）＋ じゃ ありません" },
+      { "dir": "jv", "jp": "あの{人|ひと}も{学生|がくせい}です。", "vi": "Người kia cũng là sinh viên.",
+        "acceptVi": ["Người kia cũng là học sinh", "Người đằng kia cũng là sinh viên", "Người ấy cũng là sinh viên"] },
+      { "dir": "vj", "vi": "Tôi cũng là sinh viên.", "jp": "{私|わたし}も{学生|がくせい}です。",
+        "acceptJp": [], "hint": "わたし ＋ も ＋ がくせい（sinh viên）＋ です" },
+      { "dir": "jv", "jp": "あれは{病院|びょういん}じゃありません。", "vi": "Kia không phải là bệnh viện.",
+        "acceptVi": ["Cái kia không phải là bệnh viện", "Kia không phải bệnh viện", "Đằng kia không phải là bệnh viện"] },
+      { "dir": "vj", "vi": "Người kia cũng không phải là giáo viên.", "jp": "あの{人|ひと}も{先生|せんせい}じゃありません。",
+        "acceptJp": ["あの人も先生ではありません"], "hint": "あの ひと ＋ も ＋ せんせい ＋ じゃ ありません" }
+    ]
+  },
+  "L4": {
+    "points": [
+      {
+        "pattern": "あまり 〜ません",
+        "meaning": "Không… lắm",
+        "structure": "あまり ＋ Vません",
+        "explain": "あまり luôn đi với dạng phủ định, nghĩa là \"không… lắm, ít khi…\". Bài này mới làm quen vài động từ quen thuộc: 食べます (ăn), 飲みます (uống), 見ます (xem); đuôi ～ません là dạng phủ định (sẽ học kỹ ở bài 9). Đồ vật nói tới đặt trước は làm chủ đề: コーヒーはあまり飲みません = Cà phê thì tôi không uống lắm.",
+        "note": "Không dùng あまり với câu khẳng định: nói あまり飲みません, không nói \"あまり飲みます\".",
+        "examples": [
+          { "jp": "{肉|にく}はあまり{食|た}べません。", "vi": "Tôi không ăn thịt lắm." },
+          { "jp": "お{酒|さけ}はあまり{飲|の}みません。", "vi": "Tôi không uống rượu lắm." },
+          { "jp": "テレビはあまり{見|み}ません。", "vi": "Tôi không xem tivi lắm." }
+        ]
+      },
+      {
+        "pattern": "いつも／ときどき／よく",
+        "meaning": "Trạng từ chỉ tần suất",
+        "structure": "いつも／よく／ときどき ＋ Vます ／ … です",
+        "explain": "Ba trạng từ cho biết việc xảy ra thường xuyên đến đâu: いつも (luôn luôn, lúc nào cũng), よく (hay, thường), ときどき (thỉnh thoảng). Chúng đứng trước động từ hoặc trước phần vị ngữ. Đi với câu khẳng định ～ます／です.",
+        "note": "Thứ tự từ nhiều đến ít: いつも ＞ よく ＞ ときどき ＞ あまり〜ません.",
+        "examples": [
+          { "jp": "{兄|あに}はいつも{元気|げんき}です。", "vi": "Anh trai tôi lúc nào cũng khoẻ." },
+          { "jp": "テレビはよく{見|み}ます。", "vi": "Tôi hay xem tivi." },
+          { "jp": "コーヒーはときどき{飲|の}みます。", "vi": "Thỉnh thoảng tôi uống cà phê." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{肉|にく}はあまり{食|た}べません。", "vi": "Tôi không ăn thịt lắm.",
+        "acceptVi": ["Tôi ít ăn thịt", "Tôi không hay ăn thịt", "Mình không ăn thịt lắm", "Thịt thì tôi không ăn lắm"] },
+      { "dir": "vj", "vi": "Tôi không uống cà phê lắm.", "jp": "コーヒーはあまり{飲|の}みません。",
+        "acceptJp": ["私はコーヒーをあまり飲みません", "コーヒーをあまり飲みません", "私はコーヒーはあまり飲みません"],
+        "hint": "コーヒー ＋ は ＋ あまり ＋ のみません（không uống）" },
+      { "dir": "jv", "jp": "テレビはときどき{見|み}ます。", "vi": "Thỉnh thoảng tôi xem tivi.",
+        "acceptVi": ["Tôi thỉnh thoảng xem tivi", "Thỉnh thoảng mình xem ti vi", "Tivi thì thỉnh thoảng tôi xem"] },
+      { "dir": "vj", "vi": "Anh trai tôi lúc nào cũng khoẻ.", "jp": "{兄|あに}はいつも{元気|げんき}です。",
+        "acceptJp": ["私の兄はいつも元気です"], "hint": "あに（anh trai tôi）＋ は ＋ いつも ＋ げんき（khoẻ）＋ です" },
+      { "dir": "jv", "jp": "{水|みず}はよく{飲|の}みます。", "vi": "Tôi hay uống nước.",
+        "acceptVi": ["Tôi thường uống nước", "Mình hay uống nước", "Nước thì tôi hay uống"] },
+      { "dir": "vj", "vi": "Tôi thỉnh thoảng ăn cá.", "jp": "{魚|さかな}はときどき{食|た}べます。",
+        "acceptJp": ["私は時々魚を食べます", "時々魚を食べます", "魚を時々食べます", "私は魚を時々食べます"],
+        "hint": "さかな（cá）＋ は ＋ ときどき ＋ たべます（ăn）" }
+    ]
+  },
+  "L5": {
+    "points": [
+      {
+        "pattern": "N1 は N2 です",
+        "meaning": "N1 là N2 (giới thiệu)",
+        "structure": "N1 ＋ は ＋ N2 ＋ です",
+        "explain": "Mẫu câu cơ bản để giới thiệu bản thân và người thân: N1 là chủ đề, N2 là thông tin về N1 (tên, nghề nghiệp…). Khi nói về gia đình mình với người khác, dùng các từ khiêm tốn: 兄 (anh trai tôi), 姉 (chị gái tôi), 弟 (em trai tôi), 妹 (em gái tôi).",
+        "note": "Khi đã rõ đang nói về mình, người Nhật thường bỏ 私は cho tự nhiên.",
+        "examples": [
+          { "jp": "{私|わたし}はリンです。", "vi": "Tôi là Linh." },
+          { "jp": "{兄|あに}は{医者|いしゃ}です。", "vi": "Anh trai tôi là bác sĩ." },
+          { "jp": "{妹|いもうと}は{学生|がくせい}です。", "vi": "Em gái tôi là sinh viên." }
+        ]
+      },
+      {
+        "pattern": "N1 の N2",
+        "meaning": "N2 của N1 (sở hữu, thuộc về)",
+        "structure": "N1 ＋ の ＋ N2",
+        "explain": "の nối hai danh từ: N1 bổ nghĩa cho N2. Thường mang nghĩa sở hữu (私の本 = sách của tôi) hoặc nói N2 thuộc loại/lĩnh vực nào (日本語の先生 = giáo viên tiếng Nhật). Chú ý thứ tự ngược với tiếng Việt: từ bổ nghĩa đứng trước.",
+        "note": "Khi đã rõ vật là gì, có thể bỏ N2: この本は私のです (Quyển sách này là của tôi).",
+        "examples": [
+          { "jp": "これは{私|わたし}の{本|ほん}です。", "vi": "Đây là sách của tôi." },
+          { "jp": "{弟|おとうと}の{名前|なまえ}はナムです。", "vi": "Tên của em trai tôi là Nam." },
+          { "jp": "{姉|あね}は{日本語|にほんご}の{先生|せんせい}です。", "vi": "Chị gái tôi là giáo viên tiếng Nhật." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{兄|あに}は{医者|いしゃ}です。", "vi": "Anh trai tôi là bác sĩ.",
+        "acceptVi": ["Anh tôi là bác sĩ", "Anh trai mình là bác sĩ", "Anh trai của tôi là bác sĩ"] },
+      { "dir": "vj", "vi": "Em gái tôi là sinh viên.", "jp": "{妹|いもうと}は{学生|がくせい}です。",
+        "acceptJp": ["私の妹は学生です"], "hint": "いもうと（em gái tôi）＋ は ＋ がくせい ＋ です" },
+      { "dir": "jv", "jp": "これは{弟|おとうと}の{傘|かさ}です。", "vi": "Đây là cái ô của em trai tôi.",
+        "acceptVi": ["Cái này là ô của em trai tôi", "Đây là ô của em trai mình", "Đây là cái dù của em trai tôi"] },
+      { "dir": "vj", "vi": "Đây là sách của tôi.", "jp": "これは{私|わたし}の{本|ほん}です。",
+        "acceptJp": [], "hint": "これ ＋ は ＋ わたし ＋ の ＋ ほん ＋ です" },
+      { "dir": "jv", "jp": "{姉|あね}は{日本語|にほんご}の{先生|せんせい}です。", "vi": "Chị gái tôi là giáo viên tiếng Nhật.",
+        "acceptVi": ["Chị tôi là giáo viên tiếng Nhật", "Chị gái mình là cô giáo tiếng Nhật", "Chị gái tôi là giáo viên dạy tiếng Nhật"] },
+      { "dir": "vj", "vi": "Bố mẹ tôi là giáo viên.", "jp": "{両親|りょうしん}は{先生|せんせい}です。",
+        "acceptJp": ["私の両親は先生です"], "hint": "りょうしん（bố mẹ tôi）＋ は ＋ せんせい ＋ です" }
+    ]
+  },
+  "L6": {
+    "points": [
+      {
+        "pattern": "〜さん／お〜さん",
+        "meaning": "Cách gọi người khác lịch sự",
+        "structure": "Tên ＋ さん ／ お ＋ (người thân) ＋ さん",
+        "explain": "さん gắn sau tên người khác để gọi lịch sự, dùng cho cả nam lẫn nữ, tương đương anh/chị/ông/bà. Khi nói về người thân của người khác, dùng dạng kính trọng có お〜さん: お母さん (mẹ bạn), お父さん (bố bạn), お兄さん, お姉さん. Không bao giờ gắn さん vào tên của chính mình.",
+        "note": "Nói về gia đình mình dùng 兄・姉 (bài 5); nói về gia đình người khác dùng お兄さん・お姉さん.",
+        "examples": [
+          { "jp": "{田中|たなか}さんは{先生|せんせい}です。", "vi": "Anh Tanaka là giáo viên." },
+          { "jp": "あなたのお{母|かあ}さんは{先生|せんせい}ですか。", "vi": "Mẹ của bạn là giáo viên à?" },
+          { "jp": "{山田|やまだ}さんのお{兄|にい}さんは{医者|いしゃ}です。", "vi": "Anh trai của chị Yamada là bác sĩ." }
+        ]
+      },
+      {
+        "pattern": "N1 と N2",
+        "meaning": "N1 và N2",
+        "structure": "N1 ＋ と ＋ N2",
+        "explain": "と nối hai (hoặc nhiều) danh từ, nghĩa là \"và\". Chỉ dùng để nối danh từ với danh từ, không dùng để nối hai câu.",
+        "note": "Nối ba danh từ: A と B と C; không nối câu bằng と.",
+        "examples": [
+          { "jp": "{兄|あに}と{姉|あね}は{学生|がくせい}です。", "vi": "Anh trai và chị gái tôi là sinh viên." },
+          { "jp": "これとそれは{私|わたし}の{本|ほん}です。", "vi": "Cái này và cái đó là sách của tôi." },
+          { "jp": "おじいさんとおばあさんは{元気|げんき}です。", "vi": "Ông và bà đều khoẻ." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{山田|やまだ}さんのお{父|とう}さんは{医者|いしゃ}です。", "vi": "Bố của anh Yamada là bác sĩ.",
+        "acceptVi": ["Bố anh Yamada là bác sĩ", "Bố của chị Yamada là bác sĩ", "Bố của bạn Yamada là bác sĩ", "Cha của anh Yamada là bác sĩ"] },
+      { "dir": "vj", "vi": "Mẹ của bạn là giáo viên à?", "jp": "あなたのお{母|かあ}さんは{先生|せんせい}ですか。",
+        "acceptJp": ["お母さんは先生ですか"], "hint": "あなた ＋ の ＋ おかあさん ＋ は ＋ せんせい ＋ ですか" },
+      { "dir": "jv", "jp": "{皆|みな}さん、こちらは{田中|たなか}さんです。", "vi": "Mọi người ơi, đây là anh Tanaka.",
+        "acceptVi": ["Thưa mọi người, đây là anh Tanaka", "Mọi người, đây là chị Tanaka", "Các bạn ơi, đây là anh Tanaka"] },
+      { "dir": "vj", "vi": "Anh trai và chị gái tôi là sinh viên.", "jp": "{兄|あに}と{姉|あね}は{学生|がくせい}です。",
+        "acceptJp": ["私の兄と姉は学生です"], "hint": "あに ＋ と ＋ あね ＋ は ＋ がくせい ＋ です" },
+      { "dir": "jv", "jp": "おじいさんとおばあさんは{元気|げんき}です。", "vi": "Ông và bà đều khoẻ.",
+        "acceptVi": ["Ông bà khoẻ", "Ông và bà khoẻ", "Ông bà đều khỏe"] },
+      { "dir": "vj", "vi": "Chị gái của anh Kimura là giáo viên.", "jp": "{木村|きむら}さんのお{姉|ねえ}さんは{先生|せんせい}です。",
+        "acceptJp": [], "hint": "きむらさん ＋ の ＋ おねえさん（chị gái người khác）＋ は ＋ せんせい ＋ です" }
+    ]
+  },
+  "L7": {
+    "points": [
+      {
+        "pattern": "〜じん／〜さい",
+        "meaning": "Người nước…/ … tuổi",
+        "structure": "Tên nước ＋ じん ／ Số ＋ さい",
+        "explain": "Gắn 人 (đọc じん) sau tên nước để nói quốc tịch: ベトナム人 (người Việt Nam), 日本人 (người Nhật). Gắn 歳 (đọc さい) sau số để nói tuổi: 十歳 (10 tuổi). Hỏi tuổi dùng 何歳ですか hoặc lịch sự hơn là おいくつですか.",
+        "note": "Đọc đặc biệt: 1 tuổi いっさい, 8 tuổi はっさい, 10 tuổi じゅっさい, 20 tuổi はたち.",
+        "examples": [
+          { "jp": "{私|わたし}はベトナム{人|じん}です。", "vi": "Tôi là người Việt Nam." },
+          { "jp": "マイクさんはアメリカ{人|じん}です。", "vi": "Anh Mike là người Mỹ." },
+          { "jp": "{弟|おとうと}は{十歳|じゅっさい}です。", "vi": "Em trai tôi 10 tuổi." }
+        ]
+      },
+      {
+        "pattern": "N が います",
+        "meaning": "Có (người, động vật)",
+        "structure": "N ＋ が ＋ います",
+        "explain": "います dùng để nói có người hoặc con vật (những thứ sống, tự cử động được). Muốn nói mình có anh chị em, bạn bè… cũng dùng mẫu này: 兄がいます (Tôi có anh trai). Câu hỏi: 兄弟がいますか (Bạn có anh chị em không?).",
+        "note": "Với đồ vật, cây cối thì dùng あります (sẽ học ở bài sau), không dùng います.",
+        "examples": [
+          { "jp": "{兄|あに}がいます。", "vi": "Tôi có anh trai." },
+          { "jp": "{日本人|にほんじん}の{友達|ともだち}がいます。", "vi": "Tôi có bạn người Nhật." },
+          { "jp": "{犬|いぬ}と{猫|ねこ}がいます。", "vi": "Tôi có chó và mèo." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{私|わたし}はベトナム{人|じん}です。", "vi": "Tôi là người Việt Nam.",
+        "acceptVi": ["Mình là người Việt Nam", "Tôi là người Việt", "Tớ là người Việt Nam"] },
+      { "dir": "vj", "vi": "Anh Mike là người Mỹ.", "jp": "マイクさんはアメリカ{人|じん}です。",
+        "acceptJp": [], "hint": "マイクさん ＋ は ＋ アメリカ ＋ じん ＋ です" },
+      { "dir": "jv", "jp": "{妹|いもうと}は{二十歳|はたち}です。", "vi": "Em gái tôi 20 tuổi.",
+        "acceptVi": ["Em gái tôi hai mươi tuổi", "Em gái mình 20 tuổi", "Em gái tôi năm nay 20 tuổi"] },
+      { "dir": "vj", "vi": "Tôi có bạn người Nhật.", "jp": "{日本人|にほんじん}の{友達|ともだち}がいます。",
+        "acceptJp": ["私は日本人の友達がいます", "私には日本人の友達がいます"],
+        "hint": "にほんじん ＋ の ＋ ともだち（bạn）＋ が ＋ います" },
+      { "dir": "jv", "jp": "{兄弟|きょうだい}がいますか。", "vi": "Bạn có anh chị em không?",
+        "acceptVi": ["Bạn có anh chị em không", "Cậu có anh chị em không", "Bạn có anh chị em à"] },
+      { "dir": "vj", "vi": "Em trai tôi 10 tuổi.", "jp": "{弟|おとうと}は{十歳|じゅっさい}です。",
+        "acceptJp": ["弟は10歳です", "私の弟は十歳です"], "hint": "おとうと ＋ は ＋ じゅっさい（10 tuổi）＋ です" }
+    ]
+  },
+  "L8": {
+    "points": [
+      {
+        "pattern": "N1 は N2 が Adj",
+        "meaning": "N1 thì N2 (bộ phận) … (vd. đau đầu)",
+        "structure": "N1 ＋ は ＋ N2 ＋ が ＋ tính từ ＋ です",
+        "explain": "N1 là người (hoặc vật) được nói tới, N2 là một bộ phận hay đặc điểm của N1, còn tính từ mô tả N2. Ví dụ 私は頭が痛いです: nói về tôi, thì cái đầu đau, tức là \"Tôi bị đau đầu\". Mẫu này rất hay dùng để tả cơ thể, ngoại hình và triệu chứng bệnh.",
+        "note": "背が高い nghĩa là \"cao (người)\" — 背 ở đây là chiều cao, không phải cái lưng.",
+        "examples": [
+          { "jp": "{私|わたし}は{頭|あたま}が{痛|いた}いです。", "vi": "Tôi bị đau đầu." },
+          { "jp": "{兄|あに}は{背|せ}が{高|たか}いです。", "vi": "Anh trai tôi cao." },
+          { "jp": "{妹|いもうと}は{目|め}が{大|おお}きいです。", "vi": "Em gái tôi có đôi mắt to." }
+        ]
+      },
+      {
+        "pattern": "〜から",
+        "meaning": "Vì… (nêu lý do)",
+        "structure": "Lý do ＋ から、Kết quả",
+        "explain": "から đặt ngay sau vế lý do, vế sau là kết quả: 風邪ですから、休みます (Vì bị cảm nên tôi nghỉ). Ngược với tiếng Việt, \"vì\" đứng ở cuối vế lý do chứ không đứng đầu câu. Vế lý do có thể giữ đuôi です／ます cho lịch sự.",
+        "note": "Trả lời câu hỏi どうして (tại sao) bằng: 〜から です.",
+        "examples": [
+          { "jp": "{風邪|かぜ}ですから、{休|やす}みます。", "vi": "Vì bị cảm nên tôi nghỉ." },
+          { "jp": "{病気|びょうき}ですから、{薬|くすり}を{飲|の}みます。", "vi": "Vì bị bệnh nên tôi uống thuốc." },
+          { "jp": "{頭|あたま}が{痛|いた}いですから、{帰|かえ}ります。", "vi": "Vì đau đầu nên tôi về." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{私|わたし}はおなかが{痛|いた}いです。", "vi": "Tôi bị đau bụng.",
+        "acceptVi": ["Tôi đau bụng", "Mình bị đau bụng", "Tôi đang đau bụng"] },
+      { "dir": "vj", "vi": "Anh trai tôi cao.", "jp": "{兄|あに}は{背|せ}が{高|たか}いです。",
+        "acceptJp": ["私の兄は背が高いです"], "hint": "あに ＋ は ＋ せ（chiều cao）＋ が ＋ たかい（cao）＋ です" },
+      { "dir": "jv", "jp": "{風邪|かぜ}ですから、{休|やす}みます。", "vi": "Vì bị cảm nên tôi nghỉ.",
+        "acceptVi": ["Tôi bị cảm nên tôi nghỉ", "Vì bị cảm nên mình nghỉ", "Tôi nghỉ vì bị cảm"] },
+      { "dir": "vj", "vi": "Tôi bị đau răng.", "jp": "{私|わたし}は{歯|は}が{痛|いた}いです。",
+        "acceptJp": ["歯が痛いです"], "hint": "わたし ＋ は ＋ は（răng）＋ が ＋ いたい（đau）＋ です" },
+      { "dir": "jv", "jp": "{妹|いもうと}は{目|め}が{大|おお}きいです。", "vi": "Em gái tôi có đôi mắt to.",
+        "acceptVi": ["Em gái tôi mắt to", "Mắt em gái tôi to", "Em gái mình có mắt to"] },
+      { "dir": "vj", "vi": "Vì bị bệnh nên tôi uống thuốc.", "jp": "{病気|びょうき}ですから、{薬|くすり}を{飲|の}みます。",
+        "acceptJp": ["私は病気ですから、薬を飲みます"], "hint": "びょうき ＋ です ＋ から、くすり（thuốc）＋ を ＋ のみます（uống）" }
+    ]
+  }
+}

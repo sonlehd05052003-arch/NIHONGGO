@@ -1,0 +1,337 @@
+{
+  "L33": {
+    "points": [
+      {
+        "pattern": "Adj かった／Adj くなかった",
+        "meaning": "Tính từ い ở quá khứ: đã… / đã không…",
+        "structure": "Adj い（bỏ い）＋ かったです ／ Adj い（bỏ い）＋ くなかったです",
+        "explain": "Muốn nói về trạng thái trong quá khứ, bỏ đuôi い của tính từ rồi thêm かったです: あつい → あつかったです (đã nóng). Phủ định quá khứ: bỏ い, thêm くなかったです: さむい → さむくなかったです (đã không lạnh). Tính từ い không dùng でした: nói あついでした là sai.",
+        "note": "いい là ngoại lệ: よかったです／よくなかったです.",
+        "examples": [
+          { "jp": "{昨日|きのう}は{暑|あつ}かったです。", "vi": "Hôm qua trời nóng." },
+          { "jp": "{先週|せんしゅう}は{寒|さむ}くなかったです。", "vi": "Tuần trước trời không lạnh." },
+          { "jp": "{昨日|きのう}は{天気|てんき}がよかったです。", "vi": "Hôm qua thời tiết đẹp." }
+        ]
+      },
+      {
+        "pattern": "〜でしょう",
+        "meaning": "Có lẽ…, chắc là… (phỏng đoán)",
+        "structure": "N ／ Adj い ／ Vる ＋ でしょう",
+        "explain": "でしょう dùng để phỏng đoán điều chưa chắc chắn, rất hay gặp trong dự báo thời tiết: 'có lẽ…, chắc là…'. Đặt sau danh từ, tính từ い (giữ nguyên い) hoặc động từ thể từ điển (ふる, はれる). Tính từ な thì bỏ な: しずかでしょう.",
+        "note": "Lên giọng ở cuối (〜でしょう？) thì thành câu hỏi xác nhận: '…đúng không?'.",
+        "examples": [
+          { "jp": "{明日|あした}は{雨|あめ}でしょう。", "vi": "Ngày mai có lẽ trời mưa." },
+          { "jp": "{午後|ごご}は{晴|は}れるでしょう。", "vi": "Buổi chiều có lẽ trời sẽ nắng." },
+          { "jp": "{夜|よる}は{寒|さむ}いでしょう。", "vi": "Buổi tối có lẽ sẽ lạnh." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{昨日|きのう}は{涼|すず}しかったです。", "vi": "Hôm qua trời mát.",
+        "acceptVi": ["Hôm qua mát mẻ", "Hôm qua trời mát mẻ", "Ngày hôm qua trời mát"] },
+      { "dir": "vj", "vi": "Hôm qua trời không lạnh.", "jp": "{昨日|きのう}は{寒|さむ}くなかったです。",
+        "acceptJp": ["昨日は寒くありませんでした。"], "hint": "さむい → さむくなかったです" },
+      { "dir": "jv", "jp": "{明日|あした}は{雨|あめ}でしょう。", "vi": "Ngày mai có lẽ trời mưa.",
+        "acceptVi": ["Mai có lẽ mưa", "Ngày mai chắc là mưa", "Ngày mai có lẽ sẽ mưa"] },
+      { "dir": "vj", "vi": "Hôm qua thời tiết đẹp.", "jp": "{昨日|きのう}は{天気|てんき}がよかったです。",
+        "acceptJp": ["昨日はいい天気でした。", "昨日は天気が良かったです。"], "hint": "いい → よかったです (ngoại lệ)" },
+      { "dir": "jv", "jp": "{今朝|けさ}は{風|かぜ}が{強|つよ}かったです。", "vi": "Sáng nay gió mạnh.",
+        "acceptVi": ["Sáng nay gió to", "Sáng nay gió thổi mạnh", "Sáng nay gió rất mạnh"] },
+      { "dir": "vj", "vi": "Ngày mai có lẽ cũng nóng.", "jp": "{明日|あした}も{暑|あつ}いでしょう。",
+        "acceptJp": [], "hint": "あした ＋ も ＋ あつい ＋ でしょう" }
+    ]
+  },
+  "L34": {
+    "points": [
+      {
+        "pattern": "Vた ことが あります",
+        "meaning": "Đã từng làm V",
+        "structure": "Vた ＋ ことが あります ／ Vた ＋ ことが ありません",
+        "explain": "Dùng để kể kinh nghiệm: đã từng làm V (ít nhất một lần trong đời). Thể た chia giống hệt thể て, chỉ đổi て → た, で → だ: みて → みた, のんで → のんだ. Chưa từng thì dùng Vた ことが ありません.",
+        "note": "Việc cụ thể vừa làm (hôm qua, tuần trước) thì dùng Vました, không dùng ことが あります.",
+        "examples": [
+          { "jp": "{日本|にほん}の{映画|えいが}を{見|み}たことがあります。", "vi": "Tôi đã từng xem phim Nhật." },
+          { "jp": "すしを{食|た}べたことがありますか。", "vi": "Bạn đã từng ăn sushi chưa?" },
+          { "jp": "ギターをひいたことがありません。", "vi": "Tôi chưa từng chơi ghi-ta." }
+        ]
+      },
+      {
+        "pattern": "Vたり Vたり します",
+        "meaning": "Lúc thì…, lúc thì… (liệt kê hành động)",
+        "structure": "Vた ＋ り、Vた ＋ り ＋ します／しました",
+        "explain": "Dùng để nêu vài hành động tiêu biểu trong nhiều việc, không theo thứ tự: 'lúc thì…, lúc thì…', 'làm này làm kia'. Chia động từ sang thể た rồi thêm り. Thì (hiện tại/quá khứ) thể hiện ở します／しました cuối câu.",
+        "note": "Khác Vて、Vて (L26): Vて kể các hành động nối tiếp theo thứ tự, còn Vたり chỉ nêu ví dụ.",
+        "examples": [
+          { "jp": "{週末|しゅうまつ}は{散歩|さんぽ}したり、{買|か}い{物|もの}したりします。", "vi": "Cuối tuần tôi lúc thì đi dạo, lúc thì đi mua sắm." },
+          { "jp": "{休|やす}みの{日|ひ}は{本|ほん}を{読|よ}んだり、{寝|ね}たりします。", "vi": "Ngày nghỉ tôi lúc thì đọc sách, lúc thì ngủ." },
+          { "jp": "{昨日|きのう}は{歌|うた}を{歌|うた}ったり、{泳|およ}いだりしました。", "vi": "Hôm qua tôi lúc thì hát, lúc thì bơi." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{京都|きょうと}へ{行|い}ったことがあります。", "vi": "Tôi đã từng đi Kyoto.",
+        "acceptVi": ["Tôi từng đi Kyoto", "Mình đã từng đến Kyoto", "Tôi đã từng đến Kyoto"] },
+      { "dir": "vj", "vi": "Tôi chưa từng xem phim Nhật.", "jp": "{日本|にほん}の{映画|えいが}を{見|み}たことがありません。",
+        "acceptJp": ["わたしは日本の映画を見たことがありません。", "日本の映画は見たことがありません。"], "hint": "Vた ＋ ことが ありません" },
+      { "dir": "jv", "jp": "{週末|しゅうまつ}は{音楽|おんがく}を{聞|き}いたり、{絵|え}をかいたりします。", "vi": "Cuối tuần tôi lúc thì nghe nhạc, lúc thì vẽ tranh.",
+        "acceptVi": ["Cuối tuần tôi nghe nhạc, vẽ tranh", "Cuối tuần mình lúc thì nghe nhạc lúc thì vẽ tranh", "Vào cuối tuần tôi nghe nhạc và vẽ tranh"] },
+      { "dir": "vj", "vi": "Bạn đã từng chơi ghi-ta chưa?", "jp": "ギターをひいたことがありますか。",
+        "acceptJp": ["ギターを弾いたことがありますか。"], "hint": "ひきます (chơi đàn) → ひいた ＋ ことが ありますか" },
+      { "dir": "jv", "jp": "{昨日|きのう}はプールで{泳|およ}いだり、{散歩|さんぽ}したりしました。", "vi": "Hôm qua tôi lúc thì bơi ở bể bơi, lúc thì đi dạo.",
+        "acceptVi": ["Hôm qua tôi bơi ở bể bơi và đi dạo", "Hôm qua mình lúc thì bơi ở hồ bơi lúc thì đi dạo", "Hôm qua tôi bơi ở hồ bơi, đi dạo"] },
+      { "dir": "vj", "vi": "Hôm qua tôi lúc thì đi mua sắm, lúc thì xem phim.", "jp": "{昨日|きのう}は{買|か}い{物|もの}をしたり、{映画|えいが}を{見|み}たりしました。",
+        "acceptJp": ["昨日は買い物したり、映画を見たりしました。", "昨日、買い物をしたり映画を見たりしました。"], "hint": "Vたり、Vたり ＋ しました (quá khứ)" }
+    ]
+  },
+  "L35": {
+    "points": [
+      {
+        "pattern": "Adj い + N／Adj な + N",
+        "meaning": "Tính từ bổ nghĩa cho danh từ",
+        "structure": "Adj い ＋ N ／ Adj な ＋ な ＋ N",
+        "explain": "Trong tiếng Nhật, tính từ đứng TRƯỚC danh từ, ngược với tiếng Việt: 'ô đỏ' → あかい かさ. Tính từ い giữ nguyên đuôi い; tính từ な phải thêm な: しずかな へや. Các từ chỉ màu là danh từ (くろ, みどり, ちゃいろ) thì nối bằng の: みどりの かばん.",
+        "note": "きれい, ゆうめい trông giống tính từ い nhưng là tính từ な: きれいな へや.",
+        "examples": [
+          { "jp": "{赤|あか}い{傘|かさ}を{買|か}いました。", "vi": "Tôi đã mua cái ô màu đỏ." },
+          { "jp": "これは{白|しろ}い{車|くるま}です。", "vi": "Đây là chiếc xe màu trắng." },
+          { "jp": "きれいな{部屋|へや}ですね。", "vi": "Căn phòng đẹp nhỉ." }
+        ]
+      },
+      {
+        "pattern": "どんな N",
+        "meaning": "N như thế nào? N kiểu gì?",
+        "structure": "どんな ＋ N ＋ ですか／が Adj ですか",
+        "explain": "どんな đứng trước danh từ để hỏi tính chất, đặc điểm của người hoặc vật: 'N như thế nào, loại N nào'. Câu trả lời thường dùng tính từ + danh từ: しずかな まちです. Muốn hỏi cụ thể 'màu gì' thì dùng なにいろ.",
+        "examples": [
+          { "jp": "どんな{色|いろ}が{好|す}きですか。", "vi": "Bạn thích màu như thế nào?" },
+          { "jp": "どんな{映画|えいが}を{見|み}ますか。", "vi": "Bạn xem loại phim nào?" },
+          { "jp": "{田中|たなか}さんはどんな{人|ひと}ですか。", "vi": "Anh Tanaka là người như thế nào?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{青|あお}い{車|くるま}がほしいです。", "vi": "Tôi muốn có chiếc xe màu xanh.",
+        "acceptVi": ["Tôi muốn có xe màu xanh", "Mình muốn một chiếc ô tô màu xanh", "Tôi muốn có chiếc xe hơi màu xanh dương"] },
+      { "dir": "vj", "vi": "Đây là cái ô màu vàng.", "jp": "これは{黄色|きいろ}い{傘|かさ}です。",
+        "acceptJp": ["これは黄色の傘です。"], "hint": "きいろい ＋ かさ (ô)" },
+      { "dir": "jv", "jp": "どんな{音楽|おんがく}が{好|す}きですか。", "vi": "Bạn thích loại nhạc nào?",
+        "acceptVi": ["Bạn thích nhạc như thế nào", "Bạn thích thể loại nhạc nào", "Bạn thích nhạc gì"] },
+      { "dir": "vj", "vi": "Tokyo là thành phố như thế nào?", "jp": "{東京|とうきょう}はどんな{町|まち}ですか。",
+        "acceptJp": ["東京はどんなところですか。"], "hint": "どんな ＋ まち (thành phố)" },
+      { "dir": "jv", "jp": "{茶色|ちゃいろ}の{靴|くつ}を{買|か}いました。", "vi": "Tôi đã mua đôi giày màu nâu.",
+        "acceptVi": ["Tôi mua giày màu nâu", "Mình đã mua đôi giày nâu", "Tôi đã mua giày nâu"] },
+      { "dir": "vj", "vi": "Đó là một căn phòng yên tĩnh.", "jp": "それは{静|しず}かな{部屋|へや}です。",
+        "acceptJp": ["静かな部屋です。"], "hint": "しずか (tính từ な) ＋ な ＋ へや" }
+    ]
+  },
+  "L36": {
+    "points": [
+      {
+        "pattern": "Vないで ください",
+        "meaning": "Xin đừng làm V",
+        "structure": "Vない ＋ で ください",
+        "explain": "Dùng để nhờ hoặc yêu cầu lịch sự ai đó đừng làm gì. Cách chia thể ない từ thể ます: nhóm 1 đổi âm trước ます từ hàng い sang hàng あ rồi thêm ない (のみます → のまない, かきます → かかない; riêng い → わ: あらいます → あらわない). Nhóm 2 bỏ ます thêm ない (たべます → たべない). Nhóm 3: します → しない, きます → こない.",
+        "note": "Vては いけません (L25) là cấm đoán mạnh; Vないで ください là lời nhờ nhẹ nhàng hơn.",
+        "examples": [
+          { "jp": "ここで{寝|ね}ないでください。", "vi": "Xin đừng ngủ ở đây." },
+          { "jp": "テレビをつけないでください。", "vi": "Xin đừng bật tivi." },
+          { "jp": "{写真|しゃしん}をとらないでください。", "vi": "Xin đừng chụp ảnh." }
+        ]
+      },
+      {
+        "pattern": "Vなければ なりません",
+        "meaning": "Phải làm V",
+        "structure": "Vない（bỏ い）＋ ければ なりません",
+        "explain": "Diễn tả nghĩa vụ, việc bắt buộc phải làm. Từ thể ない, bỏ い rồi thêm ければ なりません: たべない → たべなければ なりません, しない → しなければ なりません. Đã phải làm (quá khứ): なければ なりませんでした.",
+        "note": "Mẹo nhớ: ない → なければ なりません (hai lần phủ định = phải làm).",
+        "examples": [
+          { "jp": "{毎日|まいにち}{掃除|そうじ}しなければなりません。", "vi": "Ngày nào cũng phải dọn dẹp." },
+          { "jp": "{薬|くすり}を{飲|の}まなければなりません。", "vi": "Tôi phải uống thuốc." },
+          { "jp": "{明日|あした}は{早|はや}く{起|お}きなければなりません。", "vi": "Ngày mai tôi phải dậy sớm." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "ここでたばこを{吸|す}わないでください。", "vi": "Xin đừng hút thuốc ở đây.",
+        "acceptVi": ["Đừng hút thuốc ở đây", "Vui lòng không hút thuốc ở đây", "Xin vui lòng đừng hút thuốc ở đây"] },
+      { "dir": "vj", "vi": "Xin đừng bật tivi.", "jp": "テレビをつけないでください。",
+        "acceptJp": [], "hint": "つけます → つけない ＋ で ください" },
+      { "dir": "jv", "jp": "{今日|きょう}は{洗濯|せんたく}しなければなりません。", "vi": "Hôm nay tôi phải giặt đồ.",
+        "acceptVi": ["Hôm nay phải giặt quần áo", "Hôm nay mình phải giặt đồ", "Hôm nay tôi phải giặt giũ"] },
+      { "dir": "vj", "vi": "Tôi phải dọn dẹp phòng.", "jp": "{部屋|へや}を{掃除|そうじ}しなければなりません。",
+        "acceptJp": ["部屋の掃除をしなければなりません。", "わたしは部屋を掃除しなければなりません。"], "hint": "そうじします → そうじしなければ なりません" },
+      { "dir": "jv", "jp": "{疲|つか}れましたから、{休|やす}まなければなりません。", "vi": "Vì mệt rồi nên tôi phải nghỉ.",
+        "acceptVi": ["Tôi mệt nên phải nghỉ ngơi", "Vì mệt nên mình phải nghỉ", "Tôi đã mệt rồi nên phải nghỉ ngơi"] },
+      { "dir": "vj", "vi": "Xin đừng ăn trong phòng.", "jp": "{部屋|へや}で{食|た}べないでください。",
+        "acceptJp": ["部屋の中で食べないでください。"], "hint": "たべます → たべない ＋ で ください" }
+    ]
+  },
+  "L37": {
+    "points": [
+      {
+        "pattern": "Vる (thể từ điển)",
+        "meaning": "Thể từ điển và cách chia nhóm động từ",
+        "structure": "Nhóm 1: 〜い ます → 〜う ／ Nhóm 2: 〜ます → 〜る ／ Nhóm 3: します → する, きます → くる",
+        "explain": "Thể từ điển là dạng gốc của động từ, được ghi trong từ điển và dùng trước nhiều mẫu như ことが できます, まえに, でしょう. Nhóm 1: âm trước ます thuộc hàng い, đổi sang hàng う (あるきます → あるく, のります → のる). Nhóm 2: đa số có âm え hoặc い trước ます, chỉ cần bỏ ます thêm る (でかけます → でかける, おります → おりる). Nhóm 3 chỉ có hai động từ bất quy tắc: します → する, きます → くる.",
+        "note": "Vài động từ nhóm 1 trông như nhóm 2: かえります (về) → かえる, はいります → はいる, はしります → はしる.",
+        "examples": [
+          { "jp": "{出|で}かける{前|まえ}に{電話|でんわ}します。", "vi": "Trước khi ra ngoài tôi sẽ gọi điện." },
+          { "jp": "{自転車|じてんしゃ}に{乗|の}ることができます。", "vi": "Tôi có thể đi xe đạp." },
+          { "jp": "{一人|ひとり}で{帰|かえ}ることができます。", "vi": "Tôi có thể tự về một mình." }
+        ]
+      },
+      {
+        "pattern": "Vて いきます／きます",
+        "meaning": "Làm V rồi đi / làm V rồi đến (quay lại)",
+        "structure": "Vて ＋ いきます ／ Vて ＋ きます",
+        "explain": "Vて いきます: làm V rồi đi, hoặc đi bằng cách V (あるいて いきます = đi bộ đi). Vて きます: làm V rồi đến/quay lại đây. Ví dụ もって いきます = mang đi, もって きます = mang đến; かって きます = đi mua rồi về.",
+        "note": "Người Nhật hay nói ちょっと 〜て きます khi ra ngoài một lát rồi sẽ quay lại.",
+        "examples": [
+          { "jp": "{傘|かさ}を{持|も}っていきます。", "vi": "Tôi mang ô đi." },
+          { "jp": "{駅|えき}まで{歩|ある}いていきます。", "vi": "Tôi đi bộ đến ga." },
+          { "jp": "ちょっとジュースを{買|か}ってきます。", "vi": "Tôi đi mua nước ngọt một chút rồi về." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{学校|がっこう}まで{走|はし}っていきました。", "vi": "Tôi đã chạy đến trường.",
+        "acceptVi": ["Tôi chạy đến trường", "Mình đã chạy tới trường", "Tôi chạy tới trường"] },
+      { "dir": "vj", "vi": "Trước khi về nhà, tôi đi mua sắm.", "jp": "{家|うち}へ{帰|かえ}る{前|まえ}に、{買|か}い{物|もの}をします。",
+        "acceptJp": ["家に帰る前に買い物をします。", "家へ帰る前に買い物します。"], "hint": "かえります → かえる ＋ まえに" },
+      { "dir": "jv", "jp": "{降|お}りる{前|まえ}にボタンを{押|お}してください。", "vi": "Trước khi xuống xe, hãy bấm nút.",
+        "acceptVi": ["Hãy bấm nút trước khi xuống", "Trước khi xuống hãy nhấn nút", "Hãy nhấn nút trước khi xuống xe"] },
+      { "dir": "vj", "vi": "Tôi sẽ mang ô đi.", "jp": "{傘|かさ}を{持|も}っていきます。",
+        "acceptJp": ["傘を持って行きます。"], "hint": "もちます → もって いきます" },
+      { "dir": "jv", "jp": "ちょっと{飲|の}み{物|もの}を{買|か}ってきます。", "vi": "Tôi đi mua chút đồ uống rồi quay lại.",
+        "acceptVi": ["Tôi đi mua đồ uống một chút rồi về", "Mình đi mua nước rồi quay lại", "Tôi đi mua ít đồ uống rồi về"] },
+      { "dir": "vj", "vi": "Hôm qua tôi đã đi bộ đến ga.", "jp": "{昨日|きのう}は{駅|えき}まで{歩|ある}いていきました。",
+        "acceptJp": ["昨日、駅まで歩いて行きました。", "昨日は駅まで歩いて行きました。"], "hint": "あるきます → あるいて いきました" }
+    ]
+  },
+  "L38": {
+    "points": [
+      {
+        "pattern": "N に N を かします／かります",
+        "meaning": "Cho (ai) mượn / mượn (của ai)",
+        "structure": "(người) ＋ に ＋ N ＋ を ＋ かします ／ (người) ＋ に ＋ N ＋ を ＋ かります",
+        "explain": "かします là cho người khác mượn, かります là mượn của người khác. Trong cả hai câu, trợ từ に đánh dấu người kia; với かります có thể dùng から thay に. Trả lại đồ đã mượn dùng かえします.",
+        "note": "Mẹo nhớ: かします = đồ rời khỏi tay mình, かります = đồ đến tay mình.",
+        "examples": [
+          { "jp": "{友|とも}だちに{本|ほん}を{貸|か}しました。", "vi": "Tôi đã cho bạn mượn sách." },
+          { "jp": "{先生|せんせい}に{辞書|じしょ}を{借|か}りました。", "vi": "Tôi đã mượn từ điển của thầy giáo." },
+          { "jp": "ペンを{貸|か}してください。", "vi": "Cho tôi mượn cây bút với." }
+        ]
+      },
+      {
+        "pattern": "N が いります",
+        "meaning": "Cần N",
+        "structure": "(người は) N ＋ が ＋ いります",
+        "explain": "いります nghĩa là cần (cái gì đó). Vật cần đi với trợ từ が, không dùng を. Dạng phủ định いりません còn dùng để từ chối lịch sự: 'không cần đâu ạ'.",
+        "note": "いります (cần) là động từ nhóm 1, đừng nhầm với います (có, ở).",
+        "examples": [
+          { "jp": "{旅行|りょこう}にパスポートがいります。", "vi": "Đi du lịch thì cần hộ chiếu." },
+          { "jp": "お{金|かね}がいります。", "vi": "Tôi cần tiền." },
+          { "jp": "ふくろはいりません。", "vi": "Tôi không cần túi." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{田中|たなか}さんに{傘|かさ}を{借|か}りました。", "vi": "Tôi đã mượn ô của anh Tanaka.",
+        "acceptVi": ["Tôi mượn ô của anh Tanaka", "Mình đã mượn cái ô của chị Tanaka", "Tôi đã mượn ô của Tanaka"] },
+      { "dir": "vj", "vi": "Tôi đã cho chị Mai mượn từ điển.", "jp": "マイさんに{辞書|じしょ}を{貸|か}しました。",
+        "acceptJp": ["わたしはマイさんに辞書を貸しました。"], "hint": "(người) に ＋ N を ＋ かしました" },
+      { "dir": "jv", "jp": "{傘|かさ}はいりません。", "vi": "Tôi không cần ô.",
+        "acceptVi": ["Không cần ô", "Mình không cần ô đâu", "Tôi không cần cái ô"] },
+      { "dir": "vj", "vi": "Tôi cần tiền.", "jp": "お{金|かね}がいります。",
+        "acceptJp": ["わたしはお金がいります。", "お金が要ります。"], "hint": "N ＋ が ＋ いります" },
+      { "dir": "jv", "jp": "その{本|ほん}を{貸|か}してください。", "vi": "Hãy cho tôi mượn quyển sách đó.",
+        "acceptVi": ["Cho tôi mượn quyển sách đó", "Làm ơn cho tôi mượn cuốn sách đó", "Cho mình mượn cuốn sách đó nhé"] },
+      { "dir": "vj", "vi": "Tôi đã trả sách cho thư viện.", "jp": "{図書館|としょかん}に{本|ほん}を{返|かえ}しました。",
+        "acceptJp": ["わたしは図書館に本を返しました。"], "hint": "かえします = trả lại; (nơi) に ＋ N を ＋ かえしました" }
+    ]
+  },
+  "L39": {
+    "points": [
+      {
+        "pattern": "Thể thông thường (Vる／Vない／Vた)",
+        "meaning": "Thể thông thường: nói chuyện thân mật",
+        "structure": "Vます → Vる ／ Vません → Vない ／ Vました → Vた ／ Vませんでした → Vなかった",
+        "explain": "Với bạn bè, gia đình hay người nhỏ tuổi hơn, người Nhật dùng thể thông thường thay cho です／ます. Động từ: ます → thể từ điển, ません → thể ない, ました → thể た, ませんでした → なかった (いかなかった). Tính từ い chỉ cần bỏ です; danh từ và tính từ な đổi です thành だ (thường lược bỏ trong câu hỏi).",
+        "note": "Câu hỏi thân mật thường bỏ か và lên giọng ở cuối: たべる？ Không dùng thể này với thầy cô, người lớn tuổi.",
+        "examples": [
+          { "jp": "{明日|あした}、{何|なに}をする？", "vi": "Mai cậu làm gì?" },
+          { "jp": "{昨日|きのう}は{学校|がっこう}へ{行|い}かなかった。", "vi": "Hôm qua tớ không đi học." },
+          { "jp": "その{本|ほん}、{読|よ}んだ？", "vi": "Cậu đọc cuốn sách đó chưa?" }
+        ]
+      },
+      {
+        "pattern": "〜と いいます",
+        "meaning": "Nói rằng… / gọi là…",
+        "structure": "N は (ngôn ngữ) で 〜 と いいます ／ (người) は「…」と いいました",
+        "explain": "と いいます dùng để nói tên gọi của sự vật, người ('…gọi là…, tên là…') hoặc thuật lại lời ai đó. Lời nói nguyên văn đặt trong ngoặc 「」 rồi thêm と いいました. Hỏi cách gọi: N は にほんごで なんと いいますか.",
+        "note": "何と đọc là なんと.",
+        "examples": [
+          { "jp": "これは{日本語|にほんご}で{何|なん}といいますか。", "vi": "Cái này tiếng Nhật gọi là gì?" },
+          { "jp": "{私|わたし}は{山田|やまだ}といいます。", "vi": "Tôi tên là Yamada." },
+          { "jp": "{先生|せんせい}は「{休|やす}んでください」といいました。", "vi": "Thầy giáo đã nói: \"Hãy nghỉ đi.\"" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎晩|まいばん}{音楽|おんがく}を{聞|き}く。", "vi": "Tối nào tớ cũng nghe nhạc.",
+        "acceptVi": ["Tối nào tôi cũng nghe nhạc", "Mỗi tối mình nghe nhạc", "Tớ nghe nhạc mỗi tối"] },
+      { "dir": "vj", "vi": "(Nói thân mật) Hôm qua tớ không làm bài tập.", "jp": "{昨日|きのう}、{宿題|しゅくだい}をしなかった。",
+        "acceptJp": ["昨日は宿題をしなかった。", "昨日、宿題をやらなかった。"], "hint": "しませんでした → しなかった (thể thông thường)" },
+      { "dir": "jv", "jp": "{昨日|きのう}、{友|とも}だちにメールを{書|か}いた。", "vi": "Hôm qua tớ đã viết email cho bạn.",
+        "acceptVi": ["Hôm qua tôi viết email cho bạn", "Hôm qua mình đã viết thư điện tử cho bạn", "Hôm qua tớ viết mail cho bạn"] },
+      { "dir": "vj", "vi": "(Nói thân mật) Mai cậu có dùng máy tính không?", "jp": "{明日|あした}、パソコンを{使|つか}う？",
+        "acceptJp": ["明日パソコン使う？", "明日はパソコンを使う？"], "hint": "つかいますか → つかう？ (bỏ か, lên giọng)" },
+      { "dir": "jv", "jp": "{先生|せんせい}は「{答|こた}えを{書|か}いてください」といった。", "vi": "Thầy giáo nói: \"Hãy viết câu trả lời.\"",
+        "acceptVi": ["Thầy giáo đã nói hãy viết câu trả lời", "Cô giáo nói hãy viết câu trả lời", "Thầy bảo hãy viết câu trả lời"] },
+      { "dir": "vj", "vi": "(Nói thân mật) Cái này tiếng Nhật gọi là gì?", "jp": "これ、{日本語|にほんご}で{何|なん}という？",
+        "acceptJp": ["これは日本語で何という？", "これ、日本語で何て言う？", "これは日本語でなんて言う？"], "hint": "なんと いいますか → なんと いう？" }
+    ]
+  },
+  "L40": {
+    "points": [
+      {
+        "pattern": "Vて います (trạng thái)",
+        "meaning": "Đang ở trạng thái… (すんでいます, しっています)",
+        "structure": "Vて ＋ います",
+        "explain": "Ngoài nghĩa 'đang làm', Vて います còn chỉ trạng thái là kết quả của một hành động đã xảy ra và vẫn còn kéo dài: すんで います (đang sống ở), まどが あいて います (cửa sổ đang mở). しります (biết) luôn dùng dạng しって います; nhưng phủ định là しりません, không nói しって いません.",
+        "note": "すみます đi với trợ từ に: とうきょうに すんで います.",
+        "examples": [
+          { "jp": "{東京|とうきょう}に{住|す}んでいます。", "vi": "Tôi sống ở Tokyo." },
+          { "jp": "{山田|やまだ}さんを{知|し}っていますか。", "vi": "Bạn có biết anh Yamada không?" },
+          { "jp": "{窓|まど}が{開|あ}いています。", "vi": "Cửa sổ đang mở." }
+        ]
+      },
+      {
+        "pattern": "N に なります／Adj く なります",
+        "meaning": "Trở nên, trở thành",
+        "structure": "N ／ Adj な ＋ に なります ／ Adj い（bỏ い）＋ く なります",
+        "explain": "なります diễn tả sự thay đổi: trở nên, trở thành. Danh từ và tính từ な thêm に: いしゃに なります, きれいに なります. Tính từ い bỏ い thêm く: さむい → さむく なります. Thay đổi đã xảy ra thì dùng なりました.",
+        "note": "いい → よく なります.",
+        "examples": [
+          { "jp": "{寒|さむ}くなりましたね。", "vi": "Trời đã lạnh rồi nhỉ." },
+          { "jp": "{先生|せんせい}になりたいです。", "vi": "Tôi muốn trở thành giáo viên." },
+          { "jp": "{部屋|へや}がきれいになりました。", "vi": "Căn phòng đã sạch sẽ rồi." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{兄|あに}は{大阪|おおさか}に{住|す}んでいます。", "vi": "Anh trai tôi sống ở Osaka.",
+        "acceptVi": ["Anh tôi sống ở Osaka", "Anh trai mình đang sống ở Osaka", "Anh trai tôi đang sống ở Osaka"] },
+      { "dir": "vj", "vi": "Tôi biết số điện thoại của chị Tanaka.", "jp": "{田中|たなか}さんの{電話番号|でんわばんごう}を{知|し}っています。",
+        "acceptJp": ["わたしは田中さんの電話番号を知っています。"], "hint": "しります → しって います (biết)" },
+      { "dir": "jv", "jp": "{銀行|ぎんこう}は{閉|し}まっています。", "vi": "Ngân hàng đang đóng cửa.",
+        "acceptVi": ["Ngân hàng đóng cửa rồi", "Ngân hàng đã đóng cửa", "Ngân hàng đang đóng"] },
+      { "dir": "vj", "vi": "Trời đã trở nên ấm áp rồi.", "jp": "{暖|あたた}かくなりました。",
+        "acceptJp": ["暖かくなりましたね。"], "hint": "あたたかい → あたたかく なりました" },
+      { "dir": "jv", "jp": "{弟|おとうと}は{医者|いしゃ}になりました。", "vi": "Em trai tôi đã trở thành bác sĩ.",
+        "acceptVi": ["Em trai tôi đã làm bác sĩ", "Em trai mình trở thành bác sĩ", "Em tôi đã thành bác sĩ"] },
+      { "dir": "vj", "vi": "Cửa đang mở.", "jp": "ドアが{開|あ}いています。",
+        "acceptJp": [], "hint": "あきます (mở, tự động từ) → あいて います" }
+    ]
+  }
+}

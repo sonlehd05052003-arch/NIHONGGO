@@ -1,0 +1,338 @@
+{
+  "L17": {
+    "points": [
+      {
+        "pattern": "N を V",
+        "meaning": "Trợ từ を chỉ đối tượng của hành động",
+        "structure": "（Người は）＋ N ＋ を ＋ Vます",
+        "explain": "を đứng sau danh từ là đối tượng mà hành động tác động lên: ăn cái gì, uống cái gì, làm món gì. Câu thường có dạng (Người) は N を Vます. Có thể thêm thời gian (に) hoặc nơi chốn (で) ở phía trước.",
+        "note": "を chỉ dùng làm trợ từ và đọc giống お (\"ô\"), khi gõ máy thì gõ \"wo\".",
+        "examples": [
+          { "jp": "{朝|あさ}ご{飯|はん}を{食|た}べます。", "vi": "Tôi ăn sáng." },
+          { "jp": "コーヒーを{飲|の}みます。", "vi": "Tôi uống cà phê." },
+          { "jp": "{母|はは}は{料理|りょうり}を{作|つく}ります。", "vi": "Mẹ tôi nấu ăn." }
+        ]
+      },
+      {
+        "pattern": "N(dụng cụ) で V",
+        "meaning": "Làm V bằng N (dụng cụ, phương tiện, ngôn ngữ)",
+        "structure": "N（dụng cụ）＋ で ＋ （N ＋ を）＋ Vます",
+        "explain": "で đứng sau danh từ chỉ dụng cụ hoặc cách thức để làm việc gì, giống chữ \"bằng\" trong tiếng Việt: ăn bằng đũa, viết bằng bút, nói bằng tiếng Nhật. Ở bài 9 で chỉ nơi diễn ra hành động; ở đây で chỉ công cụ. Nhìn danh từ đứng trước で để biết nghĩa nào.",
+        "note": "Một câu có thể có hai で: しょくどうで はしで たべます (ăn bằng đũa ở nhà ăn).",
+        "examples": [
+          { "jp": "{箸|はし}でご{飯|はん}を{食|た}べます。", "vi": "Tôi ăn cơm bằng đũa." },
+          { "jp": "ペンで{名前|なまえ}を{書|か}きます。", "vi": "Tôi viết tên bằng bút." },
+          { "jp": "{日本語|にほんご}で{話|はな}します。", "vi": "Tôi nói bằng tiếng Nhật." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎日|まいにち}お{弁当|べんとう}を{食|た}べます。", "vi": "Ngày nào tôi cũng ăn cơm hộp.",
+        "acceptVi": ["Hằng ngày tôi ăn cơm hộp", "Mỗi ngày tôi ăn cơm hộp", "Ngày nào mình cũng ăn cơm hộp", "Hàng ngày tôi ăn cơm hộp"] },
+      { "dir": "vj", "vi": "Tôi uống trà ở quán giải khát.", "jp": "{喫茶店|きっさてん}でお{茶|ちゃ}を{飲|の}みます。",
+        "acceptJp": ["わたしは喫茶店でお茶を飲みます"], "hint": "きっさてん（quán giải khát）＋ で ＋ おちゃ ＋ を ＋ のみます" },
+      { "dir": "jv", "jp": "{台所|だいどころ}で{晩|ばん}ご{飯|はん}を{作|つく}りました。", "vi": "Tôi đã nấu bữa tối trong bếp.",
+        "acceptVi": ["Tôi đã nấu cơm tối ở bếp", "Mình đã nấu bữa tối trong bếp", "Tôi nấu bữa tối ở nhà bếp", "Tôi đã làm bữa tối trong bếp"] },
+      { "dir": "vj", "vi": "Tôi ăn cơm bằng đũa.", "jp": "{箸|はし}でご{飯|はん}を{食|た}べます。",
+        "acceptJp": ["わたしは箸でご飯を食べます"], "hint": "はし（đũa）＋ で ＋ ごはん ＋ を ＋ たべます" },
+      { "dir": "jv", "jp": "スプーンでカレーを{食|た}べます。", "vi": "Tôi ăn cà ri bằng thìa.",
+        "acceptVi": ["Tôi ăn cà ri bằng muỗng", "Mình ăn cà ri bằng thìa", "Ăn cà ri bằng thìa"] },
+      { "dir": "vj", "vi": "Hôm qua tôi đã không uống cà phê.", "jp": "{昨日|きのう}コーヒーを{飲|の}みませんでした。",
+        "acceptJp": ["昨日はコーヒーを飲みませんでした", "わたしは昨日コーヒーを飲みませんでした"], "hint": "きのう ＋ コーヒー ＋ を ＋ のみませんでした" }
+    ]
+  },
+  "L18": {
+    "points": [
+      {
+        "pattern": "N が すき／きらい です",
+        "meaning": "Thích / ghét N",
+        "structure": "（Người は）＋ N ＋ が ＋ すき／きらい ＋ です",
+        "explain": "Thứ mình thích hoặc ghét đi với が, không dùng を. すき và きらい là tính từ đuôi な nên chỉ cần thêm です. Hỏi: N が すきですか. Phủ định nhẹ nhàng: (あまり) すきじゃ ありません.",
+        "note": "Lỗi hay gặp: ✗ さかなを すきです → ✓ さかなが すきです. きらい nghe khá mạnh, nói lịch sự nên dùng あまり すきじゃ ありません.",
+        "examples": [
+          { "jp": "{私|わたし}は{果物|くだもの}が{好|す}きです。", "vi": "Tôi thích hoa quả." },
+          { "jp": "{弟|おとうと}は{野菜|やさい}が{嫌|きら}いです。", "vi": "Em trai tôi ghét rau." },
+          { "jp": "お{菓子|かし}が{好|す}きですか。", "vi": "Bạn có thích bánh kẹo không?" }
+        ]
+      },
+      {
+        "pattern": "N1 と N2 と どちらが Adj ですか",
+        "meaning": "N1 và N2, cái nào … hơn?",
+        "structure": "N1 ＋ と ＋ N2 ＋ と ＋ どちらが ＋ Adj ＋ ですか → N ＋ の ほうが ＋ Adj ＋ です",
+        "explain": "Dùng để hỏi giữa hai thứ thì thứ nào hơn (ngon hơn, đắt hơn, thích hơn…). Trả lời bằng N の ほうが Adj です (N thì … hơn). Nếu hai thứ như nhau thì nói どちらも Adj です (cả hai đều …).",
+        "note": "どちら chỉ dùng khi so sánh 2 thứ; câu trả lời có のほうが, không lặp lại どちら.",
+        "examples": [
+          { "jp": "{肉|にく}と{魚|さかな}とどちらが{好|す}きですか。", "vi": "Thịt và cá, bạn thích cái nào hơn?" },
+          { "jp": "{魚|さかな}のほうが{好|す}きです。", "vi": "Tôi thích cá hơn." },
+          { "jp": "{牛肉|ぎゅうにく}と{豚肉|ぶたにく}とどちらが{高|たか}いですか。", "vi": "Thịt bò và thịt lợn, cái nào đắt hơn?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{私|わたし}は{卵|たまご}が{好|す}きです。", "vi": "Tôi thích trứng.",
+        "acceptVi": ["Mình thích trứng", "Tôi thích ăn trứng", "Tôi thích quả trứng"] },
+      { "dir": "vj", "vi": "Tôi không thích thịt lắm.", "jp": "{肉|にく}があまり{好|す}きじゃありません。",
+        "acceptJp": ["肉はあまり好きじゃありません", "肉があまり好きではありません", "肉はあまり好きではありません", "わたしは肉があまり好きじゃありません"], "hint": "にく ＋ が ＋ あまり ＋ すきじゃ ありません" },
+      { "dir": "jv", "jp": "{姉|あね}はお{菓子|かし}が{嫌|きら}いです。", "vi": "Chị tôi ghét bánh kẹo.",
+        "acceptVi": ["Chị gái tôi ghét bánh kẹo", "Chị mình ghét bánh kẹo", "Chị gái tôi không thích bánh kẹo"] },
+      { "dir": "vj", "vi": "Thịt gà và cá, bạn thích cái nào hơn?", "jp": "とり{肉|にく}と{魚|さかな}とどちらが{好|す}きですか。",
+        "acceptJp": ["とり肉と魚と、どちらが好きですか"], "hint": "とりにく ＋ と ＋ さかな ＋ と ＋ どちらが ＋ すきですか" },
+      { "dir": "jv", "jp": "カレーとパンとどちらがおいしいですか。", "vi": "Cà ri và bánh mì, cái nào ngon hơn?",
+        "acceptVi": ["Cà ri với bánh mì cái nào ngon hơn", "Giữa cà ri và bánh mì thì cái nào ngon hơn", "Cà ri và bánh mì, món nào ngon hơn"] },
+      { "dir": "vj", "vi": "(Trả lời câu hỏi chọn giữa thịt và rau) Tôi thích rau hơn.", "jp": "{野菜|やさい}のほうが{好|す}きです。",
+        "acceptJp": ["わたしは野菜のほうが好きです"], "hint": "やさい ＋ の ほうが ＋ すきです" }
+    ]
+  },
+  "L19": {
+    "points": [
+      {
+        "pattern": "N を ください",
+        "meaning": "Cho tôi N",
+        "structure": "N ＋ を ＋ （số lượng）＋ ください",
+        "explain": "Dùng khi gọi món ở quán, mua hàng hoặc xin ai đó đưa cho mình một thứ. Muốn nói số lượng thì đặt lượng từ ngay trước ください: N を ふたつ ください (bài 11). Có thể mở đầu bằng すみません cho lịch sự.",
+        "note": "Ở nhà hàng cũng hay nói N を おねがいします, nghĩa tương tự.",
+        "examples": [
+          { "jp": "お{水|みず}をください。", "vi": "Cho tôi nước." },
+          { "jp": "コーヒーを{二|ふた}つください。", "vi": "Cho tôi hai cốc cà phê." },
+          { "jp": "すみません、{塩|しお}をください。", "vi": "Xin lỗi, cho tôi muối." }
+        ]
+      },
+      {
+        "pattern": "N が ほしい です",
+        "meaning": "Muốn có N",
+        "structure": "（わたしは）＋ N ＋ が ＋ ほしい ＋ です",
+        "explain": "ほしい là tính từ đuôi い, nghĩa là muốn có một đồ vật; vật muốn có đi với が. Phủ định: ほしくないです. Dùng để nói mong muốn của chính mình hoặc hỏi người nghe (なにが ほしいですか), không dùng trực tiếp cho người thứ ba.",
+        "note": "ほしい đi với danh từ (đồ vật); muốn làm một hành động thì dùng Vたい (bài 23).",
+        "examples": [
+          { "jp": "{新|あたら}しいかばんがほしいです。", "vi": "Tôi muốn có một cái cặp mới." },
+          { "jp": "{冷|つめ}たい{水|みず}がほしいです。", "vi": "Tôi muốn có nước lạnh." },
+          { "jp": "{今|いま}、{何|なに}がほしいですか。", "vi": "Bây giờ bạn muốn có gì?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{紅茶|こうちゃ}を{一|ひと}つください。", "vi": "Cho tôi một cốc trà đen.",
+        "acceptVi": ["Cho tôi một tách hồng trà", "Cho tôi một ly trà đen", "Cho tôi một trà đen", "Cho mình một cốc hồng trà"] },
+      { "dir": "vj", "vi": "Cho tôi sữa.", "jp": "{牛乳|ぎゅうにゅう}をください。",
+        "acceptJp": ["牛乳をお願いします", "牛乳をおねがいします"], "hint": "ぎゅうにゅう（sữa）＋ を ＋ ください" },
+      { "dir": "jv", "jp": "{冷|つめ}たいお{茶|ちゃ}がほしいです。", "vi": "Tôi muốn có trà lạnh.",
+        "acceptVi": ["Tôi muốn trà lạnh", "Mình muốn có trà lạnh", "Tôi muốn uống trà lạnh"] },
+      { "dir": "vj", "vi": "Tôi không muốn có ô tô.", "jp": "{車|くるま}はほしくないです。",
+        "acceptJp": ["車がほしくないです", "車はほしくありません", "わたしは車がほしくないです"], "hint": "くるま ＋ は ＋ ほしくないです" },
+      { "dir": "jv", "jp": "すみません、しょうゆと{砂糖|さとう}をください。", "vi": "Xin lỗi, cho tôi xì dầu và đường.",
+        "acceptVi": ["Xin lỗi, cho tôi nước tương và đường", "Cho tôi xì dầu với đường", "Làm ơn cho tôi nước tương và đường"] },
+      { "dir": "vj", "vi": "Tôi muốn có một cái máy ảnh mới.", "jp": "{新|あたら}しいカメラがほしいです。",
+        "acceptJp": ["わたしは新しいカメラがほしいです"], "hint": "あたらしい ＋ カメラ ＋ が ＋ ほしいです" }
+    ]
+  },
+  "L20": {
+    "points": [
+      {
+        "pattern": "N に N を あげます",
+        "meaning": "Cho, tặng ai cái gì",
+        "structure": "Người cho ＋ は ＋ Người nhận ＋ に ＋ Vật ＋ を ＋ あげます",
+        "explain": "あげます là \"cho, tặng\": người nhận đi với に, đồ vật đi với を. Người cho là mình hoặc người khác, nhưng người nhận không phải là mình. Khi người khác cho mình thì nói theo hướng của người nhận bằng もらいます.",
+        "note": "Tặng thầy cô hay người trên thì あげます hơi thiếu khiêm tốn; ở N5 chỉ cần dùng với bạn bè, người nhà.",
+        "examples": [
+          { "jp": "{友達|ともだち}に{本|ほん}をあげます。", "vi": "Tôi tặng sách cho bạn." },
+          { "jp": "{母|はは}に{花|はな}をあげました。", "vi": "Tôi đã tặng hoa cho mẹ." },
+          { "jp": "{弟|おとうと}にお{菓子|かし}をあげます。", "vi": "Tôi cho em trai bánh kẹo." }
+        ]
+      },
+      {
+        "pattern": "N に N を もらいます",
+        "meaning": "Nhận cái gì từ ai",
+        "structure": "Người nhận ＋ は ＋ Người cho ＋ に／から ＋ Vật ＋ を ＋ もらいます",
+        "explain": "もらいます là \"nhận, được (ai) cho\". Lúc này に đánh dấu người cho, và có thể thay bằng から. Câu nhìn từ phía người nhận, thường là mình nên hay bỏ わたしは.",
+        "note": "Cùng một sự việc: マイさんは わたしに ペンを あげました ＝ わたしは マイさんに ペンを もらいました.",
+        "examples": [
+          { "jp": "{友達|ともだち}にコップをもらいました。", "vi": "Tôi được bạn tặng một cái cốc." },
+          { "jp": "{姉|あね}から{箸|はし}をもらいました。", "vi": "Tôi được chị gái tặng đôi đũa." },
+          { "jp": "{父|ちち}にお{金|かね}をもらいます。", "vi": "Tôi nhận tiền từ bố." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{私|わたし}は{友達|ともだち}にカップをあげました。", "vi": "Tôi đã tặng bạn một cái cốc.",
+        "acceptVi": ["Tôi đã tặng cái cốc cho bạn", "Mình đã tặng bạn một cái cốc", "Tôi đã cho bạn một cái tách", "Tôi tặng bạn cái cốc"] },
+      { "dir": "vj", "vi": "Tôi đã nhận được con dao từ bố.", "jp": "{父|ちち}にナイフをもらいました。",
+        "acceptJp": ["父からナイフをもらいました", "わたしは父にナイフをもらいました", "わたしは父からナイフをもらいました"], "hint": "ちち ＋ に（から）＋ ナイフ ＋ を ＋ もらいました" },
+      { "dir": "jv", "jp": "{田中|たなか}さんは{山田|やまだ}さんに{花|はな}をもらいました。", "vi": "Anh Tanaka đã nhận được hoa từ chị Yamada.",
+        "acceptVi": ["Tanaka đã nhận được hoa từ Yamada", "Anh Tanaka được chị Yamada tặng hoa", "Tanaka đã nhận hoa của Yamada"] },
+      { "dir": "vj", "vi": "Tôi sẽ tặng bố cà vạt.", "jp": "{父|ちち}にネクタイをあげます。",
+        "acceptJp": ["わたしは父にネクタイをあげます"], "hint": "ちち ＋ に ＋ ネクタイ ＋ を ＋ あげます" },
+      { "dir": "jv", "jp": "{弟|おとうと}にちゃわんをあげました。", "vi": "Tôi đã cho em trai một cái bát.",
+        "acceptVi": ["Tôi đã tặng em trai cái bát", "Mình đã cho em trai một cái bát", "Tôi đã cho em trai cái bát ăn cơm"] },
+      { "dir": "vj", "vi": "Bạn đã nhận được gì từ chị Mai?", "jp": "マイさんに{何|なに}をもらいましたか。",
+        "acceptJp": ["マイさんから何をもらいましたか"], "hint": "マイさん ＋ に ＋ なに ＋ を ＋ もらいましたか" }
+    ]
+  },
+  "L21": {
+    "points": [
+      {
+        "pattern": "(nơi) に N が あります／います",
+        "meaning": "Ở (nơi) có N",
+        "structure": "Nơi ＋ に ＋ N ＋ が ＋ あります（đồ vật）／います（người, con vật）",
+        "explain": "Câu nói ở một nơi nào đó có cái gì, có ai. Nơi chốn đi với に, vật hay người đi với が. あります dùng cho đồ vật, cây cối (không tự cử động); います dùng cho người và động vật. Hỏi: (nơi)に なにが ありますか／だれが いますか.",
+        "note": "Đừng nhầm với で ở bài 9: \"có … ở nhà\" dùng に, \"làm … ở nhà\" dùng で.",
+        "examples": [
+          { "jp": "{庭|にわ}に{猫|ねこ}がいます。", "vi": "Ngoài vườn có một con mèo." },
+          { "jp": "{部屋|へや}に{窓|まど}が{二|ふた}つあります。", "vi": "Trong phòng có hai cửa sổ." },
+          { "jp": "{玄関|げんかん}にだれがいますか。", "vi": "Ở lối vào có ai vậy?" }
+        ]
+      },
+      {
+        "pattern": "N は (nơi) に あります／います",
+        "meaning": "N ở (nơi)",
+        "structure": "N ＋ は ＋ Nơi ＋ に ＋ あります／います",
+        "explain": "Khi người nói và người nghe đã biết đến N, ta đưa N lên làm chủ đề với は rồi nói nó ở đâu. Thông tin mới là nơi chốn nên đứng ngay trước あります／います. Hỏi: N は どこに ありますか (hoặc gọn hơn: N は どこですか, bài 2).",
+        "note": "So sánh: にわに いぬが います (ngoài vườn có chó) ↔ いぬは にわに います (con chó ở ngoài vườn).",
+        "examples": [
+          { "jp": "トイレは{二階|にかい}にあります。", "vi": "Nhà vệ sinh ở tầng hai." },
+          { "jp": "{母|はは}は{台所|だいどころ}にいます。", "vi": "Mẹ tôi ở trong bếp." },
+          { "jp": "エレベーターはどこにありますか。", "vi": "Thang máy ở đâu?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{庭|にわ}に{犬|いぬ}がいます。", "vi": "Ngoài vườn có một con chó.",
+        "acceptVi": ["Trong vườn có con chó", "Ở vườn có một con chó", "Có con chó ở ngoài vườn", "Ngoài vườn có con chó"] },
+      { "dir": "vj", "vi": "Trong phòng có cái gì?", "jp": "{部屋|へや}に{何|なに}がありますか。",
+        "acceptJp": ["部屋には何がありますか"], "hint": "へや ＋ に ＋ なに ＋ が ＋ ありますか" },
+      { "dir": "jv", "jp": "お{手洗|てあら}いはどこにありますか。", "vi": "Nhà vệ sinh ở đâu?",
+        "acceptVi": ["Phòng vệ sinh ở đâu", "Nhà vệ sinh ở chỗ nào", "Toilet ở đâu", "Nhà vệ sinh ở đâu ạ"] },
+      { "dir": "vj", "vi": "Bố tôi ở ngoài vườn.", "jp": "{父|ちち}は{庭|にわ}にいます。",
+        "acceptJp": [], "hint": "ちち ＋ は ＋ にわ ＋ に ＋ います" },
+      { "dir": "jv", "jp": "{階段|かいだん}に{子|こ}どもがいます。", "vi": "Ở cầu thang có một đứa trẻ.",
+        "acceptVi": ["Có một đứa bé ở cầu thang", "Ở cầu thang có trẻ con", "Trên cầu thang có một đứa trẻ"] },
+      { "dir": "vj", "vi": "Thang máy ở đằng kia.", "jp": "エレベーターはあそこにあります。",
+        "acceptJp": ["エレベーターはあそこです"], "hint": "エレベーター ＋ は ＋ あそこ ＋ に ＋ あります" }
+    ]
+  },
+  "L22": {
+    "points": [
+      {
+        "pattern": "N の うえ／した／なか…",
+        "meaning": "Vị trí: trên, dưới, trong… của N",
+        "structure": "N ＋ の ＋ うえ／した／なか／まえ／うしろ／よこ／となり ＋ に ＋ あります／います",
+        "explain": "Để nói vị trí cụ thể so với một vật, ta dùng N の + từ chỉ vị trí: うえ (trên), した (dưới), なか (trong), まえ (trước), うしろ (sau), よこ (bên cạnh), となり (sát bên). Cụm này là nơi chốn nên ghép với に あります／います của bài 21.",
+        "note": "となり dùng cho hai thứ cùng loại đứng cạnh nhau (nhà – nhà, người – người); よこ dùng chung cho mọi thứ.",
+        "examples": [
+          { "jp": "{机|つくえ}の{上|うえ}に{時計|とけい}があります。", "vi": "Trên bàn có cái đồng hồ." },
+          { "jp": "ベッドの{下|した}に{猫|ねこ}がいます。", "vi": "Dưới giường có con mèo." },
+          { "jp": "かばんは{椅子|いす}の{横|よこ}にあります。", "vi": "Cái cặp ở bên cạnh ghế." }
+        ]
+      },
+      {
+        "pattern": "N1 や N2 (など)",
+        "meaning": "N1, N2… (liệt kê không hết)",
+        "structure": "N1 ＋ や ＋ N2 ＋ （など）",
+        "explain": "や nối các danh từ khi chỉ nêu vài ví dụ tiêu biểu, ngụ ý vẫn còn thứ khác. Thêm など ở cuối để nhấn mạnh \"v.v.\". Khác với と (bài 6) là kể đầy đủ, không sót thứ gì.",
+        "note": "や và など chỉ nối danh từ, không nối động từ hay câu.",
+        "examples": [
+          { "jp": "{本棚|ほんだな}に{本|ほん}やノートがあります。", "vi": "Trên giá sách có sách, vở…" },
+          { "jp": "{部屋|へや}にテレビやラジオなどがあります。", "vi": "Trong phòng có tivi, radio, v.v." },
+          { "jp": "パンや{果物|くだもの}を{食|た}べます。", "vi": "Tôi ăn bánh mì, hoa quả…" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "テーブルの{上|うえ}に{灰皿|はいざら}があります。", "vi": "Trên bàn có cái gạt tàn.",
+        "acceptVi": ["Có cái gạt tàn ở trên bàn", "Trên bàn có gạt tàn thuốc", "Trên bàn có một cái gạt tàn"] },
+      { "dir": "vj", "vi": "Con mèo ở dưới bàn.", "jp": "{猫|ねこ}は{机|つくえ}の{下|した}にいます。",
+        "acceptJp": ["猫はテーブルの下にいます"], "hint": "ねこ ＋ は ＋ つくえ（bàn）＋ の ＋ した ＋ に ＋ います" },
+      { "dir": "jv", "jp": "{部屋|へや}に{椅子|いす}や{机|つくえ}などがあります。", "vi": "Trong phòng có ghế, bàn, v.v.",
+        "acceptVi": ["Trong phòng có ghế, bàn", "Ở trong phòng có ghế và bàn", "Trong phòng có những thứ như ghế và bàn", "Trong phòng có ghế, bàn…"] },
+      { "dir": "vj", "vi": "Trên giá sách có sách, tạp chí, v.v.", "jp": "{本棚|ほんだな}に{本|ほん}や{雑誌|ざっし}などがあります。",
+        "acceptJp": ["本棚に本や雑誌があります", "本棚の上に本や雑誌などがあります"], "hint": "ほんだな ＋ に ＋ ほん ＋ や ＋ ざっし（tạp chí）＋ など ＋ が ＋ あります" },
+      { "dir": "jv", "jp": "{時計|とけい}はテレビの{横|よこ}にあります。", "vi": "Đồng hồ ở bên cạnh tivi.",
+        "acceptVi": ["Cái đồng hồ ở cạnh tivi", "Đồng hồ ở bên cạnh cái ti vi", "Đồng hồ nằm cạnh tivi"] },
+      { "dir": "vj", "vi": "Dưới giường có cái gì?", "jp": "ベッドの{下|した}に{何|なに}がありますか。",
+        "acceptJp": ["ベッドの下には何がありますか"], "hint": "ベッド ＋ の ＋ した ＋ に ＋ なに ＋ が ＋ ありますか" }
+    ]
+  },
+  "L23": {
+    "points": [
+      {
+        "pattern": "Vたい です",
+        "meaning": "Muốn làm V",
+        "structure": "N ＋ を／が ＋ V（bỏ ます）＋ たい ＋ です",
+        "explain": "Bỏ ます rồi thêm たい: たべます → たべたいです, のみます → のみたいです, かいます → かいたいです. Vたい chia như tính từ đuôi い, nên phủ định là Vたくないです. Dùng cho mong muốn của chính mình hoặc để hỏi người nghe.",
+        "note": "Đối tượng có thể đi với を hoặc が (みずを／みずが のみたいです). Mời người khác thì dùng Vませんか (bài 16) chứ không hỏi Vたいですか.",
+        "examples": [
+          { "jp": "{新|あたら}しい{財布|さいふ}を{買|か}いたいです。", "vi": "Tôi muốn mua một cái ví mới." },
+          { "jp": "{水|みず}が{飲|の}みたいです。", "vi": "Tôi muốn uống nước." },
+          { "jp": "テレビを{見|み}たくないです。", "vi": "Tôi không muốn xem tivi." }
+        ]
+      },
+      {
+        "pattern": "N が あります (sở hữu)",
+        "meaning": "Có N (của mình)",
+        "structure": "（Người は）＋ N ＋ が ＋ あります／ありません",
+        "explain": "Ngoài nghĩa \"ở đâu có cái gì\" (bài 21), あります còn dùng để nói một người có (sở hữu) đồ vật: お金が あります (có tiền), かぎが ありません (không có chìa khoá). Hỏi: N が ありますか.",
+        "note": "Có anh chị em, bạn bè… (người) thì dùng います: きょうだいが います.",
+        "examples": [
+          { "jp": "{私|わたし}は{傘|かさ}があります。", "vi": "Tôi có ô." },
+          { "jp": "お{金|かね}がありますか。", "vi": "Bạn có tiền không?" },
+          { "jp": "{今|いま}、かぎがありません。", "vi": "Bây giờ tôi không có chìa khoá." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{眼鏡|めがね}を{買|か}いたいです。", "vi": "Tôi muốn mua kính.",
+        "acceptVi": ["Mình muốn mua kính", "Tôi muốn mua một cái kính", "Tôi muốn mua mắt kính"] },
+      { "dir": "vj", "vi": "Tôi không muốn ăn cá.", "jp": "{魚|さかな}を{食|た}べたくないです。",
+        "acceptJp": ["魚は食べたくないです", "魚が食べたくないです", "わたしは魚を食べたくないです"], "hint": "さかな ＋ を ＋ たべ ＋ たくないです" },
+      { "dir": "jv", "jp": "ハンカチがありますか。", "vi": "Bạn có khăn tay không?",
+        "acceptVi": ["Cậu có khăn tay không", "Bạn có khăn mùi soa không", "Có khăn tay không"] },
+      { "dir": "vj", "vi": "Bây giờ tôi không có tiền.", "jp": "{今|いま}、お{金|かね}がありません。",
+        "acceptJp": ["今はお金がありません", "わたしは今お金がありません"], "hint": "いま ＋ おかね ＋ が ＋ ありません" },
+      { "dir": "jv", "jp": "{荷物|にもつ}がたくさんあります。", "vi": "Tôi có nhiều hành lý.",
+        "acceptVi": ["Mình có nhiều hành lý", "Tôi có rất nhiều hành lý", "Tôi có nhiều đồ đạc"] },
+      { "dir": "vj", "vi": "Bạn muốn mua gì?", "jp": "{何|なに}を{買|か}いたいですか。",
+        "acceptJp": ["何が買いたいですか"], "hint": "なに ＋ を ＋ かい ＋ たいですか" }
+    ]
+  },
+  "L24": {
+    "points": [
+      {
+        "pattern": "Vて ください",
+        "meaning": "Hãy làm V (nhờ, yêu cầu lịch sự)",
+        "structure": "（N ＋ を）＋ Vて ＋ ください",
+        "explain": "Dùng để nhờ hoặc bảo ai làm gì một cách lịch sự. Cách đổi Vます sang thể て — Nhóm 1: い・ち・り → って (かいます→かって, まちます→まって), み・び・に → んで (のみます→のんで), き → いて (かきます→かいて), ぎ → いで, し → して; riêng いきます→いって. Nhóm 2 (たべます, みます, きます \"mặc\"…): bỏ ます thêm て (たべて, みて). Nhóm 3: します→して, きます (đến)→きて.",
+        "note": "Mẹo nhớ nhóm 1: \"いちり って, みびに んで, き いて, ぎ いで, し して\".",
+        "examples": [
+          { "jp": "ちょっと{待|ま}ってください。", "vi": "Xin đợi một chút." },
+          { "jp": "ここに{名前|なまえ}を{書|か}いてください。", "vi": "Hãy viết tên vào đây." },
+          { "jp": "コートを{着|き}てください。", "vi": "Hãy mặc áo khoác vào." }
+        ]
+      },
+      {
+        "pattern": "Vて います (mặc, đeo)",
+        "meaning": "Đang mặc / đang đeo…",
+        "structure": "N（quần áo）＋ を ＋ きて／はいて／かぶって／かけて／して ＋ います",
+        "explain": "Tiếng Nhật dùng động từ khác nhau tuỳ chỗ mặc: きます (áo, đồ phần trên: シャツ, セーター, コート), はきます (đồ phần dưới: ズボン, スカート, くつ, くつした), かぶります (mũ), かけます (kính), します (cà vạt, đồng hồ). Vています tả trạng thái đang mặc, đang đeo trên người, dùng để miêu tả trang phục của ai đó.",
+        "note": "Thể て: きます(mặc)→きて, はきます→はいて, かぶります→かぶって, かけます→かけて, します→して.",
+        "examples": [
+          { "jp": "{田中|たなか}さんは{赤|あか}いセーターを{着|き}ています。", "vi": "Anh Tanaka đang mặc áo len đỏ." },
+          { "jp": "{妹|いもうと}はスカートをはいています。", "vi": "Em gái tôi đang mặc váy." },
+          { "jp": "{父|ちち}は{帽子|ぼうし}をかぶっています。", "vi": "Bố tôi đang đội mũ." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{靴|くつ}を{脱|ぬ}いでください。", "vi": "Xin hãy cởi giày ra.",
+        "acceptVi": ["Hãy cởi giày ra", "Vui lòng cởi giày", "Làm ơn cởi giày ra", "Xin cởi giày"] },
+      { "dir": "vj", "vi": "Xin hãy mở cửa sổ.", "jp": "{窓|まど}を{開|あ}けてください。",
+        "acceptJp": [], "hint": "まど ＋ を ＋ あけて（あけます: mở）＋ ください" },
+      { "dir": "jv", "jp": "{兄|あに}はネクタイをしています。", "vi": "Anh tôi đang đeo cà vạt.",
+        "acceptVi": ["Anh trai tôi đang thắt cà vạt", "Anh trai mình đang đeo cà vạt", "Anh tôi đang thắt cà vạt"] },
+      { "dir": "vj", "vi": "Anh Yamada đang đeo kính.", "jp": "{山田|やまだ}さんは{眼鏡|めがね}をかけています。",
+        "acceptJp": [], "hint": "めがね ＋ を ＋ かけて います（かけます: đeo kính）" },
+      { "dir": "jv", "jp": "{寒|さむ}いですから、{上着|うわぎ}を{着|き}てください。", "vi": "Trời lạnh nên hãy mặc áo khoác vào.",
+        "acceptVi": ["Vì trời lạnh nên hãy mặc áo khoác", "Lạnh nên hãy mặc áo khoác vào", "Vì lạnh nên xin hãy mặc áo khoác"] },
+      { "dir": "vj", "vi": "Chị Mai đang mặc quần màu đen.", "jp": "マイさんは{黒|くろ}いズボンをはいています。",
+        "acceptJp": [], "hint": "くろい ズボン ＋ を ＋ はいて います（はきます: mặc đồ phần dưới）" }
+    ]
+  }
+}

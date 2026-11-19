@@ -3,6 +3,7 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { checkLesson } from './check-grammar.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIR = resolve(ROOT, 'scripts/content')
@@ -45,14 +46,28 @@ for (const l of lessons) {
   })
 }
 
+// Ngữ pháp & bài tập viết câu: scripts/grammar/part-*.json
+const GDIR = resolve(ROOT, 'scripts/grammar')
+const grammar = {}
+for (const f of readdirSync(GDIR).filter((f) => /^part-\d+\.json$/.test(f)).sort())
+  Object.assign(grammar, JSON.parse(readFileSync(resolve(GDIR, f), 'utf8')))
+for (const l of lessons) {
+  if (!grammar[l.id]) errors.push(`${l.id}: thiếu ngữ pháp`)
+  else checkLesson(l.id, grammar[l.id], errors)
+}
+
 // Chỉ giữ dữ liệu của từ/bài có thật
 const ids = new Set(lessons.flatMap((l) => l.words))
 const out = {
   examples: Object.fromEntries(Object.entries(examples).filter(([k]) => ids.has(k))),
   readings: Object.fromEntries(lessons.filter((l) => readings[l.id]).map((l) => [l.id, readings[l.id]])),
+  grammar: Object.fromEntries(lessons.filter((l) => grammar[l.id]).map((l) => [l.id, grammar[l.id]])),
 }
 writeFileSync(resolve(ROOT, 'src/data/content.json'), JSON.stringify(out) + '\n')
-console.log(`Câu ví dụ: ${Object.keys(out.examples).length}/${ids.size} · Bài đọc: ${Object.keys(out.readings).length}/${lessons.length}`)
+console.log(
+  `Câu ví dụ: ${Object.keys(out.examples).length}/${ids.size} · Bài đọc: ${Object.keys(out.readings).length}/${lessons.length}` +
+    ` · Ngữ pháp: ${Object.keys(out.grammar).length}/${lessons.length}`,
+)
 if (errors.length) {
   console.log(`\n${errors.length} lỗi:`)
   console.log(errors.slice(0, 80).join('\n'))

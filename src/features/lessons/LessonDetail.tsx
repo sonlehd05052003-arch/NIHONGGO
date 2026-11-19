@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArrowLeft, ArrowRight, BookOpen, Dumbbell, FileText, Volume2, Star, Lightbulb, Check, Eye, EyeOff } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Dumbbell, FileText, GraduationCap, PenLine, Volume2, Star, Lightbulb, Check, Eye, EyeOff } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { WordImage } from '@/components/ui/WordImage'
@@ -10,9 +10,11 @@ import { lessonStats, lessonWords, rubyKana } from '@/services/lessons'
 import { isLearned } from '@/services/srs'
 import { speak, speakSentence } from '@/services/vocabularyService'
 import type { Lesson, QuizDirection, StudyMode } from '@/types'
+import { GrammarView } from './GrammarView'
 import { ReadingView } from './ReadingView'
+import { WritingView } from './WritingView'
 
-export type Step = 'learn' | 'practice' | 'read'
+export type Step = 'learn' | 'grammar' | 'practice' | 'write' | 'read'
 
 const PRACTICE: { mode: StudyMode; label: string; desc: string }[] = [
   { mode: 'flashcard', label: '① Thẻ ghi nhớ', desc: 'Làm quen: lật thẻ, tự đánh giá' },
@@ -39,14 +41,20 @@ export const LessonDetail: React.FC<{
   const stats = lessonStats(lesson, get, progress.readings?.[lesson.id])
   const reading = content?.readings[lesson.id]
 
+  const grammar = content?.grammar?.[lesson.id]
+  const [grammarSeen, setGrammarSeen] = useLocalStorage<Record<string, true>>('nihongo_grammar_seen', {})
+
   const steps: { id: Step; label: string; icon: React.ReactNode; done: boolean }[] = [
     { id: 'learn', label: 'Học từ', icon: <BookOpen size={16} />, done: stats.learned > 0 },
+    { id: 'grammar', label: 'Ngữ pháp', icon: <GraduationCap size={16} />, done: !!grammarSeen[lesson.id] },
     { id: 'practice', label: 'Luyện tập', icon: <Dumbbell size={16} />, done: stats.done },
+    { id: 'write', label: 'Viết câu', icon: <PenLine size={16} />, done: (progress.writing?.[lesson.id] ?? 0) > 0 },
     { id: 'read', label: 'Bài đọc', icon: <FileText size={16} />, done: (progress.readings?.[lesson.id] ?? 0) > 0 },
   ]
 
   const go = (s: Step) => {
     setStep(s)
+    if (s === 'grammar' && !grammarSeen[lesson.id]) setGrammarSeen({ ...grammarSeen, [lesson.id]: true })
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -151,6 +159,28 @@ export const LessonDetail: React.FC<{
             })}
           </div>
           <div className="ld-footer">
+            <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => go('grammar')}>
+              Sang ngữ pháp
+            </Button>
+          </div>
+        </>
+      )}
+
+      {step === 'grammar' && (
+        <>
+          <p className="ld-hint">
+            Đọc giải thích, nghe các câu ví dụ và thử tự đặt một câu tương tự. Sau đó luyện từ vựng rồi sang bước{' '}
+            <b>Viết câu</b> để dùng mẫu câu này.
+          </p>
+          {grammar ? (
+            <GrammarView points={grammar.points} />
+          ) : (
+            <p className="ld-hint">{content ? 'Bài này chưa có phần ngữ pháp.' : 'Đang tải ngữ pháp…'}</p>
+          )}
+          <div className="ld-footer">
+            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('learn')}>
+              Xem lại từ
+            </Button>
             <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => go('practice')}>
               Sang luyện tập
             </Button>
@@ -190,8 +220,30 @@ export const LessonDetail: React.FC<{
             ))}
           </div>
           <div className="ld-footer">
-            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('learn')}>
-              Xem lại từ
+            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('grammar')}>
+              Xem lại ngữ pháp
+            </Button>
+            <Button size="lg" icon={<PenLine size={18} />} onClick={() => go('write')}>
+              Sang viết câu
+            </Button>
+          </div>
+        </>
+      )}
+
+      {step === 'write' && (
+        <>
+          <p className="ld-hint">
+            Dịch cả câu theo mẫu ngữ pháp của bài: Nhật → Việt và Việt → Nhật. Quên mẫu câu thì quay lại bước{' '}
+            <b>Ngữ pháp</b>.
+          </p>
+          {grammar ? (
+            <WritingView key={lesson.id} lessonId={lesson.id} exercises={grammar.exercises} />
+          ) : (
+            <p className="ld-hint">{content ? 'Bài này chưa có bài tập viết câu.' : 'Đang tải bài tập…'}</p>
+          )}
+          <div className="ld-footer">
+            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('grammar')}>
+              Xem lại ngữ pháp
             </Button>
             <Button size="lg" icon={<FileText size={18} />} onClick={() => go('read')}>
               Sang bài đọc
@@ -208,8 +260,8 @@ export const LessonDetail: React.FC<{
             <p className="ld-hint">{content ? 'Bài này chưa có bài đọc.' : 'Đang tải bài đọc…'}</p>
           )}
           <div className="ld-footer">
-            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('practice')}>
-              Luyện tập thêm
+            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('write')}>
+              Luyện viết câu
             </Button>
             {onNext && (
               <>

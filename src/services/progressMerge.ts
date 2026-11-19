@@ -20,8 +20,20 @@ export function mergeProgress(a: ProgressState, b: ProgressState): ProgressState
     xp: Math.max(a.xp ?? 0, b.xp ?? 0),
     readings,
   }
+  const writing = maxMap(a.writing, b.writing)
+  if (writing) out.writing = writing
+  const dictation = maxMap(a.dictation, b.dictation)
+  if (dictation) out.dictation = dictation
   const daily = mergeDaily(a.daily, b.daily)
   if (daily) out.daily = daily
+  return out
+}
+
+/** Gộp hai bảng điểm: mỗi khoá lấy giá trị lớn hơn */
+function maxMap(a?: Record<string, number>, b?: Record<string, number>) {
+  if (!a && !b) return undefined
+  const out: Record<string, number> = { ...a }
+  for (const [k, v] of Object.entries(b ?? {})) out[k] = Math.max(out[k] ?? 0, v)
   return out
 }
 

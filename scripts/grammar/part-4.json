@@ -1,0 +1,338 @@
+{
+  "L25": {
+    "points": [
+      {
+        "pattern": "Vても いいですか",
+        "meaning": "Làm V có được không? (xin phép)",
+        "structure": "Vて ＋ も ＋ いいですか",
+        "explain": "Dùng để xin phép một cách lịch sự: lấy thể て của động từ rồi thêm もいいですか. Khi đồng ý, trả lời はい、いいですよ hoặc はい、Vても いいです. Khi từ chối nhẹ nhàng, nói すみません、ちょっと…",
+        "note": "Đừng quên chữ も: nói 〜ていいですか cũng được trong văn nói, nhưng 〜てもいいですか là dạng chuẩn để học.",
+        "examples": [
+          { "jp": "この{辞書|じしょ}を{使|つか}ってもいいですか。", "vi": "Tôi dùng quyển từ điển này có được không?" },
+          { "jp": "ペンで{書|か}いてもいいですか。", "vi": "Viết bằng bút có được không?" },
+          { "jp": "このカメラを{見|み}てもいいですか。", "vi": "Tôi xem cái máy ảnh này có được không?" }
+        ]
+      },
+      {
+        "pattern": "Vては いけません",
+        "meaning": "Không được làm V (cấm)",
+        "structure": "Vて ＋ は ＋ いけません",
+        "explain": "Dùng để nói một việc bị cấm, thường là quy định ở trường, thư viện, nơi công cộng. Lấy thể て của động từ rồi thêm はいけません. Đây là cách nói khá mạnh, nên thường dùng khi nói về luật lệ, hoặc khi người trên nói với người dưới.",
+        "note": "Chữ は ở đây đọc là \"wa\". Khi được hỏi 〜てもいいですか mà muốn từ chối, câu いいえ、いけません nghe khá cứng.",
+        "examples": [
+          { "jp": "ここで{写真|しゃしん}を{撮|と}ってはいけません。", "vi": "Không được chụp ảnh ở đây." },
+          { "jp": "テストで{辞書|じしょ}を{使|つか}ってはいけません。", "vi": "Không được dùng từ điển trong bài kiểm tra." },
+          { "jp": "{図書館|としょかん}で{食|た}べてはいけません。", "vi": "Không được ăn trong thư viện." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "この{雑誌|ざっし}を{読|よ}んでもいいですか。", "vi": "Tôi đọc cuốn tạp chí này có được không?",
+        "acceptVi": ["Tôi đọc tạp chí này được không", "Mình đọc quyển tạp chí này có được không", "Đọc cuốn tạp chí này có được không"] },
+      { "dir": "vj", "vi": "Tôi dùng cái bút bi này có được không?", "jp": "このボールペンを{使|つか}ってもいいですか。",
+        "acceptJp": [], "hint": "この ＋ ボールペン ＋ を ＋ Vても いいですか（つかう = dùng）" },
+      { "dir": "jv", "jp": "ここで{写真|しゃしん}を{撮|と}ってはいけません。", "vi": "Không được chụp ảnh ở đây.",
+        "acceptVi": ["Ở đây không được chụp ảnh", "Không được chụp hình ở đây", "Ở đây cấm chụp ảnh"] },
+      { "dir": "vj", "vi": "Không được viết bằng bút chì.", "jp": "{鉛筆|えんぴつ}で{書|か}いてはいけません。",
+        "acceptJp": [], "hint": "えんぴつ ＋ で ＋ Vては いけません（えんぴつ = bút chì）" },
+      { "dir": "jv", "jp": "{紙|かみ}に{書|か}いてもいいですか。", "vi": "Tôi viết vào giấy có được không?",
+        "acceptVi": ["Viết lên giấy có được không", "Tôi viết ra giấy được không", "Mình viết vào giấy có được không"] },
+      { "dir": "vj", "vi": "Không được đọc báo ở đây.", "jp": "ここで{新聞|しんぶん}を{読|よ}んではいけません。",
+        "acceptJp": ["ここでは新聞を読んではいけません"], "hint": "ここ ＋ で ＋ しんぶん ＋ を ＋ Vては いけません" }
+    ]
+  },
+  "L26": {
+    "points": [
+      {
+        "pattern": "Vて から",
+        "meaning": "Sau khi làm V xong thì… (làm V trước)",
+        "structure": "V1て ＋ から、V2",
+        "explain": "Dùng khi muốn nhấn mạnh hành động V1 phải làm xong rồi mới làm V2. Động từ V1 chia thể て, thêm から; thì của cả câu do động từ cuối quyết định. Chủ ngữ của V1 (nếu khác chủ ngữ chính) dùng trợ từ が.",
+        "note": "Đừng nhầm với 〜から \"vì\" (bài 8): ở đây から đứng sau thể て nên mang nghĩa \"sau khi\".",
+        "examples": [
+          { "jp": "{宿題|しゅくだい}をしてから、{寝|ね}ます。", "vi": "Tôi làm bài tập xong rồi mới đi ngủ." },
+          { "jp": "{手|て}を{洗|あら}ってから、{食|た}べます。", "vi": "Rửa tay xong rồi mới ăn." },
+          { "jp": "{授業|じゅぎょう}が{終|お}わってから、{図書館|としょかん}で{勉強|べんきょう}します。", "vi": "Sau khi giờ học kết thúc, tôi học ở thư viện." }
+        ]
+      },
+      {
+        "pattern": "Vて、Vて、…",
+        "meaning": "Nối nhiều hành động theo thứ tự",
+        "structure": "V1て、V2て、V3ます",
+        "explain": "Muốn kể nhiều hành động xảy ra lần lượt, ta chia các động từ phía trước sang thể て và chỉ chia động từ cuối cùng theo thì (ます／ました). Thứ tự trong câu chính là thứ tự xảy ra. Thường nối 2–3 hành động là tự nhiên nhất.",
+        "note": "Động từ cuối quyết định thì: 起きて、食べて、出かけました → tất cả đều ở quá khứ.",
+        "examples": [
+          { "jp": "{朝|あさ}{起|お}きて、{顔|かお}を{洗|あら}います。", "vi": "Buổi sáng tôi thức dậy rồi rửa mặt." },
+          { "jp": "{教室|きょうしつ}に{入|はい}って、{宿題|しゅくだい}を{出|だ}しました。", "vi": "Tôi vào lớp rồi nộp bài tập." },
+          { "jp": "{本|ほん}を{読|よ}んで、{作文|さくぶん}を{書|か}きます。", "vi": "Tôi đọc sách rồi viết bài văn." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{宿題|しゅくだい}をしてから、テレビを{見|み}ます。", "vi": "Tôi làm bài tập xong rồi mới xem tivi.",
+        "acceptVi": ["Sau khi làm bài tập tôi xem tivi", "Làm bài tập xong rồi tôi xem ti vi", "Mình làm bài tập xong rồi xem tivi"] },
+      { "dir": "vj", "vi": "Tôi ăn sáng xong rồi mới đi học (đến trường).", "jp": "{朝|あさ}ごはんを{食|た}べてから、{学校|がっこう}に{行|い}きます。",
+        "acceptJp": ["朝ごはんを食べてから、学校へ行きます", "わたしは朝ごはんを食べてから、学校に行きます"], "hint": "あさごはん ＋ を ＋ Vてから、がっこう ＋ に ＋ いきます" },
+      { "dir": "jv", "jp": "{教室|きょうしつ}に{入|はい}って、{先生|せんせい}に{質問|しつもん}しました。", "vi": "Tôi vào lớp rồi hỏi thầy giáo.",
+        "acceptVi": ["Tôi vào lớp học và hỏi giáo viên", "Mình vào lớp rồi đặt câu hỏi cho thầy", "Tôi đã vào lớp và hỏi cô giáo"] },
+      { "dir": "vj", "vi": "Hôm qua tôi về nhà rồi làm bài tập.", "jp": "{昨日|きのう}、{家|うち}に{帰|かえ}って、{宿題|しゅくだい}をしました。",
+        "acceptJp": ["昨日、家へ帰って、宿題をしました", "昨日、家に帰ってから、宿題をしました", "昨日、いえに帰って、宿題をしました"], "hint": "きのう、うち ＋ に ＋ かえって、しゅくだい ＋ を ＋ しました" },
+      { "dir": "jv", "jp": "{授業|じゅぎょう}が{終|お}わってから、{友達|ともだち}と{話|はな}します。", "vi": "Sau khi giờ học kết thúc, tôi nói chuyện với bạn.",
+        "acceptVi": ["Học xong tôi nói chuyện với bạn", "Tan học rồi tôi nói chuyện với bạn bè", "Sau giờ học mình nói chuyện với bạn"] },
+      { "dir": "vj", "vi": "Tôi đọc đề bài rồi viết câu trả lời.", "jp": "{問題|もんだい}を{読|よ}んで、{答|こた}えを{書|か}きます。",
+        "acceptJp": ["問題を読んでから、答えを書きます"], "hint": "もんだい ＋ を ＋ よんで、こたえ ＋ を ＋ かきます（こたえ = câu trả lời）" }
+    ]
+  },
+  "L27": {
+    "points": [
+      {
+        "pattern": "N が わかります",
+        "meaning": "Hiểu N / biết N",
+        "structure": "N ＋ が ＋ わかります",
+        "explain": "わかります nghĩa là \"hiểu, biết\". Đối tượng được hiểu đi với trợ từ が, không dùng を. Thường đi kèm trạng từ chỉ mức độ: よく (rõ, giỏi), すこし (một chút), あまり〜ません (không… lắm), ぜんぜん〜ません (hoàn toàn không).",
+        "note": "Lỗi hay gặp: nói 日本語をわかります. Phải là 日本語がわかります.",
+        "examples": [
+          { "jp": "{英語|えいご}がわかります。", "vi": "Tôi hiểu tiếng Anh." },
+          { "jp": "この{漢字|かんじ}の{意味|いみ}がわかりますか。", "vi": "Bạn có hiểu nghĩa của chữ Hán này không?" },
+          { "jp": "{先生|せんせい}の{話|はなし}がよくわかりました。", "vi": "Tôi đã hiểu rõ lời thầy nói." }
+        ]
+      },
+      {
+        "pattern": "Vる ことが できます",
+        "meaning": "Có thể làm V",
+        "structure": "Vる (thể từ điển) ＋ ことが ＋ できます",
+        "explain": "Diễn tả khả năng (biết làm, làm được) hoặc sự cho phép (ở đâu đó có thể làm gì). Động từ để ở thể từ điển, ví dụ: かきます→かく, よみます→よむ, はなします→はなす, たべます→たべる, します→する. Với danh từ chỉ kỹ năng có thể nói ngắn gọn N が できます (日本語ができます).",
+        "note": "Phủ định là 〜ことが できません: \"không thể…\".",
+        "examples": [
+          { "jp": "{漢字|かんじ}を{書|か}くことができます。", "vi": "Tôi có thể viết chữ Hán." },
+          { "jp": "{英語|えいご}で{手紙|てがみ}を{書|か}くことができます。", "vi": "Tôi có thể viết thư bằng tiếng Anh." },
+          { "jp": "ここで{本|ほん}を{読|よ}むことができます。", "vi": "Ở đây có thể đọc sách." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "この{言葉|ことば}の{意味|いみ}がわかりません。", "vi": "Tôi không hiểu nghĩa của từ này.",
+        "acceptVi": ["Mình không hiểu nghĩa của từ này", "Tôi không biết nghĩa của từ này", "Tôi không hiểu nghĩa từ này"] },
+      { "dir": "vj", "vi": "Tôi hiểu tiếng Anh một chút.", "jp": "{英語|えいご}が{少|すこ}しわかります。",
+        "acceptJp": ["わたしは英語が少しわかります", "英語がちょっとわかります"], "hint": "えいご ＋ が ＋ すこし ＋ わかります" },
+      { "dir": "jv", "jp": "{私|わたし}は{漢字|かんじ}を{読|よ}むことができます。", "vi": "Tôi có thể đọc chữ Hán.",
+        "acceptVi": ["Tôi đọc được chữ Hán", "Mình có thể đọc kanji", "Tôi đọc được kanji"] },
+      { "dir": "vj", "vi": "Tôi có thể viết thư bằng tiếng Nhật.", "jp": "{日本語|にほんご}で{手紙|てがみ}を{書|か}くことができます。",
+        "acceptJp": ["わたしは日本語で手紙を書くことができます"], "hint": "にほんご ＋ で ＋ てがみ ＋ を ＋ かく ＋ ことが できます" },
+      { "dir": "jv", "jp": "ここで{英語|えいご}を{習|なら}うことができます。", "vi": "Ở đây có thể học tiếng Anh.",
+        "acceptVi": ["Có thể học tiếng Anh ở đây", "Ở đây học được tiếng Anh", "Bạn có thể học tiếng Anh ở đây"] },
+      { "dir": "vj", "vi": "Tôi không thể nhớ chữ Hán.", "jp": "{漢字|かんじ}を{覚|おぼ}えることができません。",
+        "acceptJp": ["わたしは漢字を覚えることができません"], "hint": "かんじ ＋ を ＋ おぼえる ＋ ことが できません（おぼえる = nhớ, thuộc）" }
+    ]
+  },
+  "L28": {
+    "points": [
+      {
+        "pattern": "(nơi) へ いきます／きます／かえります",
+        "meaning": "Đi / đến / về (nơi)",
+        "structure": "Nơi chốn ＋ へ ＋ いきます／きます／かえります",
+        "explain": "Trợ từ へ chỉ hướng di chuyển, đứng sau nơi chốn và trước các động từ di chuyển: いきます (đi), きます (đến, tới chỗ người nói), かえります (về nhà, về nước). Có thể thay へ bằng に mà nghĩa gần như không đổi.",
+        "note": "へ khi làm trợ từ đọc là \"e\", không đọc là \"he\".",
+        "examples": [
+          { "jp": "{明日|あした}、{銀行|ぎんこう}へ{行|い}きます。", "vi": "Ngày mai tôi sẽ đi ngân hàng." },
+          { "jp": "{友達|ともだち}が{私|わたし}の{家|うち}へ{来|き}ました。", "vi": "Bạn tôi đã đến nhà tôi." },
+          { "jp": "{七時|しちじ}に{家|うち}へ{帰|かえ}ります。", "vi": "Tôi về nhà lúc 7 giờ." }
+        ]
+      },
+      {
+        "pattern": "(nơi) へ Vに いきます",
+        "meaning": "Đi (đến nơi) để làm V",
+        "structure": "Nơi chốn ＋ へ ＋ (N を) Vます bỏ ます ＋ に ＋ いきます／きます／かえります",
+        "explain": "Nêu mục đích của việc đi lại: bỏ ます của động từ rồi thêm に (かいます→かいに). Với danh từ chỉ hoạt động như さんぽ, かいもの, べんきょう thì có thể dùng thẳng N に いきます (こうえんへ さんぽに いきます).",
+        "note": "Thứ tự tự nhiên: nơi chốn へ → việc làm に → いきます.",
+        "examples": [
+          { "jp": "{郵便局|ゆうびんきょく}へ{切手|きって}を{買|か}いに{行|い}きます。", "vi": "Tôi đi bưu điện để mua tem." },
+          { "jp": "{図書館|としょかん}へ{本|ほん}を{借|か}りに{行|い}きます。", "vi": "Tôi đến thư viện để mượn sách." },
+          { "jp": "{映画館|えいがかん}へ{映画|えいが}を{見|み}に{行|い}きました。", "vi": "Tôi đã đến rạp để xem phim." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎日|まいにち}{六時|ろくじ}に{家|うち}へ{帰|かえ}ります。", "vi": "Hằng ngày tôi về nhà lúc 6 giờ.",
+        "acceptVi": ["Mỗi ngày tôi về nhà lúc 6 giờ", "Ngày nào tôi cũng về nhà lúc sáu giờ", "Hàng ngày mình về nhà lúc 6 giờ"] },
+      { "dir": "vj", "vi": "Ngày mai tôi sẽ đi ngân hàng.", "jp": "{明日|あした}、{銀行|ぎんこう}へ{行|い}きます。",
+        "acceptJp": ["明日、銀行に行きます", "わたしは明日、銀行へ行きます"], "hint": "あした、ぎんこう ＋ へ ＋ いきます" },
+      { "dir": "jv", "jp": "デパートへ{靴|くつ}を{買|か}いに{行|い}きます。", "vi": "Tôi đi cửa hàng bách hóa để mua giày.",
+        "acceptVi": ["Tôi đi trung tâm thương mại mua giày", "Tôi đến cửa hàng bách hoá để mua giày", "Mình đi bách hóa mua giày"] },
+      { "dir": "vj", "vi": "Hôm qua tôi đã đi công viên để chụp ảnh.", "jp": "{昨日|きのう}、{公園|こうえん}へ{写真|しゃしん}を{撮|と}りに{行|い}きました。",
+        "acceptJp": ["昨日、公園に写真を撮りに行きました"], "hint": "こうえん ＋ へ ＋ しゃしん ＋ を ＋ とりに ＋ いきました" },
+      { "dir": "jv", "jp": "{先週|せんしゅう}、{国|くに}へ{帰|かえ}りました。", "vi": "Tuần trước tôi đã về nước.",
+        "acceptVi": ["Tuần trước mình đã về nước", "Tôi đã về nước vào tuần trước", "Tuần trước tôi về quê hương"] },
+      { "dir": "vj", "vi": "Tôi đi hiệu sách để mua từ điển.", "jp": "{本屋|ほんや}へ{辞書|じしょ}を{買|か}いに{行|い}きます。",
+        "acceptJp": ["本屋に辞書を買いに行きます"], "hint": "ほんや ＋ へ ＋ じしょ ＋ を ＋ かいに ＋ いきます（ほんや = hiệu sách）" }
+    ]
+  },
+  "L29": {
+    "points": [
+      {
+        "pattern": "(phương tiện) で いきます",
+        "meaning": "Đi bằng (phương tiện)",
+        "structure": "Phương tiện ＋ で ＋ (nơi へ) いきます／きます／かえります",
+        "explain": "Trợ từ で đứng sau phương tiện giao thông để nói đi bằng gì: でんしゃで, バスで, じてんしゃで… Đây cũng là で chỉ phương tiện, cách thức như ở bài 17 (はしで たべます). Để hỏi đi bằng gì, dùng なんで いきますか.",
+        "note": "Đi bộ thì nói あるいて いきます, không nói あしで いきます.",
+        "examples": [
+          { "jp": "{毎日|まいにち}{電車|でんしゃ}で{会社|かいしゃ}へ{行|い}きます。", "vi": "Hằng ngày tôi đi làm bằng tàu điện." },
+          { "jp": "{自転車|じてんしゃ}で{学校|がっこう}へ{来|き}ます。", "vi": "Tôi đến trường bằng xe đạp." },
+          { "jp": "{飛行機|ひこうき}で{日本|にほん}へ{行|い}きました。", "vi": "Tôi đã đi Nhật bằng máy bay." }
+        ]
+      },
+      {
+        "pattern": "どのくらい かかりますか",
+        "meaning": "Mất bao lâu? (thời gian / tiền)",
+        "structure": "(A から B まで) ＋ どのくらい ＋ かかりますか",
+        "explain": "かかります nghĩa là \"tốn, mất\" (thời gian hoặc tiền). Hỏi mất bao lâu thì dùng どのくらい (hoặc どれくらい) かかりますか. Khi trả lời, đặt số thời gian trước かかります: 30ぷん かかります, 1じかん かかります.",
+        "note": "Số thời gian đứng ngay trước かかります, không cần trợ từ.",
+        "examples": [
+          { "jp": "{家|うち}から{駅|えき}までどのくらいかかりますか。", "vi": "Từ nhà đến ga mất bao lâu?" },
+          { "jp": "バスで{三十分|さんじゅっぷん}かかります。", "vi": "Đi xe buýt mất 30 phút." },
+          { "jp": "{東京|とうきょう}まで{電車|でんしゃ}で{一時間|いちじかん}かかります。", "vi": "Đến Tokyo đi tàu điện mất một tiếng." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{兄|あに}は{車|くるま}で{会社|かいしゃ}へ{行|い}きます。", "vi": "Anh trai tôi đi làm bằng ô tô.",
+        "acceptVi": ["Anh tôi đi đến công ty bằng xe hơi", "Anh trai tôi đi ô tô đến công ty", "Anh mình đi làm bằng xe ô tô"] },
+      { "dir": "vj", "vi": "Tôi đến trường bằng xe đạp.", "jp": "{自転車|じてんしゃ}で{学校|がっこう}へ{行|い}きます。",
+        "acceptJp": ["自転車で学校に行きます", "わたしは自転車で学校へ行きます", "自転車で学校へ来ます"], "hint": "じてんしゃ ＋ で ＋ がっこう ＋ へ ＋ いきます" },
+      { "dir": "jv", "jp": "{駅|えき}から{大学|だいがく}までどのくらいかかりますか。", "vi": "Từ ga đến trường đại học mất bao lâu?",
+        "acceptVi": ["Từ nhà ga tới đại học mất bao lâu", "Đi từ ga đến trường đại học mất bao lâu", "Từ ga đến đại học mất khoảng bao lâu"] },
+      { "dir": "vj", "vi": "Đi bằng tàu điện mất 20 phút.", "jp": "{電車|でんしゃ}で{二十分|にじゅっぷん}かかります。",
+        "acceptJp": ["電車で20分かかります"], "hint": "でんしゃ ＋ で ＋ にじゅっぷん ＋ かかります" },
+      { "dir": "jv", "jp": "タクシーでホテルへ{帰|かえ}りました。", "vi": "Tôi đã về khách sạn bằng taxi.",
+        "acceptVi": ["Tôi đi taxi về khách sạn", "Mình đã về khách sạn bằng tắc xi", "Tôi đã đi tắc-xi về khách sạn"] },
+      { "dir": "vj", "vi": "Từ đây đến ngân hàng mất bao lâu?", "jp": "ここから{銀行|ぎんこう}までどのくらいかかりますか。",
+        "acceptJp": ["ここから銀行までどれくらいかかりますか", "ここから銀行までどのぐらいかかりますか"], "hint": "ここ ＋ から ＋ ぎんこう ＋ まで ＋ どのくらい かかりますか" }
+    ]
+  },
+  "L30": {
+    "points": [
+      {
+        "pattern": "Vる まえに",
+        "meaning": "Trước khi làm V",
+        "structure": "Vる (thể từ điển) ＋ まえに、V2 ／ N の ＋ まえに",
+        "explain": "Diễn tả V2 xảy ra trước V1. Động từ đứng trước まえに luôn ở thể từ điển, kể cả khi cả câu nói về quá khứ; thì của câu do động từ cuối quyết định. Với danh từ thì thêm の: しょくじの まえに (trước bữa ăn).",
+        "note": "Lỗi hay gặp: nói 食べましたまえに. Đúng là 食べるまえに.",
+        "examples": [
+          { "jp": "{寝|ね}る{前|まえ}に、{歯|は}をみがきます。", "vi": "Trước khi ngủ, tôi đánh răng." },
+          { "jp": "{食|た}べる{前|まえ}に、{手|て}を{洗|あら}います。", "vi": "Trước khi ăn, tôi rửa tay." },
+          { "jp": "{日本|にほん}へ{来|く}る{前|まえ}に、{日本語|にほんご}を{勉強|べんきょう}しました。", "vi": "Trước khi đến Nhật, tôi đã học tiếng Nhật." }
+        ]
+      },
+      {
+        "pattern": "Vた あとで",
+        "meaning": "Sau khi làm V",
+        "structure": "Vた ＋ あとで、V2 ／ N の ＋ あとで",
+        "explain": "Diễn tả V2 xảy ra sau V1. Động từ đứng trước あとで chia ở thể た (giống thể て nhưng đổi て→た, で→だ: たべて→たべた, よんで→よんだ). Với danh từ thì thêm の: じゅぎょうの あとで (sau giờ học).",
+        "note": "So với Vてから, Vたあとで chỉ nói thứ tự trước sau, không nhấn mạnh \"phải xong V1 rồi mới\".",
+        "examples": [
+          { "jp": "{仕事|しごと}が{終|お}わった{後|あと}で、{買|か}い{物|もの}をします。", "vi": "Sau khi xong việc, tôi đi mua sắm." },
+          { "jp": "{晩|ばん}ごはんを{食|た}べた{後|あと}で、{散歩|さんぽ}します。", "vi": "Sau khi ăn tối, tôi đi dạo." },
+          { "jp": "{映画|えいが}を{見|み}た{後|あと}で、{喫茶店|きっさてん}へ{行|い}きました。", "vi": "Sau khi xem phim, tôi đã đến quán cà phê." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{寝|ね}る{前|まえ}に、{本|ほん}を{読|よ}みます。", "vi": "Trước khi ngủ, tôi đọc sách.",
+        "acceptVi": ["Tôi đọc sách trước khi ngủ", "Trước khi đi ngủ tôi đọc sách", "Mình đọc sách trước khi ngủ"] },
+      { "dir": "vj", "vi": "Trước khi ra ngoài, tôi xem bản đồ.", "jp": "{外|そと}に{出|で}る{前|まえ}に、{地図|ちず}を{見|み}ます。",
+        "acceptJp": ["外へ出る前に、地図を見ます", "出かける前に、地図を見ます"], "hint": "そと ＋ に ＋ でる ＋ まえに、ちず ＋ を ＋ みます" },
+      { "dir": "jv", "jp": "{宿題|しゅくだい}をした{後|あと}で、テレビを{見|み}ました。", "vi": "Sau khi làm bài tập, tôi đã xem tivi.",
+        "acceptVi": ["Làm bài tập xong tôi đã xem tivi", "Tôi xem ti vi sau khi làm bài tập", "Sau khi làm bài tập mình xem tivi"] },
+      { "dir": "vj", "vi": "Sau khi giờ học kết thúc, tôi chơi ở công viên.", "jp": "{授業|じゅぎょう}が{終|お}わった{後|あと}で、{公園|こうえん}で{遊|あそ}びます。",
+        "acceptJp": ["授業の後で、公園で遊びます", "授業が終わってから、公園で遊びます"], "hint": "じゅぎょう ＋ が ＋ おわった ＋ あとで、こうえん ＋ で ＋ あそびます" },
+      { "dir": "jv", "jp": "{昼|ひる}ごはんを{食|た}べた{後|あと}で、{少|すこ}し{寝|ね}ます。", "vi": "Sau khi ăn trưa, tôi ngủ một chút.",
+        "acceptVi": ["Ăn trưa xong tôi ngủ một lát", "Tôi ngủ một chút sau khi ăn trưa", "Sau bữa trưa mình ngủ một chút"] },
+      { "dir": "vj", "vi": "Trước khi ngủ, tôi đặt điện thoại lên bàn.", "jp": "{寝|ね}る{前|まえ}に、{電話|でんわ}を{机|つくえ}の{上|うえ}に{置|お}きます。",
+        "acceptJp": ["寝る前に、机の上に電話を置きます"], "hint": "ねる まえに、でんわ ＋ を ＋ つくえ の うえ ＋ に ＋ おきます（おく = đặt, để）" }
+    ]
+  },
+  "L31": {
+    "points": [
+      {
+        "pattern": "〜ぐらい／〜ごろ",
+        "meaning": "Khoảng (số lượng / thời điểm)",
+        "structure": "Số lượng, khoảng thời gian ＋ ぐらい（くらい）／ Thời điểm ＋ ごろ",
+        "explain": "ぐらい (cũng nói くらい) đi sau số lượng hoặc độ dài thời gian: 2じかんぐらい (khoảng 2 tiếng), 5キロぐらい (khoảng 5 cân/5 km). ごろ đi sau một mốc thời gian cụ thể: 7じごろ (khoảng 7 giờ), 3がつごろ (khoảng tháng 3). Sau ごろ có thể thêm に hoặc bỏ đi đều được.",
+        "note": "Mẹo nhớ: hỏi \"bao lâu, bao nhiêu\" → ぐらい; hỏi \"lúc nào\" → ごろ.",
+        "examples": [
+          { "jp": "{毎日|まいにち}{二時間|にじかん}ぐらい{勉強|べんきょう}します。", "vi": "Mỗi ngày tôi học khoảng hai tiếng." },
+          { "jp": "{十一時|じゅういちじ}ごろ{寝|ね}ます。", "vi": "Tôi ngủ vào khoảng 11 giờ." },
+          { "jp": "{駅|えき}まで{五百|ごひゃく}メートルぐらいです。", "vi": "Đến ga khoảng 500 mét." }
+        ]
+      },
+      {
+        "pattern": "Adj くて／Adj で",
+        "meaning": "Nối tính từ: … và …",
+        "structure": "Adj い bỏ い ＋ くて、〜 ／ Adj な ＋ で、〜 ／ N ＋ で、〜",
+        "explain": "Muốn nối hai tính từ (hoặc hai câu miêu tả) thành một câu, tính từ い đổi い thành くて (やすい→やすくて), tính từ な và danh từ thêm で (しずか→しずかで). Thì và lịch sự do phần cuối câu quyết định. Hai ý nối với nhau nên cùng chiều (cùng tốt hoặc cùng xấu).",
+        "note": "Ngoại lệ: いい → よくて (không nói いくて).",
+        "examples": [
+          { "jp": "この{部屋|へや}は{広|ひろ}くて、{明|あか}るいです。", "vi": "Căn phòng này rộng và sáng sủa." },
+          { "jp": "この{町|まち}は{静|しず}かで、きれいです。", "vi": "Thị trấn này yên tĩnh và sạch đẹp." },
+          { "jp": "この{店|みせ}は{安|やす}くて、おいしいです。", "vi": "Quán này rẻ và ngon." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎朝|まいあさ}{七時|しちじ}ごろ{起|お}きます。", "vi": "Mỗi sáng tôi dậy vào khoảng 7 giờ.",
+        "acceptVi": ["Sáng nào tôi cũng thức dậy khoảng 7 giờ", "Mỗi buổi sáng mình dậy khoảng bảy giờ", "Hằng sáng tôi dậy lúc khoảng 7 giờ"] },
+      { "dir": "vj", "vi": "Cái cặp này nặng khoảng 3 ký.", "jp": "このかばんは{三|さん}キロぐらいです。",
+        "acceptJp": ["このかばんは3キロぐらいです", "このかばんは三キロくらいです", "このかばんは三キログラムぐらいです"], "hint": "このかばん ＋ は ＋ さんキロ ＋ ぐらい ＋ です（キロ = ki-lô-gam）" },
+      { "dir": "jv", "jp": "この{道|みち}は{広|ひろ}くて、{明|あか}るいです。", "vi": "Con đường này rộng và sáng sủa.",
+        "acceptVi": ["Đường này rộng và sáng", "Con đường này vừa rộng vừa sáng", "Con đường này rộng rãi và sáng sủa"] },
+      { "dir": "vj", "vi": "Thầy Tanaka tốt bụng và vui tính.", "jp": "{田中|たなか}{先生|せんせい}は{親切|しんせつ}で、おもしろいです。",
+        "acceptJp": [], "hint": "たなかせんせい ＋ は ＋ しんせつ ＋ で、おもしろいです（しんせつ = tốt bụng）" },
+      { "dir": "jv", "jp": "{角|かど}の{店|みせ}は{安|やす}くて、おいしいです。", "vi": "Quán ở góc đường rẻ và ngon.",
+        "acceptVi": ["Cửa hàng ở góc phố rẻ và ngon", "Quán ở chỗ góc đường vừa rẻ vừa ngon", "Tiệm ở góc đường rẻ mà ngon"] },
+      { "dir": "vj", "vi": "Tối qua tôi đã về nhà vào khoảng 9 giờ.", "jp": "{昨日|きのう}の{夜|よる}、{九時|くじ}ごろ{家|うち}へ{帰|かえ}りました。",
+        "acceptJp": ["昨日の夜、九時ごろ家に帰りました", "昨日の夜、9時ごろ家へ帰りました", "ゆうべ、九時ごろ家へ帰りました"], "hint": "きのう の よる、くじ ごろ ＋ うち ＋ へ ＋ かえりました" }
+    ]
+  },
+  "L32": {
+    "points": [
+      {
+        "pattern": "N1 は N2 より Adj",
+        "meaning": "N1 … hơn N2",
+        "structure": "N1 ＋ は ＋ N2 ＋ より ＋ Adj ＋ です",
+        "explain": "Dùng để so sánh hai thứ: より đứng sau vật được đem ra làm mốc so sánh (N2), nghĩa là \"so với N2\". Tính từ giữ nguyên dạng, không cần thêm từ \"hơn\". Có thể so sánh cả người, vật, nơi chốn, thời gian.",
+        "note": "Đừng đảo vị trí: いぬは ねこより おおきい = chó to hơn mèo (より đi với cái nhỏ hơn).",
+        "examples": [
+          { "jp": "{犬|いぬ}は{猫|ねこ}より{大|おお}きいです。", "vi": "Chó to hơn mèo." },
+          { "jp": "{飛行機|ひこうき}は{電車|でんしゃ}より{速|はや}いです。", "vi": "Máy bay nhanh hơn tàu điện." },
+          { "jp": "{山|やま}は{海|うみ}より{涼|すず}しいです。", "vi": "Núi mát hơn biển." }
+        ]
+      },
+      {
+        "pattern": "N の なかで N が いちばん Adj",
+        "meaning": "Trong N, … nhất",
+        "structure": "N(phạm vi) ＋ の なかで ＋ N ＋ が ＋ いちばん ＋ Adj ＋ です",
+        "explain": "Dùng để nói cái gì \"nhất\" trong một nhóm. Phạm vi so sánh đặt trước のなかで, cái được chọn đi với が, rồi いちばん + tính từ. Khi hỏi, dùng なに (vật), だれ (người), どこ (nơi), いつ (thời gian) + が いちばん 〜ですか.",
+        "note": "Trong câu hỏi, từ để hỏi luôn đi với が: だれが いちばん…?",
+        "examples": [
+          { "jp": "{花|はな}の{中|なか}でさくらがいちばん{好|す}きです。", "vi": "Trong các loài hoa, tôi thích hoa anh đào nhất." },
+          { "jp": "{日本|にほん}の{山|やま}の{中|なか}で{富士山|ふじさん}がいちばん{高|たか}いです。", "vi": "Trong các ngọn núi ở Nhật, núi Phú Sĩ cao nhất." },
+          { "jp": "{一年|いちねん}の{中|なか}で{何月|なんがつ}がいちばん{暑|あつ}いですか。", "vi": "Trong một năm, tháng mấy nóng nhất?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "この{川|かわ}はあの{川|かわ}より{長|なが}いです。", "vi": "Con sông này dài hơn con sông kia.",
+        "acceptVi": ["Sông này dài hơn sông kia", "Dòng sông này dài hơn dòng sông kia", "Con sông này thì dài hơn con sông kia"] },
+      { "dir": "vj", "vi": "Hôm nay nóng hơn hôm qua.", "jp": "{今日|きょう}は{昨日|きのう}より{暑|あつ}いです。",
+        "acceptJp": [], "hint": "きょう ＋ は ＋ きのう ＋ より ＋ あついです" },
+      { "dir": "jv", "jp": "{動物|どうぶつ}の{中|なか}で{何|なに}がいちばん{好|す}きですか。", "vi": "Trong các con vật, bạn thích con gì nhất?",
+        "acceptVi": ["Trong các loài động vật bạn thích con nào nhất", "Bạn thích con vật nào nhất", "Trong số động vật, bạn thích con gì nhất"] },
+      { "dir": "vj", "vi": "Trong gia đình bạn, ai cao nhất?", "jp": "{家族|かぞく}の{中|なか}でだれがいちばん{背|せ}が{高|たか}いですか。",
+        "acceptJp": ["ご家族の中でだれがいちばん背が高いですか", "あなたの家族の中でだれがいちばん背が高いですか"], "hint": "かぞく の なかで ＋ だれ ＋ が ＋ いちばん ＋ せが たかいですか（せが たかい = cao, dùng cho người）" },
+      { "dir": "jv", "jp": "{町|まち}の{中|なか}でこの{公園|こうえん}がいちばんきれいです。", "vi": "Trong thị trấn, công viên này đẹp nhất.",
+        "acceptVi": ["Công viên này đẹp nhất trong thị trấn", "Trong khu phố, công viên này là đẹp nhất", "Công viên này đẹp nhất thị trấn"] },
+      { "dir": "vj", "vi": "Tàu điện ngầm nhanh hơn xe buýt.", "jp": "{地下鉄|ちかてつ}はバスより{速|はや}いです。",
+        "acceptJp": [], "hint": "ちかてつ ＋ は ＋ バス ＋ より ＋ はやいです" }
+    ]
+  }
+}

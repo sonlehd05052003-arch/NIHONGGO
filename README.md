@@ -43,17 +43,24 @@ sửa từ khoá rồi chạy `node scripts/fetch-images.mjs` để lấy lại 
 ## Lộ trình bài học
 
 Tab **Bài học** chia 604 từ thành 48 bài theo chủ đề (`src/data/lessons.json`, nguồn ở `scripts/lessons-src.mjs`).
-Mỗi bài có 3 bước:
+Mỗi bài có 5 bước:
 
 1. **Học từ** — ảnh, câu ví dụ có furigana (nghe được), mẹo nhớ (âm Hán Việt, từ dễ nhầm, cách dùng)
-2. **Luyện tập** — 4 chế độ từ dễ đến khó, chỉ với từ của bài
-3. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, bật/tắt bản dịch từng câu, nghe cả bài, 3 câu hỏi đọc hiểu
+2. **Ngữ pháp** — 2 mẫu câu N5 mỗi bài (tổng 96 mẫu, tương đương Minna no Nihongo bài 1–25): cấu trúc, giải thích, lưu ý, 3 ví dụ nghe được
+3. **Luyện tập** — 4 chế độ từ dễ đến khó, chỉ với từ của bài
+4. **Viết câu** — 6 câu mỗi bài: 3 câu Nhật → Việt, 3 câu Việt → Nhật. Việt → Nhật gõ được bằng kana, kanji hoặc romaji
+   (mỗi chỗ có furigana gõ kanji hay kana đều đúng; trợ từ は/へ/を gõ わ/え/お cũng được). Nhật → Việt chấm gần đúng
+   (bỏ qua dấu, từ đệm như "cái/là/thì", tha lỗi gõ nhầm 1 chữ ở câu dài) và có nút "Tôi đúng mà"
+5. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, trình phát có thanh tua, bật/tắt bản dịch từng câu, 3 câu hỏi đọc hiểu.
+   Chế độ **Chỉ nghe** ẩn chữ để luyện nghe hiểu rồi mới hiện chữ đối chiếu
 
 **Ôn tập ngắt quãng (SRS):** trả lời đúng thì từ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày, sai thì ôn lại
 ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn.
 
-Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`, gộp lại bằng
-`node scripts/build-content.mjs` (kiểm tra furigana, đủ từ, đáp án hợp lệ) → `src/data/content.json` (tải lười).
+Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`; ngữ pháp & bài tập viết câu trong
+`scripts/grammar/part-*.json` (lộ trình mẫu: `scripts/grammar-plan.mjs`, quy cách: `scripts/grammar/SPEC.md`).
+Gộp lại bằng `node scripts/build-content.mjs` (kiểm tra furigana, đủ từ, đáp án hợp lệ) → `src/data/content.json` (tải lười).
+Kiểm tra riêng phần ngữ pháp: `node scripts/check-grammar.mjs`.
 Furigana viết dạng `{漢字|かんじ}`.
 
 ## Chế độ học

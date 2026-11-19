@@ -34,6 +34,7 @@ interface ProgressContextValue {
   /** Các từ đến hạn ôn hôm nay theo lịch ôn ngắt quãng */
   dueIds: string[]
   setReadingScore: (lessonId: string, score: number) => void
+  setWritingScore: (lessonId: string, score: number) => void
   resetProgress: () => void
   /** Thay tiến độ bằng dữ liệu khác (vd. từ file sao lưu); merge = gộp với tiến độ hiện có */
   replaceProgress: (p: ProgressState, merge?: boolean) => void
@@ -79,6 +80,11 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         setProgress((prev) => {
           const best = Math.max(prev.readings?.[lessonId] ?? 0, score)
           return { ...prev, readings: { ...prev.readings, [lessonId]: best } }
+        }),
+      setWritingScore: (lessonId, score) =>
+        setProgress((prev) => {
+          const best = Math.max(prev.writing?.[lessonId] ?? 0, score)
+          return { ...prev, writing: { ...prev.writing, [lessonId]: best } }
         }),
       recordAnswer: (id, correct) => {
         update(id, (p) => ({

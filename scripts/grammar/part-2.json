@@ -1,0 +1,338 @@
+{
+  "L9": {
+    "points": [
+      {
+        "pattern": "Vます／Vません",
+        "meaning": "Thể lịch sự ở hiện tại / tương lai: làm / không làm",
+        "structure": "Vます (khẳng định) ・ Vません (phủ định) ・ Vますか (câu hỏi)",
+        "explain": "Động từ thể ます dùng để nói lịch sự về thói quen hằng ngày hoặc việc sắp làm trong tương lai. Muốn phủ định thì đổi đuôi ます thành ません. Thêm か vào cuối câu để hỏi. Tiếng Nhật không có thì tương lai riêng: はたらきます vừa là \"làm việc\" (thói quen) vừa là \"sẽ làm việc\".",
+        "note": "Động từ luôn đứng cuối câu. Khi trả lời câu hỏi Vますか: はい、Vます／いいえ、Vません.",
+        "examples": [
+          { "jp": "{私|わたし}は{毎日|まいにち}{働|はたら}きます。", "vi": "Tôi làm việc mỗi ngày." },
+          { "jp": "{日曜日|にちようび}は{働|はたら}きません。", "vi": "Chủ nhật tôi không làm việc." },
+          { "jp": "{明日|あした}、{勉強|べんきょう}しますか。", "vi": "Ngày mai bạn có học không?" }
+        ]
+      },
+      {
+        "pattern": "N(địa điểm) で V",
+        "meaning": "Làm V ở N (nơi diễn ra hành động)",
+        "structure": "N(nơi chốn) ＋ で ＋ Vます",
+        "explain": "Trợ từ で đứng sau danh từ chỉ nơi chốn để cho biết hành động diễn ra ở đâu, giống \"ở…\" trong \"làm việc ở bệnh viện\". で gắn với các động từ chỉ hành động như はたらきます, べんきょうします, やすみます.",
+        "note": "Để nói nghề nghiệp hiện tại, người Nhật thường dùng はたらいています (sẽ học ở bài sau); ở bài này dùng はたらきます là đủ.",
+        "examples": [
+          { "jp": "{病院|びょういん}で{働|はたら}きます。", "vi": "Tôi làm việc ở bệnh viện." },
+          { "jp": "{図書館|としょかん}で{勉強|べんきょう}します。", "vi": "Tôi học ở thư viện." },
+          { "jp": "{日曜日|にちようび}はうちで{休|やす}みます。", "vi": "Chủ nhật tôi nghỉ ở nhà." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{山田|やまだ}さんは{会社|かいしゃ}で{働|はたら}きます。", "vi": "Anh Yamada làm việc ở công ty.",
+        "acceptVi": ["Chị Yamada làm việc ở công ty", "Yamada làm việc ở công ty", "Anh Yamada làm ở công ty"] },
+      { "dir": "vj", "vi": "Tôi không làm việc ở bệnh viện.", "jp": "{私|わたし}は{病院|びょういん}で{働|はたら}きません。",
+        "acceptJp": ["病院で働きません", "私は病院では働きません"], "hint": "びょういん ＋ で ＋ はたらきません" },
+      { "dir": "jv", "jp": "{警官|けいかん}は{交番|こうばん}で{働|はたら}きます。", "vi": "Cảnh sát làm việc ở bốt cảnh sát.",
+        "acceptVi": ["Cảnh sát làm việc ở trạm cảnh sát", "Viên cảnh sát làm việc ở đồn cảnh sát", "Người cảnh sát làm việc ở bốt cảnh sát"] },
+      { "dir": "vj", "vi": "Bố tôi làm việc ở đại sứ quán.", "jp": "{父|ちち}は{大使館|たいしかん}で{働|はたら}きます。",
+        "acceptJp": ["私の父は大使館で働きます", "父は大使館で働いています"], "hint": "ちち (bố mình) ＋ は ＋ たいしかん ＋ で ＋ はたらきます" },
+      { "dir": "jv", "jp": "{明日|あした}は{働|はたら}きません。", "vi": "Ngày mai tôi không làm việc.",
+        "acceptVi": ["Mai tôi không làm việc", "Ngày mai mình không làm việc", "Ngày mai tôi không đi làm"] },
+      { "dir": "vj", "vi": "Thứ bảy bạn có làm việc không?", "jp": "{土曜日|どようび}は{働|はたら}きますか。",
+        "acceptJp": ["土曜日に働きますか", "土曜日働きますか"], "hint": "どようび (thứ bảy) ＋ は ＋ はたらきますか" }
+    ]
+  },
+  "L10": {
+    "points": [
+      {
+        "pattern": "〜じ〜ふん",
+        "meaning": "Nói giờ phút",
+        "structure": "Số ＋ じ (giờ) ＋ Số ＋ ふん／ぷん (phút) ・ 〜じはん (rưỡi)",
+        "explain": "Giờ = số + じ (時), phút = số + ふん hoặc ぷん (分). Một số giờ đọc đặc biệt: 4 giờ よじ, 7 giờ しちじ, 9 giờ くじ. Phút đọc ぷん sau 1, 3, 4, 6, 8, 10: いっぷん, さんぷん, よんぷん, ろっぷん, はっぷん, じゅっぷん; còn lại đọc ふん: にふん, ごふん, ななふん, きゅうふん. \"Rưỡi\" là はん (半).",
+        "note": "Đừng đọc 4 giờ là よんじ hay 9 giờ là きゅうじ — phải là よじ, くじ.",
+        "examples": [
+          { "jp": "{今|いま}、{四時|よじ}です。", "vi": "Bây giờ là 4 giờ." },
+          { "jp": "{今|いま}、{九時十分|くじじゅっぷん}です。", "vi": "Bây giờ là 9 giờ 10 phút." },
+          { "jp": "{今|いま}、{七時半|しちじはん}です。", "vi": "Bây giờ là 7 giờ rưỡi." }
+        ]
+      },
+      {
+        "pattern": "〜ばん",
+        "meaning": "Số thứ tự, số hiệu (số …)",
+        "structure": "Số ＋ ばん (番) ・ なんばん (số mấy?)",
+        "explain": "Thêm ばん (番) sau con số để chỉ số thứ tự hoặc số hiệu: số 1, số 2, xe buýt số 8… Hỏi \"số mấy?\" dùng なんばん. ばんごう (番号) là \"con số, số hiệu\", ví dụ でんわばんごう là số điện thoại.",
+        "note": "いちばん (一番) còn có nghĩa là \"nhất\" (sẽ học ở bài so sánh). 7 thường đọc ななばん.",
+        "examples": [
+          { "jp": "{私|わたし}は{三番|さんばん}です。", "vi": "Tôi là số 3." },
+          { "jp": "{電話番号|でんわばんごう}は{何番|なんばん}ですか。", "vi": "Số điện thoại là số mấy?" },
+          { "jp": "それは{八番|はちばん}のバスです。", "vi": "Đó là xe buýt số 8." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{今|いま}、{四時半|よじはん}です。", "vi": "Bây giờ là 4 giờ rưỡi.",
+        "acceptVi": ["Bây giờ là bốn giờ rưỡi", "Bây giờ là 4 giờ 30 phút", "Giờ là 4 giờ rưỡi"] },
+      { "dir": "vj", "vi": "Bây giờ là 9 giờ 5 phút.", "jp": "{今|いま}、{九時五分|くじごふん}です。",
+        "acceptJp": ["今9時5分です", "九時五分です", "9時5分です"], "hint": "いま ＋ くじ (9 giờ) ＋ ごふん (5 phút) ＋ です" },
+      { "dir": "jv", "jp": "{電話番号|でんわばんごう}は{何番|なんばん}ですか。", "vi": "Số điện thoại là số mấy?",
+        "acceptVi": ["Số điện thoại là số bao nhiêu", "Số điện thoại số mấy", "Số điện thoại của bạn là bao nhiêu"] },
+      { "dir": "vj", "vi": "Tôi là số 7.", "jp": "{私|わたし}は{七番|ななばん}です。",
+        "acceptJp": ["七番です", "私は7番です", "わたしはしちばんです"], "hint": "わたし ＋ は ＋ ななばん ＋ です" },
+      { "dir": "jv", "jp": "{今|いま}、{七時|しちじ}です。", "vi": "Bây giờ là 7 giờ.",
+        "acceptVi": ["Bây giờ là bảy giờ", "Giờ là 7 giờ", "Bây giờ 7 giờ"] },
+      { "dir": "vj", "vi": "Đây là xe buýt số 6.", "jp": "これは{六番|ろくばん}のバスです。",
+        "acceptJp": ["これは6番のバスです"], "hint": "これ ＋ は ＋ ろくばん ＋ の ＋ バス ＋ です" }
+    ]
+  },
+  "L11": {
+    "points": [
+      {
+        "pattern": "N を 〜つ ください",
+        "meaning": "Cho tôi … cái N (dùng lượng từ đếm đồ vật)",
+        "structure": "N ＋ を ＋ số đếm (ひとつ、ふたつ…) ＋ ください",
+        "explain": "Khi mua hàng hay gọi món, nói tên đồ vật, trợ từ を, rồi số lượng và ください. Bộ đếm 〜つ dùng cho đồ vật nói chung từ 1 đến 9: ひとつ, ふたつ, みっつ, よっつ, いつつ, むっつ, ななつ, やっつ, ここのつ. Số lượng đứng ngay trước động từ, không cần trợ từ.",
+        "note": "Từ 10 trở đi không dùng 〜つ: 10 cái là とお, còn từ 11 thì nói số trơn (じゅういち…).",
+        "examples": [
+          { "jp": "りんごを{一|ひと}つください。", "vi": "Cho tôi một quả táo." },
+          { "jp": "{卵|たまご}を{三|みっ}つください。", "vi": "Cho tôi ba quả trứng." },
+          { "jp": "このパンを{二|ふた}つください。", "vi": "Cho tôi hai cái bánh mì này." }
+        ]
+      },
+      {
+        "pattern": "〜にん／ひとり／ふたり",
+        "meaning": "Đếm người",
+        "structure": "ひとり (1 người)・ふたり (2 người)・số ＋ にん (từ 3 người)",
+        "explain": "Đếm người dùng 〜にん (人), nhưng 1 người là ひとり (一人) và 2 người là ふたり (二人) — đây là cách đọc đặc biệt. Từ 3 người trở đi: さんにん, よにん, ごにん… Thường dùng với が います: N が ～にん います.",
+        "note": "4 người đọc là よにん (không phải よんにん), 7 người là しちにん hoặc ななにん. Hỏi \"mấy người?\" dùng なんにん.",
+        "examples": [
+          { "jp": "{学生|がくせい}が{三人|さんにん}います。", "vi": "Có ba học sinh." },
+          { "jp": "{私|わたし}は{兄弟|きょうだい}が{二人|ふたり}います。", "vi": "Tôi có hai anh chị em." },
+          { "jp": "{先生|せんせい}が{一人|ひとり}います。", "vi": "Có một giáo viên." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "りんごを{五|いつ}つください。", "vi": "Cho tôi năm quả táo.",
+        "acceptVi": ["Cho tôi 5 quả táo", "Cho mình năm quả táo", "Lấy cho tôi 5 quả táo"] },
+      { "dir": "vj", "vi": "Cho tôi hai cái bánh mì này.", "jp": "このパンを{二|ふた}つください。",
+        "acceptJp": ["このパン、二つください", "このパンを2つください", "このパン2つください"], "hint": "この パン ＋ を ＋ ふたつ ＋ ください" },
+      { "dir": "jv", "jp": "{学生|がくせい}が{四人|よにん}います。", "vi": "Có bốn học sinh.",
+        "acceptVi": ["Có 4 học sinh", "Có bốn sinh viên", "Có 4 em học sinh"] },
+      { "dir": "vj", "vi": "Tôi có hai em trai.", "jp": "{私|わたし}は{弟|おとうと}が{二人|ふたり}います。",
+        "acceptJp": ["弟が二人います", "私は弟が2人います", "弟が2人います"], "hint": "わたし ＋ は ＋ おとうと (em trai) ＋ が ＋ ふたり ＋ います" },
+      { "dir": "jv", "jp": "{私|わたし}は{子|こ}どもが{一人|ひとり}います。", "vi": "Tôi có một đứa con.",
+        "acceptVi": ["Tôi có 1 đứa con", "Mình có một đứa con", "Tôi có một người con"] },
+      { "dir": "vj", "vi": "Cho tôi ba quả táo.", "jp": "りんごを{三|みっ}つください。",
+        "acceptJp": ["りんご三つください", "りんごを3つください", "りんご3つください"], "hint": "りんご ＋ を ＋ みっつ ＋ ください" }
+    ]
+  },
+  "L12": {
+    "points": [
+      {
+        "pattern": "〜がつ 〜にち",
+        "meaning": "Nói ngày tháng",
+        "structure": "Số ＋ がつ (tháng) ＋ ngày (ついたち、ふつか… ／ số ＋ にち)",
+        "explain": "Tiếng Nhật nói tháng trước rồi mới đến ngày, ngược với tiếng Việt: \"ngày 5 tháng 3\" là さんがついつか. Tháng = số + がつ, chú ý しがつ (tháng 4), しちがつ (tháng 7), くがつ (tháng 9). Ngày 1–10, 14, 20, 24 có cách đọc riêng: ついたち, ふつか, みっか, よっか, いつか, むいか, なのか, ようか, ここのか, とおか, じゅうよっか, はつか, にじゅうよっか; các ngày khác là số + にち.",
+        "note": "一日 khi là ngày mồng 1 đọc ついたち, còn khi là \"một ngày\" (khoảng thời gian) đọc いちにち.",
+        "examples": [
+          { "jp": "{今日|きょう}は{四月一日|しがつついたち}です。", "vi": "Hôm nay là ngày 1 tháng 4." },
+          { "jp": "{誕生日|たんじょうび}は{七月二十日|しちがつはつか}です。", "vi": "Sinh nhật tôi là ngày 20 tháng 7." },
+          { "jp": "{明日|あした}は{九月八日|くがつようか}です。", "vi": "Ngày mai là ngày 8 tháng 9." }
+        ]
+      },
+      {
+        "pattern": "(thời điểm) に V",
+        "meaning": "Trợ từ に chỉ thời điểm xảy ra hành động",
+        "structure": "Thời điểm (tháng, ngày, giờ…) ＋ に ＋ Vます",
+        "explain": "Đặt に sau mốc thời gian có con số (tháng, ngày, giờ, năm) để nói hành động xảy ra vào lúc đó, giống \"vào…\" trong tiếng Việt. Với thứ trong tuần, に có thể dùng hoặc bỏ.",
+        "note": "Các từ thời gian tương đối như きょう, あした, きのう, まいにち KHÔNG đi với に: あした やすみます.",
+        "examples": [
+          { "jp": "{八月|はちがつ}に{休|やす}みます。", "vi": "Tôi nghỉ vào tháng 8." },
+          { "jp": "{田中|たなか}さんは{三日|みっか}に{来|き}ます。", "vi": "Anh Tanaka sẽ đến vào ngày mồng 3." },
+          { "jp": "{十月十日|じゅうがつとおか}に{休|やす}みますか。", "vi": "Ngày 10 tháng 10 bạn có nghỉ không?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{今日|きょう}は{六月六日|ろくがつむいか}です。", "vi": "Hôm nay là ngày 6 tháng 6.",
+        "acceptVi": ["Hôm nay là mồng 6 tháng 6", "Hôm nay ngày 6 tháng 6", "Hôm nay là ngày mùng 6 tháng 6"] },
+      { "dir": "vj", "vi": "Sinh nhật tôi là ngày 20 tháng 4.", "jp": "{私|わたし}の{誕生日|たんじょうび}は{四月二十日|しがつはつか}です。",
+        "acceptJp": ["誕生日は四月二十日です", "私の誕生日は4月20日です", "誕生日は4月20日です"], "hint": "たんじょうび (sinh nhật) ＋ は ＋ しがつ (tháng 4) ＋ はつか (ngày 20) ＋ です" },
+      { "dir": "jv", "jp": "{山田|やまだ}さんは{五日|いつか}に{来|き}ます。", "vi": "Anh Yamada sẽ đến vào ngày mồng 5.",
+        "acceptVi": ["Anh Yamada đến vào ngày 5", "Chị Yamada sẽ đến vào ngày mồng 5", "Yamada sẽ đến vào ngày mùng 5"] },
+      { "dir": "vj", "vi": "Ngày mai là ngày mồng 1 tháng 1.", "jp": "{明日|あした}は{一月一日|いちがつついたち}です。",
+        "acceptJp": ["明日は1月1日です"], "hint": "あした ＋ は ＋ いちがつ ＋ ついたち (mồng 1) ＋ です" },
+      { "dir": "jv", "jp": "{九月|くがつ}に{休|やす}みます。", "vi": "Tôi nghỉ vào tháng 9.",
+        "acceptVi": ["Tháng 9 tôi nghỉ", "Tôi sẽ nghỉ vào tháng chín", "Mình nghỉ vào tháng 9"] },
+      { "dir": "vj", "vi": "Tôi sẽ làm việc vào ngày mồng 8.", "jp": "{八日|ようか}に{働|はたら}きます。",
+        "acceptJp": ["私は八日に働きます", "8日に働きます", "私は8日に働きます"], "hint": "ようか (ngày mồng 8) ＋ に ＋ はたらきます" }
+    ]
+  },
+  "L13": {
+    "points": [
+      {
+        "pattern": "〜から 〜まで",
+        "meaning": "Từ… đến…",
+        "structure": "N1 ＋ から ＋ N2 ＋ まで",
+        "explain": "から chỉ điểm bắt đầu, まで chỉ điểm kết thúc, dùng cho cả thời gian lẫn nơi chốn. Có thể đặt trước động từ (〜から〜まで はたらきます) hoặc kết thúc bằng です (〜から〜まで です). Cũng có thể dùng riêng từng từ: 〜から (từ…), 〜まで (đến…).",
+        "note": "から ở đây là \"từ\", khác với から \"vì\" đứng sau câu (bài 8).",
+        "examples": [
+          { "jp": "{月曜日|げつようび}から{金曜日|きんようび}まで{働|はたら}きます。", "vi": "Tôi làm việc từ thứ hai đến thứ sáu." },
+          { "jp": "{銀行|ぎんこう}は{九時|くじ}から{三時|さんじ}までです。", "vi": "Ngân hàng làm việc từ 9 giờ đến 3 giờ." },
+          { "jp": "{休|やす}みは{火曜日|かようび}から{木曜日|もくようび}までです。", "vi": "Kỳ nghỉ từ thứ ba đến thứ năm." }
+        ]
+      },
+      {
+        "pattern": "Vました／Vませんでした",
+        "meaning": "Quá khứ: đã làm / đã không làm",
+        "structure": "Vます → Vました ・ Vません → Vませんでした",
+        "explain": "Để nói việc đã xảy ra, đổi ます thành ました. Phủ định quá khứ thì đổi ます thành ませんでした. Câu hỏi thêm か: Vましたか (đã… chưa? / có… không?).",
+        "note": "Tiếng Việt hay bỏ chữ \"đã\", nhưng tiếng Nhật bắt buộc chia ました khi nói về quá khứ (きのう、せんしゅう…).",
+        "examples": [
+          { "jp": "{昨日|きのう}、{勉強|べんきょう}しました。", "vi": "Hôm qua tôi đã học." },
+          { "jp": "{先週|せんしゅう}は{働|はたら}きませんでした。", "vi": "Tuần trước tôi đã không làm việc." },
+          { "jp": "{日曜日|にちようび}に{休|やす}みましたか。", "vi": "Chủ nhật bạn có nghỉ không?" }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎週|まいしゅう}、{月曜日|げつようび}から{金曜日|きんようび}まで{働|はたら}きます。", "vi": "Mỗi tuần tôi làm việc từ thứ hai đến thứ sáu.",
+        "acceptVi": ["Hằng tuần tôi làm việc từ thứ hai đến thứ sáu", "Tuần nào tôi cũng làm việc từ thứ 2 đến thứ 6", "Mỗi tuần tôi làm từ thứ hai đến thứ sáu"] },
+      { "dir": "vj", "vi": "Tuần trước tôi đã không làm việc.", "jp": "{先週|せんしゅう}は{働|はたら}きませんでした。",
+        "acceptJp": ["先週働きませんでした", "私は先週働きませんでした", "私は先週は働きませんでした"], "hint": "せんしゅう (tuần trước) ＋ は ＋ はたらきませんでした" },
+      { "dir": "jv", "jp": "{昨日|きのう}は{休|やす}みました。", "vi": "Hôm qua tôi đã nghỉ.",
+        "acceptVi": ["Hôm qua tôi nghỉ", "Hôm qua mình đã nghỉ", "Hôm qua tôi đã nghỉ ngơi"] },
+      { "dir": "vj", "vi": "Tôi học từ 7 giờ đến 9 giờ.", "jp": "{七時|しちじ}から{九時|くじ}まで{勉強|べんきょう}します。",
+        "acceptJp": ["7時から9時まで勉強します", "私は七時から九時まで勉強します", "私は7時から9時まで勉強します"], "hint": "しちじ ＋ から ＋ くじ ＋ まで ＋ べんきょうします" },
+      { "dir": "jv", "jp": "{土曜日|どようび}に{働|はたら}きましたか。", "vi": "Thứ bảy bạn có làm việc không?",
+        "acceptVi": ["Thứ bảy vừa rồi bạn có làm việc không", "Thứ bảy bạn đã làm việc à", "Hôm thứ bảy anh có đi làm không"] },
+      { "dir": "vj", "vi": "Bưu điện làm việc từ 9 giờ đến 5 giờ.", "jp": "{郵便局|ゆうびんきょく}は{九時|くじ}から{五時|ごじ}までです。",
+        "acceptJp": ["郵便局は9時から5時までです"], "hint": "ゆうびんきょく (bưu điện) ＋ は ＋ くじ ＋ から ＋ ごじ ＋ まで ＋ です" }
+    ]
+  },
+  "L14": {
+    "points": [
+      {
+        "pattern": "なんじ ですか",
+        "meaning": "Mấy giờ?",
+        "structure": "(N は) ＋ なんじ ＋ ですか ・ なんじ から／まで ですか",
+        "explain": "なんじ (何時) dùng để hỏi giờ. Hỏi giờ hiện tại: いま なんじ ですか. Có thể kết hợp với から／まで để hỏi giờ bắt đầu, giờ kết thúc. Muốn hỏi phút thì dùng なんぷん.",
+        "note": "何時 ở đây đọc là なんじ, không phải なにじ.",
+        "examples": [
+          { "jp": "{今|いま}、{何時|なんじ}ですか。", "vi": "Bây giờ là mấy giờ?" },
+          { "jp": "{昼休|ひるやす}みは{何時|なんじ}からですか。", "vi": "Giờ nghỉ trưa bắt đầu từ mấy giờ?" },
+          { "jp": "{東京|とうきょう}は{今|いま}、{何時|なんじ}ですか。", "vi": "Ở Tokyo bây giờ là mấy giờ?" }
+        ]
+      },
+      {
+        "pattern": "(giờ) に V",
+        "meaning": "Làm V lúc … giờ",
+        "structure": "〜じ ＋ に ＋ Vます ・ なんじ に Vますか",
+        "explain": "Thêm に sau giờ để nói hành động xảy ra vào lúc đó: しちじに おきます (dậy lúc 7 giờ). Có thể thêm buổi trong ngày phía trước: ごご さんじに (3 giờ chiều). Hỏi \"lúc mấy giờ?\" dùng なんじに.",
+        "note": "Các từ như けさ, こんばん, まいあさ, まいばん không đi với に, nhưng giờ cụ thể đi sau chúng vẫn cần に: まいあさ ろくじに おきます.",
+        "examples": [
+          { "jp": "{毎朝|まいあさ}{六時|ろくじ}に{起|お}きます。", "vi": "Mỗi sáng tôi dậy lúc 6 giờ." },
+          { "jp": "{夜|よる}{十一時|じゅういちじ}に{寝|ね}ます。", "vi": "Tôi đi ngủ lúc 11 giờ đêm." },
+          { "jp": "{田中|たなか}さんは{午後|ごご}{二時|にじ}に{来|き}ます。", "vi": "Anh Tanaka sẽ đến lúc 2 giờ chiều." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{毎晩|まいばん}{何時|なんじ}に{寝|ね}ますか。", "vi": "Mỗi tối bạn đi ngủ lúc mấy giờ?",
+        "acceptVi": ["Tối nào bạn cũng ngủ lúc mấy giờ", "Hằng tối bạn ngủ lúc mấy giờ", "Mỗi tối anh đi ngủ lúc mấy giờ"] },
+      { "dir": "vj", "vi": "Bây giờ là mấy giờ?", "jp": "{今|いま}、{何時|なんじ}ですか。",
+        "acceptJp": [], "hint": "いま ＋ なんじ ＋ ですか" },
+      { "dir": "jv", "jp": "{今朝|けさ}、{五時|ごじ}に{起|お}きました。", "vi": "Sáng nay tôi đã dậy lúc 5 giờ.",
+        "acceptVi": ["Sáng nay tôi dậy lúc 5 giờ", "Sáng nay mình thức dậy lúc năm giờ", "Sáng nay tôi thức dậy lúc 5 giờ"] },
+      { "dir": "vj", "vi": "Tối nay tôi sẽ đi ngủ lúc 10 giờ.", "jp": "{今晩|こんばん}、{十時|じゅうじ}に{寝|ね}ます。",
+        "acceptJp": ["今晩は十時に寝ます", "今晩10時に寝ます", "私は今晩十時に寝ます"], "hint": "こんばん (tối nay) ＋ じゅうじ ＋ に ＋ ねます (ngủ)" },
+      { "dir": "jv", "jp": "{昼休|ひるやす}みは{何時|なんじ}からですか。", "vi": "Giờ nghỉ trưa bắt đầu từ mấy giờ?",
+        "acceptVi": ["Nghỉ trưa từ mấy giờ", "Giờ nghỉ trưa từ mấy giờ vậy", "Mấy giờ thì nghỉ trưa"] },
+      { "dir": "vj", "vi": "Anh Tanaka sẽ đến lúc 3 giờ chiều.", "jp": "{田中|たなか}さんは{午後|ごご}{三時|さんじ}に{来|き}ます。",
+        "acceptJp": ["田中さんは午後3時に来ます"], "hint": "たなかさん ＋ は ＋ ごご (buổi chiều) ＋ さんじ ＋ に ＋ きます" }
+    ]
+  },
+  "L15": {
+    "points": [
+      {
+        "pattern": "(khoảng thời gian) に 〜かい",
+        "meaning": "Bao nhiêu lần trong một khoảng thời gian",
+        "structure": "Khoảng thời gian ＋ に ＋ số ＋ かい (回) ＋ V",
+        "explain": "Để nói tần suất như \"một tuần hai lần\", đặt khoảng thời gian trước rồi thêm に, sau đó là số lần + かい (回). Hỏi \"mấy lần?\" dùng なんかい. Chú ý cách đọc: いっかい (1 lần), ろっかい (6 lần), はっかい (8 lần), じゅっかい (10 lần).",
+        "note": "Các khoảng thời gian hay dùng: いちにち (1 ngày), いっしゅうかん (1 tuần), いっかげつ (1 tháng), いちねん (1 năm).",
+        "examples": [
+          { "jp": "{一週間|いっしゅうかん}に{三回|さんかい}{泳|およ}ぎます。", "vi": "Một tuần tôi bơi ba lần." },
+          { "jp": "{一日|いちにち}に{三回|さんかい}{薬|くすり}を{飲|の}みます。", "vi": "Tôi uống thuốc ngày ba lần." },
+          { "jp": "{一週間|いっしゅうかん}に{何回|なんかい}{勉強|べんきょう}しますか。", "vi": "Một tuần bạn học mấy lần?" }
+        ]
+      },
+      {
+        "pattern": "Vましょう",
+        "meaning": "Cùng làm V nhé (rủ, đề nghị)",
+        "structure": "Vます → Vましょう",
+        "explain": "Đổi ます thành ましょう để rủ người khác cùng làm một việc, giống \"chúng ta cùng… nhé / …đi\". Hay đi với いっしょに (cùng nhau). Cũng dùng để đáp lại lời rủ: ええ、Vましょう (Ừ, cùng làm nào).",
+        "note": "Vましょう mang ý chủ động, chắc chắn hơn; nếu muốn hỏi ý kiến nhẹ nhàng hơn thì dùng Vませんか (bài sau).",
+        "examples": [
+          { "jp": "{一緒|いっしょ}に{帰|かえ}りましょう。", "vi": "Chúng ta cùng về nhé." },
+          { "jp": "{少|すこ}し{休|やす}みましょう。", "vi": "Mình nghỉ một chút đi." },
+          { "jp": "{明日|あした}、{図書館|としょかん}で{勉強|べんきょう}しましょう。", "vi": "Ngày mai cùng học ở thư viện nhé." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{一週間|いっしゅうかん}に{二回|にかい}{泳|およ}ぎます。", "vi": "Một tuần tôi bơi hai lần.",
+        "acceptVi": ["Mỗi tuần tôi bơi 2 lần", "Tôi bơi một tuần hai lần", "Một tuần mình bơi 2 lần"] },
+      { "dir": "vj", "vi": "Chúng ta cùng nghỉ một chút nhé.", "jp": "{少|すこ}し{休|やす}みましょう。",
+        "acceptJp": ["ちょっと休みましょう", "一緒に少し休みましょう"], "hint": "すこし (một chút) ＋ やすみましょう" },
+      { "dir": "jv", "jp": "{一日|いちにち}に{何回|なんかい}{薬|くすり}を{飲|の}みますか。", "vi": "Một ngày bạn uống thuốc mấy lần?",
+        "acceptVi": ["Mỗi ngày bạn uống thuốc mấy lần", "Bạn uống thuốc ngày mấy lần", "Một ngày anh uống thuốc mấy lần"] },
+      { "dir": "vj", "vi": "Chúng ta cùng ăn cơm trưa nhé.", "jp": "{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べましょう。",
+        "acceptJp": ["昼ご飯を食べましょう", "一緒に昼ご飯食べましょう"], "hint": "いっしょに (cùng nhau) ＋ ひるごはん ＋ を ＋ たべましょう" },
+      { "dir": "jv", "jp": "{一|いっ}か{月|げつ}に{一回|いっかい}{映画|えいが}を{見|み}ます。", "vi": "Một tháng tôi xem phim một lần.",
+        "acceptVi": ["Mỗi tháng tôi xem phim một lần", "Tôi xem phim mỗi tháng 1 lần", "Một tháng mình xem phim 1 lần"] },
+      { "dir": "vj", "vi": "Một tuần tôi học tiếng Nhật ba lần.", "jp": "{一週間|いっしゅうかん}に{三回|さんかい}{日本語|にほんご}を{勉強|べんきょう}します。",
+        "acceptJp": ["1週間に3回日本語を勉強します", "私は一週間に三回日本語を勉強します", "週に三回日本語を勉強します", "週に3回日本語を勉強します"], "hint": "いっしゅうかん ＋ に ＋ さんかい ＋ にほんご ＋ を ＋ べんきょうします" }
+    ]
+  },
+  "L16": {
+    "points": [
+      {
+        "pattern": "Vませんか",
+        "meaning": "Rủ rê lịch sự: … không?",
+        "structure": "Vます → Vませんか ・ (いっしょに) Vませんか",
+        "explain": "Dùng dạng phủ định + か để mời, rủ người khác một cách lịch sự, tôn trọng ý người nghe: \"cùng… không?\". Người được rủ đồng ý thì đáp ええ、Vましょう; từ chối khéo thì nói ちょっと…",
+        "note": "Tuy có ません nhưng đây không phải câu phủ định; nghĩa là lời mời.",
+        "examples": [
+          { "jp": "{一緒|いっしょ}に{帰|かえ}りませんか。", "vi": "Cùng về với tôi không?" },
+          { "jp": "{日曜日|にちようび}、{一緒|いっしょ}に{泳|およ}ぎませんか。", "vi": "Chủ nhật cùng đi bơi không?" },
+          { "jp": "{少|すこ}し{休|やす}みませんか。", "vi": "Mình nghỉ một chút không?" }
+        ]
+      },
+      {
+        "pattern": "〜と おもいます",
+        "meaning": "Tôi nghĩ là…",
+        "structure": "N ＋ だ ＋ と おもいます ・ Adj い ＋ と おもいます",
+        "explain": "Dùng để nêu ý kiến hoặc phỏng đoán của bản thân: \"tôi nghĩ là…\". Phần trước と phải ở thể thông thường: danh từ thêm だ (あめだ), tính từ đuôi い giữ nguyên (さむい). Không dùng です trước と おもいます.",
+        "note": "Sai: あめですと おもいます → Đúng: あめだと おもいます.",
+        "examples": [
+          { "jp": "{明日|あした}は{雨|あめ}だと{思|おも}います。", "vi": "Tôi nghĩ ngày mai trời mưa." },
+          { "jp": "{今年|ことし}の{夏|なつ}は{暑|あつ}いと{思|おも}います。", "vi": "Tôi nghĩ mùa hè năm nay sẽ nóng." },
+          { "jp": "{田中|たなか}さんは{学生|がくせい}だと{思|おも}います。", "vi": "Tôi nghĩ anh Tanaka là sinh viên." }
+        ]
+      }
+    ],
+    "exercises": [
+      { "dir": "jv", "jp": "{夏休|なつやす}みに{一緒|いっしょ}に{泳|およ}ぎませんか。", "vi": "Kỳ nghỉ hè cùng đi bơi không?",
+        "acceptVi": ["Nghỉ hè cùng đi bơi không", "Kỳ nghỉ hè chúng ta cùng bơi không", "Nghỉ hè bạn có muốn đi bơi cùng tôi không"] },
+      { "dir": "vj", "vi": "Tôi nghĩ mùa đông năm nay sẽ lạnh.", "jp": "{今年|ことし}の{冬|ふゆ}は{寒|さむ}いと{思|おも}います。",
+        "acceptJp": ["私は今年の冬は寒いと思います"], "hint": "ことし の ふゆ ＋ は ＋ さむい (lạnh) ＋ と おもいます" },
+      { "dir": "jv", "jp": "{明日|あした}は{休|やす}みだと{思|おも}います。", "vi": "Tôi nghĩ ngày mai là ngày nghỉ.",
+        "acceptVi": ["Tôi nghĩ mai được nghỉ", "Mình nghĩ ngày mai là ngày nghỉ", "Tôi nghĩ ngày mai nghỉ"] },
+      { "dir": "vj", "vi": "Tối nay cùng ăn tối không?", "jp": "{今晩|こんばん}、{一緒|いっしょ}に{晩|ばん}ご{飯|はん}を{食|た}べませんか。",
+        "acceptJp": ["今晩一緒に晩ご飯を食べませんか", "今晩、晩ご飯を食べませんか", "今晩一緒にご飯を食べませんか", "今晩、一緒に夕ご飯を食べませんか"], "hint": "こんばん ＋ いっしょに ＋ ばんごはん ＋ を ＋ たべませんか" },
+      { "dir": "jv", "jp": "あの{人|ひと}は{先生|せんせい}だと{思|おも}います。", "vi": "Tôi nghĩ người kia là giáo viên.",
+        "acceptVi": ["Tôi nghĩ người đó là giáo viên", "Mình nghĩ người kia là thầy giáo", "Tôi nghĩ người kia là cô giáo"] },
+      { "dir": "vj", "vi": "Thứ bảy cùng học tiếng Nhật không?", "jp": "{土曜日|どようび}、{一緒|いっしょ}に{日本語|にほんご}を{勉強|べんきょう}しませんか。",
+        "acceptJp": ["土曜日に一緒に日本語を勉強しませんか", "土曜日、日本語を勉強しませんか", "土曜日一緒に日本語を勉強しませんか"], "hint": "どようび ＋ いっしょに ＋ にほんご ＋ を ＋ べんきょうしませんか" }
+    ]
+  }
+}

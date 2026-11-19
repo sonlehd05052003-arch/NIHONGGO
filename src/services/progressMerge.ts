@@ -24,6 +24,12 @@ export function mergeProgress(a: ProgressState, b: ProgressState): ProgressState
   if (writing) out.writing = writing
   const dictation = maxMap(a.dictation, b.dictation)
   if (dictation) out.dictation = dictation
+  const watched = maxMap(a.videosWatched, b.videosWatched)
+  if (watched) out.videosWatched = watched
+  const notes = unionMap(a.videoNotes, b.videoNotes)
+  if (notes) out.videoNotes = notes
+  const mine = unionMap(a.myVideos, b.myVideos)
+  if (mine) out.myVideos = mine
   const daily = mergeDaily(a.daily, b.daily)
   if (daily) out.daily = daily
   return out
@@ -34,6 +40,17 @@ function maxMap(a?: Record<string, number>, b?: Record<string, number>) {
   if (!a && !b) return undefined
   const out: Record<string, number> = { ...a }
   for (const [k, v] of Object.entries(b ?? {})) out[k] = Math.max(out[k] ?? 0, v)
+  return out
+}
+
+/** Gộp hai bảng danh sách (ghi chú, video): hợp theo `id`, giữ thứ tự */
+function unionMap<T extends { id: string }>(a?: Record<string, T[]>, b?: Record<string, T[]>) {
+  if (!a && !b) return undefined
+  const out: Record<string, T[]> = { ...a }
+  for (const [k, list] of Object.entries(b ?? {})) {
+    const seen = new Set((out[k] ?? []).map((x) => x.id))
+    out[k] = [...(out[k] ?? []), ...list.filter((x) => !seen.has(x.id))]
+  }
   return out
 }
 

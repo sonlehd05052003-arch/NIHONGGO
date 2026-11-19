@@ -57,6 +57,34 @@ export interface ProgressState {
   writing?: Record<string, number>
   /** Điểm cao nhất phần nghe chép chính tả của từng bài (0..1) */
   dictation?: Record<string, number>
+  /** Tỉ lệ đã xem của từng video YouTube (0..1), theo mã video */
+  videosWatched?: Record<string, number>
+  /** Ghi chú trong video, theo mã video */
+  videoNotes?: Record<string, VideoNote[]>
+  /** Video YouTube người học tự thêm vào từng bài */
+  myVideos?: Record<string, LessonVideo[]>
+}
+
+export interface VideoNote {
+  /** Mã duy nhất (để gộp khi đồng bộ) */
+  id: string
+  /** Thời điểm trong video (giây) */
+  t: number
+  text: string
+  /** note = ghi chú, dictation = đoạn nghe chép */
+  kind?: 'note' | 'dictation'
+}
+
+export interface LessonVideo {
+  /** Mã video YouTube (11 ký tự) */
+  id: string
+  title: string
+  channel?: string
+  /** Vì sao hợp với bài */
+  why?: string
+  level?: string
+  /** Bắt đầu từ giây thứ… */
+  start?: number
 }
 
 export interface Lesson {
@@ -119,6 +147,8 @@ export interface StudyContent {
   examples: Record<string, WordExample>
   readings: Record<string, Reading>
   grammar?: Record<string, LessonGrammar>
+  /** Video YouTube gợi ý theo bài */
+  videos?: Record<string, LessonVideo[]>
 }
 
 export type StudyMode = 'flashcard' | 'quiz' | 'typing' | 'match'

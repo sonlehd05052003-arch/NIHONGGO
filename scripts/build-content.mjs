@@ -56,17 +56,40 @@ for (const l of lessons) {
   else checkLesson(l.id, grammar[l.id], errors)
 }
 
+// Video YouTube gợi ý: scripts/videos/part-*.json
+const VDIR = resolve(ROOT, 'scripts/videos')
+const videos = {}
+for (const f of readdirSync(VDIR).filter((f) => /^part-\d+\.json$/.test(f)).sort())
+  Object.assign(videos, JSON.parse(readFileSync(resolve(VDIR, f), 'utf8')))
+for (const l of lessons) {
+  const list = videos[l.id]
+  if (!list?.length) { errors.push(`${l.id}: thiếu video`); continue }
+  const seen = new Set()
+  for (const v of list) {
+    if (!/^[\w-]{11}$/.test(v.id ?? '')) errors.push(`${l.id}: mã video sai "${v.id}"`)
+    if (!v.title?.trim()) errors.push(`${l.id} ${v.id}: thiếu tiêu đề`)
+    if (seen.has(v.id)) errors.push(`${l.id}: video lặp ${v.id}`)
+    seen.add(v.id)
+  }
+}
+
 // Chỉ giữ dữ liệu của từ/bài có thật
 const ids = new Set(lessons.flatMap((l) => l.words))
 const out = {
   examples: Object.fromEntries(Object.entries(examples).filter(([k]) => ids.has(k))),
   readings: Object.fromEntries(lessons.filter((l) => readings[l.id]).map((l) => [l.id, readings[l.id]])),
   grammar: Object.fromEntries(lessons.filter((l) => grammar[l.id]).map((l) => [l.id, grammar[l.id]])),
+  videos: Object.fromEntries(
+    lessons
+      .filter((l) => videos[l.id])
+      .map((l) => [l.id, videos[l.id].map(({ id, title, channel, why, level, start }) => ({ id, title, channel, why, level, start: start || 0 }))]),
+  ),
 }
 writeFileSync(resolve(ROOT, 'src/data/content.json'), JSON.stringify(out) + '\n')
 console.log(
   `Câu ví dụ: ${Object.keys(out.examples).length}/${ids.size} · Bài đọc: ${Object.keys(out.readings).length}/${lessons.length}` +
-    ` · Ngữ pháp: ${Object.keys(out.grammar).length}/${lessons.length}`,
+    ` · Ngữ pháp: ${Object.keys(out.grammar).length}/${lessons.length}` +
+    ` · Video: ${Object.values(out.videos).flat().length} (${Object.keys(out.videos).length}/${lessons.length} bài)`,
 )
 if (errors.length) {
   console.log(`\n${errors.length} lỗi:`)

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArrowLeft, ArrowRight, BookOpen, Dumbbell, FileText, GraduationCap, PenLine, Volume2, Star, Lightbulb, Check, Eye, EyeOff } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Dumbbell, FileText, GraduationCap, PenLine, Headphones, Volume2, Star, Lightbulb, Check, Eye, EyeOff } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { WordImage } from '@/components/ui/WordImage'
@@ -11,10 +11,11 @@ import { isLearned } from '@/services/srs'
 import { speak, speakSentence } from '@/services/vocabularyService'
 import type { Lesson, QuizDirection, StudyMode } from '@/types'
 import { GrammarView } from './GrammarView'
+import { ListenStep } from './ListenStep'
 import { ReadingView } from './ReadingView'
 import { WritingView } from './WritingView'
 
-export type Step = 'learn' | 'grammar' | 'practice' | 'write' | 'read'
+export type Step = 'learn' | 'grammar' | 'practice' | 'write' | 'read' | 'listen'
 
 const PRACTICE: { mode: StudyMode; label: string; desc: string }[] = [
   { mode: 'flashcard', label: '① Thẻ ghi nhớ', desc: 'Làm quen: lật thẻ, tự đánh giá' },
@@ -42,6 +43,11 @@ export const LessonDetail: React.FC<{
   const reading = content?.readings[lesson.id]
 
   const grammar = content?.grammar?.[lesson.id]
+  const videos = content?.videos?.[lesson.id] ?? []
+  // Bước Nghe xong khi đã xem hết một video của bài hoặc đã làm nghe chép
+  const listenDone =
+    (progress.dictation?.[lesson.id] ?? 0) > 0 ||
+    [...videos, ...(progress.myVideos?.[lesson.id] ?? [])].some((v) => (progress.videosWatched?.[v.id] ?? 0) >= 0.8)
   const [grammarSeen, setGrammarSeen] = useLocalStorage<Record<string, true>>('nihongo_grammar_seen', {})
 
   const steps: { id: Step; label: string; icon: React.ReactNode; done: boolean }[] = [
@@ -50,6 +56,7 @@ export const LessonDetail: React.FC<{
     { id: 'practice', label: 'Luyện tập', icon: <Dumbbell size={16} />, done: stats.done },
     { id: 'write', label: 'Viết câu', icon: <PenLine size={16} />, done: (progress.writing?.[lesson.id] ?? 0) > 0 },
     { id: 'read', label: 'Bài đọc', icon: <FileText size={16} />, done: (progress.readings?.[lesson.id] ?? 0) > 0 },
+    { id: 'listen', label: 'Nghe', icon: <Headphones size={16} />, done: listenDone },
   ]
 
   const go = (s: Step) => {
@@ -263,6 +270,9 @@ export const LessonDetail: React.FC<{
             <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('write')}>
               Luyện viết câu
             </Button>
+            <Button variant="secondary" icon={<Headphones size={16} />} onClick={() => go('listen')}>
+              Sang luyện nghe
+            </Button>
             {onNext && (
               <>
                 <Button variant="secondary" icon={<BookOpen size={16} />} onClick={() => onNext('learn')}>
@@ -272,6 +282,29 @@ export const LessonDetail: React.FC<{
                   Bài đọc tiếp theo
                 </Button>
               </>
+            )}
+          </div>
+        </>
+      )}
+      {step === 'listen' && (
+        <>
+          <p className="ld-hint">
+            Luyện tai với video tiếng Nhật thật và nghe chép từng câu của hội thoại trong bài. Muốn luyện nghe hiểu thì vào{' '}
+            <b>Bài đọc</b> và bật <b>Chỉ nghe</b>.
+          </p>
+          {content ? (
+            <ListenStep lessonId={lesson.id} videos={videos} reading={reading} />
+          ) : (
+            <p className="ld-hint">Đang tải…</p>
+          )}
+          <div className="ld-footer">
+            <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('read')}>
+              Về bài đọc
+            </Button>
+            {onNext && (
+              <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => onNext('learn')}>
+                Học bài tiếp theo
+              </Button>
             )}
           </div>
         </>

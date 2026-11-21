@@ -3,7 +3,7 @@ import { CloudProvider } from '@/hooks/useCloud'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { EMPTY_PROGRESS, mergeProgress } from '@/services/progressMerge'
 import { dayKey as today, isDue, nextSrs } from '@/services/srs'
-import type { LessonVideo, ProgressState, VideoNote, WordProgress } from '@/types'
+import type { ProgressState, WordProgress } from '@/types'
 
 function computeStreak(days: string[]): number {
   const set = new Set(days)
@@ -36,12 +36,6 @@ interface ProgressContextValue {
   setReadingScore: (lessonId: string, score: number) => void
   setWritingScore: (lessonId: string, score: number) => void
   setDictationScore: (lessonId: string, score: number) => void
-  /** Ghi nhận đã xem tới tỉ lệ `fraction` của video (chỉ tăng) */
-  setVideoWatched: (videoId: string, fraction: number) => void
-  addVideoNote: (videoId: string, note: Omit<VideoNote, 'id'>) => void
-  removeVideoNote: (videoId: string, noteId: string) => void
-  addMyVideo: (lessonId: string, video: LessonVideo) => void
-  removeMyVideo: (lessonId: string, videoId: string) => void
   resetProgress: () => void
   /** Thay tiến độ bằng dữ liệu khác (vd. từ file sao lưu); merge = gộp với tiến độ hiện có */
   replaceProgress: (p: ProgressState, merge?: boolean) => void
@@ -98,34 +92,6 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           const best = Math.max(prev.dictation?.[lessonId] ?? 0, score)
           return { ...prev, dictation: { ...prev.dictation, [lessonId]: best } }
         }),
-      setVideoWatched: (videoId, fraction) =>
-        setProgress((prev) => {
-          const f = Math.min(1, Math.round(fraction * 100) / 100)
-          if ((prev.videosWatched?.[videoId] ?? 0) >= f) return prev
-          return { ...prev, videosWatched: { ...prev.videosWatched, [videoId]: f } }
-        }),
-      addVideoNote: (videoId, note) =>
-        setProgress((prev) => {
-          const id = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`
-          const list = [...(prev.videoNotes?.[videoId] ?? []), { ...note, id }].sort((x, y) => x.t - y.t)
-          return { ...prev, videoNotes: { ...prev.videoNotes, [videoId]: list } }
-        }),
-      removeVideoNote: (videoId, noteId) =>
-        setProgress((prev) => ({
-          ...prev,
-          videoNotes: { ...prev.videoNotes, [videoId]: (prev.videoNotes?.[videoId] ?? []).filter((n) => n.id !== noteId) },
-        })),
-      addMyVideo: (lessonId, video) =>
-        setProgress((prev) => {
-          const list = prev.myVideos?.[lessonId] ?? []
-          if (list.some((v) => v.id === video.id)) return prev
-          return { ...prev, myVideos: { ...prev.myVideos, [lessonId]: [...list, video] } }
-        }),
-      removeMyVideo: (lessonId, videoId) =>
-        setProgress((prev) => ({
-          ...prev,
-          myVideos: { ...prev.myVideos, [lessonId]: (prev.myVideos?.[lessonId] ?? []).filter((v) => v.id !== videoId) },
-        })),
       recordAnswer: (id, correct) => {
         update(id, (p) => ({
           ...p,

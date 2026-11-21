@@ -53,13 +53,8 @@ Mỗi bài có 6 bước:
    (bỏ qua dấu, từ đệm như "cái/là/thì", tha lỗi gõ nhầm 1 chữ ở câu dài) và có nút "Tôi đúng mà"
 5. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, trình phát có thanh tua, bật/tắt bản dịch từng câu, 3 câu hỏi đọc hiểu.
    Chế độ **Chỉ nghe** ẩn chữ để luyện nghe hiểu rồi mới hiện chữ đối chiếu
-6. **Nghe** — 
-   - **Xem video**: 1–2 video YouTube gợi ý theo chủ đề mỗi bài (95 video, đã kiểm tra nhúng được; danh sách ở
-     `scripts/videos/part-*.json`) + thêm video của riêng bạn bằng link. Công cụ nghe: tốc độ 0.5–1.25x, lùi/tiến 5 giây,
-     lặp đoạn A–B, bật phụ đề tiếng Nhật (nếu video có), phím tắt. Ghi chú từ mới theo thời điểm (bấm để tua lại; từ N5
-     trong ghi chú gắn sao được để ôn). Nghe chép đoạn A–B rồi bật phụ đề để tự so.
-   - **Nghe chép chính tả**: nghe từng câu của hội thoại trong bài (thường/chậm), gõ lại bằng kana/kanji/romaji, chấm tự động
-     và tô đỏ chữ nghe sai.
+6. **Nghe** — nghe chép chính tả từng câu của hội thoại trong bài (thường/chậm), gõ lại bằng kana/kanji/romaji, chấm tự động
+   và tô đỏ chữ nghe sai
 
 **Ôn tập ngắt quãng (SRS):** trả lời đúng thì từ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày, sai thì ôn lại
 ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn.

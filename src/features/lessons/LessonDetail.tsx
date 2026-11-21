@@ -43,11 +43,8 @@ export const LessonDetail: React.FC<{
   const reading = content?.readings[lesson.id]
 
   const grammar = content?.grammar?.[lesson.id]
-  const videos = content?.videos?.[lesson.id] ?? []
-  // Bước Nghe xong khi đã xem hết một video của bài hoặc đã làm nghe chép
-  const listenDone =
-    (progress.dictation?.[lesson.id] ?? 0) > 0 ||
-    [...videos, ...(progress.myVideos?.[lesson.id] ?? [])].some((v) => (progress.videosWatched?.[v.id] ?? 0) >= 0.8)
+  // Bước Nghe xong khi đã làm nghe chép chính tả
+  const listenDone = (progress.dictation?.[lesson.id] ?? 0) > 0
   const [grammarSeen, setGrammarSeen] = useLocalStorage<Record<string, true>>('nihongo_grammar_seen', {})
 
   const steps: { id: Step; label: string; icon: React.ReactNode; done: boolean }[] = [
@@ -289,11 +286,11 @@ export const LessonDetail: React.FC<{
       {step === 'listen' && (
         <>
           <p className="ld-hint">
-            Luyện tai với video tiếng Nhật thật và nghe chép từng câu của hội thoại trong bài. Muốn luyện nghe hiểu thì vào{' '}
+            Nghe từng câu của hội thoại trong bài rồi gõ lại. Muốn luyện nghe hiểu thì vào{' '}
             <b>Bài đọc</b> và bật <b>Chỉ nghe</b>.
           </p>
           {content ? (
-            <ListenStep lessonId={lesson.id} videos={videos} reading={reading} />
+            <ListenStep lessonId={lesson.id} reading={reading} />
           ) : (
             <p className="ld-hint">Đang tải…</p>
           )}

@@ -16,6 +16,7 @@ import {
 import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { useSessionState } from '@/hooks/useSessionState'
 import { useProgress } from '@/hooks/useProgress'
 import { rubySpeech, rubyPlain } from '@/services/lessons'
 import { sfx } from '@/services/sound'
@@ -42,9 +43,15 @@ export const ReadingView: React.FC<{
   words: VocabularyItem[]
 }> = ({ lessonId, reading, words }) => {
   const { progress, setReadingScore } = useProgress()
-  const [showAllVi, setShowAllVi] = useState(false)
-  const [openVi, setOpenVi] = useState<Set<number>>(new Set())
-  const [answers, setAnswers] = useState<(number | null)[]>(() => reading.questions.map(() => null))
+  // Lưu tạm theo bài để chuyển sang bước khác rồi quay lại vẫn còn câu đã trả lời
+  const k = `nihongo_read_${lessonId}`
+  const [showAllVi, setShowAllVi] = useSessionState(`${k}_allvi`, false)
+  const [openVi, setOpenVi] = useSessionState<number[]>(`${k}_vi`, [])
+  const [answers, setAnswers] = useSessionState<(number | null)[]>(
+    `${k}_answers`,
+    () => reading.questions.map(() => null),
+    (a) => Array.isArray(a) && a.length === reading.questions.length,
+  )
   const [rate, setRate] = useLocalStorage<RateId>('nihongo_reading_rate', 'normal')
   /** Chế độ luyện nghe hiểu: ẩn chữ, nghe rồi trả lời câu hỏi */
   const [listenOnly, setListenOnly] = useState(false)
@@ -79,12 +86,7 @@ export const ReadingView: React.FC<{
   }, [reading, words])
 
   const toggleVi = (i: number) =>
-    setOpenVi((s) => {
-      const n = new Set(s)
-      if (n.has(i)) n.delete(i)
-      else n.add(i)
-      return n
-    })
+    setOpenVi((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i]))
 
   const answered = answers.filter((a) => a !== null).length
   const correct = answers.filter((a, i) => a === reading.questions[i].answer).length
@@ -265,7 +267,7 @@ export const ReadingView: React.FC<{
                   <button className="reading-jp" onClick={() => toggleVi(i)} title="Xem nghĩa">
                     <Ruby text={l.jp} />
                   </button>
-                  {(showAllVi || openVi.has(i)) && <p className="reading-vi">{l.vi}</p>}
+                  {(showAllVi || openVi.includes(i)) && <p className="reading-vi">{l.vi}</p>}
                 </>
               )}
             </div>

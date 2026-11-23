@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { Volume2, Turtle, CheckCircle2, XCircle, Lightbulb, RotateCcw, ArrowRight, Headphones } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
+import { useSessionState } from '@/hooks/useSessionState'
 import { useKanjiReadings } from '@/hooks/useKanjiReadings'
 import { useProgress } from '@/hooks/useProgress'
 import { rubyKana, rubySpeech } from '@/services/lessons'
@@ -43,12 +44,18 @@ export const DictationView: React.FC<{ lessonId: string; reading: Reading }> = (
   const { progress, setDictationScore, addXp } = useProgress()
   const readings = useKanjiReadings()
   const sentences = useMemo(() => dictationSentences(reading), [reading])
-  const [queue, setQueue] = useState<number[]>(() => sentences.map((_, i) => i))
-  const [pos, setPos] = useState(0)
-  const [input, setInput] = useState('')
-  const [answers, setAnswers] = useState<Record<number, Answer>>({})
+  // Lưu tạm theo bài để chuyển sang bước khác rồi quay lại vẫn làm tiếp được
+  const k = `nihongo_dict_${lessonId}_${sentences.length}`
+  const [queue, setQueue] = useSessionState<number[]>(
+    `${k}_queue`,
+    () => sentences.map((_, i) => i),
+    (q) => Array.isArray(q) && q.every((i) => i >= 0 && i < sentences.length),
+  )
+  const [pos, setPos] = useSessionState(`${k}_pos`, 0)
+  const [input, setInput] = useSessionState(`${k}_input`, '')
+  const [answers, setAnswers] = useSessionState<Record<number, Answer>>(`${k}_answers`, {})
   const [plays, setPlays] = useState(0)
-  const [hint, setHint] = useState(false)
+  const [hint, setHint] = useSessionState(`${k}_hint`, false)
   const inputRef = useRef<HTMLInputElement>(null)
   const best = progress.dictation?.[lessonId]
 

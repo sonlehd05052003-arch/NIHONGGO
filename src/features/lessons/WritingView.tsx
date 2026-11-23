@@ -1,7 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { CheckCircle2, XCircle, Lightbulb, Volume2, RotateCcw, ArrowRight, PenLine } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
+import { useSessionState } from '@/hooks/useSessionState'
 import { useKanjiReadings } from '@/hooks/useKanjiReadings'
 import { useProgress } from '@/hooks/useProgress'
 import { rubyKana, rubySpeech, rubyPlain } from '@/services/lessons'
@@ -28,13 +29,19 @@ interface Answer {
 /** Bước "Viết câu": dịch cả câu Nhật → Việt và Việt → Nhật */
 export const WritingView: React.FC<{ lessonId: string; exercises: WritingExercise[] }> = ({ lessonId, exercises }) => {
   const { progress, setWritingScore, addXp } = useProgress()
-  const [filter, setFilter] = useState<Filter>('all')
+  // Lưu tạm theo bài để chuyển sang bước khác rồi quay lại vẫn làm tiếp được
+  const k = `nihongo_wr_${lessonId}_${exercises.length}`
+  const [filter, setFilter] = useSessionState<Filter>(`${k}_filter`, 'all')
   /** Danh sách chỉ số câu của lượt hiện tại */
-  const [queue, setQueue] = useState<number[]>(() => exercises.map((_, i) => i))
-  const [pos, setPos] = useState(0)
-  const [input, setInput] = useState('')
-  const [answers, setAnswers] = useState<Record<number, Answer>>({})
-  const [showHint, setShowHint] = useState(false)
+  const [queue, setQueue] = useSessionState<number[]>(
+    `${k}_queue`,
+    () => exercises.map((_, i) => i),
+    (q) => Array.isArray(q) && q.every((i) => i >= 0 && i < exercises.length),
+  )
+  const [pos, setPos] = useSessionState(`${k}_pos`, 0)
+  const [input, setInput] = useSessionState(`${k}_input`, '')
+  const [answers, setAnswers] = useSessionState<Record<number, Answer>>(`${k}_answers`, {})
+  const [showHint, setShowHint] = useSessionState(`${k}_hint`, false)
   const inputRef = useRef<HTMLInputElement>(null)
   const best = progress.writing?.[lessonId]
 

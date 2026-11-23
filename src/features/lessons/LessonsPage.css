@@ -897,6 +897,27 @@
   color: var(--text-muted);
 }
 
+/* Từ N5 học ở bài khác: bài trước = đã gặp, bài sau = sẽ học */
+.g-lesson {
+  align-self: center;
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.g-lesson.past {
+  background: rgba(34, 197, 94, 0.14);
+  color: #16a34a;
+}
+
+.reading-glossary .reading-help {
+  margin: -4px 0 10px;
+}
+
 .reading-best {
   font-size: 0.78rem;
   font-weight: 700;
@@ -913,8 +934,65 @@
 }
 
 .rq-q {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+.rq-q .ruby-text {
+  font-size: 1.08rem;
+  line-height: 2;
+}
+
+.rq-num {
+  line-height: 2;
+}
+
+.rq-q-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.rq-vi {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.rq-vi-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  font: 700 0.76rem var(--font-primary);
+  cursor: pointer;
+}
+
+.rq-vi-btn.active,
+.rq-vi-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.rq-opt-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.rq-opt-text .ruby-text {
+  line-height: 1.9;
 }
 
 .rq-options {

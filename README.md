@@ -51,7 +51,8 @@ Mỗi bài có 6 bước:
 4. **Viết câu** — 6 câu mỗi bài: 3 câu Nhật → Việt, 3 câu Việt → Nhật. Việt → Nhật gõ được bằng kana, kanji hoặc romaji
    (mỗi chỗ có furigana gõ kanji hay kana đều đúng; trợ từ は/へ/を gõ わ/え/お cũng được). Nhật → Việt chấm gần đúng
    (bỏ qua dấu, từ đệm như "cái/là/thì", tha lỗi gõ nhầm 1 chữ ở câu dài) và có nút "Tôi đúng mà"
-5. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, trình phát có thanh tua, bật/tắt bản dịch từng câu, 3 câu hỏi đọc hiểu.
+5. **Bài đọc** — đoạn văn/hội thoại ngắn dùng từ của bài, trình phát có thanh tua, bật/tắt bản dịch từng câu, bảng **từ mới trong đoạn văn**
+   (từ không thuộc bài, kèm nghĩa và bài N5 có từ đó), 3 câu hỏi đọc hiểu **bằng tiếng Nhật** (bấm "Nghĩa" để xem bản Việt).
    Chế độ **Chỉ nghe** ẩn chữ để luyện nghe hiểu rồi mới hiện chữ đối chiếu
 6. **Nghe** — nghe chép chính tả từng câu của hội thoại trong bài (thường/chậm), gõ lại bằng kana/kanji/romaji, chấm tự động
    và tô đỏ chữ nghe sai
@@ -62,7 +63,8 @@ ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn.
 Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`; ngữ pháp & bài tập viết câu trong
 `scripts/grammar/part-*.json` (lộ trình mẫu: `scripts/grammar-plan.mjs`, quy cách: `scripts/grammar/SPEC.md`).
 Gộp lại bằng `node scripts/build-content.mjs` (kiểm tra furigana, đủ từ, đáp án hợp lệ) → `src/data/content.json` (tải lười).
-Kiểm tra riêng phần ngữ pháp: `node scripts/check-grammar.mjs`.
+Kiểm tra riêng phần ngữ pháp: `node scripts/check-grammar.mjs`. Từ mới trong bài đọc + câu hỏi tiếng Nhật ở
+`scripts/reading-extra/part-*.json` (quy cách: `scripts/reading-extra/SPEC.md`, kiểm tra: `node scripts/check-reading-extra.mjs`).
 Furigana viết dạng `{漢字|かんじ}`.
 
 ## Chế độ học

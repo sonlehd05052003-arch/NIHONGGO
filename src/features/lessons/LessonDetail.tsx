@@ -258,7 +258,7 @@ export const LessonDetail: React.FC<{
       {step === 'read' && (
         <>
           {reading ? (
-            <ReadingView key={lesson.id} lessonId={lesson.id} reading={reading} words={words} />
+            <ReadingView key={lesson.id} lessonId={lesson.id} reading={reading} />
           ) : (
             <p className="ld-hint">{content ? 'Bài này chưa có bài đọc.' : 'Đang tải bài đọc…'}</p>
           )}

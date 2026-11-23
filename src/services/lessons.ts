@@ -11,6 +11,17 @@ export const wordById = (id: string) => BY_ID.get(id)
 export const lessonWords = (lesson: Lesson): VocabularyItem[] =>
   lesson.words.map((id) => BY_ID.get(id)).filter((w): w is VocabularyItem => !!w)
 
+/** Từ (kanji hoặc kana) → số thứ tự bài có từ đó (bắt đầu từ 1) */
+const LESSON_OF_FORM = new Map<string, number>()
+LESSONS.forEach((l, i) =>
+  l.words.forEach((id) => {
+    const w = BY_ID.get(id)
+    if (!w) return
+    for (const f of [w.kanji, ...w.kana.split('、')]) if (f && !LESSON_OF_FORM.has(f)) LESSON_OF_FORM.set(f, i + 1)
+  }),
+)
+export const lessonOfWord = (form: string) => LESSON_OF_FORM.get(form)
+
 /** Các chương theo đúng thứ tự xuất hiện */
 export const UNITS = [...new Set(LESSONS.map((l) => l.unit))].map((unit) => ({
   unit,

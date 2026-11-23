@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { checkLesson } from './check-grammar.mjs'
+import { checkExtra } from './check-reading-extra.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIR = resolve(ROOT, 'scripts/content')
@@ -54,6 +55,24 @@ for (const f of readdirSync(GDIR).filter((f) => /^part-\d+\.json$/.test(f)).sort
 for (const l of lessons) {
   if (!grammar[l.id]) errors.push(`${l.id}: thiếu ngữ pháp`)
   else checkLesson(l.id, grammar[l.id], errors)
+}
+
+// Từ mới trong đoạn văn + câu hỏi đọc hiểu tiếng Nhật: scripts/reading-extra/part-*.json
+const XDIR = resolve(ROOT, 'scripts/reading-extra')
+const extra = {}
+for (const f of readdirSync(XDIR).filter((f) => /^part-\d+\.json$/.test(f)).sort())
+  Object.assign(extra, JSON.parse(readFileSync(resolve(XDIR, f), 'utf8')))
+for (const l of lessons) {
+  const r = readings[l.id]
+  const x = extra[l.id]
+  if (!r) continue
+  if (!x) { errors.push(`${l.id}: thiếu từ mới / câu hỏi tiếng Nhật`); continue }
+  checkExtra(l.id, x, r, errors)
+  readings[l.id] = {
+    ...r,
+    glossary: x.glossary,
+    questions: r.questions.map((q, i) => ({ ...q, jp: x.questions?.[i]?.jp, optionsJp: x.questions?.[i]?.options })),
+  }
 }
 
 // Chỉ giữ dữ liệu của từ/bài có thật

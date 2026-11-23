@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import {
   Volume2,
   Languages,
+  BookMarked,
   CheckCircle2,
   XCircle,
   RotateCcw,
@@ -18,10 +19,10 @@ import { Ruby } from '@/components/ui/Ruby'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useSessionState } from '@/hooks/useSessionState'
 import { useProgress } from '@/hooks/useProgress'
-import { rubySpeech, rubyPlain } from '@/services/lessons'
+import { lessonOfWord, rubyKana, rubyPlain, rubySpeech } from '@/services/lessons'
 import { sfx } from '@/services/sound'
 import { speakSentence } from '@/services/vocabularyService'
-import type { Reading, VocabularyItem } from '@/types'
+import type { Reading } from '@/types'
 import { useReadingPlayer } from './useReadingPlayer'
 
 type RateId = 'slow' | 'normal' | 'fast'
@@ -40,13 +41,14 @@ const fmt = (s: number) => {
 export const ReadingView: React.FC<{
   lessonId: string
   reading: Reading
-  words: VocabularyItem[]
-}> = ({ lessonId, reading, words }) => {
+}> = ({ lessonId, reading }) => {
   const { progress, setReadingScore } = useProgress()
   // Lưu tạm theo bài để chuyển sang bước khác rồi quay lại vẫn còn câu đã trả lời
   const k = `nihongo_read_${lessonId}`
   const [showAllVi, setShowAllVi] = useSessionState(`${k}_allvi`, false)
   const [openVi, setOpenVi] = useSessionState<number[]>(`${k}_vi`, [])
+  /** Câu hỏi đang mở bản dịch tiếng Việt */
+  const [qVi, setQVi] = useSessionState<number[]>(`${k}_qvi`, [])
   const [answers, setAnswers] = useSessionState<(number | null)[]>(
     `${k}_answers`,
     () => reading.questions.map(() => null),
@@ -70,20 +72,18 @@ export const ReadingView: React.FC<{
       lineRefs.current[player.curLine]?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
   }, [player.curLine, player.state])
 
-  // Các từ của bài xuất hiện trong bài đọc → hiện bảng từ ngay bên dưới
-  const glossary = useMemo(() => {
-    const plain = reading.lines.map((l) => rubyPlain(l.jp)).join('') + rubyPlain(reading.title)
-    return words.filter((w) => {
-      const forms = [w.kanji, ...w.kana.split('、')].filter(Boolean)
-      // động từ / tính từ い: so phần gốc (bỏ đuôi cuối) để bắt cả dạng chia, nhưng gốc phải đủ đặc trưng
-      const conj = w.category === 'Động từ' || w.category === 'Tính từ い'
-      return forms.some((f) => {
-        const stem = f.slice(0, -1)
-        const useStem = conj && (/[一-鿿]/.test(stem) || stem.length >= 2)
-        return plain.includes(useStem ? stem : f)
-      })
-    })
-  }, [reading, words])
+  // Từ mới trong đoạn văn (ngoài từ của bài) + từ đó học ở bài nào (nếu là từ N5 của bài khác)
+  const glossary = useMemo(
+    () =>
+      (reading.glossary ?? []).map((g) => ({
+        ...g,
+        kana: rubyKana(g.jp),
+        lesson: lessonOfWord(rubyPlain(g.jp)) ?? lessonOfWord(rubyKana(g.jp)),
+      })),
+    [reading],
+  )
+  const thisLesson = Number(lessonId.replace(/[^0-9]/g, ''))
+  const toggleQVi = (i: number) => setQVi((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i]))
 
   const toggleVi = (i: number) =>
     setOpenVi((s) => (s.includes(i) ? s.filter((x) => x !== i) : [...s, i]))
@@ -277,22 +277,29 @@ export const ReadingView: React.FC<{
 
       {glossary.length > 0 && !hideText && (
         <div className="reading-glossary">
-          <h3>Từ của bài trong đoạn văn</h3>
+          <h3>
+            <BookMarked size={17} /> Từ mới trong đoạn văn
+          </h3>
+          <p className="reading-help">Các từ không thuộc bài này. Bấm vào từ để nghe.</p>
           <div className="glossary-grid">
             {glossary.map((w) => (
               <button
-                key={w.id}
+                key={w.jp}
                 className="glossary-item"
                 onClick={() => {
                   if (playing) player.pause()
-                  speakSentence(w.kana.split('、')[0])
+                  speakSentence(rubySpeech(w.jp))
                 }}
+                title={w.lesson ? `Từ N5 — học ở Bài ${w.lesson}` : 'Nghe'}
               >
                 <span className="g-jp" lang="ja">
-                  {w.kanji || w.kana}
+                  {rubyPlain(w.jp)}
                 </span>
-                {w.kanji && <span className="g-kana">{w.kana}</span>}
-                <span className="g-vi">{w.meaningVi}</span>
+                {w.kana !== rubyPlain(w.jp) && <span className="g-kana">{w.kana}</span>}
+                <span className="g-vi">{w.vi}</span>
+                {w.lesson && w.lesson !== thisLesson && (
+                  <span className={`g-lesson ${w.lesson < thisLesson ? 'past' : ''}`}>Bài {w.lesson}</span>
+                )}
               </button>
             ))}
           </div>
@@ -306,11 +313,28 @@ export const ReadingView: React.FC<{
         </h3>
         {reading.questions.map((q, qi) => {
           const picked = answers[qi]
+          const jp = !!q.jp && q.optionsJp?.length === q.options.length
+          // Có bản tiếng Nhật: hiện tiếng Nhật; bản Việt hiện khi bấm "Nghĩa" hoặc sau khi đã trả lời
+          const showVi = jp && (qVi.includes(qi) || picked !== null)
           return (
             <div key={qi} className="rq">
-              <p className="rq-q">
-                {qi + 1}. {q.q}
-              </p>
+              <div className="rq-q">
+                <span className="rq-num">{qi + 1}.</span>
+                <div className="rq-q-body">
+                  {jp ? <Ruby text={q.jp!} /> : q.q}
+                  {showVi && <span className="rq-vi">{q.q}</span>}
+                </div>
+                {jp && picked === null && (
+                  <button
+                    type="button"
+                    className={`rq-vi-btn ${qVi.includes(qi) ? 'active' : ''}`}
+                    onClick={() => toggleQVi(qi)}
+                    title="Xem nghĩa tiếng Việt"
+                  >
+                    <Languages size={14} /> Nghĩa
+                  </button>
+                )}
+              </div>
               <div className="rq-options">
                 {q.options.map((o, oi) => {
                   const state = picked === null ? '' : oi === q.answer ? 'ok' : oi === picked ? 'bad' : 'dim'
@@ -323,7 +347,14 @@ export const ReadingView: React.FC<{
                     >
                       {state === 'ok' && <CheckCircle2 size={16} />}
                       {state === 'bad' && <XCircle size={16} />}
-                      {o}
+                      {jp ? (
+                        <span className="rq-opt-text">
+                          <Ruby text={q.optionsJp![oi]} />
+                          {showVi && <span className="rq-vi">{o}</span>}
+                        </span>
+                      ) : (
+                        o
+                      )}
                     </button>
                   )
                 })}
@@ -341,7 +372,10 @@ export const ReadingView: React.FC<{
               variant="ghost"
               size="sm"
               icon={<RotateCcw size={15} />}
-              onClick={() => setAnswers(reading.questions.map(() => null))}
+              onClick={() => {
+                setAnswers(reading.questions.map(() => null))
+                setQVi([])
+              }}
             >
               Làm lại
             </Button>

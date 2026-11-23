@@ -74,9 +74,20 @@ export interface WordExample {
 }
 
 export interface ReadingQuestion {
+  /** Câu hỏi tiếng Việt (dùng làm bản dịch khi có bản tiếng Nhật) */
   q: string
   options: string[]
   answer: number
+  /** Câu hỏi tiếng Nhật (có furigana) */
+  jp?: string
+  /** Phương án tiếng Nhật, cùng thứ tự với `options` */
+  optionsJp?: string[]
+}
+
+export interface GlossaryItem {
+  /** Từ (dạng từ điển, có furigana) */
+  jp: string
+  vi: string
 }
 
 export interface Reading {
@@ -84,6 +95,8 @@ export interface Reading {
   titleVi: string
   lines: { jp: string; vi: string }[]
   questions: ReadingQuestion[]
+  /** Từ mới trong đoạn văn (không thuộc từ vựng của bài) */
+  glossary?: GlossaryItem[]
 }
 
 export interface GrammarPoint {

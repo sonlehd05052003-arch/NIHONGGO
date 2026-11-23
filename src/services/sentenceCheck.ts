@@ -193,7 +193,29 @@ const FILLER_NO_ACCENT = new Set(['cai', 'chiec', 'quyen', 'cuon', 'buc', 'la'])
 const VI_SAME: Record<string, string> = { mình: 'tôi', tớ: 'tôi' }
 
 /** "v.v." / "vv" = "vân vân" */
-const expandVi = (s: string) => s.normalize('NFC').replace(/(^|\s)v\.?\s*v\.?(?=\s|$|[,;])/gi, '$1vân vân')
+const expandVi = (s: string) =>
+  s
+    .normalize('NFC')
+    .toLowerCase()
+    .replace(/(^|\s)v\.?\s*v\.?(?=\s|$|[,;])/g, '$1vân vân')
+    // "hàng tuần" / "hằng tuần" = "mỗi tuần" (cả "hàng buổi sáng"…)
+    .replace(/(^|[^\p{L}])(?:hàng|hằng|hang)\s+(?=(?:buổi\s+|buoi\s+)?(?:ngày|tuần|tháng|năm|sáng|trưa|chiều|tối|đêm|ngay|tuan|thang|nam|sang|trua|chieu|toi|dem)(?![\p{L}]))/gu, '$1mỗi ')
+    // "mỗi buổi sáng" = "mỗi sáng"
+    .replace(/(^|[^\p{L}])(mỗi|moi)\s+(?:buổi|buoi)\s+/gu, '$1$2 ')
+    // Số viết bằng chữ số (≤ 99) → chữ: "thứ 2" = "thứ hai", "3 giờ" = "ba giờ"
+    .replace(/(?<![\p{L}\p{N}])\d{1,2}(?![\p{L}\p{N}]|[.,:]\d)/gu, (d) => numToVi(Number(d)))
+
+const DIGITS = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+/** 0–99 → chữ: 10 "mười", 15 "mười lăm", 21 "hai mươi mốt", 24 "hai mươi tư" */
+function numToVi(n: number): string {
+  if (n < 10) return DIGITS[n]
+  const t = Math.floor(n / 10)
+  const u = n % 10
+  const head = t === 1 ? 'mười' : `${DIGITS[t]} mươi`
+  if (!u) return head
+  const unit = u === 5 ? 'lăm' : u === 1 && t > 1 ? 'mốt' : u === 4 && t > 1 ? 'tư' : DIGITS[u]
+  return `${head} ${unit}`
+}
 
 const viTokens = (s: string) =>
   expandVi(s)

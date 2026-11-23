@@ -188,6 +188,22 @@ const VI_SYNONYMS: string[][] = [
   ['ký', 'kí'],
   ['đợi', 'chờ'],
   ['hai mươi', 'hai chục'],
+  // 毎〜: "mỗi tuần" = "hàng tuần" = "hằng tuần" = "tuần nào cũng"…
+  ...[
+    ['ngày'],
+    ['tuần'],
+    ['tháng'],
+    ['năm'],
+    ['sáng', 'buổi sáng'],
+    ['trưa', 'buổi trưa'],
+    ['chiều', 'buổi chiều'],
+    ['tối', 'buổi tối'],
+    ['đêm', 'buổi đêm'],
+  ].map(([t, long]) => [
+    `mỗi ${t}`,
+    ...[t, long].filter(Boolean).flatMap((x) => [`hàng ${x}`, `hằng ${x}`, `${x} nào cũng`]),
+    ...(long ? [`mỗi ${long}`] : []),
+  ]),
 ]
 
 /** Số đếm viết bằng chữ → chữ số (áp dụng cho cả đáp án và câu trả lời nên luôn nhất quán) */

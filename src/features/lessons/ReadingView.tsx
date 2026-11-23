@@ -17,7 +17,7 @@ import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useProgress } from '@/hooks/useProgress'
-import { rubyKana, rubyPlain } from '@/services/lessons'
+import { rubySpeech, rubyPlain } from '@/services/lessons'
 import { sfx } from '@/services/sound'
 import { speakSentence } from '@/services/vocabularyService'
 import type { Reading, VocabularyItem } from '@/types'
@@ -52,7 +52,7 @@ export const ReadingView: React.FC<{
   const hideText = listenOnly && !revealed
 
   const best = progress.readings?.[lessonId]
-  const spoken = useMemo(() => reading.lines.map((l) => rubyKana(l.jp)), [reading])
+  const spoken = useMemo(() => reading.lines.map((l) => rubySpeech(l.jp)), [reading])
   const player = useReadingPlayer(spoken, RATES[rate])
   const lineRefs = useRef<(HTMLDivElement | null)[]>([])
   const active = player.state !== 'idle'

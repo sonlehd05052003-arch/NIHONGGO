@@ -55,5 +55,18 @@ export function parseRuby(text: string): RubyPart[] {
 
 /** Bản chỉ có kanji (bỏ furigana) */
 export const rubyPlain = (text: string) => text.replace(/\{([^|{}]+)\|[^{}]+\}/g, '$1')
-/** Bản toàn kana, dùng cho giọng đọc để phát âm chuẩn */
+/** Bản toàn kana (dùng để chấm / so sánh) */
 export const rubyKana = (text: string) => text.replace(/\{[^|{}]+\|([^{}]+)\}/g, '$1')
+
+/** Chữ Hán có nhiều cách đọc mà giọng máy hay đọc nhầm → đưa kana theo furigana */
+const SPEAK_AS_KANA = new Set(['何', '一日', '方', '私|わたくし'])
+
+/**
+ * Câu đưa cho giọng đọc. Giữ chữ Hán (để máy tách từ đúng: trợ từ は đọc "wa", へ đọc "e";
+ * nếu đưa toàn kana thì "先週は働き…" thành "せんしゅうははたらき…" và は bị đọc "ha"),
+ * chỉ đổi sang kana ở vài chữ Hán dễ đọc nhầm.
+ */
+export const rubySpeech = (text: string) =>
+  text.replace(/\{([^|{}]+)\|([^{}]+)\}/g, (_, base: string, kana: string) =>
+    SPEAK_AS_KANA.has(base) || SPEAK_AS_KANA.has(`${base}|${kana}`) ? kana : base,
+  )

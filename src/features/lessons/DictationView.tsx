@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { useKanjiReadings } from '@/hooks/useKanjiReadings'
 import { useProgress } from '@/hooks/useProgress'
-import { rubyKana } from '@/services/lessons'
+import { rubyKana, rubySpeech } from '@/services/lessons'
 import { checkJapanese, kanaDiff, normJa } from '@/services/sentenceCheck'
 import { sfx } from '@/services/sound'
 import { speakSentence } from '@/services/vocabularyService'
@@ -60,7 +60,7 @@ export const DictationView: React.FC<{ lessonId: string; reading: Reading }> = (
 
   const play = (rate: number) => {
     if (!s) return
-    speakSentence(kana, rate)
+    speakSentence(rubySpeech(s.jp), rate)
     setPlays((n) => n + 1)
     if (!answer) inputRef.current?.focus()
   }
@@ -68,7 +68,7 @@ export const DictationView: React.FC<{ lessonId: string; reading: Reading }> = (
   // Câu mới: tự đọc một lần
   useEffect(() => {
     if (done || !s) return
-    const t = window.setTimeout(() => speakSentence(rubyKana(s.jp), 0.85), 250)
+    const t = window.setTimeout(() => speakSentence(rubySpeech(s.jp), 0.85), 250)
     return () => window.clearTimeout(t)
   }, [pos, done, s])
 

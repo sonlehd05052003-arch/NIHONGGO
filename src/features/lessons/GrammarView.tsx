@@ -1,7 +1,7 @@
 import React from 'react'
 import { Lightbulb, Volume2 } from 'lucide-react'
 import { Ruby } from '@/components/ui/Ruby'
-import { rubyKana } from '@/services/lessons'
+import { rubySpeech } from '@/services/lessons'
 import { speakSentence } from '@/services/vocabularyService'
 import type { GrammarPoint } from '@/types'
 
@@ -38,7 +38,7 @@ export const GrammarView: React.FC<{ points: GrammarPoint[] }> = ({ points }) =>
         <ul className="gc-examples">
           {p.examples.map((e, j) => (
             <li key={j}>
-              <button className="gc-ex" onClick={() => speakSentence(rubyKana(e.jp), 0.85)} title="Nghe câu này">
+              <button className="gc-ex" onClick={() => speakSentence(rubySpeech(e.jp), 0.85)} title="Nghe câu này">
                 <Volume2 size={15} className="gc-ex-icon" />
                 <span className="gc-ex-jp" lang="ja">
                   <Ruby text={e.jp} />

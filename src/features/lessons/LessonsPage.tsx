@@ -8,7 +8,7 @@ import { addDays, dayKey } from '@/services/srs'
 import { shuffle } from '@/services/vocabularyService'
 import type { QuizDirection, StudyMode, VocabularyItem } from '@/types'
 import { StudySession, type Session } from '@/features/study/StudySession'
-import { LessonDetail, type Step } from './LessonDetail'
+import { LessonDetail } from './LessonDetail'
 import './LessonsPage.css'
 
 const REVIEW_MODES: { mode: StudyMode; label: string }[] = [
@@ -23,11 +23,11 @@ export const LessonsPage: React.FC = () => {
   const [openId, setOpenId] = useLocalStorage<string | null>('nihongo_open_lesson', null)
   const [reviewMode, setReviewMode] = useLocalStorage<StudyMode>('nihongo_review_mode', 'quiz')
   const [session, setSession] = useState<(Session & { direction: QuizDirection }) | null>(null)
-  // Bước mở đầu khi vào một bài (mặc định "Học từ"; "Bài đọc tiếp theo" thì mở thẳng bài đọc)
-  const [openStep, setOpenStep] = useState<Step>('learn')
+  // Vào bài nào cũng bắt đầu từ bước 1 (Học từ)
   const openLesson = (id: string | null) => {
-    setOpenStep('learn')
+    setSession(null)
     setOpenId(id)
+    window.scrollTo({ top: 0 })
   }
 
   const stats = useMemo(
@@ -78,14 +78,9 @@ export const LessonsPage: React.FC = () => {
             lesson={open}
             index={openIdx}
             onBack={() => openLesson(null)}
-            initialStep={openStep}
             onNext={
               openIdx < LESSONS.length - 1
-                ? (step) => {
-                    setOpenStep(step)
-                    setOpenId(LESSONS[openIdx + 1].id)
-                    window.scrollTo({ top: 0 })
-                  }
+                ? () => openLesson(LESSONS[openIdx + 1].id)
                 : undefined
             }
             onPractice={(mode, direction) => start(mode, shuffle(lessonWords(open)), direction)}

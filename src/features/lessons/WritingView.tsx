@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button'
 import { Ruby } from '@/components/ui/Ruby'
 import { useKanjiReadings } from '@/hooks/useKanjiReadings'
 import { useProgress } from '@/hooks/useProgress'
-import { rubyKana, rubyPlain } from '@/services/lessons'
+import { rubyKana, rubySpeech, rubyPlain } from '@/services/lessons'
 import { checkJapanese, checkVietnamese } from '@/services/sentenceCheck'
 import { sfx } from '@/services/sound'
 import { speakSentence } from '@/services/vocabularyService'
@@ -198,7 +198,7 @@ export const WritingView: React.FC<{ lessonId: string; exercises: WritingExercis
             <button
               type="button"
               className="icon-btn sm"
-              onClick={() => speakSentence(rubyKana(ex.jp), 0.85)}
+              onClick={() => speakSentence(rubySpeech(ex.jp), 0.85)}
               title="Nghe câu"
             >
               <Volume2 size={16} />
@@ -261,7 +261,7 @@ export const WritingView: React.FC<{ lessonId: string; exercises: WritingExercis
                   <button
                     type="button"
                     className="icon-btn sm"
-                    onClick={() => speakSentence(rubyKana(ex.jp), 0.85)}
+                    onClick={() => speakSentence(rubySpeech(ex.jp), 0.85)}
                     title="Nghe đáp án"
                   >
                     <Volume2 size={16} />

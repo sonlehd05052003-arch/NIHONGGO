@@ -6,7 +6,7 @@ import { WordImage } from '@/components/ui/WordImage'
 import { useContent } from '@/hooks/useContent'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useProgress } from '@/hooks/useProgress'
-import { lessonStats, lessonWords, rubyKana } from '@/services/lessons'
+import { lessonStats, lessonWords, rubySpeech } from '@/services/lessons'
 import { isLearned } from '@/services/srs'
 import { speak, speakSentence } from '@/services/vocabularyService'
 import type { Lesson, QuizDirection, StudyMode } from '@/types'
@@ -28,14 +28,13 @@ export const LessonDetail: React.FC<{
   lesson: Lesson
   index: number
   onBack: () => void
-  initialStep?: Step
   /** Mở bài kế tiếp, ở bước được chỉ định */
-  onNext?: (step: Step) => void
+  onNext?: () => void
   onPractice: (mode: StudyMode, direction: QuizDirection) => void
-}> = ({ lesson, index, initialStep = 'learn', onBack, onNext, onPractice }) => {
+}> = ({ lesson, index, onBack, onNext, onPractice }) => {
   const { get, toggleStar, progress } = useProgress()
   const content = useContent()
-  const [step, setStep] = useState<Step>(initialStep)
+  const [step, setStep] = useState<Step>('learn')
   const [furigana, setFurigana] = useLocalStorage('nihongo_furigana', true)
   const [direction, setDirection] = useLocalStorage<QuizDirection>('nihongo_lesson_direction', 'jp-vi')
   const words = lessonWords(lesson)
@@ -145,7 +144,7 @@ export const LessonDetail: React.FC<{
                     <p className="wc-meaning">{w.meaningVi}</p>
                     {ex ? (
                       <>
-                        <button className="wc-example" onClick={() => speakSentence(rubyKana(ex.jp), 0.85)} title="Nghe câu ví dụ">
+                        <button className="wc-example" onClick={() => speakSentence(rubySpeech(ex.jp), 0.85)} title="Nghe câu ví dụ">
                           <Ruby text={ex.jp} />
                           <Volume2 size={14} className="wc-ex-icon" />
                         </button>
@@ -267,19 +266,9 @@ export const LessonDetail: React.FC<{
             <Button variant="outline" icon={<ArrowLeft size={16} />} onClick={() => go('write')}>
               Luyện viết câu
             </Button>
-            <Button variant="secondary" icon={<Headphones size={16} />} onClick={() => go('listen')}>
+            <Button size="lg" icon={<Headphones size={18} />} onClick={() => go('listen')}>
               Sang luyện nghe
             </Button>
-            {onNext && (
-              <>
-                <Button variant="secondary" icon={<BookOpen size={16} />} onClick={() => onNext('learn')}>
-                  Học bài tiếp theo
-                </Button>
-                <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => onNext('read')}>
-                  Bài đọc tiếp theo
-                </Button>
-              </>
-            )}
           </div>
         </>
       )}
@@ -299,7 +288,7 @@ export const LessonDetail: React.FC<{
               Về bài đọc
             </Button>
             {onNext && (
-              <Button size="lg" icon={<ArrowRight size={18} />} onClick={() => onNext('learn')}>
+              <Button size="lg" icon={<ArrowRight size={18} />} onClick={onNext}>
                 Học bài tiếp theo
               </Button>
             )}

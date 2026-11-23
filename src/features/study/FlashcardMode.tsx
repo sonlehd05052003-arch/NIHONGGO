@@ -4,7 +4,7 @@ import { Ruby } from '@/components/ui/Ruby'
 import { WordImage } from '@/components/ui/WordImage'
 import { useContent } from '@/hooks/useContent'
 import { useProgress } from '@/hooks/useProgress'
-import { rubyKana } from '@/services/lessons'
+import { rubySpeech } from '@/services/lessons'
 import { preloadImage, speak, speakSentence } from '@/services/vocabularyService'
 import { isSoundOn, sfx } from '@/services/sound'
 import type { VocabularyItem } from '@/types'
@@ -159,7 +159,7 @@ export const FlashcardMode: React.FC<ModeProps> = ({ deck, onExit, onRestart }) 
 
       {flipped && example && (
         <div className="fc-extra">
-          <button className="wc-example" onClick={() => speakSentence(rubyKana(example.jp), 0.85)} title="Nghe câu ví dụ">
+          <button className="wc-example" onClick={() => speakSentence(rubySpeech(example.jp), 0.85)} title="Nghe câu ví dụ">
             <Ruby text={example.jp} />
           </button>
           <p className="wc-example-vi">{example.vi}</p>

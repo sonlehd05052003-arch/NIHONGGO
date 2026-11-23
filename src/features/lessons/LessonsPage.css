@@ -1,3 +1,8 @@
+/* `hidden` phải thắng display: flex (ẩn trang bài học khi đang luyện tập) */
+.lessons-container[hidden] {
+  display: none;
+}
+
 .lessons-container {
   max-width: 980px;
   width: 100%;

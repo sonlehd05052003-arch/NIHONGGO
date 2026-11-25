@@ -5,6 +5,7 @@ import { useProgress } from '@/hooks/useProgress'
 import { WordImage } from '@/components/ui/WordImage'
 import { checkMeaningAnswer, checkTypedAnswer, meaningAlternatives, preloadImage, speak } from '@/services/vocabularyService'
 import { isSoundOn } from '@/services/sound'
+import { matchConjugated, type Form } from '@/services/conjugate'
 import type { QuizDirection, VocabularyItem } from '@/types'
 import { ResultView, SessionHeader, type ModeProps } from './shared'
 import { useSessionGame } from './useSessionGame'
@@ -28,6 +29,8 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
   const [input, setInput] = useState('')
   const [status, setStatus] = useState<Status>('idle')
   const [hint, setHint] = useState(0)
+  /** Gõ đúng từ nhưng ở dạng đã chia (vd. 歩いて thay vì 歩く) */
+  const [form, setForm] = useState<Form | null>(null)
   const [wrong, setWrong] = useState<VocabularyItem[]>([])
   const inputRef = useRef<HTMLInputElement>(null)
   const nextRef = useRef<HTMLButtonElement>(null)
@@ -82,7 +85,10 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
     e.preventDefault()
     if (status !== 'idle') return next()
     if (!input.trim()) return
-    const ok = dir === 'vi-jp' ? checkTypedAnswer(input, word) : checkMeaningAnswer(input, word)
+    const exact = dir === 'vi-jp' ? checkTypedAnswer(input, word) : checkMeaningAnswer(input, word)
+    const conj = !exact && dir === 'vi-jp' ? matchConjugated(input, word) : null
+    setForm(conj)
+    const ok = exact || !!conj
     setStatus(ok ? 'correct' : 'wrong')
     if (ok) {
       recordAnswer(word.id, true)
@@ -102,6 +108,7 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
     setInput('')
     setStatus('idle')
     setHint(0)
+    setForm(null)
     setIdx((i) => i + 1)
   }
 
@@ -190,6 +197,11 @@ export const TypingMode: React.FC<ModeProps & { direction: QuizDirection }> = ({
               {status === 'correct' ? <CheckCircle2 size={22} /> : <XCircle size={22} />}
               <span>{status === 'correct' ? 'Chính xác!' : 'Chưa đúng, đáp án là:'}</span>
             </div>
+            {status === 'correct' && form && (
+              <p className="type-form-note">
+                Bạn gõ <b lang="ja">{form.text}</b> ({form.label}). Dạng từ điển của từ này là:
+              </p>
+            )}
             <div className="type-answer">
               <span className="jp">{word.kanji || word.kana}</span>
               {word.kanji && <span className="kana">{word.kana}</span>}

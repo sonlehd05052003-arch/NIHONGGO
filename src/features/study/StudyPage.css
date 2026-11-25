@@ -571,6 +571,17 @@ kbd {
   color: #dc2626;
 }
 
+.type-form-note {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.type-form-note b {
+  font-family: var(--font-japanese);
+  color: var(--text-main);
+}
+
 .type-answer {
   display: flex;
   align-items: baseline;

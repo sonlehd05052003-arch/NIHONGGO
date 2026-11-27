@@ -5,6 +5,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { checkLesson } from './check-grammar.mjs'
 import { checkExtra } from './check-reading-extra.mjs'
+import { UNIT_IDS, checkJlpt, loadJlpt } from './check-jlpt.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIR = resolve(ROOT, 'scripts/content')
@@ -83,9 +84,17 @@ const out = {
   grammar: Object.fromEntries(lessons.filter((l) => grammar[l.id]).map((l) => [l.id, grammar[l.id]])),
 }
 writeFileSync(resolve(ROOT, 'src/data/content.json'), JSON.stringify(out) + '\n')
+
+// Ngân hàng câu hỏi dạng đề JLPT N5: scripts/jlpt/*.json → src/data/jlpt.json (tải riêng khi làm bài kiểm tra)
+const jlpt = loadJlpt()
+checkJlpt(jlpt, errors)
+for (const l of lessons) if (!jlpt.lessons[l.id]) errors.push(`${l.id}: thiếu ngân hàng câu hỏi JLPT`)
+for (const u of UNIT_IDS) if (!jlpt.units[u]) errors.push(`${u}: thiếu bài văn JLPT của chủ đề`)
+writeFileSync(resolve(ROOT, 'src/data/jlpt.json'), JSON.stringify(jlpt) + '\n')
 console.log(
   `Câu ví dụ: ${Object.keys(out.examples).length}/${ids.size} · Bài đọc: ${Object.keys(out.readings).length}/${lessons.length}` +
-    ` · Ngữ pháp: ${Object.keys(out.grammar).length}/${lessons.length}`,
+    ` · Ngữ pháp: ${Object.keys(out.grammar).length}/${lessons.length}` +
+    ` · Đề JLPT: ${Object.keys(jlpt.lessons).length}/${lessons.length} bài, ${Object.keys(jlpt.units).length}/${UNIT_IDS.length} chủ đề`,
 )
 if (errors.length) {
   console.log(`\n${errors.length} lỗi:`)

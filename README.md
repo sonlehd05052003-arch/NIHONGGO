@@ -60,6 +60,15 @@ Mỗi bài có 6 bước:
 **Ôn tập ngắt quãng (SRS):** trả lời đúng thì từ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày, sai thì ôn lại
 ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn của những bài đã học tới.
 
+**Kiểm tra theo cấu trúc đề JLPT N5:** mỗi chủ đề có nút *Kiểm tra chủ đề* (~35 câu, chỉ dùng nội dung của chủ đề, có
+chế độ luyện tập xem đáp án ngay), và mục *Thi thử JLPT N5* (67 câu, đủ ba phần thi như thật: 言語知識（文字・語彙）20 phút ·
+言語知識（文法）・読解 40 phút · 聴解 30 phút; hết giờ tự chuyển phần, câu nghe chỉ phát một lần). Chấm theo thang 180 điểm
+(言語知識・読解 120, 聴解 60; đỗ khi ≥ 80 và không dưới điểm liệt 38 / 19). Mỗi lần làm là một đề mới: 漢字読み / 表記 sinh tự
+động từ câu ví dụ (bẫy trường âm, âm ngắt, dakuten, chữ Hán giống nhau), các dạng khác chọn ngẫu nhiên từ ngân hàng câu hỏi,
+ưu tiên câu chưa gặp. Phần nghe là hội thoại đọc bằng giọng máy (nam/nữ). Ngân hàng: `scripts/jlpt/lessons-*.json` (theo bài)
+và `scripts/jlpt/units.json` (bài văn theo chủ đề) — quy cách `scripts/jlpt/SPEC.md`, kiểm tra `node scripts/check-jlpt.mjs`,
+build ra `src/data/jlpt.json` (tải lười).
+
 Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`; ngữ pháp & bài tập viết câu trong
 `scripts/grammar/part-*.json` (lộ trình mẫu: `scripts/grammar-plan.mjs`, quy cách: `scripts/grammar/SPEC.md`).
 Gộp lại bằng `node scripts/build-content.mjs` (kiểm tra furigana, đủ từ, đáp án hợp lệ) → `src/data/content.json` (tải lười).

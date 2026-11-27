@@ -57,6 +57,8 @@ export interface ProgressState {
   writing?: Record<string, number>
   /** Điểm cao nhất phần nghe chép chính tả của từng bài (0..1) */
   dictation?: Record<string, number>
+  /** Điểm cao nhất bài kiểm tra của từng chủ đề (khoá u1, u2…; 0..1) */
+  tests?: Record<string, number>
 }
 
 export interface Lesson {

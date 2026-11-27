@@ -24,6 +24,8 @@ export function mergeProgress(a: ProgressState, b: ProgressState): ProgressState
   if (writing) out.writing = writing
   const dictation = maxMap(a.dictation, b.dictation)
   if (dictation) out.dictation = dictation
+  const tests = maxMap(a.tests, b.tests)
+  if (tests) out.tests = tests
   const daily = mergeDaily(a.daily, b.daily)
   if (daily) out.daily = daily
   return out

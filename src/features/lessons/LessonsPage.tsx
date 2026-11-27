@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { Brain, CheckCircle2, Play, Star, Trophy, CalendarClock } from 'lucide-react'
+import { Brain, CheckCircle2, ClipboardCheck, GraduationCap, Play, Star, Trophy, CalendarClock } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
 import { useProgress } from '@/hooks/useProgress'
@@ -9,6 +9,9 @@ import { shuffle } from '@/services/vocabularyService'
 import type { QuizDirection, StudyMode, VocabularyItem } from '@/types'
 import { StudySession, type Session } from '@/features/study/StudySession'
 import { LessonDetail } from './LessonDetail'
+import { ExamView } from '@/features/exam/ExamView'
+import { JLPT_SCALE } from '@/services/jlptExam'
+import { useSessionState } from '@/hooks/useSessionState'
 import './LessonsPage.css'
 
 const REVIEW_MODES: { mode: StudyMode; label: string }[] = [
@@ -23,6 +26,17 @@ export const LessonsPage: React.FC = () => {
   const [openId, setOpenId] = useLocalStorage<string | null>('nihongo_open_lesson', null)
   const [reviewMode, setReviewMode] = useLocalStorage<StudyMode>('nihongo_review_mode', 'quiz')
   const [session, setSession] = useState<(Session & { direction: QuizDirection }) | null>(null)
+  /** Đang làm bài kiểm tra chủ đề (chỉ số chủ đề) hoặc thi thử N5 */
+  const [testUnit, setTestUnit] = useSessionState<number | 'mock' | null>('nihongo_open_exam', null)
+  const openExam = (t: number | 'mock') => {
+    setTestUnit(t)
+    window.scrollTo({ top: 0 })
+  }
+  /** Điểm cao nhất (thang 180) */
+  const examScore = (key: string) => {
+    const v = progress.tests?.[key]
+    return v === undefined ? undefined : Math.round(v * (JLPT_SCALE.language + JLPT_SCALE.listening))
+  }
   // Vào bài nào cũng bắt đầu từ bước 1 (Học từ)
   const openLesson = (id: string | null) => {
     setSession(null)
@@ -93,6 +107,18 @@ export const LessonsPage: React.FC = () => {
   }
 
   if (sessionView) return sessionView
+  if (testUnit !== null)
+    return (
+      <ExamView
+        key={testUnit}
+        kind={testUnit === 'mock' ? 'mock' : 'unit'}
+        unitIndex={testUnit === 'mock' ? 0 : testUnit}
+        onExit={() => {
+          setTestUnit(null)
+          window.scrollTo({ top: 0 })
+        }}
+      />
+    )
 
   return (
     <div className="lessons-container">
@@ -161,14 +187,46 @@ export const LessonsPage: React.FC = () => {
         </section>
       </div>
 
+      <section className="mock-card">
+        <div className="mock-icon">
+          <GraduationCap size={26} />
+        </div>
+        <div className="mock-body">
+          <h2>Thi thử JLPT N5</h2>
+          <p>
+            Đề đầy đủ theo cấu trúc thi thật: 文字・語彙 (20 phút) · 文法・読解 (40 phút) · 聴解 (30 phút), chấm thang 180 điểm.
+            Mỗi lần thi là một đề mới.
+            {examScore('mock') !== undefined && (
+              <>
+                {' '}
+                Điểm cao nhất: <b>{examScore('mock')}/180</b>.
+              </>
+            )}
+          </p>
+        </div>
+        <Button variant="secondary" icon={<Play size={16} />} onClick={() => openExam('mock')}>
+          Vào thi
+        </Button>
+      </section>
+
       <p className="srs-explain">
         💡 Mỗi lần bạn trả lời đúng, từ đó sẽ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày. Trả lời sai thì phải
         ôn lại ngay hôm nay. Chỉ cần ôn đều mục <b>Ôn tập hôm nay</b> là nhớ lâu.
       </p>
 
-      {UNITS.map(({ unit, lessons }) => (
+      {UNITS.map(({ unit, lessons }, ui) => (
         <section key={unit} className="unit">
-          <h2 className="unit-title">{unit}</h2>
+          <div className="unit-head">
+            <h2 className="unit-title">{unit}</h2>
+            <button
+              className={`unit-test-btn ${(examScore(`u${ui + 1}`) ?? 0) >= JLPT_SCALE.pass ? 'pass' : ''}`}
+              onClick={() => openExam(ui)}
+              title="Bài kiểm tra theo cấu trúc đề JLPT N5, mỗi lần một đề mới"
+            >
+              <ClipboardCheck size={15} /> Kiểm tra chủ đề
+              {examScore(`u${ui + 1}`) !== undefined && <b>{examScore(`u${ui + 1}`)}/180</b>}
+            </button>
+          </div>
           <div className="lesson-grid">
             {lessons.map((l) => {
               const s = stats.get(l.id)!

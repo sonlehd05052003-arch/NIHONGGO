@@ -1643,3 +1643,83 @@
   border-radius: 5px;
   background: repeating-linear-gradient(90deg, var(--border-strong) 0 18px, transparent 18px 24px);
 }
+
+/* ---------- Kiểm tra theo chủ đề ---------- */
+.unit-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.unit-head .unit-title {
+  margin-bottom: 0;
+}
+.unit-test-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+.unit-test-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.unit-test-btn b {
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.78rem;
+}
+.unit-test-btn.pass b {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.mock-card {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: linear-gradient(135deg, var(--color-accent-light), var(--bg-surface));
+}
+.mock-icon {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  background: var(--color-accent);
+  color: #fff;
+}
+.mock-body {
+  flex: 1;
+  min-width: 0;
+}
+.mock-body h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.mock-body p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+@media (max-width: 640px) {
+  .mock-card {
+    flex-wrap: wrap;
+  }
+}

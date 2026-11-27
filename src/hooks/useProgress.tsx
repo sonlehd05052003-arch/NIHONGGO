@@ -39,6 +39,7 @@ interface ProgressContextValue {
   setReadingScore: (lessonId: string, score: number) => void
   setWritingScore: (lessonId: string, score: number) => void
   setDictationScore: (lessonId: string, score: number) => void
+  setTestScore: (unitKey: string, score: number) => void
   resetProgress: () => void
   /** Thay tiến độ bằng dữ liệu khác (vd. từ file sao lưu); merge = gộp với tiến độ hiện có */
   replaceProgress: (p: ProgressState, merge?: boolean) => void
@@ -96,6 +97,11 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         setProgress((prev) => {
           const best = Math.max(prev.dictation?.[lessonId] ?? 0, score)
           return { ...prev, dictation: { ...prev.dictation, [lessonId]: best } }
+        }),
+      setTestScore: (unitKey, score) =>
+        setProgress((prev) => {
+          const best = Math.max(prev.tests?.[unitKey] ?? 0, score)
+          return { ...prev, tests: { ...prev.tests, [unitKey]: best } }
         }),
       recordAnswer: (id, correct) => {
         update(id, (p) => ({

@@ -19,7 +19,7 @@ const REVIEW_MODES: { mode: StudyMode; label: string }[] = [
 const REVIEW_MAX = 30
 
 export const LessonsPage: React.FC = () => {
-  const { get, progress, dueIds } = useProgress()
+  const { get, progress, dueIds, reachedIds } = useProgress()
   const [openId, setOpenId] = useLocalStorage<string | null>('nihongo_open_lesson', null)
   const [reviewMode, setReviewMode] = useLocalStorage<StudyMode>('nihongo_review_mode', 'quiz')
   const [session, setSession] = useState<(Session & { direction: QuizDirection }) | null>(null)
@@ -41,8 +41,10 @@ export const LessonsPage: React.FC = () => {
   const tomorrowCount = useMemo(() => {
     const t = dayKey()
     const tm = addDays(1)
-    return Object.values(progress.words).filter((p) => p.srs && p.srs.due > t && p.srs.due <= tm).length
-  }, [progress.words])
+    return Object.entries(progress.words).filter(
+      ([id, p]) => reachedIds.has(id) && p.srs && p.srs.due > t && p.srs.due <= tm,
+    ).length
+  }, [progress.words, reachedIds])
 
   const start = (mode: StudyMode, deck: VocabularyItem[], direction: QuizDirection = 'jp-vi') => {
     if (deck.length < (mode === 'match' ? 2 : 1)) return

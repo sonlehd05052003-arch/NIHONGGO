@@ -1,6 +1,7 @@
 import React, { createContext, useCallback, useContext, useMemo } from 'react'
 import { CloudProvider } from '@/hooks/useCloud'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { reachedWordIds } from '@/services/lessons'
 import { EMPTY_PROGRESS, mergeProgress } from '@/services/progressMerge'
 import { dayKey as today, isDue, nextSrs } from '@/services/srs'
 import type { ProgressState, WordProgress } from '@/types'
@@ -31,8 +32,10 @@ interface ProgressContextValue {
   setKnown: (id: string, known: boolean) => void
   toggleStar: (id: string) => void
   recordAnswer: (id: string, correct: boolean) => void
-  /** Các từ đến hạn ôn hôm nay theo lịch ôn ngắt quãng */
+  /** Các từ đến hạn ôn hôm nay theo lịch ôn ngắt quãng (chỉ từ của các bài đã học tới) */
   dueIds: string[]
+  /** Từ của các bài đã học tới */
+  reachedIds: Set<string>
   setReadingScore: (lessonId: string, score: number) => void
   setWritingScore: (lessonId: string, score: number) => void
   setDictationScore: (lessonId: string, score: number) => void
@@ -65,7 +68,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const value = useMemo<ProgressContextValue>(() => {
     const words = progress.words ?? {}
     const t = today()
-    const dueIds = Object.keys(words).filter((id) => isDue(words[id], t))
+    const reached = reachedWordIds((id) => words[id] ?? {})
+    const dueIds = Object.keys(words).filter((id) => reached.has(id) && isDue(words[id], t))
     return {
       progress,
       streak: computeStreak(progress.studyDays ?? []),
@@ -77,6 +81,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setKnown: (id, known) => update(id, (p) => ({ ...p, known })),
       toggleStar: (id) => update(id, (p) => ({ ...p, starred: !p.starred }), false),
       dueIds,
+      reachedIds: reached,
       setReadingScore: (lessonId, score) =>
         setProgress((prev) => {
           const best = Math.max(prev.readings?.[lessonId] ?? 0, score)

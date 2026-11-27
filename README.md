@@ -58,7 +58,7 @@ Mỗi bài có 6 bước:
    và tô đỏ chữ nghe sai
 
 **Ôn tập ngắt quãng (SRS):** trả lời đúng thì từ được hẹn ôn lại sau 1 → 3 → 7 → 14 → 30 → 60 ngày, sai thì ôn lại
-ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn.
+ngay trong ngày. Mục *Ôn tập hôm nay* gom các từ đến hạn của những bài đã học tới.
 
 Nội dung câu ví dụ / mẹo nhớ / bài đọc viết trong `scripts/content/part-*.json`; ngữ pháp & bài tập viết câu trong
 `scripts/grammar/part-*.json` (lộ trình mẫu: `scripts/grammar-plan.mjs`, quy cách: `scripts/grammar/SPEC.md`).

@@ -39,6 +39,22 @@ export function lessonStats(lesson: Lesson, get: (id: string) => WordProgress, r
   return { learned, total: lesson.words.length, ratio, done: ratio >= LESSON_PASS, stars }
 }
 
+/**
+ * Từ thuộc các bài đã học tới: tới bài "Học tiếp" (bài đầu tiên chưa xong),
+ * hoặc tới bài xa nhất đã xong nếu học vượt. Ôn tập chỉ lấy các từ này,
+ * để từ của bài chưa học (vd. lỡ gặp ở trang Luyện tập tự do) không lọt vào lượt ôn.
+ */
+export function reachedWordIds(get: (id: string) => WordProgress): Set<string> {
+  let last = 0
+  let firstOpen = -1
+  LESSONS.forEach((l, i) => {
+    if (lessonStats(l, get).done) last = i
+    else if (firstOpen < 0) firstOpen = i
+  })
+  const upto = Math.max(last, firstOpen < 0 ? LESSONS.length - 1 : firstOpen)
+  return new Set(LESSONS.slice(0, upto + 1).flatMap((l) => l.words))
+}
+
 // ---------------------------------------------------------------------------
 // Nội dung câu ví dụ / mẹo nhớ / bài đọc: file lớn nên chỉ tải khi cần
 // ---------------------------------------------------------------------------

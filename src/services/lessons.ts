@@ -69,15 +69,22 @@ export const rubyPlain = (text: string) => text.replace(/\{([^|{}]+)\|[^{}]+\}/g
 /** Bản toàn kana (dùng để chấm / so sánh) */
 export const rubyKana = (text: string) => text.replace(/\{[^|{}]+\|([^{}]+)\}/g, '$1')
 
-/** Chữ Hán có nhiều cách đọc mà giọng máy hay đọc nhầm → đưa kana theo furigana */
-const SPEAK_AS_KANA = new Set(['何', '一日', '方', '私|わたくし'])
-
 /**
- * Câu đưa cho giọng đọc. Giữ chữ Hán (để máy tách từ đúng: trợ từ は đọc "wa", へ đọc "e";
- * nếu đưa toàn kana thì "先週は働き…" thành "せんしゅうははたらき…" và は bị đọc "ha"),
- * chỉ đổi sang kana ở vài chữ Hán dễ đọc nhầm.
+ * Câu đưa cho giọng đọc: đọc đúng theo furigana thay vì để máy tự đoán âm chữ Hán
+ * (máy hay đọc sai: 何時 → "itsu", 七時 → "nanaji", 家を → "kao", 町 → "chou"…).
+ * - は/へ nằm trong cách đọc của từ (はし, はなします, へや) → viết katakana ハ/ヘ để luôn đọc "ha"/"he".
+ * - Trợ từ は/へ đứng sát chữ Hán → viết わ/え (không thì "せんしゅうははたらき" bị đọc "ha").
+ * Đã kiểm bằng giọng Microsoft Haruka trên toàn bộ ~1800 câu có furigana.
  */
-export const rubySpeech = (text: string) =>
-  text.replace(/\{([^|{}]+)\|([^{}]+)\}/g, (_, base: string, kana: string) =>
-    SPEAK_AS_KANA.has(base) || SPEAK_AS_KANA.has(`${base}|${kana}`) ? kana : base,
-  )
+export function rubySpeech(text: string): string {
+  const parts = parseRuby(text)
+  return parts
+    .map((p, i) => {
+      if (typeof p !== 'string') return p.rt.replace(/は/g, 'ハ').replace(/へ/g, 'ヘ')
+      let s = p
+      if (i > 0) s = s.replace(/^[はへ]/, (c) => (c === 'は' ? 'わ' : 'え'))
+      if (i < parts.length - 1) s = s.replace(/[はへ](?=\s*$)/, (c) => (c === 'は' ? 'わ' : 'え'))
+      return s
+    })
+    .join('')
+}
